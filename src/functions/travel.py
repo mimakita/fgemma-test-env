@@ -7,12 +7,14 @@ SCHEMA = {
     "properties": {
         "destination": {
             "type": "string",
-            "description": "The place or destination name, e.g. Tokyo, Paris, Kyoto",
+            # "description": "The place or destination name, e.g. Tokyo, Paris, Kyoto",
+            "description": "場所や目的地の名前。例: 東京、パリ、京都",
         },
         "info_type": {
             "type": "string",
             "enum": ["attractions", "tips", "transportation", "food", "general"],
-            "description": "Type of travel information requested",
+            # "description": "Type of travel information requested",
+            "description": "リクエストされた旅行情報の種類",
         },
     },
     "required": ["destination"],
@@ -37,9 +39,11 @@ def register(registry: FunctionRegistry):
         FunctionDefinition(
             name="travel_guide",
             description=(
-                "Get travel information, tourist attractions, tips, and guides "
-                "for a specific place or destination. Use when the user asks about "
-                "a place to visit, sightseeing, travel plans, or tourism."
+                # "Get travel information, tourist attractions, tips, and guides "
+                # "for a specific place or destination. Use when the user asks about "
+                # "a place to visit, sightseeing, travel plans, or tourism."
+                "特定の場所や目的地の旅行情報、観光名所、ヒント、ガイドを取得する。"
+                "ユーザーが訪問先、観光、旅行計画、ツーリズムについて尋ねた時に使用する。"
             ),
             parameters=SCHEMA,
             handler=travel_guide_handler,

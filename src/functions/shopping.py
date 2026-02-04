@@ -7,12 +7,14 @@ SCHEMA = {
     "properties": {
         "product_or_service": {
             "type": "string",
-            "description": "Product or service the user is interested in",
+            # "description": "Product or service the user is interested in",
+            "description": "ユーザーが興味のある商品やサービス",
         },
         "intent_type": {
             "type": "string",
             "enum": ["buy", "compare", "research", "deal"],
-            "description": "Type of shopping intent detected",
+            # "description": "Type of shopping intent detected",
+            "description": "検出された購買意図の種類",
         },
     },
     "required": ["product_or_service"],
@@ -37,9 +39,11 @@ def register(registry: FunctionRegistry):
         FunctionDefinition(
             name="shopping_intent",
             description=(
-                "Detect purchase intent and provide product or service information, "
-                "recommendations, or advertisements. Use when the user wants to buy, "
-                "compare, or research products or services, or shows commercial intent."
+                # "Detect purchase intent and provide product or service information, "
+                # "recommendations, or advertisements. Use when the user wants to buy, "
+                # "compare, or research products or services, or shows commercial intent."
+                "購買意図を検出し、商品やサービスの情報、おすすめ、広告を提供する。"
+                "ユーザーが商品を買いたい、比較したい、調べたい時、または商業的な意図を示した時に使用する。"
             ),
             parameters=SCHEMA,
             handler=shopping_intent_handler,
