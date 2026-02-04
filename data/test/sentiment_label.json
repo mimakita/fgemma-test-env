@@ -1,0 +1,2371 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレストランのレビューを読んでも、何とも言えないですね。気分が上がらないし、落ち込まない。"
+      },
+      {
+        "role": "assistant",
+        "content": "その感想は中立的な感情を表しているかもしれませんね。詳しく分析してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "ええ、そう思います。ちょっと微妙な感じですね。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "このレストランのレビューを読んでも、何とも言えないですね。気分が上がらないし、落ち込まない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0001",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近彼との会話があまり楽しくないなと感じています。"
+      },
+      {
+        "role": "assistant",
+        "content": "その感じは悲しみや怒りを含んでいるかもしれませんね。詳しく分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "そうだな、ちょっと寂しさが勝ってきている気がする"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近彼との会話があまり楽しくないなと感じています。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0002",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章は正直面白くないと思う。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、面白みのない文章の感情分析をしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "確かに、あまり笑えなさそうだな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この文章は正直面白くないと思う。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0003",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画レビュー、どう思いますか？「素晴らしい演技で、ストーリーがとても深いです。しかし、結末があまりにも予測できる」"
+      },
+      {
+        "role": "assistant",
+        "content": "そのレビューや感情を分析し、詳細な感情分類をしてみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='素晴らしい演技で、ストーリーがとても深いです。しかし、結末があまりにも予測できる', granularity='detailed')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい演技で、ストーリーがとても深いです。しかし、結末があまりにも予測できる",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0004",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレビューを分析してみてください。「商品は良さそうだけど、まだ使っていないので、評価は保留」とか。"
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使います。"
+      },
+      {
+        "role": "user",
+        "content": "粒度は何にする？"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='商品は良さそうだけど、まだ使っていないので、評価は保留', granularity='basic')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "商品は良さそうだけど、まだ使っていないので、評価は保留",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0005",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼の態度は冷たいね。最近何かあったのか？\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情を分析するために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "それを詳しく見てみましょう。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='彼の態度は冷たいね。最近何かあったのか？', granularity='detailed')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼の態度は冷たいね。最近何かあったのか？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0006",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"これは面白い本だよ！\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使ってみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "それについて詳しく言ってください。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='これは面白い本だよ！', granularity='detailed')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "これは面白い本だよ！",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0007",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"今日の天気は気持ちいいですね。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='今日の天気は気持ちいいですね。', granularity='basic')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気は気持ちいいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0008",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"最近の仕事でストレスが溜まってる。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく見てみましょう。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='最近の仕事でストレスが溜まってる。', granularity='detailed')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の仕事でストレスが溜まってる。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0009",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"このアプリは使いやすいけど、機能が少ない。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='このアプリは使いやすいけど、機能が少ない。', granularity='basic')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "このアプリは使いやすいけど、機能が少ない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0010",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼女の笑顔はとても素敵です。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく見てみましょう。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='彼女の笑顔はとても素敵です。', granularity='detailed')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼女の笑顔はとても素敵です。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0011",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼はいつも明るい。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='彼はいつも明るい。', granularity='basic')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼はいつも明るい。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0012",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"今日の天気は気持ちいいですね。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その感情分析のために、sentiment_label関数を使用しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく見てみましょう。"
+      },
+      {
+        "role": "assistant",
+        "content": "sentiment_label(text='今日の天気は気持ちいいですね。', granularity='detailed')"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気は気持ちいいですね。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0013",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日の会議について、あなたがどのように感じたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは非常に刺激的だったと思う。でも、いくつかの提案には疑問符が付いたよ。"
+      },
+      {
+        "role": "user",
+        "content": "その意見を具体的に分析してみるよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "それは非常に刺激的だったと思う。でも、いくつかの提案には疑問符が付いたよ。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0014",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレビューを読み、その製品に対する消費者の感情を分析してみてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。レビューを確認しますね。"
+      },
+      {
+        "role": "user",
+        "content": "こちらは具体的なレビューです：\"素晴らしい商品、とても満足しています！\""
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい商品、とても満足しています！",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0015",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この会社の最近の発表について、人々がどう感じたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに興味がありますね。その発表はどんな内容だったのか教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "それは：‘私たちは今後5年間で新製品を開発し続ける計画だ’"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "私たちは今後5年間で新製品を開発し続ける計画だ。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0016",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"あなたはこの映画を好きか？\"と聞かれたら、どのように答えますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは難しい質問ね。でも、もし私が正直に答えるなら：‘まあ、それは好みによるけど、まあいい感じだったかな’"
+      },
+      {
+        "role": "user",
+        "content": "そのような返答を分析してみてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあ、それは好みによるけど、まあいい感じだったかな。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0017",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"今日は天気が良かったね。\"と話題が出た時に、あなたの反応は？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに晴れて気持ちがいいですね。私はこう答えるでしょう：‘もちろんです、本当に快適です。’"
+      },
+      {
+        "role": "user",
+        "content": "そのような返答を分析してみてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "もちろんです、本当に快適です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0018",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "\"今日のセミナーは大変楽しかったよ。\"",
+        "内容": "それは素晴らしいです！そのような感想を共有することは、自信にもつながりますね。"
+      },
+      {
+        "role": "user",
+        "content": "そのような意見を分析してみてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日のセミナーは大変楽しかったよ。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0019",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気についての会話の感情分析をしたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、その感情分析を行うことができます。分析対象の文章を入力してください。"
+      },
+      {
+        "role": "user",
+        "content": "「今日は晴れて気持ちが良いですね」という内容でお願いします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日は晴れて気持ちが良いですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0020",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"最近のニュースはちょっと辛いな…\"という感情分析を行いたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "その文章を入力してください。"
+      },
+      {
+        "role": "user",
+        "content": "「最近のニュースはちょっと辛いな…」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近のニュースはちょっと辛いな…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0021",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼女に内緒で旅行を計画中です。\"という文章の感情分析を行ってください。"
+      },
+      {
+        "role": "assistant",
+        "content": "この文章は秘密の内容が含まれているため、感情を特定するのは難しいですね。具体的な表現を教えていただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "\"彼女に内緒で旅行を計画中ですが、ちょっとワクワクしていますね。\""
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼女に内緒で旅行を計画中ですが、ちょっとワクワクしていますね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0022",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"お友達が遠足に行くと言いましたが、本当は楽しみにしていないような…\""
+      },
+      {
+        "role": "assistant",
+        "content": "その文章の感情分析を行います。具体的な内容を入力してください。"
+      },
+      {
+        "role": "user",
+        "content": "「お友達が遠足に行くと言いましたが、本当は楽しみにしていないような感じでしたね。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "お友達が遠足に行くと言いましたが、本当は楽しみにしていないような感じでしたね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0023",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼のメールには少し怒りが隠されているかもしれません。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その文章を分析し、感情を特定します。具体的な内容を教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "「彼のメールには少し怒りが隠されているかもしれませんね。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼のメールには少し怒りが隠されているかもしれませんね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0024",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"最近、友達との関係がうまくいかなくなって、少し落ち込んでいるかも。\""
+      },
+      {
+        "role": "assistant",
+        "content": "その文章を分析します。具体的な内容を入力してください。"
+      },
+      {
+        "role": "user",
+        "content": "「最近、友達との関係がうまくいかなくなって、少し落ち込んでいるかもしれませんね。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近、友達との関係がうまくいかなくなって、少し落ち込んでいるかもしれませんね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0025",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の社員会議について感情を分析してほしいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、会議の内容について具体的に教えていただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "参加者たちがとても冷たく接していたような感じがしたよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "参加者たちはとても冷たく接していました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0026",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日のデート、ちょっと複雑な気持ちで終わったんだ。"
+      },
+      {
+        "role": "assistant",
+        "content": "詳しく教えてくれると感情分析ができるでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "彼女が予定をキャンセルしたんだよ。突然に言われて少し怒りもあったけど、それ以上に寂しかった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼女が予定をキャンセルされて、怒りよりも寂しさの方が強かった。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0027",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレビューについて感情を分析してほしい。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、レビューの本文を教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "商品の説明と実際の品質がかけ離れていて大変残念な気持ちになった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "商品の説明と品質が大きく異なり、非常に不満を感じた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0028",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気について話してくれない？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで、最高気温は25度くらいだよ。でも夕方から雨が降り始めそうだから注意しよう."
+      },
+      {
+        "role": "user",
+        "content": "雨の話はどういう感情が含まれていると思う？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "夕方から雨が降り始めそう。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0029",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画評論をいくつか読んできたけど、どれも同じような文脈で書いてあるよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは興味深いね。具体的にどの点についてそう思う？"
+      },
+      {
+        "role": "user",
+        "content": "多くのレビューは物語が単調だと感じているって書かれている."
+      },
+      {
+        "role": "assistant",
+        "content": "了解した、その文脈で感情を分析してみようか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "多くのレビューは物語が単調だと感じている.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0030",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達の誕生日 party で笑い声が聞こえたけど、その中の一部だったと感じている."
+      },
+      {
+        "role": "assistant",
+        "content": "そうね、パーティーでの笑い声は楽しいよね。その感情を分析してみましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "でも、他の人はもっと楽しそうに見える."
+      },
+      {
+        "role": "assistant",
+        "content": "それを踏まえて感情を詳細に分析するよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友達の誕生日 party で笑い声が聞こえた.",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0031",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、新しい会社に転職したんだけど、まだ慣れていない."
+      },
+      {
+        "role": "assistant",
+        "content": "新環境に適応するのは難しいよね。その感情を分析してみようか？"
+      },
+      {
+        "role": "user",
+        "content": "特に同僚とのコミュニケーションが不安を感じている."
+      },
+      {
+        "role": "assistant",
+        "content": "それを具体的な言葉で表現するといいよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "特に同僚とのコミュニケーションが不安を感じている.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0032",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいアプリを試してみたんだけど、使い方が分かりにくい."
+      },
+      {
+        "role": "assistant",
+        "content": "そういえば、最近のアプリは使いやすさに力を入れているよね。その感想を分析しようか？"
+      },
+      {
+        "role": "user",
+        "content": "特に最初の説明が不十分だと感じている."
+      },
+      {
+        "role": "assistant",
+        "content": "それを踏まえて感情を詳細に分析してみよう。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "特に最初の説明が不十分だと感じている.",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0033",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを見ていて、政治家たちの態度に疑問を感じている."
+      },
+      {
+        "role": "assistant",
+        "content": "政治家の行動は多くの人が気にしているよね。その感情を分析してみようか？"
+      },
+      {
+        "role": "user",
+        "content": "特に彼らが解決すべき問題に対しての対応が不十分だと感じている."
+      },
+      {
+        "role": "assistant",
+        "content": "それを踏まえて感情を詳細に分析するよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "特に彼らが解決すべき問題に対しての対応が不十分だと感じている.",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0034",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日、友達に会ったんだけど、彼女の声には幸せな感情が伝わってきた."
+      },
+      {
+        "role": "assistant",
+        "content": "幸せな気分は伝染するよね。その感情を分析してみようか？"
+      },
+      {
+        "role": "user",
+        "content": "でも私は何故か彼女とは違った感じを受けた."
+      },
+      {
+        "role": "assistant",
+        "content": "それを具体的な言葉で表現してみよう。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友達に会ったんだけど、彼女の声には幸せな感情が伝わってきた.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0035",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画のレビューを教えてください。主人公が頑張ったところが印象に残っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "ありがとうございます。その内容から、良い感情が込められていると思います。sentiment_labelを使って分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "それじゃあ、基本的な感情だけ調べてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。調査結果をお伝えします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この映画のレビューを教えてください。主人公が頑張ったところが印象に残っています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0036",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気予報、晴れが続くって言ってましたよね？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その通りです。今日は気持ちの良い天気が続く見込みです。その内容から感情を分析してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "基本的な感情を調べてくださいね。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、分析結果をお伝えします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気予報、晴れが続くって言ってましたよね？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0037",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女は新しいプロジェクトで頑張っているよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！sentiment_labelを使ってその感情を分析してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく調べてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、詳細な結果をお伝えします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼女は新しいプロジェクトで頑張っているよ。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0038",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の新型コロナウイルスの状況は？"
+      },
+      {
+        "role": "assistant",
+        "content": "最新情報によると、一部地域では依然として厳しい状況が続いているようです。その内容から感情を分析してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳細な感情を調べてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、詳細な結果をお伝えします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の新型コロナウイルスの状況は？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0039",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼の態度は明らかに怒りを隠していない\"って言ってる人はいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、それは気になる点です。その内容から感情を分析してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳細な感情を調べてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、詳細な結果をお伝えします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"彼の態度は明らかに怒りを隠していない\"って言ってる人はいます。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0040",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達の誕生日パーティーで、みんな笑顔で過ごしていました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！その内容から感情を分析してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "基本的な感情だけ調べてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、分析結果をお伝えします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友達の誕生日パーティーで、みんな笑顔で過ごしていました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0041",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画のレビューを読んだら、どういった感情が伝わっているか知りたいな."
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。具体的にレビューの文章を教えていただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「この映画はとても面白かった。でも物語の後半が少し単調だったかな。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この映画はとても面白かった。でも物語の後半が少し単調だったかな。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0042",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼との関係性がどうなっていくのか、とても気になる\"って感じで読んだよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは興味深いですね。具体的な文章を教えていただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「この物語では彼らの関係が徐々に深まる過程がとても丁寧に描かれている」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この物語では彼らの関係が徐々に深まる过程がとても丁寧に描かれている。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0043",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近会社で起こった問題について、みんなの感情がどうだったか知りたいな。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。具体的に何の問題关于这个问题，大家都表达了什么样的情感？您可以描述一下具体的情境。"
+      },
+      {
+        "role": "user",
+        "content": "「会社内での新しい規則が導入され、多くの人が不満を口にしていた」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "会社内での新しい規则が導入され、多くの人が不満を口にしていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0044",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気予報、どう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは感情分析には見えないですね。でも、もし天候に関するあなたの感想を知りたいなら教えてください！"
+      },
+      {
+        "role": "user",
+        "content": "うーん、明日は晴れると嬉しいな…"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "明日は晴れると嬉しいな…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0045",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画のレビューを読んだけど、どう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、その感想を共有していただければ、感情分析で詳しく調べることができます。"
+      },
+      {
+        "role": "user",
+        "content": "それは面白い！このレビューは、『ディパーテッド』という映画の話だよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "それは面白い！このレビューは、『ディパーテッド』という映画の話だよ。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0046",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の株価動向についてどう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "株価は感情分析には当てはまらないですね。でも、株式市場に関するあなたの感想を知りたい場合は教えてください！"
+      },
+      {
+        "role": "user",
+        "content": "株価が下落しているけど、長期的には大丈夫かな？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "株価が下落しているけど、長期的には大丈夫かな？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0047",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼は優しくて、私の人生を明るくしてくれた。\""
+      },
+      {
+        "role": "assistant",
+        "content": "それはとてもポジティブな言葉ですね！この感情分析でそれを詳しく見ていきましょう。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとう"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"彼は優しくて、私の人生を明るくしてくれた。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0048",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュース見ていて感じることは？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは個人的な感想なので、感情分析でそれを詳しく見ていきましょう！"
+      },
+      {
+        "role": "user",
+        "content": "最近の移民政策は厳しいですね。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の移民政策は厳しいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0049",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の彼との会話、少し辛いな。気分が落ち込んでいる感じだよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは少し辛いですね。具体的にどんな会話だったか教えてもらえますか？"
+      },
+      {
+        "role": "user",
+        "content": "私たち、将来について話し合ったんだけど、彼の言動があまりにも曖昧で困っていたんだ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "彼との会話は曖昧で、将来の展望が明確でない。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0050",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この製品レビュー読んで、どう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。レビューを共有していただけますか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "製品の品質は悪いが、価格は割安だ。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0051",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の仕事環境って、みんなで話してみたんだけど、なんか雰囲気が重いね。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは少し辛いですね。具体的に何が問題があるのか教えていただけますか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "会社の雰囲気は重苦しく、ストレスを感じている。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0052",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画レビューについての会話、その感情を分析してください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、詳細な感情分析が必要ですか？それとも基本的なポジティブ・ネガティブ判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の映画レビューについての会話",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0053",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章はポジティブな感情を表しているでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的な判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この文章はポジティブな感情を表しているでしょうか？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0054",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気予報について、そのトーンがどのような感情を表しているか教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的な判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の天気予報について、そのトーンがどのような感情を表しているか教えてください。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0055",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友人のメールに反応してあげたいですが、その内容の感情を知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的な判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友人のメールに反応してあげたいですが、その内容の感情を知りたいです。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0056",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章はネガティブな感情を表していますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。基本的な感情分析が必要ですか？それとも詳細な分析が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この文章はネガティブな感情を表していますか？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0057",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの内容が良いと感じるのはなぜでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的な判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "レビューの内容が良いと感じるのはなぜでしょう？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0058",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章は友人の感情を表していますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的な判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この文章は友人の感情を表していますか？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0059",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの内容を詳しく分析してみてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。基本的な感情分析が必要ですか？それとも詳細な分析が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "レビューの内容を詳しく分析してみてください。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0060",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章は友人の感情がよく表されていると思います。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的な判断だけで良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この文章は友人の感情がよく表されていると思います。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0061",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの内容がどうなっているか詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。基本的な感情分析が必要ですか？それとも詳細な分析が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "レビューの内容がどうなっているか詳しく知りたいです。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0062",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日のプレゼンの感想を教えてほしいな。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん！ あなたのプレゼンの反応について分析しますね。まずは基本的な感情を知りたいですか？それとも詳細な種類まで知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しい分析して。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "昨日のプレゼンの反応を詳しく分析してください。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0063",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な結果を見たいですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えてね！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "このレビューについて感情分析して。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0064",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本の評価はどう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "その質問に答えるために、この本についてのレビューの感情分析をしますね。基本的な感情で十分ですか？詳細な種類まで知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "もっと詳しく知りたいよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この本の評価について分析して。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0065",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"彼は怒りっぽいね。\" これはどういう意味？"
+      },
+      {
+        "role": "assistant",
+        "content": "その状況から感情を分析しますが、まずは基本的な感情として怒りを示す文の感情分析でよろしいですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく教えて！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"彼は怒りっぽいね。\"",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0066",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "もちろんです。詳細な感情分析が必要ですか？それとも基本的なポジティブ、ネガティブ、ニュートラルで十分ですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく知りたいよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この会社の評判を調査してみて。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0067",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気について話してくれない？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、今日は晴れていて、少し暑いくらいかな。"
+      },
+      {
+        "role": "user",
+        "content": "そんな日って気分はどう？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気は晴れていて、少し暑いです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0068",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画レビューを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "「最後まで見届けたよ。これは素晴らしい作品だね。」と書いてあります。"
+      },
+      {
+        "role": "user",
+        "content": "その感想は？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最後まで見届けたよ。これは素晴らしい作品だね。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0069",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この会社の最近の評判について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近、新しい製品の発表がありましたね。それについてどう思う？"
+      },
+      {
+        "role": "user",
+        "content": "そのニュースはどれくらいポジティブか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい製品の発表があり、多くのユーザーに高く評価されています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0070",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレビューはどんな感情を伝えている？"
+      },
+      {
+        "role": "assistant",
+        "content": "「製品がすぐ壊れた。全く使えなかった。」って書いてあるよ。「とても不満だね。」"
+      },
+      {
+        "role": "user",
+        "content": "その文は怒りからくるものか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "製品がすぐ壊れた。全く使えなかった。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0071",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この投稿は喜びを感じさせる内容ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "「友人と久々に会ってとても楽しかった！」と書かれてますね。"
+      },
+      {
+        "role": "user",
+        "content": "その内容はどの感情から来ている？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友人と久々に会ってとても楽しかった！",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0072",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この会話はどのような感情を表している？"
+      },
+      {
+        "role": "assistant",
+        "content": "「一緒に働けることが嬉しいよ。」と書いてあるので、喜びが感じられますね。"
+      },
+      {
+        "role": "user",
+        "content": "その言葉は誰が言ったのか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "一緒に働けることが嬉しいよ。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0073",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレビューはどれくらいポジティブですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "「商品が早速届いて、とても満足しています。」とあります。「かなり正直に言うと、これは大絶賛！」"
+      },
+      {
+        "role": "user",
+        "content": "そのレビューはどの程度の感情を含んでいる？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "商品が早速届いて、とても満足しています。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0074",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このレビューはどの程度の感情を含んでいる？"
+      },
+      {
+        "role": "assistant",
+        "content": "「サービスが遅くて、全く満足できなかった。」と書いてあるよ。「怒りを感じるな。」"
+      },
+      {
+        "role": "user",
+        "content": "その文は怒りからくるものか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが遅くて、全く満足できなかった。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0075",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この会話はどの程度の感情を表している？"
+      },
+      {
+        "role": "assistant",
+        "content": "「今日は友人と一緒に散歩して、とても楽しい一日だった。」とあります。「幸せな気持ちが感じられるな。」"
+      },
+      {
+        "role": "user",
+        "content": "その文はどの程度の感情から来ている？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日は友人と一緒に散歩して、とても楽しい一日だった。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0076",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"新しいプロジェクトを始める準備ができています。\"と書いてあるが、その感情は？"
+      },
+      {
+        "role": "assistant",
+        "content": "「新しいプロジェクトを始める準備ができています。」という文から、期待や喜びを感じるよ。「これは良い兆候だね。」"
+      },
+      {
+        "role": "user",
+        "content": "その文の感情は？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しいプロジェクトを始める準備ができています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0077",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気について話してくれない？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！でも、天気以外に何か特別感想や見解がありますか？"
+      },
+      {
+        "role": "user",
+        "content": "最近のニュース記事が少し辛い内容だったので、その感情を分析してみてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近のニュース記事は深刻な問題を取り上げており、多くの人々に悲しみと怒りを感じさせています。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0078",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画レビューを教えて。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！そのレビューの感情分析を行います。レビュー内容を教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "「この映画は非常に退屈でした。ストーリーが弱く、役者たちも魅力的ではありませんでした。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この映画は非常に退屈でした。ストーリーが弱く、役者たちも魅力的ではありませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0079",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日の会議について話してね。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！その会議の内容や感想をお聞かせください。"
+      },
+      {
+        "role": "user",
+        "content": "会議は良い雰囲気で進んだと思いますが、一部の課題について議論がありました。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "会議は良い雰囲気で進んだと思いますが、一部の課題について議論がありました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0080",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日の会議で上司と意見が食い違ったんですが、その感情を分析していただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんできます。その状況についてのテキストをお聞かせください。"
+      },
+      {
+        "role": "user",
+        "content": "会議の中で上司は私に厳しい意見を言ってきましたが、私は彼に対して敬意を持ちつつ反論しました。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "会議の中で上司は私に厳しい意見を言ってきましたが、私は彼に対して敬意を持ちつつ反論しました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0081",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"あなたが言ったことは真実でしょう？それとも嘘？”と聞かれるとどう思うかを教えて。"
+      },
+      {
+        "role": "assistant",
+        "content": "これは難しい状況ですね。そのような状況での会話内容を詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「私に嘘をついていると疑われている」という感情について分析して。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"私に嘘をついていると疑われている\"という感情について。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0082",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女はその新しいファッションブランドのレビューを書いたけど、どう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは興味深いですね。具体的なレビュー内容をお聞かせください。"
+      },
+      {
+        "role": "user",
+        "content": "「新しく買ったバッグがとても素敵だよ。デザインも素材も素晴らしい。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "「新しく買ったバッグがとても素敵だよ。デザインも素材も素晴らしい。」",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0083",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"このプロジェクトは完璧だね。\"と友人に言われて何を感じた？"
+      },
+      {
+        "role": "assistant",
+        "content": "その言葉を受けてどのような感情が沸き上がったか詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「うれしいけど、まだ改善できる余地があると思っている。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"うれしいけど、まだ改善できる余地がある-thinking\"",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0084",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新入社員の研修で、先輩社員が生徒たちにどのように扱われたかについて書いた文章があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "その文章を共有していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「私たちには優しく接してくれる先輩がいて、とても感謝しています。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "「私たちには優しく接てくれる先輩がいて、とても感謝しています。」",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0085",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"あなたは今どんな気分？\"と聞かれたときに答えるとしたら？"
+      },
+      {
+        "role": "assistant",
+        "content": "そのような状況でどのように返事をしたか詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「今日の天気がいいから、良い気分。でもちょっと疲れちゃった。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"今日の天気がいいから、良い気分。でもちょっと疲れちゃった\"",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0086",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この映画は面白かったね。」と友人に言われて、どう感じる？"
+      },
+      {
+        "role": "assistant",
+        "content": "そのような状況での反応を詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「うん、私もそうだよ。でもいくつかのシーンは少し怖かった。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"いくつかのシーンは少し怖かった\"",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0087",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日のパーティーで会った人たちはみんな親切だったけど、一人だけ態度が悪かった。"
+      },
+      {
+        "role": "assistant",
+        "content": "その状況について詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「ある人はとても気まずい感じで接してきて、他の人たちはもう少し自然な振る舞いだった。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"ある人はとても気まずい感じで接してきて、他の人たちはもう少し自然な振る舞いだった\"",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0088",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日見つけた古い写真を見ながら、この瞬間の感情を考えてみよう。"
+      },
+      {
+        "role": "assistant",
+        "content": "その写真について詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「私たちが一緒に旅行に行っている写真で、とても楽しい思い出がある。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"私たちが一緒に旅行に行っている写真で、とても楽しい思い出がある\"",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0089",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天候はどう？気分が落ち込んでる。"
+      },
+      {
+        "role": "assistant",
+        "content": "そのような気分になった理由を詳しく説明していただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "「この週末は雨続きで、ちょっと憂鬱な気分になった。」"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "\"この週末は雨続きで、ちょっと憂鬱な気分になった\"",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0090",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が気になってるんですが、晴れなのか雨なのか教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、お知らせします。でもちょっと面白いのは、その天気予報を感情分析してみませんか？"
+      },
+      {
+        "role": "user",
+        "content": "ええと、それはどういう意味でしょう？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気が晴れだと良いですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0091",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のビジネスの動向について話してみてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、具体的にどの業界の動向を分析したいですか？"
+      },
+      {
+        "role": "user",
+        "content": "食品業界ですね。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近、新しい食品技術が登場して話題になっているんです。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0092",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画のレビューを読むと、感情が複雑なようですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その通りです。映画に対するさまざまな感情が感じられます。 sentiments_label 関数を使って分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "基本的な感情で十分ですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この映画のレビューを読むと、感情が複雑なようですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0093",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュース記事は少し暗い内容が多いですが、何が主な問題になっているか知っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "その通りですね。感情的には少し悲しい感じがします。sentiment_label 関数を使って分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳細な感情を知りたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近のニュース記事は少し暗い内容が多いですが、何が主な問題になっているか知っていますか？",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0094",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気予報は晴れらしいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "天気が良いと気持ちが良いですよね。sentiment_label 関数を使ってこの文の感情を分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "基本的な感情で十分ですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気予報は晴れらしいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0095",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいプロジェクトについて、みんなで話し合っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいです！sentiment_label 関数を使ってこの会話の感情を分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳細な感情を知りたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しいプロジェクトについて、みんなで話し合っています。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0096",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の試合は相手チームにやられてしまった。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは残念です。sentiment_label 関数を使ってこの感情を分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "基本的な感情で十分ですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の試合は相手チームにやられてしまった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0097",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達との旅行がとても楽しかったですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしい経験でしたね！sentiment_label 関数を使ってこの感情を分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳細な感情を知りたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友達との旅行がとても楽しかったですね。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0098",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の株価は不安定です。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは少し心配な感じがしますね。sentiment_label 関数を使ってこの感情を分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "基本的な感情で十分ですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の株価は不安定です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0099",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいプロジェクトがうまく進んでいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！sentiment_label 関数を使ってこの感情を分析しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "詳細な感情を知りたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しいプロジェクトがうまく進んでいます。",
+      "granularity": "detailed"
+    },
+    "test_id": "sentiment_label_0100",
+    "category": "sentiment_label"
+  }
+]

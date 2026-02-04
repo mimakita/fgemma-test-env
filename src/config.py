@@ -21,7 +21,7 @@ ROUTER_OPTIONS = {
 
 TEST_DATA_OPTIONS = {
     "temperature": 0.8,
-    "num_ctx": 4096,
+    "num_ctx": 8192,
 }
 
 # Memory management (keep_alive duration)

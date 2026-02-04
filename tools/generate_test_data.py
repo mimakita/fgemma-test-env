@@ -34,89 +34,38 @@ DATA_DIR = Path(__file__).parent.parent / "data" / "test"
 def generate_function_prompt(func_name: str, description: str, parameters: dict, batch_size: int) -> str:
     """Create a prompt for generating test conversations for a specific function."""
     params_str = json.dumps(parameters, indent=2, ensure_ascii=False)
-    return f"""あなたはテストデータ生成の専門家です。
-以下の関数に対して、ユーザーの対話がこの関数を呼び出すべきケースを{batch_size}件生成してください。
+    return f"""テストデータを{batch_size}件生成。JSONオブジェクトで出力。"items"キーに配列を入れる。
 
-## 関数情報
-- 関数名: {func_name}
-- 説明: {description}
-- パラメータ:
-{params_str}
+関数: {func_name} - {description}
+パラメータ: {params_str}
 
-## 出力形式
-JSON配列で出力してください。各要素は以下の形式:
+出力形式(このJSONだけ出力):
+{{"items": [
+  {{"conversation": [{{"role":"user","content":"ユーザー発言"}},{{"role":"assistant","content":"AI応答"}},{{"role":"user","content":"ユーザー発言2"}}], "expected_function":"{func_name}", "expected_arguments":{{"パラメータ名":"値"}}}},
+  {{"conversation": [{{"role":"user","content":"別の発言"}},{{"role":"assistant","content":"別の応答"}}], "expected_function":"{func_name}", "expected_arguments":{{"パラメータ名":"値"}}}}
+]}}
 
-```json
-[
-  {{
-    "conversation": [
-      {{"role": "user", "content": "ユーザーの発言"}},
-      {{"role": "assistant", "content": "アシスタントの応答"}},
-      {{"role": "user", "content": "ユーザーの2回目の発言"}}
-    ],
-    "expected_function": "{func_name}",
-    "expected_arguments": {{
-      "パラメータ名": "値"
-    }}
-  }}
-]
-```
-
-## 要件
-- 各対話は2~4ターン（user + assistant の組み合わせ）
-- 日本語と英語を混ぜて多様性を持たせる（7割日本語、3割英語）
-- 直接的な表現と間接的な表現の両方を含める
-- 様々なトピックとシチュエーションを使う
-- expected_arguments は関数のパラメータに合った現実的な値を入れる
-- JSON以外のテキストは出力しない
-- 必ず{batch_size}件生成する"""
+要件: 各対話2~4ターン、7割日本語3割英語、直接的/間接的表現を混合、現実的なパラメータ値、必ず{batch_size}件"""
 
 
 def generate_no_function_prompt(function_names: list[str], batch_size: int) -> str:
     """Create a prompt for generating conversations that should NOT trigger any function."""
     funcs_str = ", ".join(function_names)
-    return f"""あなたはテストデータ生成の専門家です。
-以下の関数のどれにも該当しない、通常の対話を{batch_size}件生成してください。
+    return f"""以下の関数のどれにも該当しない通常の対話を{batch_size}件生成。JSONオブジェクトで出力。"items"キーに配列を入れる。
 
-## 登録されている関数（これらを呼び出すべきでない対話を生成）
-{funcs_str}
+該当しない関数: {funcs_str}
 
-## 出力形式
-JSON配列で出力してください。各要素は以下の形式:
+出力形式(このJSONだけ出力):
+{{"items": [
+  {{"conversation": [{{"role":"user","content":"ユーザー発言"}},{{"role":"assistant","content":"AI応答"}},{{"role":"user","content":"ユーザー発言2"}}], "expected_function":null, "expected_arguments":null}},
+  {{"conversation": [{{"role":"user","content":"別の発言"}},{{"role":"assistant","content":"別の応答"}}], "expected_function":null, "expected_arguments":null}}
+]}}
 
-```json
-[
-  {{
-    "conversation": [
-      {{"role": "user", "content": "ユーザーの発言"}},
-      {{"role": "assistant", "content": "アシスタントの応答"}},
-      {{"role": "user", "content": "ユーザーの2回目の発言"}}
-    ],
-    "expected_function": null,
-    "expected_arguments": null
-  }}
-]
-```
-
-## 要件
-- 各対話は2~4ターン
-- 日本語と英語を混ぜる（7割日本語、3割英語）
-- 以下のカテゴリから多様に生成:
-  * 挨拶や雑談
-  * 一般知識の質問
-  * 意見交換やディスカッション
-  * 数学や論理パズル
-  * 創作や物語の依頼
-  * 個人的な相談（非商業）
-  * 技術的な質問（プログラミング等）
-  * 日常的な話題
-- どの関数にも明確に該当しないこと
-- JSON以外のテキストは出力しない
-- 必ず{batch_size}件生成する"""
+要件: 各対話2~4ターン、7割日本語3割英語、カテゴリ(挨拶/雑談/一般知識/意見交換/数学/創作/個人相談/技術質問/日常)から多様に、どの関数にも非該当、必ず{batch_size}件"""
 
 
 def extract_json_from_response(text: str) -> Optional[list]:
-    """Extract JSON array from LLM response, handling markdown code blocks."""
+    """Extract JSON array from LLM response, handling various formats."""
     # Remove markdown code blocks
     text = re.sub(r'```json\s*', '', text)
     text = re.sub(r'```\s*', '', text)
@@ -127,6 +76,14 @@ def extract_json_from_response(text: str) -> Optional[list]:
         data = json.loads(text)
         if isinstance(data, list):
             return data
+        # format:"json" may return {"items": [...]} or {"data": [...]}
+        if isinstance(data, dict):
+            for key in ("items", "data", "test_data", "cases", "results", "conversations"):
+                if key in data and isinstance(data[key], list):
+                    return data[key]
+            # Single test case wrapped in object
+            if "conversation" in data:
+                return [data]
         return None
     except json.JSONDecodeError:
         pass
@@ -198,6 +155,7 @@ def generate_batch(
                 model=TEST_DATA_MODEL,
                 messages=[{"role": "user", "content": prompt}],
                 options=TEST_DATA_OPTIONS,
+                format="json",
             )
             text = response.message.content or ""
             data = extract_json_from_response(text)
@@ -327,6 +285,11 @@ def main():
         action="store_true",
         help="Skip generating no-function test data",
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip functions that already have a data file with enough cases",
+    )
     args = parser.parse_args()
 
     # Initialize function registry
@@ -347,6 +310,20 @@ def main():
         functions_to_generate = all_func_names
 
     for func_name in functions_to_generate:
+        # Check if we can skip existing data
+        if args.skip_existing:
+            existing_file = DATA_DIR / f"{func_name}.json"
+            if existing_file.exists():
+                try:
+                    with open(existing_file, "r", encoding="utf-8") as f:
+                        existing = json.load(f)
+                    if len(existing) >= args.count:
+                        logger.info(f"Skipping {func_name}: already has {len(existing)} cases")
+                        all_test_data.extend(existing)
+                        continue
+                except Exception:
+                    pass
+
         logger.info(f"\n=== Generating test data for: {func_name} ===")
         cases = generate_for_function(func_name, args.count)
         cases = add_test_ids(cases, func_name)
@@ -355,11 +332,36 @@ def main():
 
     # Generate no-function test data
     if not args.skip_no_function:
-        logger.info(f"\n=== Generating no-function test data ===")
-        no_func_cases = generate_no_function(args.no_function_count)
-        no_func_cases = add_test_ids(no_func_cases, "no_function")
-        save_test_data(no_func_cases, "no_function.json")
-        all_test_data.extend(no_func_cases)
+        # Check if we can skip existing data
+        if args.skip_existing:
+            existing_file = DATA_DIR / "no_function.json"
+            if existing_file.exists():
+                try:
+                    with open(existing_file, "r", encoding="utf-8") as f:
+                        existing = json.load(f)
+                    if len(existing) >= args.no_function_count:
+                        logger.info(f"Skipping no_function: already has {len(existing)} cases")
+                        all_test_data.extend(existing)
+                    else:
+                        raise ValueError("Not enough")
+                except Exception:
+                    logger.info(f"\n=== Generating no-function test data ===")
+                    no_func_cases = generate_no_function(args.no_function_count)
+                    no_func_cases = add_test_ids(no_func_cases, "no_function")
+                    save_test_data(no_func_cases, "no_function.json")
+                    all_test_data.extend(no_func_cases)
+            else:
+                logger.info(f"\n=== Generating no-function test data ===")
+                no_func_cases = generate_no_function(args.no_function_count)
+                no_func_cases = add_test_ids(no_func_cases, "no_function")
+                save_test_data(no_func_cases, "no_function.json")
+                all_test_data.extend(no_func_cases)
+        else:
+            logger.info(f"\n=== Generating no-function test data ===")
+            no_func_cases = generate_no_function(args.no_function_count)
+            no_func_cases = add_test_ids(no_func_cases, "no_function")
+            save_test_data(no_func_cases, "no_function.json")
+            all_test_data.extend(no_func_cases)
 
     # Save combined dataset
     save_test_data(all_test_data, "all_test_data.json")

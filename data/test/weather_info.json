@@ -1,0 +1,2858 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは。今日の天気が知りたいです。東京です。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、現在の東京の天気を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "はい、その予報も教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の東京の天気は晴れで気温が20度ほどです。今日は雷雲が出て降り始めますのでご注意ください。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0001",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気予報をチェックしたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "わかりました、東京の今日の天気予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る予報が出ていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、午後から夕方にかけて雷雲が出て雨が降る可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0002",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の天気はどうでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、東京の明日の天気予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "暖かい日になるのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、最高気温は25度まで上昇する見込みです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0003",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の天気について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、東京の今週の天気予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "土日の天気は？"
+      },
+      {
+        "role": "assistant",
+        "content": "土日は晴れ間が広がり、最高気温も26度近くまで上昇する見込みです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0004",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気について詳しく教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、現在の東京の天気を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "今日も晴れでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、朝は晴れで気温が15度ほどです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0005",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今日の東京の天気予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降るかどうか知りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、午前中は晴れますが、午後から雷雲が出て雨が降る可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0006",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の天気を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、東京の来週の天気予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "土日は雨が降る可能性があるのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、来週土日は雨が降る可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0007",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気について詳しく教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、現在の東京の天気を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "今日の最高気温は何度になりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、今日の最高気温は23度ほどになる見込みです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0008",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天候について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、現在の東京の天気を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "今日も晴れでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、朝は晴れで気温が16度ほどです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0009",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今日の東京の天気予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降るかどうか知りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、午前中は晴れますが、午後から雷雲が出て雨が降る可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0010",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、今日は雨の予報ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の天気は晴れですが、今日の後半に雨が予想されています。"
+      },
+      {
+        "role": "user",
+        "content": "知り合いが来週東京を訪れるので、1週間の天候も教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、今後の天気予報はお伝えします。1週間の天候は、月曜日から木曜日まで晴れまたは曇り、金曜日と土曜日に雨が降る可能性があります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0011",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の天気予報は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日と明日は晴れですが、金曜日に雨が降る可能性があります。"
+      },
+      {
+        "role": "user",
+        "content": "今日は傘を持って行かなければなりませんね"
+      },
+      {
+        "role": "assistant",
+        "content": "正確な予報は難しいですが、今日の後半に雨が降る可能性がありますので、傘を忘れないようにしましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0012",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、今日は東京の天気教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、現在の東京の天気は晴れで最高気温は25度です。"
+      },
+      {
+        "role": "user",
+        "content": "週間の天気予報もお願いします。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、今週の東京は月曜日から金曜日まで晴れの予報です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0013",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今朝の気温は何度でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京では、今朝は14度でした。"
+      },
+      {
+        "role": "user",
+        "content": "雪が降る予報はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今週は晴れの予報で雪は見込めません。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0014",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京では、晴れの天気が続いています。"
+      },
+      {
+        "role": "user",
+        "content": "明日は雨が降る予報でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今後の予報を見ると、明日は天気が崩れる可能性があります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0015",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の最高気温は？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京での最高気温は27度です。"
+      },
+      {
+        "role": "user",
+        "content": "明日の最低気温は何度ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の最低気温は13度でしょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0016",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日、天気が良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、東京では晴れの日が多いです。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る可能性は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れですが、明日には雲行きが怪しいですね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0017",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "現在の気温を知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "東京では現在の気温は18度です。"
+      },
+      {
+        "role": "user",
+        "content": "今日の最高気温は何度でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の最高気温は24度でしょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0018",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の天気予報を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、今週東京は晴れが続く見込みです。"
+      },
+      {
+        "role": "user",
+        "content": "今日の最低気温は何度ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の最低気温は15度です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0019",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の天気が知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "現在、東京は晴れです。"
+      },
+      {
+        "role": "user",
+        "content": "明日は雨が降るでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今後の予報では、明日は晴れの見込みです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0020",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の最高気温は何度？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の最高気温は26度です。"
+      },
+      {
+        "role": "user",
+        "content": "今朝の最低気温は何度ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今朝の最低気温は14度でした。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0021",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の天気を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "現在、東京は晴れです。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る可能性は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れですが、明日から雲行きが怪しいですね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0022",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の天気は晴れですが、最高気温は25度です。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、週末には雨が降る予報もありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "週末は雲が多いですが、降水確率は10％ほどです。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました、雪の可能性はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本のこの地域では、冬以外には雪は降りませんので、心配する必要はありません。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、明日の天気予報を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は晴れますが、夜になってから雲行きが変化し、夕方には小雨になる可能性があります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0023",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の最高気温は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の最高気温は30度です。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、明日も晴れそうですね"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、明後日まで晴れる見込みです。"
+      },
+      {
+        "role": "user",
+        "content": "でも寒さ対策は必要ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の気温は25度で暖かいですが、夜間は冷え込む可能性があるので、薄手のコートを準備しておくと良いでしょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0024",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の天気予報教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "来週は晴れ間が見込めますが、夜には雲行きが変わります。"
+      },
+      {
+        "role": "user",
+        "content": "雨の日は外出しにくいですね"
+      },
+      {
+        "role": "assistant",
+        "content": "特に土曜日夜から日曜日にかけて降水確率が高いです。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、週末に旅行予定の人には注意が必要ですね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、天気予報を確認しておきましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0025",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の寒暖差は激しいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、日中の最高気温と夜间的最低気温の差があります。"
+      },
+      {
+        "role": "user",
+        "content": "それは季節的なものでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本の気候は季節によって大きく変化しますので、その時期に適した服装を着る必要があります。"
+      },
+      {
+        "role": "user",
+        "content": "では来週の天気予報も一緒に教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "来週は全体的に晴れや快晴が続きますが、夜間には雲行きが変わります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "福岡",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0026",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "雨の日は傘が必要ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "週末に降る予報がありますので、傘を持って出るといいでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "その天気なら、今から洗濯物を干しても大丈夫でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "晴れ間が見込めますが、夜には雨になる可能性があるので、早めに取り込めるよう準備しておくと良いですね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "名古屋",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0027",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の気温は？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の最高気温は28度です。"
+      },
+      {
+        "role": "user",
+        "content": "それは暑いですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本標準で見ると少し暑い方ですが、夏場でもこの程度の温度は珍しくありません。"
+      },
+      {
+        "role": "user",
+        "content": "週末に雨が降る予報がありますね"
+      },
+      {
+        "role": "assistant",
+        "content": "週末は晴れますが、夜には雲行きが変わりますので注意が必要です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "横浜",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0028",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報を教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "現在は晴れですが、夜には雲行きが変わりますので注意が必要です。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、明日の天気も教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は晴れますが、夕方からは雲が多くなりそうです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "広島",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0029",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今から洗濯物を干しても大丈夫ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "晴れ間はありますが、夜には雲が増えてくる可能性があります。"
+      },
+      {
+        "role": "user",
+        "content": "明日の天気も教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は晴れますが、夕方からは降水確率が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "仙台",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0030",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に雨が降る予報がありますね"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、週末は雨の確率が高いです。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、明日の天気も教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は晴れますが、夜には雲が多くなりそうです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "札幌",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0031",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に雨が降る予報がありますね"
+      },
+      {
+        "role": "assistant",
+        "content": "週末は降水確率が高いです。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、今から洗濯物を干しても大丈夫ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "晴れ間はありますが、夜には雲が多くなる可能性があるので注意が必要です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "福井",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0032",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今度の週末に大阪に行こうかな。天気がどうなっているか知りたいな。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！週末の天気予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "今日の天気は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の大阪の天気は晴れで、最高気温は28℃です。"
+      },
+      {
+        "role": "user",
+        "content": "天気予報も見たいけど、あまり詳しくないんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました。週末の天気予報だけを簡単に説明しますね。今週末は晴れたり曇ったりと天気が変わりそうなので、外出する場合は複数の服装を用意した方が良いかもしれません。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0033",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近京都に来たいなって思っているんだけど、雨が心配でしょ？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに京都は雨の多い地域ですよね。"
+      },
+      {
+        "role": "user",
+        "content": "でもその中でも晴れた日を教えてほしいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、晴れた日の予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらい晴れるのか具体的に教えて"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0034",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新潟は雪が多い場所だよね？"
+      },
+      {
+        "role": "assistant",
+        "content": "その通り、新潟は冬の間特に雪が多いですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも春になれば天気が良くなってくるんじゃない？"
+      },
+      {
+        "role": "assistant",
+        "content": "春になりますと確かに天候が安定してきて晴れた日も増えてきますよ。"
+      },
+      {
+        "role": "user",
+        "content": "春に来たいんだけど、雨の量はどのくらいになるのか教えて"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "新潟",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0035",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近広島市を訪問したいなと考えている。"
+      },
+      {
+        "role": "assistant",
+        "content": "広島市は自然が豊かで観光にもおすすめですよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも梅雨時期の天気はどうなるんでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "広島市では梅雨時期になると雨が続くことが多く、湿った空気が続きますね。"
+      },
+      {
+        "role": "user",
+        "content": "じゃあ雨が心配だな"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "広島市",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0036",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の天気を知りたいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、東京の天気をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "梅雨時期にどうなるんでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "梅雨時期は東京でも雨が頻繁に降るようになりますね。"
+      },
+      {
+        "role": "user",
+        "content": "それは厳しいな"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0037",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道の天気を知りたいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、北海道の天気をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "冬場は雪がたくさん降るんでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "その通り、冬場になると北海道では雪がたくさん降りますよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも雪の中を歩くのが好きなんだけど"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "北海道",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0038",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近奈良に来たいなって思っているんだけど、雨が心配でしょ？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに奈良は雨の多い地域ですよね。"
+      },
+      {
+        "role": "user",
+        "content": "でもその中でも晴れた日を教えてほしいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、晴れた日の予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "天気はいつ頃まで続くのか"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "奈良",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0039",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "仙台に行く機会があるんだけど、雨が心配でしょ？"
+      },
+      {
+        "role": "assistant",
+        "content": "その通り、秋の仙台は特に雨が多いですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも晴れた日を教えてほしいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、晴れた日の予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "天気はいつ頃まで続くのか"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "仙台",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0040",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "横浜に行く機会があるんだけど、雨が心配でしょ？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに雨は季節に関わらずいつでも降る可能性がありますね。"
+      },
+      {
+        "role": "user",
+        "content": "でも晴れた日を教えてほしいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、晴れた日の予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "天気はいつ頃まで続くのか"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "横浜",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0041",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡に行く機会があるんだけど、雨が心配でしょ？"
+      },
+      {
+        "role": "assistant",
+        "content": "福岡は梅雨明けのタイミングで雨が多くなるので注意が必要ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも晴れた日を教えてほしいんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、晴れた日の予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "天気はいつ頃まで続くのか"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "福岡",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0042",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気について教えて！最近寒い日が多いので。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。では東京の現在の気温や天候状況をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、明日の天気も一緒に教えてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！それでは、週間天気予報を確認してみましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0043",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の天気予報は？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都の天候をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "京都って最近雨が多いよね？"
+      },
+      {
+        "role": "assistant",
+        "content": "それはそうです、今週も雨が続く可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0044",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の天気予報は？"
+      },
+      {
+        "role": "assistant",
+        "content": "わかりました、来週の天候をお知らせしますね。"
+      },
+      {
+        "role": "user",
+        "content": "あと、大阪の今日の最高気温は何度ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "おっしゃる通り、大阪の現在の最高気温を確認します。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0045",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の雪はいつ降るんでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京では、通常12月から3月頃にかけてが降雪の可能性が高い季節です。"
+      },
+      {
+        "role": "user",
+        "content": "でも最近暖かくて雪が少ないですよね？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、最近は異常気象の影響で冬場も暖かい日が多いですね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0046",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道に旅行に行く前に天気予報を確認したいです"
+      },
+      {
+        "role": "assistant",
+        "content": "いい選択ですね！今から北海道の週間天気予報をお伝えします。"
+      },
+      {
+        "role": "user",
+        "content": "じゃあ、今日も雪が降るってことですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れの天気ですが、明日からは雪の可能性がありますのでご注意ください。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "北海道",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0047",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近京都が寒くて困っています"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、京都は最近寒い日が多いですよね。"
+      },
+      {
+        "role": "user",
+        "content": "明日も寒そうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は冷たい風が吹く可能性が高いです、防寒に気をつけてくださいね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0048",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の東京の天気がどうなりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、明日の天気予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "もう少し詳しく教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は晴れますが、夜には冷たい風が吹く可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0049",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今朝大阪の最低気温は何度ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "お尋ねの通り、大阪の現在の最低気温をお伝えします。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、今日の最高気温も教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今日の最高気温は15℃程度です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0050",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週東京の天気予報を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "わかりました、今週の天気予報をお伝えしますね。"
+      },
+      {
+        "role": "user",
+        "content": "週末は晴れそうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "週末は快晴の予想です、屋外活動にお勧めですよ。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0051",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の京都の天気は？"
+      },
+      {
+        "role": "assistant",
+        "content": "お尋ねの通り、今日は晴れですが風が強いです。"
+      },
+      {
+        "role": "user",
+        "content": "明日の最低気温は何度ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の最低気温は4℃程度と寒くなる可能性がありますので、防寒にご注意ください。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0052",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日東京の天気が知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、現在東京の天気情報を調査します。"
+      },
+      {
+        "role": "user",
+        "content": "あと、週末の予報もお願いします。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、週末の天気も含めてお伝えします。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0053",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の雨は大丈夫だろうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "雨の確率はどのくらいでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "あ、それなら明日の予報も一緒に教えてくださいね。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、明日の天気予報も合わせてお伝えします。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0054",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新潟県の今後24時間の天気を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "新潟県の24時間予報を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "その前に、今日の最高気温は？"
+      },
+      {
+        "role": "assistant",
+        "content": "それも含めてお伝えしましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "新潟県",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0055",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気が良いらしいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、晴れの予報です。"
+      },
+      {
+        "role": "user",
+        "content": "明日はどうなるんでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は雨が降る可能性が高いです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0056",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気予報は見ましたが、週末の雨量が心配です。"
+      },
+      {
+        "role": "assistant",
+        "content": "週末の降水量について調べてみますね。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降るなら傘を忘れずに。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、必要なアイテムを持っていってください。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0057",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気が寒く感じます。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに寒さが増しているような気します。"
+      },
+      {
+        "role": "user",
+        "content": "来週末はどのくらいの温度になるでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "来週末の最高と最低気温を確認してきます。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "北海道",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0058",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "雪が降るなんて思っていませんでした。"
+      },
+      {
+        "role": "assistant",
+        "content": "雪の予報は意外ですよね。"
+      },
+      {
+        "role": "user",
+        "content": "雪が積もったら大丈夫でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "積雪量や路面状況を確認してきます。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "群馬県",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0059",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の気温はどのくらいでしょう"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は平均的な気温になります。"
+      },
+      {
+        "role": "user",
+        "content": "明日も同じような天気が続くのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日も概ね同様の天候が続く予想です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "福岡市",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0060",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末は雨だそうですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "週末は雨が続く見込みです。"
+      },
+      {
+        "role": "user",
+        "content": "そんな日は家の中でゆっくりした方がいいのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに家の中でのんびり過ごすのも良いでしょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "広島県",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0061",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このごろ寒いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに最近は寒さが強まる傾向にあります。"
+      },
+      {
+        "role": "user",
+        "content": "今週末の天気はどうなりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今週末も概ね寒冷な天候が続く予想です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "神奈川県",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0062",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気、教えてください。東京は雪の予報ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今現在、東京は晴れです。しかし夕方から雨が降る可能性があります。"
+      },
+      {
+        "role": "user",
+        "content": "週末も外出予定があるのですが、どうなるでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "週末は天気が回復する見込みで、晴れて気温も上がりそうです。"
+      },
+      {
+        "role": "user",
+        "content": "その話題にしても、ちょっと不安になっています。"
+      },
+      {
+        "role": "assistant",
+        "content": "大丈夫です、週末の天気予報は比較的安定していますよ。"
+      },
+      {
+        "role": "user",
+        "content": "それはそうかもしれませんが、万が一変更があったらどうしますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "安心してください、もし天気が急に変わりそうであれば、情報を更新しますから、その際にまたお知らせしましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0063",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、新 York の気温がどうなってるんですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "New York の現在の気温は15度です。"
+      },
+      {
+        "role": "user",
+        "content": "今から外出するつもりですが、雨は大丈夫ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の予報では、New York は晴れの天気が続きます。"
+      },
+      {
+        "role": "user",
+        "content": "でも、急に天気が変わるような感じがしますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは気象状況によるので、注意が必要です。外出前には最新情報を確認することをおすすめします。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "New York",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0064",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気がどうなるか教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "今日、東京は午前中は晴れ、午後から曇りの天気になります。"
+      },
+      {
+        "role": "user",
+        "content": "でも、雨が降らないといいな……"
+      },
+      {
+        "role": "assistant",
+        "content": "心配なく、雨は予報されていませんので、安心してくださいね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0065",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気予報は信頼できるんですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "多くの場合、最新のデータを基にした予報は正確ですが、急な天変地異もありますから、常に最新情報を確認することが重要です。"
+      },
+      {
+        "role": "user",
+        "content": "でも、週末には何が起きると思いますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "週末の天気は安定しており、晴れや曇りの予想です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0066",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の気温は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日、東京の最高気温は20度で、最低気温は10度です。"
+      },
+      {
+        "role": "user",
+        "content": "それなら大丈夫でしょう！"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、適度な気温なので過ごしやすいはずです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0067",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末の天気が知りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "週末の天気は晴れ予報で、気温も安定しています。"
+      },
+      {
+        "role": "user",
+        "content": "そうね、それは良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "安心して過ごせる天気になると思いますよ。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0068",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日、東京は晴れで、気温も快適です。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、でも少し寒くないですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は朝と夜は少しご主人が冷えますが、昼間は暖かいです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0069",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気予報を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "最近、東京は晴れや曇りが続く予報です。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、でも雨が降らないと嬉しいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "その通りですが、雨も時間と共に天気を変える可能性があります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0070",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末の天気がどうなるか教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "今週末は晴れの予報で、気温も上がります。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、晴れるなら外にいきたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "その気持ちわかりますよ、良い天気が続きますように。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0071",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気を教えて。"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の東京は晴れで、最高気温は21度です。"
+      },
+      {
+        "role": "user",
+        "content": "それは良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "天気は快適な一日になると思いますよ。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0072",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の東京は雨が降っていますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、現在の東京では雨の天気です。"
+      },
+      {
+        "role": "user",
+        "content": "じゃあ週間予報を教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、それでは今週の東京の天候を確認します。"
+      },
+      {
+        "role": "user",
+        "content": "ちょっと待って、今日と明日は大丈夫か？"
+      },
+      {
+        "role": "assistant",
+        "content": "それではお知らせしますね、今日は雨が続く見込みです。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0073",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の大阪の天気は？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は大阪で何を計画されていますか？"
+      },
+      {
+        "role": "user",
+        "content": "あまり外に出猟たいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、そこで今日は大阪の雨量について知りたいということですね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0074",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の東京は晴れるだろうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは楽しみですね、では明日の天気予報を確認してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "でも雨が心配です"
+      },
+      {
+        "role": "assistant",
+        "content": "その不安もわかりますが、晴れるとおっしゃる方もいますね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0075",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気予報を教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今日の天候はいかがでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "本当に雨が降るのか？"
+      },
+      {
+        "role": "assistant",
+        "content": "降水確率を確認してみましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0076",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の天気予報、教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、週間で見てみましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "それじゃあ今日と明日だけお願いします。"
+      },
+      {
+        "role": "assistant",
+        "content": "分かりました、それでは今日と明日本日の天気をチェックしてみますね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0077",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の天気予報は？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、来週の天候を確認しますね。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る日があるのか知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "その可能性も確認してみましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "福岡",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0078",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今日は雨が降っていますね。"
+      },
+      {
+        "role": "user",
+        "content": "明日は晴れるでしょう。"
+      },
+      {
+        "role": "assistant",
+        "content": "その予想は興味深いですね、明日の天気も見てみましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "広島",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0079",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の天気を知りたい！"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今すぐ確認しますね。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る？"
+      },
+      {
+        "role": "assistant",
+        "content": "降水確率はどれくらいでしょうか。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0080",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の天気予報を教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、週間で見てみましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る日は？"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは降水確率を見ていきましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0081",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日と明日の天気予報を教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、今日と明日本日の天候を確認しますね。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降る日は？"
+      },
+      {
+        "role": "assistant",
+        "content": "降水確率を確認してみましょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "横浜",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0082",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の東京の天気教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "現在東京の天気は晴れです。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温は？"
+      },
+      {
+        "role": "assistant",
+        "content": "最高気温は25度になっています。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0083",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今何時間の天気が？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の東京の天気は晴れです、最高気温は25度になります。"
+      },
+      {
+        "role": "user",
+        "content": "寒い？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の東京は暖かい方ですが、夜は気温が下がるかもしれません。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0084",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の天気予報”"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の東京の天気予報は晴れだそうですね。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温も教えて？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の最高気温は26度です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0085",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週間天気予報”"
+      },
+      {
+        "role": "assistant",
+        "content": "今週東京は晴れの日が多いようですね。"
+      },
+      {
+        "role": "user",
+        "content": "寒くなる？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今週は全体的に暖かいですが、夜は少し気温が下がるかもしれません。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0086",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のニューヨークの天気”"
+      },
+      {
+        "role": "assistant",
+        "content": "現在ニューヨークは雨です。"
+      },
+      {
+        "role": "user",
+        "content": "何時間続く？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "ニューヨークは午後まで雨が続く予報になっています。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "New York",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0087",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週のニューヨークの天気”"
+      },
+      {
+        "role": "assistant",
+        "content": "今週は晴れと雨が交互に来るでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温は？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今週のニューヨークの最高気温は20度から25度程度になります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "New York",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0088",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日はどのくらい寒い？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の東京は比較的暖かいですね。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の最高気温は24度です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0089",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の天気予報教えて”"
+      },
+      {
+        "role": "assistant",
+        "content": "今週東京は晴れと曇りが交互に来るでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温も？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今週の最高気温は26度から28度程度になります。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0090",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の東京の天気”"
+      },
+      {
+        "role": "assistant",
+        "content": "現在東京は晴れですね。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の最高気温は25度です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0091",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の東京の天気”"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の東京は晴れです。“"
+      },
+      {
+        "role": "user",
+        "content": "最高気温？”},{"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の最高気温は26度です。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0092",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の東京は寒そうですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "なるほど、東京の天気をチェックしますね。"
+      },
+      {
+        "role": "user",
+        "content": "雨予報もありますよね？"
+      },
+      {
+        "role": "assistant",
+        "content": "その通りです、雨も心配ですよね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0093",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の天気予報を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、週間天気予報について調査しますね。"
+      },
+      {
+        "role": "user",
+        "content": "雪が降る地域は？"
+      },
+      {
+        "role": "assistant",
+        "content": "雪の可能性のある地域をご案内します。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Japan",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0094",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日は新潟でスキーに行く予定です。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね、雪の状況もチェックしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "寒さに注意が必要そうですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "気温や天候について確認しますね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Niigata",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0095",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今年は冬が暖かそうですよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、暖かい冬ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも寒さも忘れないで。"
+      },
+      {
+        "role": "assistant",
+        "content": "その通り、天気予報では冷え込みの状況もチェックしますね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0096",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡は梅雨時期でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "その通り、梅雨入りの時期ですね。"
+      },
+      {
+        "role": "user",
+        "content": "雨量も気になるところです。"
+      },
+      {
+        "role": "assistant",
+        "content": "雨の量や天気予報を確認しますね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Fukuoka",
+      "forecast_type": "today"
+    },
+    "test_id": "weather_info_0097",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週は北海道に行く予定です。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね、天気もチェックしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "雪の量が心配で。"
+      },
+      {
+        "role": "assistant",
+        "content": "雪の状況や降水量を確認しますね。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "Hokkaido",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0098",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末の東京の天気予報教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。今週末は東京で何を計画していますか？"
+      },
+      {
+        "role": "user",
+        "content": "旅行用に知りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "その場合、雨具を持っていくことをおすすめします。"
+      },
+      {
+        "role": "user",
+        "content": "雨具が必要なのかどうか教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "週末の東京は晴れ間も見られますが、夕方からは雲行きが怪しくなりそうです。"
+      },
+      {
+        "role": "user",
+        "content": "雨の確率ってどれくらい？"
+      },
+      {
+        "role": "assistant",
+        "content": "正確な予測には気象条件によって違いがありますが、夕方は雨の可能性が高いです。"
+      },
+      {
+        "role": "user",
+        "content": "雨具が必要かも。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、備えるのが良いでしょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "test_id": "weather_info_0099",
+    "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "近々大阪の気温が上がると聞きましたが"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪の天気が気になるのですね。"
+      },
+      {
+        "role": "user",
+        "content": "今月の平均気温ってどのくらい？"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪の今年の今月は、過去の平均より若干高い気温が予想されています。"
+      },
+      {
+        "role": "user",
+        "content": "最高気温と最低気温も教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "最高気温は約30℃、最低気温は約20℃程度になるでしょう。"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "current"
+    },
+    "test_id": "weather_info_0100",
+    "category": "weather_info"
+  }
+]

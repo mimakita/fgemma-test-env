@@ -1,0 +1,2166 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなた知っていますか？山田さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、山田さんは日本の著名な科学者です。詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、その通り、彼のキャリアについて教えてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田太郎",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0001",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語で教えていただけますか？富田さんはどうして有名なんですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "彼は日本の著名な俳優として知られています。詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "もちろんです、その通り、彼の生涯について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "富田望生",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0002",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女はどんな経歴を持っているんですか？佐藤さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤恵美子さんは日本の著名な歌手で、数多くの賞を受賞しています。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼女の功績について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤恵美子",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0003",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼は有名な作家ですよね？林さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "正確に言うと、林真理子さんは日本の著名な女流作家です。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、その通り、彼女のキャリアについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "林真理子",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0004",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼の生涯について教えてください。石田さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、石田裕二さんは日本の有名な俳優です。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼の功績について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "石田裕二",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0005",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女の生涯について教えてください。佐藤さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤裕子さんは日本の有名な女優です。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼女のキャリアについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤裕子",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0006",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼は有名な科学者ですよね？山田さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "その通り、山田太郎さんは日本の著名な科学者です。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼の生涯について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田太郎",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0007",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼のキャリアについて教えてください。佐藤さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、佐藤裕一さんは日本の有名な政治家です。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼の功績について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤裕一",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0008",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼の生涯について教えてください。田中さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、田中智子さんは日本の有名な作家です。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼のキャリアについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中智子",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0009",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼の生涯について教えてください。吉田さんについて"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、吉田健太郎さんは日本の有名な政治家です。"
+      },
+      {
+        "role": "user",
+        "content": "その通り、彼の功績について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "吉田健太郎",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0010",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田さんがどんな方ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "山田さんは日本の著名な俳優です。彼のキャリアや主要な作品について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、特に最近の成績を教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0011",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"アリス\"という映画を演じた俳優は誰ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたが探しているのは、アリス役を演じた俳優、山田太郎さんでしょうか？彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その俳優のキャリアについて教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田太郎",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0012",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本を代表する女優さんは誰がいますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "松本奈津子さんは日本の有名な女優として知られています。彼女のプロフィールや主な作品について知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、その人について詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本奈津子",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0013",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"スターは人を信じる。\"という言葉が有名な俳優は？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたが探しているのは、この名言を持つ俳優、田中健さんでしょうか？彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その俳優のキャリアを教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中健",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0014",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"アリスを通じて\"という映画の監督は？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたが探しているのは、『アリスを通じて』という作品を手掛けた監督、佐藤孝一さんでしょうか？彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その人のキャリアについて教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤孝一",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0015",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"パルミジャーノ・レオニダスの肖像画\"という作品を書いた画家は？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたが探しているのは、『パルミジャーノ・レオニダスの肖像画』という名作を描いた画家、ロレンツォ・ドゥカネリ sir でしょうか？彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、その人について詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ロレンツォ・ドゥカネリ sir",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0016",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な日本の作家は誰ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "村上春樹さんは世界的にも有名な日本語の作家です。彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その作家の生涯について教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "村上春樹",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0017",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な歴史人物は？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本では、源頼朝は幕府を開いたことで知られています。彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その人の生涯を教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "源頼朝",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0018",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"The Shawshank Redemption\"という映画を監督したのは誰？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたが探しているのは、『ショーシャンクの空に』という名作を手掛けた監督、フランシス・フォード・コッポラさんでしょうか？彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その人のキャリアについて教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "フランシス・フォード・コッポラ",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0019",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"The Godfather\"という映画の脚本家は？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたが探しているのは、『ゴッドファーザー』という名作の脚本を手掛けたマルコム・ラッセルさんでしょうか？彼について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、その人のキャリアを教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "マルコム・ラッセル",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0020",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督について知りたいんだけど、スタンリー・キューブリックについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！斯坦利·库布里克的电影生涯和成就非常丰富，您想了解他的生平、职业生涯还是主要成就？"
+      },
+      {
+        "role": "user",
+        "content": "生平とキャリアについて詳しく知りたいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "スタンリー・キューブリック",
+      "info_type": "biography_and_career"
+    },
+    "test_id": "celebrity_info_0021",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督のスピルバーグについて教えてね。"
+      },
+      {
+        "role": "assistant",
+        "content": "ジョージ・スピルバーグは世界で最も有名な映画監督の一人です。彼のキャリアや主な作品について知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "その通り、キャリアと主要作品について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ジョージ・スピルバーグ",
+      "info_type": "career_and_main_works"
+    },
+    "test_id": "celebrity_info_0022",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ジャクソン・ブラウンの情報を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "ジャクソン・ブラウンは有名な俳優や監督でもありますね。彼の生平、キャリア、主な成就について知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "生平とキャリアについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ジャクソン・ブラウン",
+      "info_type": "biography_and_career"
+    },
+    "test_id": "celebrity_info_0023",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、アリハムと名前が一緒になってニュースで見ました。彼について教えてくださいね。"
+      },
+      {
+        "role": "assistant",
+        "content": "アリハムは最近話題の人物の一人です。彼の生平や主な成就に興味がありますか？"
+      },
+      {
+        "role": "user",
+        "content": "その通り、その2つについて詳しく教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アリハム",
+      "info_type": "biography_and_achievements"
+    },
+    "test_id": "celebrity_info_0024",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ジョー・バイデンについて詳しく知りたいんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "ジョー・バイデンはアメリカの政治家で、前大統領です。その生平やキャリアを知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "それはいいですね、一般情報を含めて詳しく教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ジョー・バイデン",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0025",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"レジェンド\"という言葉を使って、誰の話を聞いてみたいんですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに有名な人物ですね。例えば、マイケル・ジャクソンについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね、マイケル・ジャクソンについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "マイケル・ジャクソン",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0026",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、リチャード・ブラウンのことをテレビで見ました。"
+      },
+      {
+        "role": "assistant",
+        "content": "リチャード・ブラウンはどのような分野で活躍されている人物ですか？生平やキャリアについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "具体的にはキャリアと主な成就について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "リチャード・ブラウン",
+      "info_type": "career_and_achievements"
+    },
+    "test_id": "celebrity_info_0027",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名なアーティスト、マライカについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "マライカは音楽家として知られていますね。その生平やキャリアを知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "もちろんです、生平とキャリアについて詳しく教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "マライカ",
+      "info_type": "biography_and_career"
+    },
+    "test_id": "celebrity_info_0028",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、ニュースでアレックス・ジェームズという人物について聞きまして..."
+      },
+      {
+        "role": "assistant",
+        "content": "アレックス・ジェームズはどのような分野で活躍されている人物ですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアと主要な成就について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アレックス・ジェームズ",
+      "info_type": "career_and_achievements"
+    },
+    "test_id": "celebrity_info_0029",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、有名な科学者について知りたいんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに有名な科学者ですね。例えば、スティーブン・ホーキングについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね、スティーブン・ホーキングについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "スティーブン・ホーキング",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0030",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Can we get some information about the famous director Akira Kurosawa?"
+      },
+      {
+        "role": "assistant",
+        "content": "Of course! What specific type of information would you like to know? Biographical details, his career highlights, or perhaps his notable achievements?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Akira Kurosawa",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0031",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "話は少し変わるけど、有名な俳優のTom Hardyについて教えてよ"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。Tom Hardyに関する情報が必要 apparently. Do you want to know about his biography, career, or achievements?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Tom Hardy",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0032",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女は誰か知ってる？山口百恵について教えてよ"
+      },
+      {
+        "role": "assistant",
+        "content": "山口百恵のことを尋ねているのですね。彼女のプロフィールやキャリア、そして重要な成績を知りたいですか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Yasuko Yamauchi (山口百恵)",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0033",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、有名な科学者についての情報が必要だから、スティーブン・ホーキングについて教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "ステファン・ホーキングの情報を得るのはわかります。彼の生い立ち、キャリア、また重要な業績は?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Stephen Hawking",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0034",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な女性政治家について知りたいんだけど、 Condoleezza Riceについて詳しく教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。コンデリー・ライスの情報を得るのはわかりますね。彼女のキャリアと主要な業績について知りたいですか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Condoleezza Rice",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0035",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "歴史上の人物について、幕末期に活躍した坂本龍馬について詳しく知りたい。"
+      },
+      {
+        "role": "assistant",
+        "content": "坂本龍馬に関する情報を探しているのですね。彼の生い立ちや生涯について教えてくれますか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Sakamoto Ryoma",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0036",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、有名なアーティストについての情報が必要だから、Taylor Swiftについて教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。 Tayler Swiftの情報を得るのはわかりますね。彼女のキャリアと主要な業績について知りたいですか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Taylor Swift",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0037",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "アカデミー賞を受賞した女優について教えて、キャリー・フィッシャーについて"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。キャリー・フィッシャーに関する情報を探しているのですね。彼女の生い立ちやキャリアについて知りたいですか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Carrie Fisher",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0038",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な物理学者、アインシュタインについて知りたい"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。アルベルト・アインシュタインに関する情報を探しているのですね。彼の生い立ちや生涯、そして重要な業績について知りたいですか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Albert Einstein",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0039",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、有名な科学者について知りたいと思っているんだけど、ロバート・ムーアについて詳しく教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。ロバート・ムーアに関する情報を探しているのですね。彼の生い立ちやキャリアについて知りたいですか?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Robert Moog",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0040",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督について知りたいんですが、カーソン・ウィリアムズさんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、カーソン・ウィリアムズさんの情報をご提供します。まずは彼の生涯について詳しくお話ししましょう。"
+      },
+      {
+        "role": "user",
+        "content": "いいですね"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "カーソン・ウィリアムズ",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0041",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hey, do you have any information on Michael Phelps? I'm curious about his achievements in swimming."
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can provide detailed information about Michael Phelps. Let's focus on his career and achievements."
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Michael Phelps",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0042",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "アリサ・キムについて、彼女のキャリアを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。アリサ・キムのキャリアについて詳しく説明しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "それは素晴らしいです"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アリサ・キム",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0043",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について知りたいので、アルベルト・アインシュタインさんについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "アルベルト・アインシュタインの生涯と主要な成就について説明しましょう。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アルベルト・アインシュタイン",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0044",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Can you give me some background on Barack Obama? I'm interested in his biography."
+      },
+      {
+        "role": "assistant",
+        "content": "Of course, let's start with Barack Obama's biography."
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Barack Obama",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0045",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な女性アーティストについて教えてください。例えば、マドンナさんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。マドンナのキャリアと主要な成就について詳しく説明しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "それが目的であります"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Madonna",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0046",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な料理人がいたら、ジェームズ・キャリオさんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "ジェームズ・キャリオのキャリアと主要な成就について詳しく説明しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "その通り"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ジェームズ・キャリオ",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0047",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "历史上最著名的数学家是誰呢？可以帮我查一下卡尔·弗里德里希·高斯吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "好的，关于高斯的生平和主要成就，我会为您详细介绍。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "卡尔·弗里德里希·高斯",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0048",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について教えてください。アインシュタインの生涯と主要な発見を知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。アインシュタインの生涯と主要な発見について詳しく説明しましょう。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アインシュタイン",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0049",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Can you give me information on the life of Elon Musk? I'm interested in his biography."
+      },
+      {
+        "role": "assistant",
+        "content": "Of course, let's start with Elon Musk's biography."
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Elon Musk",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0050",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あしたのニュースで有名な女優について話していたんですが、その人を調査してみてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん。どの女優さんについてですか？また、どのような情報が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「ミラ・クニル」のキャリアについて知りたいんです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ミラ・クニル",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0051",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Can you give me a brief biography on Barack Obama in English, please?"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure! What kind of details do you need specifically about his life and career?"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Barack Obama",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0052",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について調べてみてください。アルベルト・アインシュタインの生涯と業績を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。アインシュタインに関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アルベルト・アインシュタイン",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0053",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本の著者について教えてください。『To Kill a Mockingbird』のアーネスト・ヘミングウェイです。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その情報が必要ですね。彼に関するキャリア情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アーネスト・ヘミングウェイ",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0054",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "知りたいのは「カタールの元サッカー選手、サッジード・アル・カンビのキャリアと功績です。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。「サッジード・アル・カンビ」に関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "サッジード・アル・カンビ",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0055",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の俳優、高橋洋樹について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その情報が必要ですね。「高橋洋樹」に関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "高橋洋樹",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0056",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な物理学者、リチャード・フィッシャーについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。「リチャード・フィッシャー」に関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "リチャード・フィッシャー",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0057",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な歌手、ビヨンセについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その情報が必要ですね。「ビヨンセ」に関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ビヨンセ",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0058",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の政治家、鈴木宗男についてキャリアを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その情報が必要ですね。「鈴木宗男」に関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "鈴木宗男",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0059",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "アメリカの政治家、マティーニ・ロメロについて功績を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。「マティーニ・ロメロ」に関する情報を取得します。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "マティーニ・ロメロ",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0060",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "江崎リチャードソンの創業者について知りたいな"
+      },
+      {
+        "role": "assistant",
+        "content": "江崎リチャードソンの創業者は江崎玲於奈さんですね。彼女のbiographyを取得できますか？"
+      },
+      {
+        "role": "user",
+        "content": "もちろん、その人物のbiographyを教えてくれるよ"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "江崎玲於奈",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0061",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなた、トム・クルーズのキャリアについて教えてくれない？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、トム・クルーズのキャリアについて詳しく知りたいですよね。それでは、celebrity_info関数を使ってcareer情報を取得しましょう！"
+      },
+      {
+        "role": "user",
+        "content": "うん、その通り"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "トム・クルーズ",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0062",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "歴史的に有名な人について知りたいんだが、誰がいい？"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたは誰かを特定していませんね。そこで、アインシュタインの情報を取得してみましょう！"
+      },
+      {
+        "role": "user",
+        "content": "あ、それならアインシュタインについて知りたい"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アインシュタイン",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0063",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督について詳しく知りたいです。例えば、スティーヴン・スピルバーグの作品やキャリアについてはどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！スティーヴン・スピルバーグに関する情報を取得します。具体的にはどの情報が必要ですか？キャリアや代表作について知りたいのであれば、その点をお伝えください。"
+      },
+      {
+        "role": "user",
+        "content": "キャリアと一般的な情報の両方ですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Steven Spielberg",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0064",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "はい、映画監督についての情報が必要です。スティーヴン・スピルバーグさんについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。スティーヴン・スピルバーグに関する情報を提供します。まずはキャリアと代表作についてどのようにお伝えするのがよろしいでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Steven Spielberg",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0065",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な俳優さんについて知りたいですね。例えば、アレック・ボールドウィンについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "アレック・ボールドウィンに関する情報を取得します。あなたが特に興味のある情報はありますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Alec Baldwin",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0066",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "歴史的な人物について知りたいです。例えば、サミュエル・デイビッドソンという人について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！サミュエル・デイビッドソンに関する情報を取得します。あなたが特に興味のある情報はありますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Samuel de Champlain",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0067",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について知りたいです。例えば、アインシュタインの生涯や業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！アルベルト・アインシュタインに関する情報を提供します。まず最初にその人生と成就について詳しく説明しますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Albert Einstein",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0068",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名なアーティストについて知りたいです。例えば、ポール・マッカートニーのキャリアと業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "ポール・マッカートニーに関する情報を取得します。あなたが特に興味のある情報はありますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Paul McCartney",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0069",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について教えてください。例えば、エミール・コクトーという人物の生涯や業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！エミール・コクトーに関する情報を提供します。まずその人生と成就について詳しく説明しますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Emile Côté",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0070",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な作家について知りたいです。例えば、村上春樹の生涯と主な作品について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！村上春樹に関する情報を提供します。まずその人生と主要な作品について詳しく説明しますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Haruki Murakami",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0071",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について知りたいです。例えば、ノーベル賞受賞者の情報が必要なので、アラン・チューリングの生涯と業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！アラン・チューリングに関する情報を提供します。まずその人生と主要な成就について詳しく説明しますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Alan Turing",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0072",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について知りたいです。例えば、アレクサンドル・グリーンバーグという人物の生涯や業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました！アレクサンドル・グリーンバーグに関する情報を取得します。まずはその人生と成就についてどのようにお伝えするのがよろしいでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Alexander Greenberg",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0073",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田太郎という人の経歴を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、山田太郎さんの経歴について調べてみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田太郎",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0074",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Could you give me some information on Audrey Hepburn?"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を呼び出して、Audrey Hepburnさんの情報を取得します。"
+      },
+      {
+        "role": "user",
+        "content": "Sure, go ahead."
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Audrey Hepburn",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0075",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、映画「シンデレラ」の原作者について知りたいんですが"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、その原作者について調べてみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "お願いします"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ジンジャー・マクドナルド",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0076",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画で有名な女優さんについて、キャリアを教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、その女優さんのキャリア情報を提供します。"
+      },
+      {
+        "role": "user",
+        "content": "もちろんです"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "カトリーナ・バーウェイ",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0077",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明石家さんまは一体何者なんでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、明石家さんまさんの情報を取得してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "うーん、詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "明石家さんま",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0078",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "\"ザ・フランクリンとマリーの結婚式\"という映画を撮った監督は誰でしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、その監督について調査します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "マット・デイモン",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0079",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の歌手で、70年代に人気があったアーティストについて詳しく教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、そのアーティストの情報を取得します。"
+      },
+      {
+        "role": "user",
+        "content": "ぜひ"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "安室奈美恵",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0080",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、有名な科学者について知りたいんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、その科学者の情報を取得します。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "スティーブン・ホーキング",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0081",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "アメリカの政治家で、前大統領について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、その前大統領の情報を取得します。"
+      },
+      {
+        "role": "user",
+        "content": "お願いします"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "バラク・オバマ",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0082",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な画家の生涯について知りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "celebrity_info関数を使って、その画家の生涯情報を調査します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いいたします"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ピeter Paul Rubens",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0083",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督关于山田洋次的一些背景信息。"
+      },
+      {
+        "role": "assistant",
+        "content": "山田洋次は日本の著名な映画監督です。彼に関する biography について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね、その情報をおしえて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田洋次",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0084",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な演劇女優について教えてくれないか？"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、アンドリュー・ラッキーという英国の演劇女優がいます。その人について general 情報を知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "ああ、そうですね。それなら彼女のキャリアについて教えてくれないか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アンドリュー・ラッキー",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0085",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近話題のミュージシャンについて、成績面で教えてね。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、ジェイ・ボーンズというシンガーソングライターは人気がありますが、彼の achievements についてはどう思いますか？"
+      },
+      {
+        "role": "user",
+        "content": "その情報よ！"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "ジェイ・ボーンズ",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0086",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "アメリカの政治家について、彼が持つ主な政策や功績を教えてね。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、バラク・オバマというアメリカの元大統領は知られています。その人について achievements について詳しく知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "うーん、general でいいね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "バラク・オバマ",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0087",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の俳優について少し知りたいけど、特にキャリアの話は聞き飽きちゃった。"
+      },
+      {
+        "role": "assistant",
+        "content": "もし興味があるなら、浅野忠信という俳優が知られています。その人について biography について詳しく教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "いいですね！"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "浅野忠信",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0088",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近注目されている科学者について。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、スティーブン・ホーキングは有名な物理学者ですが、その人について biography についてはどう思いますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "スティーブン・ホーキング",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0089",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の歌手について。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、安室奈美恵は日本の有名な歌手ですが、その人について achievements についてはどう思いますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね！"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "安室奈美恵",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0090",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な作家について。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、村上春樹は日本を代表する作家です。その人について biography についてはどう思いますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "村上春樹",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0091",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の政治家について。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、安倍晋三は日本の元首相ですが、その人について general についてはどう思いますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "安倍晋三",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0092",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について。"
+      },
+      {
+        "role": "assistant",
+        "content": "例えば、スティーブン・ホーキングは宇宙物理学の有名な科学者です。その人について biography についてはどう思いますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "スティーブン・ホーキング",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0093",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたはジョー・バイデンについて知っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、ジョー・バイデンに関する情報を提供します。どの方面がお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアについて教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Joe Biden",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0094",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたは誰かの情報が必要ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、どの著名人について情報が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "マライヤ・カリーについて教えてください。具体的には彼女がどのようなアーティストとして知られているかについて"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Mariah Carey",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0095",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の俳優、岸谷五朗さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "岸谷五朗に関する情報を提供しますよ。彼の生涯やキャリアが中心になりますか？それとも成績ですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアを教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Kiyu Kishi",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0096",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者、アインシュタインさんについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "アインシュタインに関する情報はこれでどうですか？バイオグラフィー、キャリア、または成績について知りたいのですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアとその間の主な成果を教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Albert Einstein",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0097",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたはスティーブ・ジョブズについて何を知っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、スティーブ・ジョブズに関する情報を提供します。どの方面がお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアと主な業績について教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Steve Jobs",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0098",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な日本の俳優、木村拓哉さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "木村拓哉に関する情報を提供しますよ。彼の生涯やキャリアが中心になりますか？それとも成績ですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアについて詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Takuya Kimura",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0099",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "アカデミー賞受賞者、モーリス・ルージュについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、モーリス・ルージュに関する情報を提供します。どの方面がお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "彼の生涯と主な業績を教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "Maurice Ringuet",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0100",
+    "category": "celebrity_info"
+  }
+]
