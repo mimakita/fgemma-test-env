@@ -12,10 +12,6 @@
       {
         "role": "user",
         "content": "はい、その予報も教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "現在の東京の天気は晴れで気温が20度ほどです。今日は雷雲が出て降り始めますのでご注意ください。"
       }
     ],
     "expected_function": "weather_info",
@@ -39,10 +35,6 @@
       {
         "role": "user",
         "content": "雨が降る予報が出ていますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、午後から夕方にかけて雷雲が出て雨が降る可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -66,10 +58,6 @@
       {
         "role": "user",
         "content": "暖かい日になるのでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、最高気温は25度まで上昇する見込みです。"
       }
     ],
     "expected_function": "weather_info",
@@ -93,10 +81,6 @@
       {
         "role": "user",
         "content": "土日の天気は？"
-      },
-      {
-        "role": "assistant",
-        "content": "土日は晴れ間が広がり、最高気温も26度近くまで上昇する見込みです。"
       }
     ],
     "expected_function": "weather_info",
@@ -120,10 +104,6 @@
       {
         "role": "user",
         "content": "今日も晴れでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、朝は晴れで気温が15度ほどです。"
       }
     ],
     "expected_function": "weather_info",
@@ -147,10 +127,6 @@
       {
         "role": "user",
         "content": "雨が降るかどうか知りたいです"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、午前中は晴れますが、午後から雷雲が出て雨が降る可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -174,10 +150,6 @@
       {
         "role": "user",
         "content": "土日は雨が降る可能性があるのでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、来週土日は雨が降る可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -201,10 +173,6 @@
       {
         "role": "user",
         "content": "今日の最高気温は何度になりますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、今日の最高気温は23度ほどになる見込みです。"
       }
     ],
     "expected_function": "weather_info",
@@ -228,10 +196,6 @@
       {
         "role": "user",
         "content": "今日も晴れでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、朝は晴れで気温が16度ほどです。"
       }
     ],
     "expected_function": "weather_info",
@@ -255,10 +219,6 @@
       {
         "role": "user",
         "content": "雨が降るかどうか知りたいです"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、午前中は晴れますが、午後から雷雲が出て雨が降る可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -282,10 +242,6 @@
       {
         "role": "user",
         "content": "知り合いが来週東京を訪れるので、1週間の天候も教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました、今後の天気予報はお伝えします。1週間の天候は、月曜日から木曜日まで晴れまたは曇り、金曜日と土曜日に雨が降る可能性があります。"
       }
     ],
     "expected_function": "weather_info",
@@ -309,10 +265,6 @@
       {
         "role": "user",
         "content": "今日は傘を持って行かなければなりませんね"
-      },
-      {
-        "role": "assistant",
-        "content": "正確な予報は難しいですが、今日の後半に雨が降る可能性がありますので、傘を忘れないようにしましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -336,10 +288,6 @@
       {
         "role": "user",
         "content": "週間の天気予報もお願いします。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました、今週の東京は月曜日から金曜日まで晴れの予報です。"
       }
     ],
     "expected_function": "weather_info",
@@ -363,10 +311,6 @@
       {
         "role": "user",
         "content": "雪が降る予報はありますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今週は晴れの予報で雪は見込めません。"
       }
     ],
     "expected_function": "weather_info",
@@ -390,10 +334,6 @@
       {
         "role": "user",
         "content": "明日は雨が降る予報でしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今後の予報を見ると、明日は天気が崩れる可能性があります。"
       }
     ],
     "expected_function": "weather_info",
@@ -417,10 +357,6 @@
       {
         "role": "user",
         "content": "明日の最低気温は何度ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "明日の最低気温は13度でしょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -444,10 +380,6 @@
       {
         "role": "user",
         "content": "雨が降る可能性は？"
-      },
-      {
-        "role": "assistant",
-        "content": "今日は晴れですが、明日には雲行きが怪しいですね。"
       }
     ],
     "expected_function": "weather_info",
@@ -471,10 +403,6 @@
       {
         "role": "user",
         "content": "今日の最高気温は何度でしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今日の最高気温は24度でしょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -498,10 +426,6 @@
       {
         "role": "user",
         "content": "今日の最低気温は何度ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今日の最低気温は15度です。"
       }
     ],
     "expected_function": "weather_info",
@@ -525,10 +449,6 @@
       {
         "role": "user",
         "content": "明日は雨が降るでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今後の予報では、明日は晴れの見込みです。"
       }
     ],
     "expected_function": "weather_info",
@@ -552,10 +472,6 @@
       {
         "role": "user",
         "content": "今朝の最低気温は何度ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今朝の最低気温は14度でした。"
       }
     ],
     "expected_function": "weather_info",
@@ -579,10 +495,6 @@
       {
         "role": "user",
         "content": "雨が降る可能性は？"
-      },
-      {
-        "role": "assistant",
-        "content": "今日は晴れですが、明日から雲行きが怪しいですね。"
       }
     ],
     "expected_function": "weather_info",
@@ -595,18 +507,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "こんにちは、今日の天気はどうですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "現在の天気は晴れですが、最高気温は25度です。"
-      },
-      {
-        "role": "user",
-        "content": "それなら、週末には雨が降る予報もありますか？"
-      },
       {
         "role": "assistant",
         "content": "週末は雲が多いですが、降水確率は10％ほどです。"
@@ -622,10 +522,6 @@
       {
         "role": "user",
         "content": "それなら、明日の天気予報を教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は晴れますが、夜になってから雲行きが変化し、夕方には小雨になる可能性があります。"
       }
     ],
     "expected_function": "weather_info",
@@ -638,10 +534,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "今日の最高気温は？"
-      },
       {
         "role": "assistant",
         "content": "今日の最高気温は30度です。"
@@ -657,10 +549,6 @@
       {
         "role": "user",
         "content": "でも寒さ対策は必要ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "現在の気温は25度で暖かいですが、夜間は冷え込む可能性があるので、薄手のコートを準備しておくと良いでしょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -673,10 +561,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "来週の天気予報教えて"
-      },
       {
         "role": "assistant",
         "content": "来週は晴れ間が見込めますが、夜には雲行きが変わります。"
@@ -692,10 +576,6 @@
       {
         "role": "user",
         "content": "それなら、週末に旅行予定の人には注意が必要ですね"
-      },
-      {
-        "role": "assistant",
-        "content": "そうですね、天気予報を確認しておきましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -708,10 +588,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "最近の寒暖差は激しいですか？"
-      },
       {
         "role": "assistant",
         "content": "はい、日中の最高気温と夜间的最低気温の差があります。"
@@ -727,10 +603,6 @@
       {
         "role": "user",
         "content": "では来週の天気予報も一緒に教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "来週は全体的に晴れや快晴が続きますが、夜間には雲行きが変わります。"
       }
     ],
     "expected_function": "weather_info",
@@ -754,10 +626,6 @@
       {
         "role": "user",
         "content": "その天気なら、今から洗濯物を干しても大丈夫でしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "晴れ間が見込めますが、夜には雨になる可能性があるので、早めに取り込めるよう準備しておくと良いですね。"
       }
     ],
     "expected_function": "weather_info",
@@ -770,10 +638,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "今日の気温は？"
-      },
       {
         "role": "assistant",
         "content": "現在の最高気温は28度です。"
@@ -789,10 +653,6 @@
       {
         "role": "user",
         "content": "週末に雨が降る予報がありますね"
-      },
-      {
-        "role": "assistant",
-        "content": "週末は晴れますが、夜には雲行きが変わりますので注意が必要です。"
       }
     ],
     "expected_function": "weather_info",
@@ -816,10 +676,6 @@
       {
         "role": "user",
         "content": "それなら、明日の天気も教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は晴れますが、夕方からは雲が多くなりそうです。"
       }
     ],
     "expected_function": "weather_info",
@@ -843,10 +699,6 @@
       {
         "role": "user",
         "content": "明日の天気も教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は晴れますが、夕方からは降水確率が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -870,10 +722,6 @@
       {
         "role": "user",
         "content": "それなら、明日の天気も教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は晴れますが、夜には雲が多くなりそうです。"
       }
     ],
     "expected_function": "weather_info",
@@ -897,10 +745,6 @@
       {
         "role": "user",
         "content": "それなら、今から洗濯物を干しても大丈夫ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "晴れ間はありますが、夜には雲が多くなる可能性があるので注意が必要です。"
       }
     ],
     "expected_function": "weather_info",
@@ -913,10 +757,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "今度の週末に大阪に行こうかな。天気がどうなっているか知りたいな。"
-      },
       {
         "role": "assistant",
         "content": "了解しました！週末の天気予報をお伝えしますね。"
@@ -932,10 +772,6 @@
       {
         "role": "user",
         "content": "天気予報も見たいけど、あまり詳しくないんだよね。"
-      },
-      {
-        "role": "assistant",
-        "content": "分かりました。週末の天気予報だけを簡単に説明しますね。今週末は晴れたり曇ったりと天気が変わりそうなので、外出する場合は複数の服装を用意した方が良いかもしれません。"
       }
     ],
     "expected_function": "weather_info",
@@ -948,10 +784,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "最近京都に来たいなって思っているんだけど、雨が心配でしょ？"
-      },
       {
         "role": "assistant",
         "content": "確かに京都は雨の多い地域ですよね。"
@@ -980,10 +812,6 @@
   {
     "conversation": [
       {
-        "role": "user",
-        "content": "新潟は雪が多い場所だよね？"
-      },
-      {
         "role": "assistant",
         "content": "その通り、新潟は冬の間特に雪が多いですね。"
       },
@@ -1010,10 +838,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "最近広島市を訪問したいなと考えている。"
-      },
       {
         "role": "assistant",
         "content": "広島市は自然が豊かで観光にもおすすめですよ。"
@@ -1042,10 +866,6 @@
   {
     "conversation": [
       {
-        "role": "user",
-        "content": "東京の天気を知りたいんだよね。"
-      },
-      {
         "role": "assistant",
         "content": "分かりました、東京の天気をお伝えしますね。"
       },
@@ -1072,10 +892,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "北海道の天気を知りたいんだよね。"
-      },
       {
         "role": "assistant",
         "content": "分かりました、北海道の天気をお伝えしますね。"
@@ -1104,10 +920,6 @@
   {
     "conversation": [
       {
-        "role": "user",
-        "content": "最近奈良に来たいなって思っているんだけど、雨が心配でしょ？"
-      },
-      {
         "role": "assistant",
         "content": "確かに奈良は雨の多い地域ですよね。"
       },
@@ -1134,10 +946,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "仙台に行く機会があるんだけど、雨が心配でしょ？"
-      },
       {
         "role": "assistant",
         "content": "その通り、秋の仙台は特に雨が多いですね。"
@@ -1166,10 +974,6 @@
   {
     "conversation": [
       {
-        "role": "user",
-        "content": "横浜に行く機会があるんだけど、雨が心配でしょ？"
-      },
-      {
         "role": "assistant",
         "content": "確かに雨は季節に関わらずいつでも降る可能性がありますね。"
       },
@@ -1196,10 +1000,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "福岡に行く機会があるんだけど、雨が心配でしょ？"
-      },
       {
         "role": "assistant",
         "content": "福岡は梅雨明けのタイミングで雨が多くなるので注意が必要ですね。"
@@ -1238,10 +1038,6 @@
       {
         "role": "user",
         "content": "それなら、明日の天気も一緒に教えてもらえますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです！それでは、週間天気予報を確認してみましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -1265,10 +1061,6 @@
       {
         "role": "user",
         "content": "京都って最近雨が多いよね？"
-      },
-      {
-        "role": "assistant",
-        "content": "それはそうです、今週も雨が続く可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -1292,10 +1084,6 @@
       {
         "role": "user",
         "content": "あと、大阪の今日の最高気温は何度ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "おっしゃる通り、大阪の現在の最高気温を確認します。"
       }
     ],
     "expected_function": "weather_info",
@@ -1319,10 +1107,6 @@
       {
         "role": "user",
         "content": "でも最近暖かくて雪が少ないですよね？"
-      },
-      {
-        "role": "assistant",
-        "content": "確かに、最近は異常気象の影響で冬場も暖かい日が多いですね。"
       }
     ],
     "expected_function": "weather_info",
@@ -1346,10 +1130,6 @@
       {
         "role": "user",
         "content": "じゃあ、今日も雪が降るってことですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今日は晴れの天気ですが、明日からは雪の可能性がありますのでご注意ください。"
       }
     ],
     "expected_function": "weather_info",
@@ -1373,10 +1153,6 @@
       {
         "role": "user",
         "content": "明日も寒そうですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は冷たい風が吹く可能性が高いです、防寒に気をつけてくださいね。"
       }
     ],
     "expected_function": "weather_info",
@@ -1400,10 +1176,6 @@
       {
         "role": "user",
         "content": "もう少し詳しく教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は晴れますが、夜には冷たい風が吹く可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -1427,10 +1199,6 @@
       {
         "role": "user",
         "content": "それなら、今日の最高気温も教えてください"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです、今日の最高気温は15℃程度です。"
       }
     ],
     "expected_function": "weather_info",
@@ -1454,10 +1222,6 @@
       {
         "role": "user",
         "content": "週末は晴れそうですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "週末は快晴の予想です、屋外活動にお勧めですよ。"
       }
     ],
     "expected_function": "weather_info",
@@ -1481,10 +1245,6 @@
       {
         "role": "user",
         "content": "明日の最低気温は何度ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "明日の最低気温は4℃程度と寒くなる可能性がありますので、防寒にご注意ください。"
       }
     ],
     "expected_function": "weather_info",
@@ -1508,10 +1268,6 @@
       {
         "role": "user",
         "content": "あと、週末の予報もお願いします。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました、週末の天気も含めてお伝えします。"
       }
     ],
     "expected_function": "weather_info",
@@ -1535,10 +1291,6 @@
       {
         "role": "user",
         "content": "あ、それなら明日の予報も一緒に教えてくださいね。"
-      },
-      {
-        "role": "assistant",
-        "content": "分かりました、明日の天気予報も合わせてお伝えします。"
       }
     ],
     "expected_function": "weather_info",
@@ -1562,10 +1314,6 @@
       {
         "role": "user",
         "content": "その前に、今日の最高気温は？"
-      },
-      {
-        "role": "assistant",
-        "content": "それも含めてお伝えしましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -1589,10 +1337,6 @@
       {
         "role": "user",
         "content": "明日はどうなるんでしょう？"
-      },
-      {
-        "role": "assistant",
-        "content": "明日は雨が降る可能性が高いです。"
       }
     ],
     "expected_function": "weather_info",
@@ -1616,10 +1360,6 @@
       {
         "role": "user",
         "content": "雨が降るなら傘を忘れずに。"
-      },
-      {
-        "role": "assistant",
-        "content": "そうですね、必要なアイテムを持っていってください。"
       }
     ],
     "expected_function": "weather_info",
@@ -1643,10 +1383,6 @@
       {
         "role": "user",
         "content": "来週末はどのくらいの温度になるでしょう？"
-      },
-      {
-        "role": "assistant",
-        "content": "来週末の最高と最低気温を確認してきます。"
       }
     ],
     "expected_function": "weather_info",
@@ -1670,10 +1406,6 @@
       {
         "role": "user",
         "content": "雪が積もったら大丈夫でしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "積雪量や路面状況を確認してきます。"
       }
     ],
     "expected_function": "weather_info",
@@ -1697,10 +1429,6 @@
       {
         "role": "user",
         "content": "明日も同じような天気が続くのでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "明日も概ね同様の天候が続く予想です。"
       }
     ],
     "expected_function": "weather_info",
@@ -1724,10 +1452,6 @@
       {
         "role": "user",
         "content": "そんな日は家の中でゆっくりした方がいいのでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "確かに家の中でのんびり過ごすのも良いでしょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -1751,10 +1475,6 @@
       {
         "role": "user",
         "content": "今週末の天気はどうなりますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今週末も概ね寒冷な天候が続く予想です。"
       }
     ],
     "expected_function": "weather_info",
@@ -1767,18 +1487,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "今日の天気、教えてください。東京は雪の予報ですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今現在、東京は晴れです。しかし夕方から雨が降る可能性があります。"
-      },
-      {
-        "role": "user",
-        "content": "週末も外出予定があるのですが、どうなるでしょう？"
-      },
       {
         "role": "assistant",
         "content": "週末は天気が回復する見込みで、晴れて気温も上がりそうです。"
@@ -1794,10 +1502,6 @@
       {
         "role": "user",
         "content": "それはそうかもしれませんが、万が一変更があったらどうしますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "安心してください、もし天気が急に変わりそうであれば、情報を更新しますから、その際にまたお知らせしましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -1810,10 +1514,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新 York の気温がどうなってるんですか？"
-      },
       {
         "role": "assistant",
         "content": "New York の現在の気温は15度です。"
@@ -1829,10 +1529,6 @@
       {
         "role": "user",
         "content": "でも、急に天気が変わるような感じがしますね。"
-      },
-      {
-        "role": "assistant",
-        "content": "それは気象状況によるので、注意が必要です。外出前には最新情報を確認することをおすすめします。"
       }
     ],
     "expected_function": "weather_info",
@@ -1856,10 +1552,6 @@
       {
         "role": "user",
         "content": "でも、雨が降らないといいな……"
-      },
-      {
-        "role": "assistant",
-        "content": "心配なく、雨は予報されていませんので、安心してくださいね。"
       }
     ],
     "expected_function": "weather_info",
@@ -1883,10 +1575,6 @@
       {
         "role": "user",
         "content": "でも、週末には何が起きると思いますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "週末の天気は安定しており、晴れや曇りの予想です。"
       }
     ],
     "expected_function": "weather_info",
@@ -1910,10 +1598,6 @@
       {
         "role": "user",
         "content": "それなら大丈夫でしょう！"
-      },
-      {
-        "role": "assistant",
-        "content": "そうですね、適度な気温なので過ごしやすいはずです。"
       }
     ],
     "expected_function": "weather_info",
@@ -1937,10 +1621,6 @@
       {
         "role": "user",
         "content": "そうね、それは良いですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "安心して過ごせる天気になると思いますよ。"
       }
     ],
     "expected_function": "weather_info",
@@ -1964,10 +1644,6 @@
       {
         "role": "user",
         "content": "そうですね、でも少し寒くないですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "今日は朝と夜は少しご主人が冷えますが、昼間は暖かいです。"
       }
     ],
     "expected_function": "weather_info",
@@ -1991,10 +1667,6 @@
       {
         "role": "user",
         "content": "そうですね、でも雨が降らないと嬉しいですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "その通りですが、雨も時間と共に天気を変える可能性があります。"
       }
     ],
     "expected_function": "weather_info",
@@ -2018,10 +1690,6 @@
       {
         "role": "user",
         "content": "そうですね、晴れるなら外にいきたいです。"
-      },
-      {
-        "role": "assistant",
-        "content": "その気持ちわかりますよ、良い天気が続きますように。"
       }
     ],
     "expected_function": "weather_info",
@@ -2045,10 +1713,6 @@
       {
         "role": "user",
         "content": "それは良いですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "天気は快適な一日になると思いますよ。"
       }
     ],
     "expected_function": "weather_info",
@@ -2061,10 +1725,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "今日の東京は雨が降っていますね。"
-      },
       {
         "role": "assistant",
         "content": "そうですね、現在の東京では雨の天気です。"
@@ -2080,10 +1740,6 @@
       {
         "role": "user",
         "content": "ちょっと待って、今日と明日は大丈夫か？"
-      },
-      {
-        "role": "assistant",
-        "content": "それではお知らせしますね、今日は雨が続く見込みです。"
       }
     ],
     "expected_function": "weather_info",
@@ -2107,10 +1763,6 @@
       {
         "role": "user",
         "content": "あまり外に出猟たいですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました、そこで今日は大阪の雨量について知りたいということですね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2134,10 +1786,6 @@
       {
         "role": "user",
         "content": "でも雨が心配です"
-      },
-      {
-        "role": "assistant",
-        "content": "その不安もわかりますが、晴れるとおっしゃる方もいますね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2161,10 +1809,6 @@
       {
         "role": "user",
         "content": "本当に雨が降るのか？"
-      },
-      {
-        "role": "assistant",
-        "content": "降水確率を確認してみましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -2188,10 +1832,6 @@
       {
         "role": "user",
         "content": "それじゃあ今日と明日だけお願いします。"
-      },
-      {
-        "role": "assistant",
-        "content": "分かりました、それでは今日と明日本日の天気をチェックしてみますね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2215,10 +1855,6 @@
       {
         "role": "user",
         "content": "雨が降る日があるのか知りたいです。"
-      },
-      {
-        "role": "assistant",
-        "content": "その可能性も確認してみましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -2242,10 +1878,6 @@
       {
         "role": "user",
         "content": "明日は晴れるでしょう。"
-      },
-      {
-        "role": "assistant",
-        "content": "その予想は興味深いですね、明日の天気も見てみましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -2269,10 +1901,6 @@
       {
         "role": "user",
         "content": "雨が降る？"
-      },
-      {
-        "role": "assistant",
-        "content": "降水確率はどれくらいでしょうか。"
       }
     ],
     "expected_function": "weather_info",
@@ -2296,10 +1924,6 @@
       {
         "role": "user",
         "content": "雨が降る日は？"
-      },
-      {
-        "role": "assistant",
-        "content": "それでは降水確率を見ていきましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -2323,10 +1947,6 @@
       {
         "role": "user",
         "content": "雨が降る日は？"
-      },
-      {
-        "role": "assistant",
-        "content": "降水確率を確認してみましょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -2350,10 +1970,6 @@
       {
         "role": "user",
         "content": "最高気温は？"
-      },
-      {
-        "role": "assistant",
-        "content": "最高気温は25度になっています。"
       }
     ],
     "expected_function": "weather_info",
@@ -2377,10 +1993,6 @@
       {
         "role": "user",
         "content": "寒い？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "現在の東京は暖かい方ですが、夜は気温が下がるかもしれません。"
       }
     ],
     "expected_function": "weather_info",
@@ -2404,10 +2016,6 @@
       {
         "role": "user",
         "content": "最高気温も教えて？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "明日の最高気温は26度です。"
       }
     ],
     "expected_function": "weather_info",
@@ -2431,10 +2039,6 @@
       {
         "role": "user",
         "content": "寒くなる？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "今週は全体的に暖かいですが、夜は少し気温が下がるかもしれません。"
       }
     ],
     "expected_function": "weather_info",
@@ -2458,10 +2062,6 @@
       {
         "role": "user",
         "content": "何時間続く？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "ニューヨークは午後まで雨が続く予報になっています。"
       }
     ],
     "expected_function": "weather_info",
@@ -2485,10 +2085,6 @@
       {
         "role": "user",
         "content": "最高気温は？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "今週のニューヨークの最高気温は20度から25度程度になります。"
       }
     ],
     "expected_function": "weather_info",
@@ -2512,10 +2108,6 @@
       {
         "role": "user",
         "content": "最高気温？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "今日の最高気温は24度です。"
       }
     ],
     "expected_function": "weather_info",
@@ -2539,10 +2131,6 @@
       {
         "role": "user",
         "content": "最高気温も？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "今週の最高気温は26度から28度程度になります。"
       }
     ],
     "expected_function": "weather_info",
@@ -2566,10 +2154,6 @@
       {
         "role": "user",
         "content": "最高気温？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "今日の最高気温は25度です。"
       }
     ],
     "expected_function": "weather_info",
@@ -2593,10 +2177,6 @@
       {
         "role": "user",
         "content": "最高気温？”},{"
-      },
-      {
-        "role": "assistant",
-        "content": "明日の最高気温は26度です。"
       }
     ],
     "expected_function": "weather_info",
@@ -2620,10 +2200,6 @@
       {
         "role": "user",
         "content": "雨予報もありますよね？"
-      },
-      {
-        "role": "assistant",
-        "content": "その通りです、雨も心配ですよね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2647,10 +2223,6 @@
       {
         "role": "user",
         "content": "雪が降る地域は？"
-      },
-      {
-        "role": "assistant",
-        "content": "雪の可能性のある地域をご案内します。"
       }
     ],
     "expected_function": "weather_info",
@@ -2674,10 +2246,6 @@
       {
         "role": "user",
         "content": "寒さに注意が必要そうですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "気温や天候について確認しますね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2701,10 +2269,6 @@
       {
         "role": "user",
         "content": "でも寒さも忘れないで。"
-      },
-      {
-        "role": "assistant",
-        "content": "その通り、天気予報では冷え込みの状況もチェックしますね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2728,10 +2292,6 @@
       {
         "role": "user",
         "content": "雨量も気になるところです。"
-      },
-      {
-        "role": "assistant",
-        "content": "雨の量や天気予報を確認しますね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2755,10 +2315,6 @@
       {
         "role": "user",
         "content": "雪の量が心配で。"
-      },
-      {
-        "role": "assistant",
-        "content": "雪の状況や降水量を確認しますね。"
       }
     ],
     "expected_function": "weather_info",
@@ -2771,26 +2327,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "今週末の東京の天気予報教えて！"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。今週末は東京で何を計画していますか？"
-      },
-      {
-        "role": "user",
-        "content": "旅行用に知りたいです"
-      },
-      {
-        "role": "assistant",
-        "content": "その場合、雨具を持っていくことをおすすめします。"
-      },
-      {
-        "role": "user",
-        "content": "雨具が必要なのかどうか教えて！"
-      },
       {
         "role": "assistant",
         "content": "週末の東京は晴れ間も見られますが、夕方からは雲行きが怪しくなりそうです。"
@@ -2806,10 +2342,6 @@
       {
         "role": "user",
         "content": "雨具が必要かも。"
-      },
-      {
-        "role": "assistant",
-        "content": "確かに、備えるのが良いでしょう。"
       }
     ],
     "expected_function": "weather_info",
@@ -2822,10 +2354,6 @@
   },
   {
     "conversation": [
-      {
-        "role": "user",
-        "content": "近々大阪の気温が上がると聞きましたが"
-      },
       {
         "role": "assistant",
         "content": "大阪の天気が気になるのですね。"
@@ -2841,10 +2369,6 @@
       {
         "role": "user",
         "content": "最高気温と最低気温も教えて！"
-      },
-      {
-        "role": "assistant",
-        "content": "最高気温は約30℃、最低気温は約20℃程度になるでしょう。"
       }
     ],
     "expected_function": "weather_info",

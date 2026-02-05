@@ -28,11 +28,13 @@ env/
 .pytest_cache/
 
 # Generated data (large files)
-data/test/*.json
+#data/test/*.json
 data/results/*.json
 
 # Logs
 *.log
+WORKLOG.md
 
 # Ollama model files (if downloaded locally)
 models/
+

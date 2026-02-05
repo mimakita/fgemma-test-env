@@ -7,17 +7,14 @@ SCHEMA = {
     "properties": {
         "text": {
             "type": "string",
-            # "description": "Text to analyze for sentiment or emotion",
-            "description": "感情やセンチメントを分析するテキスト",
+            "description": "Text to analyze for sentiment or emotion",
         },
         "granularity": {
             "type": "string",
             "enum": ["basic", "detailed"],
             "description": (
-                # "Level of sentiment detail: basic (positive/negative/neutral) "
-                # "or detailed (joy, anger, sadness, fear, surprise, disgust)"
-                "センチメントの詳細レベル: basic（ポジティブ/ネガティブ/ニュートラル）"
-                "またはdetailed（喜び、怒り、悲しみ、恐れ、驚き、嫌悪）"
+                "Level of sentiment detail: basic (positive/negative/neutral) "
+                "or detailed (joy, anger, sadness, fear, surprise, disgust)"
             ),
         },
     },
@@ -43,11 +40,9 @@ def register(registry: FunctionRegistry):
         FunctionDefinition(
             name="sentiment_label",
             description=(
-                # "Analyze and label the sentiment or emotion expressed in text or "
-                # "conversation. Use when the user asks about feelings, emotions, "
-                # "mood, or sentiment of a text, review, or conversation."
-                "テキストや会話で表現された感情やセンチメントを分析しラベル付けする。"
-                "ユーザーが感情、気分、テキストやレビューや会話のセンチメントについて尋ねた時に使用する。"
+                "Analyze and label the sentiment or emotion expressed in text or "
+                "conversation. Use when the user asks about feelings, emotions, "
+                "mood, or sentiment of a text, review, or conversation."
             ),
             parameters=SCHEMA,
             handler=sentiment_label_handler,

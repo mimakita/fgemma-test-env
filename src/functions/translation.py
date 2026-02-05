@@ -7,18 +7,15 @@ SCHEMA = {
     "properties": {
         "text": {
             "type": "string",
-            # "description": "Text to translate",
-            "description": "翻訳するテキスト",
+            "description": "Text to translate",
         },
         "source_language": {
             "type": "string",
-            # "description": "Source language (e.g. Japanese, English). Auto-detect if not specified.",
-            "description": "翻訳元の言語（例: 日本語、英語）。未指定の場合は自動検出",
+            "description": "Source language (e.g. Japanese, English). Auto-detect if not specified.",
         },
         "target_language": {
             "type": "string",
-            # "description": "Target language for translation (e.g. English, Japanese)",
-            "description": "翻訳先の言語（例: 英語、日本語）",
+            "description": "Target language for translation (e.g. English, Japanese)",
         },
     },
     "required": ["text", "target_language"],
@@ -44,12 +41,10 @@ def register(registry: FunctionRegistry):
         FunctionDefinition(
             name="translation_assist",
             description=(
-                # "Translate text between languages or provide language-related "
-                # "assistance. Use when the user asks to translate something, "
-                # "wants to know how to say something in another language, "
-                # "or needs language help."
-                "言語間のテキスト翻訳や言語関連の支援を行う。"
-                "ユーザーが何かを翻訳したい、別の言語での言い方を知りたい、言語の助けが必要な時に使用する。"
+                "Translate text between languages or provide language-related "
+                "assistance. Use when the user asks to translate something, "
+                "wants to know how to say something in another language, "
+                "or needs language help."
             ),
             parameters=SCHEMA,
             handler=translation_assist_handler,
