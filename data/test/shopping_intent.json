@@ -440,25 +440,6 @@
     "conversation": [
       {
         "role": "user",
-        "content": "最近家電量販店で洗濯機の広告を見ました、詳しい情報が知りたいですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "どんな機能や価格について詳しく知りたいですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "洗濯機",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0020",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
         "content": "最近新しいスマートスピーカーが欲しくて"
       },
       {
@@ -475,26 +456,7 @@
       "product_or_service": "スマートスピーカー",
       "intent_type": "buy"
     },
-    "test_id": "shopping_intent_0021",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近新しいテレビが欲しくなってきた"
-      },
-      {
-        "role": "assistant",
-        "content": "どんなサイズや価格帯のものがいいですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "テレビ",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0022",
+    "test_id": "shopping_intent_0020",
     "category": "shopping_intent"
   },
   {
@@ -517,45 +479,7 @@
       "product_or_service": "カメラ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0023",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近新しいイヤホンが欲しくて"
-      },
-      {
-        "role": "assistant",
-        "content": "どんな機能や価格帯のものがいいですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "イヤホン",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0024",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近新しいPCが欲しくなってきた"
-      },
-      {
-        "role": "assistant",
-        "content": "主にどのような用途で使う予定ですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "PC",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0025",
+    "test_id": "shopping_intent_0021",
     "category": "shopping_intent"
   },
   {
@@ -578,178 +502,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0026",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I want to buy a new laptop for work. What do you recommend?"
-      },
-      {
-        "role": "assistant",
-        "content": "Great! Do you have a specific budget in mind, or are you looking for the best value within your range?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ノートパソコン",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0027",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しい洗剤を購入したいんですが、何かおすすめありますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです。用途やサイズ、スパルタな成分など、お知らせいただければより具体的な提案ができますね。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "洗剤",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0028",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、健康食品についてもっと知りたいと思っています。"
-      },
-      {
-        "role": "assistant",
-        "content": "それは素晴らしいです！目的や特定の栄養素に興味がありますか？それとも、サプリメントの中で何か特徴的なものを探していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "健康食品",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0029",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I'm thinking of getting a new camera for my photography hobby. What do you think would be the best choice?"
-      },
-      {
-        "role": "assistant",
-        "content": "Great! Would you like to focus on DSLR or mirrorless cameras, or are you open to suggestions across different types?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "カメラ",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0030",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、家電製品の最新モデルについて知りたいと思っています。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん、何種類の家電製品に興味がありますか？例えば冷蔵庫やテレビ、洗濯機などから選べますね。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "家電製品",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0031",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しくテキストブックが必要なんですが、どこで手に入れればいいですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "オンラインショッピングサイトや書店が便利です。特定の出版社や価格帯に興味がありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "テキストブック",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0032",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しく車を買うべきだと思いますが、どのモデルが良いか教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "それは興味深い決定ですね！燃費、安全性、価格など、何に特に注目していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "車",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0033",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいスピーカーを探していますが、どのブランドが良いでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "それは素晴らしい選択です！音質やデザイン、価格帯に特に興味がありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "スピーカー",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0034",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しいパソコンが必要で、特にゲーム性能に重きを置いています。"
-      },
-      {
-        "role": "assistant",
-        "content": "それは素晴らしいです！予算はありますか？それとも特定のブランドやモデルに興味がありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "パソコン",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0035",
+    "test_id": "shopping_intent_0022",
     "category": "shopping_intent"
   },
   {
@@ -772,178 +525,7 @@
       "product_or_service": "スマートフォン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0036",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I'm looking for a new laptop that is suitable for gaming. What would you recommend?"
-      },
-      {
-        "role": "assistant",
-        "content": "Great choice! Do you have any specific budget in mind or are you open to suggestions?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ノートパソコン",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0037",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しく家具を買いたいと思っています。特にソファが欲しくて…"
-      },
-      {
-        "role": "assistant",
-        "content": "新しいソファは良いですね！予算と好みのスタイルを教えていただけますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ソファ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0038",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I heard about a great deal on home appliances. Can you help me find it?"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん、何種類の家電製品を検討していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "家電製品",
-      "intent_type": "deal"
-    },
-    "test_id": "shopping_intent_0039",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいデジタルカメラを探しています。"
-      },
-      {
-        "role": "assistant",
-        "content": "新しくデジカメを手に入れるのは楽しみですね！高解像度やバッテリー持続時間など特に重要な機能はありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "デジタルカメラ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0040",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい靴を探しています。カジュアルなスタイルのものを…"
-      },
-      {
-        "role": "assistant",
-        "content": "カジュアルな靴は人気がありますね！予算と好みの色やブランドを教えていただけますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "靴",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0041",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "私は新しいゲーム機を探しています。PS5とXbox Series Xのどちらが良いでしょうか？"
-      },
-      {
-        "role": "assistant",
-        "content": "それは難しい選択ですね！どちらの機能や価格を重視していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ゲーム機",
-      "intent_type": "compare"
-    },
-    "test_id": "shopping_intent_0042",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい家具を購入したいと思っています。特に机が欲しいのですが…"
-      },
-      {
-        "role": "assistant",
-        "content": "新しい机は便利ですね！予算と用途は何ですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "机",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0043",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいスマートウォッチを探しています。"
-      },
-      {
-        "role": "assistant",
-        "content": "スマートウォッチは便利なアイテムですね！心拍数モニタリングや通知機能が重要ですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "スマートウォッチ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0044",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいヘッドホンを探しています。音質が良いものがいいですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "素晴らしい選択ですね！予算と用途は何ですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ヘッドホン",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0045",
+    "test_id": "shopping_intent_0023",
     "category": "shopping_intent"
   },
   {
@@ -966,26 +548,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0046",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I'm interested in comparing different models of laptops. Can you help me with that?"
-      },
-      {
-        "role": "assistant",
-        "content": "Of course! What are your main priorities when choosing a laptop, such as brand or price range?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ラップトップ",
-      "intent_type": "compare"
-    },
-    "test_id": "shopping_intent_0047",
+    "test_id": "shopping_intent_0024",
     "category": "shopping_intent"
   },
   {
@@ -1008,7 +571,7 @@
       "product_or_service": "ヘッドフォン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0048",
+    "test_id": "shopping_intent_0025",
     "category": "shopping_intent"
   },
   {
@@ -1031,7 +594,7 @@
       "product_or_service": "Bluetooth ヘッドセット",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0049",
+    "test_id": "shopping_intent_0026",
     "category": "shopping_intent"
   },
   {
@@ -1054,7 +617,7 @@
       "product_or_service": "テレビ",
       "intent_type": "buy"
     },
-    "test_id": "shopping_intent_0050",
+    "test_id": "shopping_intent_0027",
     "category": "shopping_intent"
   },
   {
@@ -1077,7 +640,7 @@
       "product_or_service": "スマートスピーカー",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0051",
+    "test_id": "shopping_intent_0028",
     "category": "shopping_intent"
   },
   {
@@ -1100,7 +663,7 @@
       "product_or_service": "カメラ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0052",
+    "test_id": "shopping_intent_0029",
     "category": "shopping_intent"
   },
   {
@@ -1123,7 +686,7 @@
       "product_or_service": "イヤホン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0053",
+    "test_id": "shopping_intent_0030",
     "category": "shopping_intent"
   },
   {
@@ -1146,7 +709,7 @@
       "product_or_service": "スマートフォン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0054",
+    "test_id": "shopping_intent_0031",
     "category": "shopping_intent"
   },
   {
@@ -1169,83 +732,7 @@
       "product_or_service": "ヘッドセット",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0055",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "今日は新しいスマートウォッチを探しています。予算が約5万円程度です。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました、私たちはあなたに最適なモデルを見つけ出します。現在、5万円程度の予算でおすすめできるスマートウォッチをいくつか紹介します。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "スマートウォッチ",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0056",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "私は新しい携帯電話を買う予定です。どのブランドがおすすめですか？"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん、あなたのニーズに合わせた最適な選択肢を見つけるのが私たちの役目です。現在、最も人気のあるスマートフォンブランドとその特徴をいくつかご紹介します。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "携帯電話",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0057",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい電子レンジを探していますが、予算は2万円程度です。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました、2万円程度で購入できるおすすめの電子レンジをいくつかご紹介します。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "電子レンジ",
-      "intent_type": "buy"
-    },
-    "test_id": "shopping_intent_0058",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい家具を探しています。特にソファが気になります。"
-      },
-      {
-        "role": "assistant",
-        "content": "ソファを探すのは良い企画ですね。現在人気のある種類やデザイン、価格帯をいくつかご紹介します。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ソファ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0059",
+    "test_id": "shopping_intent_0032",
     "category": "shopping_intent"
   },
   {
@@ -1268,102 +755,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0060",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Hey, I'm thinking about getting a new laptop for work. What do you recommend?"
-      },
-      {
-        "role": "assistant",
-        "content": "Sure! Do you need one with strong processing power or more focus on graphics capabilities?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ラップトップ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0061",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいスマートフォンを探すことにしているんだけど、どのブランドがいいかわからないんだよね。"
-      },
-      {
-        "role": "assistant",
-        "content": "多くの人がSamsungやAppleの製品を好むようです。あなたの予算と特定の機能は？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "スマートフォン",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0062",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい家電製品を探しているんですが、何か良い提案ありますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "どのタイプの家電製品が特に必要ですか？エアコンや掃除機などがあります。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "家電製品",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0063",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい洗剤を探しているんです。"
-      },
-      {
-        "role": "assistant",
-        "content": "清潔さと価格を優先しますか？どちらも重要ですが、それぞれのバランスは？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "洗剤",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0064",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しい自動車を買いたいな。"
-      },
-      {
-        "role": "assistant",
-        "content": "燃費、安全性、又は外観のデザインが一番重要ですか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "自動車",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0065",
+    "test_id": "shopping_intent_0033",
     "category": "shopping_intent"
   },
   {
@@ -1386,26 +778,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0066",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I've been thinking about getting a new laptop. What do you recommend?"
-      },
-      {
-        "role": "assistant",
-        "content": "Sure, what kind of tasks do you need to perform with it?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "laptop",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0067",
+    "test_id": "shopping_intent_0034",
     "category": "shopping_intent"
   },
   {
@@ -1428,7 +801,7 @@
       "product_or_service": "ヘッドフォン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0068",
+    "test_id": "shopping_intent_0035",
     "category": "shopping_intent"
   },
   {
@@ -1451,7 +824,7 @@
       "product_or_service": "自動車",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0069",
+    "test_id": "shopping_intent_0036",
     "category": "shopping_intent"
   },
   {
@@ -1474,7 +847,7 @@
       "product_or_service": "スマートフォン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0070",
+    "test_id": "shopping_intent_0037",
     "category": "shopping_intent"
   },
   {
@@ -1497,7 +870,7 @@
       "product_or_service": "家電製品",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0071",
+    "test_id": "shopping_intent_0038",
     "category": "shopping_intent"
   },
   {
@@ -1520,7 +893,7 @@
       "product_or_service": "テレビ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0072",
+    "test_id": "shopping_intent_0039",
     "category": "shopping_intent"
   },
   {
@@ -1543,7 +916,7 @@
       "product_or_service": "家具",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0073",
+    "test_id": "shopping_intent_0040",
     "category": "shopping_intent"
   },
   {
@@ -1566,7 +939,7 @@
       "product_or_service": "家電製品",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0074",
+    "test_id": "shopping_intent_0041",
     "category": "shopping_intent"
   },
   {
@@ -1589,7 +962,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0075",
+    "test_id": "shopping_intent_0042",
     "category": "shopping_intent"
   },
   {
@@ -1612,26 +985,7 @@
       "product_or_service": "iPhone 新モデル",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0076",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい洗濯機を検討しています。おすすめの商品があれば教えてくださいね。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです。あなたが探している特長や予算はありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "洗濯機",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0077",
+    "test_id": "shopping_intent_0043",
     "category": "shopping_intent"
   },
   {
@@ -1654,45 +1008,7 @@
       "product_or_service": "マスク",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0078",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新居を探しているんですが、リビングにぴったりのソファを知っていますか？"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん。予算や色合いなど具体的な条件がありましたら教えてください。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ソファ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0079",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、ビデオゲーム機を購入しようと思っています。"
-      },
-      {
-        "role": "assistant",
-        "content": "新しいビデオゲーム機を探しているんですね。予算や興味のある特長はありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ビデオゲーム機",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0080",
+    "test_id": "shopping_intent_0044",
     "category": "shopping_intent"
   },
   {
@@ -1715,7 +1031,7 @@
       "product_or_service": "テレビ",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0081",
+    "test_id": "shopping_intent_0045",
     "category": "shopping_intent"
   },
   {
@@ -1738,26 +1054,7 @@
       "product_or_service": "電動自転車",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0082",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいスニーカーを探しています。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん。予算や主な用途を教えていただければ、最適な選択肢を提案できます。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "スニーカー",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0083",
+    "test_id": "shopping_intent_0046",
     "category": "shopping_intent"
   },
   {
@@ -1780,26 +1077,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0084",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しい冷蔵庫を検討しています。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん。予算や主な用途を教えていただければ、最適な選択肢を提案できます。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "冷蔵庫",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0085",
+    "test_id": "shopping_intent_0047",
     "category": "shopping_intent"
   },
   {
@@ -1822,178 +1100,7 @@
       "product_or_service": "スマートフォン",
       "intent_type": "research"
     },
-    "test_id": "shopping_intent_0086",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Can you help me with finding a good laptop for gaming? I'm not sure which one to choose."
-      },
-      {
-        "role": "assistant",
-        "content": "Sure, we can look at some of the latest models from Acer, ASUS, and HP. What's your budget range?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ゲーミングノートパソコン",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0087",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新年度に備えて、新しいビジネスソフトウェアが必要です。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。あなたは特定の機能を重視していますか？例えば、プロジェクト管理やチームコラボレーションなど？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ビジネスソフトウェア",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0088",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "I'm thinking about changing my home insurance. Could you give me some advice?"
-      },
-      {
-        "role": "assistant",
-        "content": "当然ですよ！您希望了解哪些类型的保险计划？比如全损、部分损失或第三方责任险。"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "自宅保険",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0089",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、新しいラップトップを探していて、いくつかのオプションを比較したいです。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろん！AppleのMacBook ProとDellのXPSを比較してみましょう。どのような点でそれぞれに注目していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "ラップトップ",
-      "intent_type": "compare"
-    },
-    "test_id": "shopping_intent_0090",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しい家電製品が欲しいです。特に冷蔵庫と洗濯機を検討中です。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました！現在、冷蔵庫はサムスンやホワイトズ、洗濯機はダイsonやパナソニックの人気製品があります。どのような機能に重視していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "家電製品",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0091",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "We're moving to a new house and need some furniture. Any recommendations for a good deal?"
-      },
-      {
-        "role": "assistant",
-        "content": "Moving can be tough! Do you have any specific items in mind like sofas, tables or beds? We can look at both online and physical stores for deals."
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "家具",
-      "intent_type": "deal"
-    },
-    "test_id": "shopping_intent_0092",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しいイヤフォンを探しています。ノイズキャンセリング機能が付いているものがいいですね。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました！AppleのAirPods ProやSamsungのGalaxy Buds Proなどがあります。どのような価格帯で探していますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "イヤフォン",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0093",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近新しい家電を探しています。特に掃除機がほしいんです。"
-      },
-      {
-        "role": "assistant",
-        "content": "掃除機ならDysonの無線製品やSharkのロボット掃除機などがあります。どのモデルに興味がありますか？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "掃除機",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0094",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "新しいカメラを探しています。特に画質が重要な条件です。"
-      },
-      {
-        "role": "assistant",
-        "content": "良い選択ですね！FUJIFILMのX系列やNIKON D系列などがあります。具体的な用途は？"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "カメラ",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0095",
+    "test_id": "shopping_intent_0048",
     "category": "shopping_intent"
   },
   {
@@ -2016,30 +1123,7 @@
       "product_or_service": "スマートウォッチ",
       "intent_type": "buy"
     },
-    "test_id": "shopping_intent_0096",
-    "category": "shopping_intent"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Hi, I'm interested in a new car. Could you help me find out what options are available?"
-      },
-      {
-        "role": "assistant",
-        "content": "Of course! Do you have any specific preferences or requirements for the car, like fuel type or brand?"
-      },
-      {
-        "role": "user",
-        "content": "I'm looking for an electric car that's also affordable. What do you recommend?"
-      }
-    ],
-    "expected_function": "shopping_intent",
-    "expected_arguments": {
-      "product_or_service": "電気自動車",
-      "intent_type": "research"
-    },
-    "test_id": "shopping_intent_0097",
+    "test_id": "shopping_intent_0049",
     "category": "shopping_intent"
   },
   {
@@ -2062,7 +1146,7 @@
       "product_or_service": "スマートフォン",
       "intent_type": "compare"
     },
-    "test_id": "shopping_intent_0098",
+    "test_id": "shopping_intent_0050",
     "category": "shopping_intent"
   },
   {
@@ -2085,7 +1169,7 @@
       "product_or_service": "パソコン",
       "intent_type": "buy"
     },
-    "test_id": "shopping_intent_0099",
+    "test_id": "shopping_intent_0051",
     "category": "shopping_intent"
   },
   {
@@ -2107,6 +1191,1087 @@
     "expected_arguments": {
       "product_or_service": "薄型テレビ",
       "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0052",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "そうですね、もう少し情報が欲しいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "わかりました、比較表を作成してお送りしますので、ご確認ください。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0053",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新幹線のチケットを検索したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "ご希望の出発地と到着地、日付をお知らせいただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "東京から大阪へ、2023年4月15日に発車する新幹線を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "新幹線のチケット"
+    },
+    "test_id": "shopping_intent_0054",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この季節に必要な衣服を調査したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "ご希望の種類（例えば、男性用ジャケット、女性用ブラウスなど）と、予算をお知らせいただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "冬用のコートを探していますが、予算は15,000円程度です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冬用コート"
+    },
+    "test_id": "shopping_intent_0055",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、料理本をいくつか探してみました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなジャンルの料理本がお好みですか？また、特定のテーマやレベル（初心者向けなど）も教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "和食のレシピ集を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "和食レシピ集"
+    },
+    "test_id": "shopping_intent_0056",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、家電製品を替えたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "具体的にはどのような商品（テレビ、冷蔵庫など）と、予算はどの程度ですか？"
+      },
+      {
+        "role": "user",
+        "content": "新しい洗濯機を探していますが、10万円以下のものでいいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機"
+    },
+    "test_id": "shopping_intent_0057",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今年の夏休みの旅行先を比較したいと思っているんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "ご希望の目的地はどこですか？また、同伴者の人数や予算も教えていただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "京都と大阪を比較してほしいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "旅行先"
+    },
+    "test_id": "shopping_intent_0058",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマートウォッチを探しているんだけど、おすすめのモデルを教えてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、最新のスマートウォッチの中から人気や評価が高いものをご紹介します。例えば、Apple Watch Series 7とSamsung Galaxy Watch4がおすすめです。どちらも機能が豊富で使いやすいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "どちらを購入すべきか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ"
+    },
+    "test_id": "shopping_intent_0059",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今季のトレンドファッションについて教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、最近のトレンドをいくつか紹介します。例えば、カモフラージュやレオパード柄が人気です。また、ベーシックな色合いですが様々なコーディネートにマッチするグリーンもおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "トレンドファッション"
+    },
+    "test_id": "shopping_intent_0060",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、オンラインで激安の家具を見つけて、購入を考えています。"
+      },
+      {
+        "role": "assistant",
+        "content": "オンラインショッピングは便利ですね。激安商品を検索する前に、品質や返品ポリシーを確認することをお勧めします。価格が安いけど長持ちしないと使い物にならない家具は避けましょう。"
+      },
+      {
+        "role": "user",
+        "content": "良いアドバイスありがとうございます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "激安家具"
+    },
+    "test_id": "shopping_intent_0061",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、自宅でワークアウトを始めるつもりです。おすすめのエクササイズ機器はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "自宅用のエクササイズ機器はたくさんありますが、まず初めに体重マシンやストレングストレーニング器具がおすすめです。また、自重を使ってできるフィットネスも効果的ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます、参考になります。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "エクササイズ機器"
+    },
+    "test_id": "shopping_intent_0062",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今秋の新学期に向けて、学生向けのノートパソコンを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "学生様用のノートパソコンならこちらがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのモデルがいいか教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "学生向けノートパソコン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0063",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、家での運動器具を探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "家庭用フィットネス機器ならこちらがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのタイプが良いでしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "家庭用フィットネス機器",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0064",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の旅行で着る服を探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "旅行の服装ならこちらがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "具体的には何色を検討していますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "旅行用服装",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0065",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、高品質なスピーカーを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "高音質なスピーカーならこちらがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのシリーズが良いですか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "高品質スピーカー",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0066",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンを比較したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "現在比較したいスマートフォンのブランドやモデルを教えていただけますか？"
+      },
+      {
+        "role": "user",
+        "content": "ソニーとサムスンの最新モデルでお願いします。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0067",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいテレビを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような機能やサイズのテレビをお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "4K解像度で、50インチ以上の大型のものがいいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0068",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末に旅行を計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どの地域や観光地をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "静かな場所でゆっくりしたいので、日本庭園があるところがいいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "旅行",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0069",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいカメラを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "被写体や撮影目的によってカメラの種類も変わります。主にどのような用途で使用しますか？"
+      },
+      {
+        "role": "user",
+        "content": "写真を楽しみたいので、旅行用のものがあればいいですね。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0070",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今度の金曜日に飲み会があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どの種類のお酒が好まれますか？また、数量や予算も教えていただけますと幸いです。"
+      },
+      {
+        "role": "user",
+        "content": "日本酒と威士忌を少量ずつ買いたいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "お酒",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0071",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいスマートウォッチを探していますが、おすすめはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在人気のあるモデルはApple Watch Series 7やSamsung Galaxy Watch4ですね。長時間のバッテリー持ちとさまざまな健康モニタリング機能があります。"
+      },
+      {
+        "role": "user",
+        "content": "価格帯はどうですか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ"
+    },
+    "test_id": "shopping_intent_0072",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいテレビを買いたいのですが、高画質でおすすめのモデルはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在注目されているのはSamsung QLED TVやLG OLED TVです。高解像度と深みのある黒が特徴です。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの値段になりますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ"
+    },
+    "test_id": "shopping_intent_0073",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近車を購入しようと思っています。ハイブリッド車について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "ハイブリッド車は燃費が良いだけでなく、環境にも優しい特性があります。ToyotaプリウスやHonda Clarityなど人気モデルがありますね。"
+      },
+      {
+        "role": "user",
+        "content": "どの程度の価格帯になりますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ハイブリッド車"
+    },
+    "test_id": "shopping_intent_0074",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月結婚式に参加しますが、スーツはもう購入しています。しかし靴がまだありません。どのくらいの価格帯のものがおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "ビジネスフォーマルなスーツシューズなら、50,000円から100,000円程度のものが多いですね。ブランドや品質により価格は変わりますが、予算内で良質なものを見つけることができます。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ビジネスシューズ"
+    },
+    "test_id": "shopping_intent_0075",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい携帯電話を購入したいのですが、最近のiPhoneとAndroidの違いは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在のiPhoneはiOS operating systemで、使いやすさとセキュリティが高く評価されています。一方、Androidは多様な選択肢があり、カスタマイズ性が高いです。どちらも優秀な機種ですが、個人の使用目的や好みによって選ぶべきだと思います。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました。検討してみます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン"
+    },
+    "test_id": "shopping_intent_0076",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいテレビを見つけることに興味があるけど、おすすめはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在人気のあるモデルとしては、LGのOLEDテレビやSonyの4Kテレビがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "価格帯と性能面での比較を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "新しいテレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0077",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この週末に海外旅行に行く予定があるけど、どこがおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "アジアではタイやシンガポール、ヨーロッパであればイタリアやフランスが人気です。"
+      },
+      {
+        "role": "user",
+        "content": "期間が1週間くらいで予算は20万円程度と考えています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "海外旅行",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0078",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近ジムに通い始め、筋トレ用のウェアを探しているんですが、おすすめはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "機能性とデザインがバランスの取れたブランドとしては、Under ArmourやNikeが人気です。"
+      },
+      {
+        "role": "user",
+        "content": "軽量で吸水速乾性のあるものがあれば良いですね。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "筋トレ用ウェア",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0079",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新居を探しているんだけど、都内のいい物件はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "お探しの条件に合致する物件があれば、すぐにご案内できます。"
+      },
+      {
+        "role": "user",
+        "content": "予算は500万円程度で、1LDKが理想です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "賃貸物件",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0080",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近クッキングシューズを探していて、おすすめの商品があれば教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "料理をする際に活躍するのがGore-Tex素材のシューズです。"
+      },
+      {
+        "role": "user",
+        "content": "価格帯や販売店が知りたいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "クッキングシューズ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0081",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいカメラが気になってるんですが、おすすめのモデルを教えてくれますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。現在人気のあるモデルは『Canon EOS R5』や『Sony α7 IV』などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どちらのカメラも高性能そうですね。比較してみてくださいね。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ"
+    },
+    "test_id": "shopping_intent_0082",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今冬のアウターを買いたいと思っていますが、どんな種類があるか教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "冬向きのアウターはコートやジャケット、ダウンジャケットなどが人気です。"
+      },
+      {
+        "role": "user",
+        "content": "寒さ対策としてどのアウターが一番おすすめですか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "アウター"
+    },
+    "test_id": "shopping_intent_0083",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近家事を手伝いたいので、掃除機を捜しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "掃除機はロボット掃除機や電動掃除機など種類がありますが、どれを選んだらよいか迷ってしまうですよね。"
+      },
+      {
+        "role": "user",
+        "content": "実際にはどの掃除機のほうが良いのでしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機"
+    },
+    "test_id": "shopping_intent_0084",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新年度に向けて新しいスマートウォッチを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "スマートウォッチは健康管理や通知受信、スポーツモニタリングなど様々な機能があります。"
+      },
+      {
+        "role": "user",
+        "content": "どのモデルがお勧めですか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ"
+    },
+    "test_id": "shopping_intent_0085",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "家に新しい照明を設置しようと考えています。"
+      },
+      {
+        "role": "assistant",
+        "content": "照明はデザインと機能性から選ぶのが良いですね。LEDやインテリジェントライトなどがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どのタイプの照明が一番おすすめですか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "照明"
+    },
+    "test_id": "shopping_intent_0086",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、新しいスマートウォッチを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "様々なブランドとモデルがあり、ご興味のある機能はありますか？"
+      },
+      {
+        "role": "user",
+        "content": "長時間のバッテリー持続力や健康診断機能がついているものがいいですね。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0087",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "現在、家電量販店で電子レンジを比較しているところです。"
+      },
+      {
+        "role": "assistant",
+        "content": "比較する際の主な基準は何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "価格と容量が気になります。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0088",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今、冬物のコートを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "寒さ対策に特徴のある素材やデザインのものがいいですね。"
+      },
+      {
+        "role": "user",
+        "content": "軽くて暖かいコートが欲しくて探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "コート",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0089",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、自宅で映画を観れるようにDVDプレーヤーを考えています。"
+      },
+      {
+        "role": "assistant",
+        "content": "高音質なスピーカーや大容量のディスク収納が希望ですか？"
+      },
+      {
+        "role": "user",
+        "content": "価格帯とスピーカーの性能について教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "DVDプレーヤー",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0090",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今、料理器具を探していますが、何を選んだら良いか迷っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "料理の種類や頻度によって選択肢は変わりますよ。"
+      },
+      {
+        "role": "user",
+        "content": "週に2〜3回使うくらいで、耐久性のあるものがあれば良いですね。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "料理器具",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0091",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいデジタルカメラを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "現在人気のあるデジタルカメラをいくつかご紹介します。"
+      },
+      {
+        "role": "user",
+        "content": "価格と性能のバランスが良いモデルは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "デジタルカメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0092",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ソファを買い替えたいと考えています。"
+      },
+      {
+        "role": "assistant",
+        "content": "サイズや色、予算など具体的な情報があればより良い提案ができるかもしれません。"
+      },
+      {
+        "role": "user",
+        "content": "リビングの角に置きたいのですが、どのくらいの大きさがいいでしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ソファ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0093",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今度の週末にピクニックを計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "天候や場所、人数に応じて必要なアイテムを考えましょう。"
+      },
+      {
+        "role": "user",
+        "content": "飲み物は何種類必要でしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "飲み物（ピクニック用）",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0094",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、スープの素が手不足で困っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "お好みに合わせて選べるスープの素をいくつか紹介します。"
+      },
+      {
+        "role": "user",
+        "content": "トマトベースの物はどれがおすすめでしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スープの素（トマトベース）",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0095",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、運動不足を感じています。"
+      },
+      {
+        "role": "assistant",
+        "content": "自宅でできる軽い運動をいくつか提案します。"
+      },
+      {
+        "role": "user",
+        "content": "ヨガのDVDはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヨガのDVD",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0096",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しくカメラを購入したいのですが、おすすめの機種はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在人気のあるカメラはニコンD7500とCanon EOS R6です。どちらも性能が高く評価されています。"
+      },
+      {
+        "role": "user",
+        "content": "どの程度の予算で選べばいいでしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ"
+    },
+    "test_id": "shopping_intent_0097",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の旅行用に新しいバッグを購入したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "軽量かつ機能的なバッグはマッ.chrome_extension.067485e321b43a79_0.jpgcrocsのAltra_running_bagやTimberlandのWeekender_Bagがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "予算は約5万円前後でいいですが、どのくらいの価格帯でしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "旅行用バッグ"
+    },
+    "test_id": "shopping_intent_0098",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近パソコンが遅いので、新しいパソコンを検討しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "あなたの用途に合わせて選べばいいと思います。ゲームや動画編集をするのであれば、Intel Core i7以上のCPUと8GB以上のRAMを持つモデルを選ぶことをおすすめします。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、ありがとうございます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "パソコン"
+    },
+    "test_id": "shopping_intent_0099",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今月の月イチセールでパソコンを調達したいと思っていますが、どのような商品がおすすめでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "月イチセールでは通常価格よりも大幅に安くなります。性能面で見ると、最近のモデルを選ぶことをおすすめします。例えば、Intel Core i5搭載のノートPCであれば約4万円から購入できるでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "分かりました、早速探してみます"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "パソコン"
     },
     "test_id": "shopping_intent_0100",
     "category": "shopping_intent"

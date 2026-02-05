@@ -693,196 +693,6 @@
     "conversation": [
       {
         "role": "user",
-        "content": "Can we get some information about the famous director Akira Kurosawa?"
-      },
-      {
-        "role": "assistant",
-        "content": "Of course! What specific type of information would you like to know? Biographical details, his career highlights, or perhaps his notable achievements?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Akira Kurosawa",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0031",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "話は少し変わるけど、有名な俳優のTom Hardyについて教えてよ"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。Tom Hardyに関する情報が必要 apparently. Do you want to know about his biography, career, or achievements?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Tom Hardy",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0032",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "彼女は誰か知ってる？山口百恵について教えてよ"
-      },
-      {
-        "role": "assistant",
-        "content": "山口百恵のことを尋ねているのですね。彼女のプロフィールやキャリア、そして重要な成績を知りたいですか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Yasuko Yamauchi (山口百恵)",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0033",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、有名な科学者についての情報が必要だから、スティーブン・ホーキングについて教えて"
-      },
-      {
-        "role": "assistant",
-        "content": "ステファン・ホーキングの情報を得るのはわかります。彼の生い立ち、キャリア、また重要な業績は?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Stephen Hawking",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0034",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な女性政治家について知りたいんだけど、 Condoleezza Riceについて詳しく教えて"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。コンデリー・ライスの情報を得るのはわかりますね。彼女のキャリアと主要な業績について知りたいですか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Condoleezza Rice",
-      "info_type": "career"
-    },
-    "test_id": "celebrity_info_0035",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "歴史上の人物について、幕末期に活躍した坂本龍馬について詳しく知りたい。"
-      },
-      {
-        "role": "assistant",
-        "content": "坂本龍馬に関する情報を探しているのですね。彼の生い立ちや生涯について教えてくれますか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Sakamoto Ryoma",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0036",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、有名なアーティストについての情報が必要だから、Taylor Swiftについて教えて"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。 Tayler Swiftの情報を得るのはわかりますね。彼女のキャリアと主要な業績について知りたいですか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Taylor Swift",
-      "info_type": "achievements"
-    },
-    "test_id": "celebrity_info_0037",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "アカデミー賞を受賞した女優について教えて、キャリー・フィッシャーについて"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。キャリー・フィッシャーに関する情報を探しているのですね。彼女の生い立ちやキャリアについて知りたいですか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Carrie Fisher",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0038",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な物理学者、アインシュタインについて知りたい"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。アルベルト・アインシュタインに関する情報を探しているのですね。彼の生い立ちや生涯、そして重要な業績について知りたいですか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Albert Einstein",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0039",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "最近、有名な科学者について知りたいと思っているんだけど、ロバート・ムーアについて詳しく教えて"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。ロバート・ムーアに関する情報を探しているのですね。彼の生い立ちやキャリアについて知りたいですか?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Robert Moog",
-      "info_type": "career"
-    },
-    "test_id": "celebrity_info_0040",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
         "content": "映画監督について知りたいんですが、カーソン・ウィリアムズさんについて教えてください。"
       },
       {
@@ -899,26 +709,7 @@
       "person_name": "カーソン・ウィリアムズ",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0041",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Hey, do you have any information on Michael Phelps? I'm curious about his achievements in swimming."
-      },
-      {
-        "role": "assistant",
-        "content": "Sure, I can provide detailed information about Michael Phelps. Let's focus on his career and achievements."
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Michael Phelps",
-      "info_type": "achievements"
-    },
-    "test_id": "celebrity_info_0042",
+    "test_id": "celebrity_info_0031",
     "category": "celebrity_info"
   },
   {
@@ -941,45 +732,7 @@
       "person_name": "アリサ・キム",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0043",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について知りたいので、アルベルト・アインシュタインさんについて詳しく教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "アルベルト・アインシュタインの生涯と主要な成就について説明しましょう。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "アルベルト・アインシュタイン",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0044",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Can you give me some background on Barack Obama? I'm interested in his biography."
-      },
-      {
-        "role": "assistant",
-        "content": "Of course, let's start with Barack Obama's biography."
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Barack Obama",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0045",
+    "test_id": "celebrity_info_0032",
     "category": "celebrity_info"
   },
   {
@@ -1002,7 +755,7 @@
       "person_name": "Madonna",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0046",
+    "test_id": "celebrity_info_0033",
     "category": "celebrity_info"
   },
   {
@@ -1025,64 +778,7 @@
       "person_name": "ジェームズ・キャリオ",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0047",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "历史上最著名的数学家是誰呢？可以帮我查一下卡尔·弗里德里希·高斯吗？"
-      },
-      {
-        "role": "assistant",
-        "content": "好的，关于高斯的生平和主要成就，我会为您详细介绍。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "卡尔·弗里德里希·高斯",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0048",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について教えてください。アインシュタインの生涯と主要な発見を知りたいです。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです。アインシュタインの生涯と主要な発見について詳しく説明しましょう。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "アインシュタイン",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0049",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Can you give me information on the life of Elon Musk? I'm interested in his biography."
-      },
-      {
-        "role": "assistant",
-        "content": "Of course, let's start with Elon Musk's biography."
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Elon Musk",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0050",
+    "test_id": "celebrity_info_0034",
     "category": "celebrity_info"
   },
   {
@@ -1105,178 +801,7 @@
       "person_name": "ミラ・クニル",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0051",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Can you give me a brief biography on Barack Obama in English, please?"
-      },
-      {
-        "role": "assistant",
-        "content": "Sure! What kind of details do you need specifically about his life and career?"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Barack Obama",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0052",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について調べてみてください。アルベルト・アインシュタインの生涯と業績を教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。アインシュタインに関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "アルベルト・アインシュタイン",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0053",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "この本の著者について教えてください。『To Kill a Mockingbird』のアーネスト・ヘミングウェイです。"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、その情報が必要ですね。彼に関するキャリア情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "アーネスト・ヘミングウェイ",
-      "info_type": "career"
-    },
-    "test_id": "celebrity_info_0054",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "知りたいのは「カタールの元サッカー選手、サッジード・アル・カンビのキャリアと功績です。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。「サッジード・アル・カンビ」に関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "サッジード・アル・カンビ",
-      "info_type": "achievements"
-    },
-    "test_id": "celebrity_info_0055",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "日本の俳優、高橋洋樹について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、その情報が必要ですね。「高橋洋樹」に関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "高橋洋樹",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0056",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な物理学者、リチャード・フィッシャーについて教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。「リチャード・フィッシャー」に関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "リチャード・フィッシャー",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0057",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な歌手、ビヨンセについて詳しく教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、その情報が必要ですね。「ビヨンセ」に関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "ビヨンセ",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0058",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "日本の政治家、鈴木宗男についてキャリアを教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "はい、その情報が必要ですね。「鈴木宗男」に関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "鈴木宗男",
-      "info_type": "career"
-    },
-    "test_id": "celebrity_info_0059",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "アメリカの政治家、マティーニ・ロメロについて功績を教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました。「マティーニ・ロメロ」に関する情報を取得します。"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "マティーニ・ロメロ",
-      "info_type": "achievements"
-    },
-    "test_id": "celebrity_info_0060",
+    "test_id": "celebrity_info_0035",
     "category": "celebrity_info"
   },
   {
@@ -1299,7 +824,7 @@
       "person_name": "江崎玲於奈",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0061",
+    "test_id": "celebrity_info_0036",
     "category": "celebrity_info"
   },
   {
@@ -1322,7 +847,7 @@
       "person_name": "トム・クルーズ",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0062",
+    "test_id": "celebrity_info_0037",
     "category": "celebrity_info"
   },
   {
@@ -1345,7 +870,7 @@
       "person_name": "アインシュタイン",
       "info_type": "general"
     },
-    "test_id": "celebrity_info_0063",
+    "test_id": "celebrity_info_0038",
     "category": "celebrity_info"
   },
   {
@@ -1368,178 +893,7 @@
       "person_name": "Steven Spielberg",
       "info_type": "general"
     },
-    "test_id": "celebrity_info_0064",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "はい、映画監督についての情報が必要です。スティーヴン・スピルバーグさんについて詳しく教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです。スティーヴン・スピルバーグに関する情報を提供します。まずはキャリアと代表作についてどのようにお伝えするのがよろしいでしょうか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Steven Spielberg",
-      "info_type": "career"
-    },
-    "test_id": "celebrity_info_0065",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な俳優さんについて知りたいですね。例えば、アレック・ボールドウィンについて教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "アレック・ボールドウィンに関する情報を取得します。あなたが特に興味のある情報はありますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Alec Baldwin",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0066",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "歴史的な人物について知りたいです。例えば、サミュエル・デイビッドソンという人について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました！サミュエル・デイビッドソンに関する情報を取得します。あなたが特に興味のある情報はありますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Samuel de Champlain",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0067",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について知りたいです。例えば、アインシュタインの生涯や業績について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです！アルベルト・アインシュタインに関する情報を提供します。まず最初にその人生と成就について詳しく説明しますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Albert Einstein",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0068",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名なアーティストについて知りたいです。例えば、ポール・マッカートニーのキャリアと業績について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "ポール・マッカートニーに関する情報を取得します。あなたが特に興味のある情報はありますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Paul McCartney",
-      "info_type": "career"
-    },
-    "test_id": "celebrity_info_0069",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について教えてください。例えば、エミール・コクトーという人物の生涯や業績について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました！エミール・コクトーに関する情報を提供します。まずその人生と成就について詳しく説明しますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Emile Côté",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0070",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な作家について知りたいです。例えば、村上春樹の生涯と主な作品について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "もちろんです！村上春樹に関する情報を提供します。まずその人生と主要な作品について詳しく説明しますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Haruki Murakami",
-      "info_type": "biography"
-    },
-    "test_id": "celebrity_info_0071",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について知りたいです。例えば、ノーベル賞受賞者の情報が必要なので、アラン・チューリングの生涯と業績について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました！アラン・チューリングに関する情報を提供します。まずその人生と主要な成就について詳しく説明しますか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Alan Turing",
-      "info_type": "achievements"
-    },
-    "test_id": "celebrity_info_0072",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "有名な科学者について知りたいです。例えば、アレクサンドル・グリーンバーグという人物の生涯や業績について教えてください。"
-      },
-      {
-        "role": "assistant",
-        "content": "了解しました！アレクサンドル・グリーンバーグに関する情報を取得します。まずはその人生と成就についてどのようにお伝えするのがよろしいでしょうか？"
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Alexander Greenberg",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0073",
+    "test_id": "celebrity_info_0039",
     "category": "celebrity_info"
   },
   {
@@ -1562,30 +916,7 @@
       "person_name": "山田太郎",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0074",
-    "category": "celebrity_info"
-  },
-  {
-    "conversation": [
-      {
-        "role": "user",
-        "content": "Could you give me some information on Audrey Hepburn?"
-      },
-      {
-        "role": "assistant",
-        "content": "celebrity_info関数を呼び出して、Audrey Hepburnさんの情報を取得します。"
-      },
-      {
-        "role": "user",
-        "content": "Sure, go ahead."
-      }
-    ],
-    "expected_function": "celebrity_info",
-    "expected_arguments": {
-      "person_name": "Audrey Hepburn",
-      "info_type": "general"
-    },
-    "test_id": "celebrity_info_0075",
+    "test_id": "celebrity_info_0040",
     "category": "celebrity_info"
   },
   {
@@ -1608,7 +939,7 @@
       "person_name": "ジンジャー・マクドナルド",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0076",
+    "test_id": "celebrity_info_0041",
     "category": "celebrity_info"
   },
   {
@@ -1631,7 +962,7 @@
       "person_name": "カトリーナ・バーウェイ",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0077",
+    "test_id": "celebrity_info_0042",
     "category": "celebrity_info"
   },
   {
@@ -1654,7 +985,7 @@
       "person_name": "明石家さんま",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0078",
+    "test_id": "celebrity_info_0043",
     "category": "celebrity_info"
   },
   {
@@ -1677,7 +1008,7 @@
       "person_name": "マット・デイモン",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0079",
+    "test_id": "celebrity_info_0044",
     "category": "celebrity_info"
   },
   {
@@ -1700,7 +1031,7 @@
       "person_name": "安室奈美恵",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0080",
+    "test_id": "celebrity_info_0045",
     "category": "celebrity_info"
   },
   {
@@ -1723,7 +1054,7 @@
       "person_name": "スティーブン・ホーキング",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0081",
+    "test_id": "celebrity_info_0046",
     "category": "celebrity_info"
   },
   {
@@ -1746,7 +1077,7 @@
       "person_name": "バラク・オバマ",
       "info_type": "general"
     },
-    "test_id": "celebrity_info_0082",
+    "test_id": "celebrity_info_0047",
     "category": "celebrity_info"
   },
   {
@@ -1769,7 +1100,7 @@
       "person_name": "ピeter Paul Rubens",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0083",
+    "test_id": "celebrity_info_0048",
     "category": "celebrity_info"
   },
   {
@@ -1792,7 +1123,7 @@
       "person_name": "山田洋次",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0084",
+    "test_id": "celebrity_info_0049",
     "category": "celebrity_info"
   },
   {
@@ -1815,7 +1146,7 @@
       "person_name": "アンドリュー・ラッキー",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0085",
+    "test_id": "celebrity_info_0050",
     "category": "celebrity_info"
   },
   {
@@ -1838,7 +1169,7 @@
       "person_name": "ジェイ・ボーンズ",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0086",
+    "test_id": "celebrity_info_0051",
     "category": "celebrity_info"
   },
   {
@@ -1861,7 +1192,7 @@
       "person_name": "バラク・オバマ",
       "info_type": "general"
     },
-    "test_id": "celebrity_info_0087",
+    "test_id": "celebrity_info_0052",
     "category": "celebrity_info"
   },
   {
@@ -1884,7 +1215,7 @@
       "person_name": "浅野忠信",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0088",
+    "test_id": "celebrity_info_0053",
     "category": "celebrity_info"
   },
   {
@@ -1907,7 +1238,7 @@
       "person_name": "スティーブン・ホーキング",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0089",
+    "test_id": "celebrity_info_0054",
     "category": "celebrity_info"
   },
   {
@@ -1930,7 +1261,7 @@
       "person_name": "安室奈美恵",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0090",
+    "test_id": "celebrity_info_0055",
     "category": "celebrity_info"
   },
   {
@@ -1953,7 +1284,7 @@
       "person_name": "村上春樹",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0091",
+    "test_id": "celebrity_info_0056",
     "category": "celebrity_info"
   },
   {
@@ -1976,7 +1307,7 @@
       "person_name": "安倍晋三",
       "info_type": "general"
     },
-    "test_id": "celebrity_info_0092",
+    "test_id": "celebrity_info_0057",
     "category": "celebrity_info"
   },
   {
@@ -1999,7 +1330,7 @@
       "person_name": "スティーブン・ホーキング",
       "info_type": "biography"
     },
-    "test_id": "celebrity_info_0093",
+    "test_id": "celebrity_info_0058",
     "category": "celebrity_info"
   },
   {
@@ -2022,7 +1353,7 @@
       "person_name": "Joe Biden",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0094",
+    "test_id": "celebrity_info_0059",
     "category": "celebrity_info"
   },
   {
@@ -2045,7 +1376,7 @@
       "person_name": "Mariah Carey",
       "info_type": "general"
     },
-    "test_id": "celebrity_info_0095",
+    "test_id": "celebrity_info_0060",
     "category": "celebrity_info"
   },
   {
@@ -2068,7 +1399,7 @@
       "person_name": "Kiyu Kishi",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0096",
+    "test_id": "celebrity_info_0061",
     "category": "celebrity_info"
   },
   {
@@ -2091,7 +1422,7 @@
       "person_name": "Albert Einstein",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0097",
+    "test_id": "celebrity_info_0062",
     "category": "celebrity_info"
   },
   {
@@ -2114,7 +1445,7 @@
       "person_name": "Steve Jobs",
       "info_type": "achievements"
     },
-    "test_id": "celebrity_info_0098",
+    "test_id": "celebrity_info_0063",
     "category": "celebrity_info"
   },
   {
@@ -2137,7 +1468,7 @@
       "person_name": "Takuya Kimura",
       "info_type": "career"
     },
-    "test_id": "celebrity_info_0099",
+    "test_id": "celebrity_info_0064",
     "category": "celebrity_info"
   },
   {
@@ -2159,6 +1490,811 @@
     "expected_arguments": {
       "person_name": "Maurice Ringuet",
       "info_type": "general"
+    },
+    "test_id": "celebrity_info_0065",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本人志は1962年生まれの日本のタレント、司会者、そして comedienne としても有名です。彼は1980年代から活動を始め、多くのテレビ番組で活躍しています。代表的な作品には『笑っていいとも!』があります。"
+      },
+      {
+        "role": "user",
+        "content": "詳しく知りたいので、キャリアについても教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0066",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹の功績を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "村上春樹は日本の現代小説家で、1987年に『1Q84』という作品でデビューしました。多くのファンから支持され、「国宝」や「世界文化賞」を受賞しています。また、彼の文学性と独創的な文体は、世界的に高い評価を受けています。"
+      },
+      {
+        "role": "user",
+        "content": "それに関連して、彼の生い立ちについても教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "村上春樹",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0067",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "深田恭子の代表作を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "深田恭子は女優として有名で、『金田一少年の事件簿』や『ガリレオ』などの人気ドラマに出演しています。彼女は演技力と美貌から多くのファンを持つ人気俳優です。"
+      },
+      {
+        "role": "user",
+        "content": "その中でも特に好きだった作品を教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "深田恭子",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0068",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "井上雄彦の経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "井上雄彦は日本の漫画家、元バスケットボール選手で、代表作に『SLAM DUNK』があります。彼はバスケットボール選手として10年間活動した後、1996年にデビューし、多くの読者から支持されています。"
+      },
+      {
+        "role": "user",
+        "content": "その他の作品についても教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "井上雄彦",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0069",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "西村諒のキャリアについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "西村諒は日本の弁護士、著者で、法律関連の書籍を多数出版しています。彼は法曹界と一般読者に多くの影響を与えています。代表作には『弁護士が言う!』があります。"
+      },
+      {
+        "role": "user",
+        "content": "その他の著作についても教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "西村諒",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0070",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "松本人志は1964年8月23日に東京都に生まれました。お笑いコンビ「 timp」のメンバーとして知られており、「サタデー NIGHT」や「ヒルズ」など人気番組にも出演しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアについてもっと詳しくなさるよ"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0071",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤優について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤優は1957年4月20日に生まれた元外交官で、現職の政治家です。外務省に勤務し、数多くの海外駐在を経験しています。その後、衆議院議員として活動しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主要な功績について詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤優",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0072",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "徳川家康の人生を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "徳川家康は江戸幕府初代将軍として知られる日本の武将です。1543年2月6日に生まれ、豊臣秀吉と並んで日本の歴史上で最も重要な人物の一人と言われています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主な功績は何だったか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "徳川家康",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0073",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田ルイ530について詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "山田ルイ530は元Jリーグの選手で、現在はサッカー評論家として知られています。1972年1月28日に生まれ、その活躍により日本のサッカー界に大きな影響を与えました。"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアについてもっと詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田ルイ530",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0074",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田聖子について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松田聖子は1964年7月2日に生まれた日本の歌手、女優です。1980年代にメジャーデビューし、「君が好きだった」や「星を抱きしめて」といったヒット曲で有名になりました。"
+      },
+      {
+        "role": "user",
+        "content": "彼女の主要な功績とは何でしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田聖子",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0075",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは1980年に東京都出身の俳優で、多くの映画やドラマに出演しています。代表作には『銀河鉄道の夜』があります。"
+      },
+      {
+        "role": "user",
+        "content": "その他の作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0076",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹さんの功績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "村上春樹さんは現代文学の大家で、『1Q84』や『ノルウェイの森』など多くのbestsellerを生み出しました。ノーベル文学賞も受賞しています。"
+      },
+      {
+        "role": "user",
+        "content": "他の作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "村上春樹",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0077",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "菅田将暉さんのキャリアについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "菅田将暉さんは2013年にデビューし、『君が favourite になれる場所』で俳優デビューしました。以来、多くの映画やドラマに出演しています。"
+      },
+      {
+        "role": "user",
+        "content": "最近の作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "菅田将暉",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0078",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高橋洋平さんの功績を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "高橋洋平さんは柔道選手として活躍し、オリンピックで金メダルを獲得しています。その後、政治家としても活動しており、現在は衆議院議員です。"
+      },
+      {
+        "role": "user",
+        "content": "それ以外の功績は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "高橋洋平",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0079",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "北野武さんは俳優、監督として多才な人物で、『座頭市』や『ヒトデ』などの映画で知られています。"
+      },
+      {
+        "role": "user",
+        "content": "それ以外の活動は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "北野武",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0080",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "藤本美貴選手について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "藤本美貴選手は元バレーボール選手で、日本女子代表として活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "どのような経歴や功績がありましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "藤本美貴",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0081",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中道子さんの生涯について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中道子さんは日本初の金メダリストとして有名な陸上競技選手です。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどのような経歴がありましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中道子",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0082",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山本健司さんのキャリアを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "山本健司さんは元サッカー選手で、日本代表として多くの試合に出場しました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的な活躍した時期は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山本健司",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0083",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "江崎lohmiの創立者について詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "江崎lohmiは1925年に江崎玲於奈によって創業されました。"
+      },
+      {
+        "role": "user",
+        "content": "どのような功績があったのでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "江崎玲於奈",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0084",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本清張さんについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本清張さんは日本の推理小説作家として有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような生涯を送られましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本清張",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0085",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中の経歴やキャリアについてお伝えしましょう。田中さんは、日本のプロ野球選手で、数多くの試合に出場し、打撃成績も素晴らしい実績があります。"
+      },
+      {
+        "role": "user",
+        "content": "具体的な栄誉は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0086",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤さんは日本の政治家で、数々の政策を推進し、国民から高い支持を得ています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的には？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0087",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本さんの生涯について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本さんは日本の俳優で、長年にわたり多くの映画やドラマに出演し、幅広い年齢層から支持されています。"
+      },
+      {
+        "role": "user",
+        "content": "有名な作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0088",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中の経歴は非常に豊かで、若くしてプロスポーツ選手として活躍し始めました。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、その後のキャリアも興味があります。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0089",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本先生について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本先生は教育分野で非常に大きな功績を残しており、多くの若手教師に影響を与えています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的な業績についても詳しく教えていただけますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0090",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福山さんはなぜ有名ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "福山はその魅力的な声と演技力で人気を博し、多くのファンを持つアーティストです。"
+      },
+      {
+        "role": "user",
+        "content": "これまでの経歴についても教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "福山",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0091",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中の俳優生活は1980年代から始まり、『花咲け』で注目を集めました。その後も多くの作品に出演し続け、演技力と人気を兼ね備えています。"
+      },
+      {
+        "role": "user",
+        "content": "田中さんについてもっと詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0092",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松下奈緒のキャリアについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松下奈緒は1980年代にモデルとしてデビューし、その後女優としても活躍しています。代表作には『東京ターミナル』などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "具体的な仕事内容についても教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松下奈緒",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0093",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "森田一義について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "森田一義は1970年代に活躍した俳優で、『男たちの質問』など多くの作品に出演しました。その演技力は高く評価されています。"
+      },
+      {
+        "role": "user",
+        "content": "森田一義さんの主な功績は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "森田一義",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0094",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "菅首相の経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "菅義偉首相は政治家として長く活躍し、前内閣で総理大臣を務めました。その経歴には多くの政策実現の功績があります。"
+      },
+      {
+        "role": "user",
+        "content": "菅首相はどのような人物か教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "菅首相",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0095",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮沢賢治について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "宮沢賢治は日本の文学家で、代表作の『銀河鉄道の夜』は多くの人に親しまれています。"
+      },
+      {
+        "role": "user",
+        "content": "宮沢賢治さんの他の作品も教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "宮沢賢治",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0096",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福山雅治さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "福山雅治さんは1973年生まれの日本の歌手、俳優です。1994年にデビューし、「FAREWELL」で大ヒットを記録しました。その後も多くのシングルとアルバムをリリースし、2006年には『君が好きだったって Said the Bird』で第58回NHK紅白歌合戦に初出場するなど、音楽活動を続けています。"
+      },
+      {
+        "role": "user",
+        "content": "福山さんの映画での活躍もすごいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "福山雅治",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0097",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中卓志選手の活躍について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中卓志選手は元プロ野球選手で、主に投手として活躍しました。1983年生まれで、2005年にDeNAからドラフト1位で入団しました。その後も様々なチームでプレーし、2014年の引退まで長く活躍しました。特に、その技術と粘り強さは多くの野球ファンに好評でした。"
+      },
+      {
+        "role": "user",
+        "content": "彼の引退後の活動についても教えてくださいね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中卓志",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0098",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志さんの経歴を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本人志さんは1970年生まれの日本のタレント、芸人です。1993年に『バカ殿』でデビューし、その後は様々なテレビ番組に出演しています。特に『オールナイトフジ』や『バイキング』では定時番組として知られており、人気を博しています。また、俳優としても作品に参加しており、幅広い活躍を見せております。"
+      },
+      {
+        "role": "user",
+        "content": "松本さんの趣味がどのようなものか興味があります。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0099",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田利彦選手について、キャリアを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松田利彦選手は、プロ野球で活躍した選手の一人です。彼は1983年に東北楽天ゴールデンイーグルスに入団し、2004年まで活躍しました。代表的な成績としては、2002年の日本シリーズ優勝や、通算176本塁打を記録しています。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田利彦",
+      "info_type": "career"
     },
     "test_id": "celebrity_info_0100",
     "category": "celebrity_info"

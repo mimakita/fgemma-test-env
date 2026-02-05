@@ -264,15 +264,34 @@ def main():
         logger.error("No test data found!")
         sys.exit(1)
 
-    # Run evaluation
-    logger.info(f"Evaluating {len(test_data)} test cases...")
+    # Check for resumable checkpoint
+    checkpoint_file = output_dir / "checkpoint.json"
     results = []
+    start_idx = 0
+
+    if checkpoint_file.exists():
+        try:
+            with open(checkpoint_file, "r", encoding="utf-8") as f:
+                checkpoint = json.load(f)
+            results = checkpoint.get("results", [])
+            start_idx = len(results)
+            if start_idx > 0:
+                logger.info(f"Resuming from checkpoint: {start_idx}/{len(test_data)} already done")
+        except Exception as e:
+            logger.warning(f"Failed to load checkpoint: {e}")
+            results = []
+            start_idx = 0
+
+    # Run evaluation
+    logger.info(f"Evaluating {len(test_data)} test cases (starting from {start_idx})...")
     start_time = time.time()
 
-    for i, case in enumerate(test_data):
+    for i in range(start_idx, len(test_data)):
+        case = test_data[i]
         if (i + 1) % 10 == 0:
             elapsed = time.time() - start_time
-            rate = (i + 1) / elapsed
+            done_in_session = i - start_idx + 1
+            rate = done_in_session / elapsed if elapsed > 0 else 0
             eta = (len(test_data) - i - 1) / rate if rate > 0 else 0
             logger.info(
                 f"Progress: {i + 1}/{len(test_data)} "
@@ -283,8 +302,19 @@ def main():
         result = evaluate_single(router, case)
         results.append(result)
 
+        # Save checkpoint every 50 cases
+        if (i + 1) % 50 == 0:
+            output_dir.mkdir(parents=True, exist_ok=True)
+            with open(checkpoint_file, "w", encoding="utf-8") as f:
+                json.dump({"results": results}, f, ensure_ascii=False)
+            logger.info(f"Checkpoint saved at {i + 1}/{len(test_data)}")
+
     elapsed = time.time() - start_time
     logger.info(f"Evaluation completed in {elapsed:.1f}s")
+
+    # Remove checkpoint after successful completion
+    if checkpoint_file.exists():
+        checkpoint_file.unlink()
 
     # Compute metrics
     metrics = compute_metrics(results)

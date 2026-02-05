@@ -7,14 +7,12 @@ SCHEMA = {
     "properties": {
         "person_name": {
             "type": "string",
-            # "description": "Name of the famous or notable person",
-            "description": "有名人や著名人の名前",
+            "description": "Name of the famous or notable person",
         },
         "info_type": {
             "type": "string",
             "enum": ["biography", "career", "achievements", "general"],
-            # "description": "Type of information requested about the person",
-            "description": "その人物についてリクエストされた情報の種類",
+            "description": "Type of information requested about the person",
         },
     },
     "required": ["person_name"],
@@ -39,11 +37,9 @@ def register(registry: FunctionRegistry):
         FunctionDefinition(
             name="celebrity_info",
             description=(
-                # "Get information about a famous or notable person, including their "
-                # "biography, career, and achievements. Use when the user asks about "
-                # "a celebrity, public figure, historical person, or notable individual."
-                "有名人や著名人の経歴、キャリア、功績などの情報を取得する。"
-                "ユーザーが芸能人、公人、歴史上の人物、著名人について尋ねた時に使用する。"
+                "Get information about a famous or notable person, including their "
+                "biography, career, and achievements. Use when the user asks about "
+                "a celebrity, public figure, historical person, or notable individual."
             ),
             parameters=SCHEMA,
             handler=celebrity_info_handler,
