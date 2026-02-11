@@ -66,38 +66,115 @@
   - 一部ミスルート確認 (京都観光→shopping, イチロー→travel) - zero-shot 270M の限界として想定内
 - ユニットテスト: 11 tests all passing ✅
 
-### Phase 5: テストデータ生成 (進行中)
+### Phase 5: テストデータ生成
 
-- qwen2.5:7b でテストデータ生成を開始
-- 生成完了:
-  - `travel_guide.json`: 100件 ✅
-  - `celebrity_info.json`: 100件 ✅
-  - `shopping_intent.json`: 100件 ✅
-- 残り:
-  - `sentiment_label`: 生成中
-  - `weather_info`: 未着手
-  - `schedule_reminder`: 未着手
-  - `translation_assist`: 未着手
-  - `no_function`: 250件 未着手
-- M1 8GB での qwen2.5:7b は 1バッチ(10件)あたり2-4分程度
+- qwen2.5:7b でテストデータ生成完了 (合計 1900件)
+  - 各Function: 200件
+  - no_function: 500件
 
-### 設計上の判断事項
+---
 
-1. **Router の二段構え**: Ollama の構造化 `tool_calls` を優先し、失敗時は raw output の regex パースにフォールバック
-2. **num_ctx=4096**: 8GB RAM でのKVキャッシュ節約のため 32K ではなく 4096 に制限
-3. **keep_alive 戦略**: gemma3:4b は 10m、functiongemma は 5m (小さいので再ロードが速い)
-4. **テストデータ生成**: バッチサイズ 10、最大3回リトライ、JSON バリデーション + 重複排除
-5. **提案追加Function**: weather_info, schedule_reminder, translation_assist の3つを追加 (合計7 Function)
+## 2025-02-10~11: LoRA Fine-tuning 実験
 
-### 既知の課題
+### 目的
+FunctionGemma (270M) を LoRA Fine-tuning して、function calling 精度を改善する。
 
-- FunctionGemma zero-shot 精度は公式ベンチマークで ~58%、Fine-tuning なしでは限界がある
-- 日本語入力での一部ミスルート (Function description を英語で記述しているため)
-- qwen2.5:7b のJSON生成が不安定な場合あり (リトライで対処)
+### 環境準備
+
+```bash
+# Fine-tuning 用の Python 3.12 環境を作成
+python3.12 -m venv .venv-ft
+source .venv-ft/bin/activate
+pip install torch transformers peft accelerate datasets
+```
+
+### 試行1: MLX-LM LoRA (失敗)
+
+Apple Silicon向けの mlx-lm を使用してLoRA学習を試みた。
+
+**問題点:**
+- 学習後のモデル出力が壊れる（`implantation)implantation...`のような無意味な文字列が出力）
+- ハイパーパラメータを調整しても改善せず
+
+**結論:** mlx-lm はこのモデルには適さないため断念。
+
+### 試行2: Transformers + PEFT (Run 1)
+
+HuggingFace Transformers + PEFT ライブラリに切り替え。
+
+**設定:**
+- Model: google/functiongemma-270m-it
+- LoRA rank: 8, alpha: 16
+- Learning rate: 2e-5
+- Max steps: 200
+- Training data: 1368件（不均衡: no_function 361件 vs 各function ~145件）
+
+**問題点:**
+1. 最初の学習で loss が 0.0 のまま（ラベルマスク処理のバグ）
+   - 原因: tool descriptions が長すぎて max_length=512 でtruncate、応答部分が消失
+   - 解決: tool descriptions を簡略化
+
+2. MPSメモリ不足エラー
+   - 解決: batch_size=1, max_length=512 に削減
+
+**結果:**
+| Metric | Baseline | Fine-tuned |
+|--------|----------|------------|
+| Accuracy | 28.4% | 22.6% |
+| weather_info Recall | 0% | 97.5% |
+| travel_guide Recall | 7.5% | 67.5% |
+| celebrity_info Recall | 20% | 0% |
+| schedule_reminder Recall | 0% | 0% |
+
+**考察:**
+- 一部の関数（weather_info, travel_guide）で大幅改善
+- しかし全体精度は低下
+- データ不均衡（no_function が多すぎ）が原因と推測
+
+### 試行3: Balanced Data + 強化パラメータ (Run 2) - 進行中
+
+**改善点:**
+1. データバランス調整: 各カテゴリ160件に統一（合計1280件）
+2. LoRA rank: 16 (8から増加)
+3. LoRA alpha: 32 (16から増加)
+4. Target modules: attention + MLP layers (q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj)
+5. Dropout: 0.1 (0.05から増加)
+6. Learning rate: 3e-5 (2e-5から増加)
+7. Max steps: 500 (200から増加)
+8. Warmup steps: 50 (20から増加)
+
+**進捗:**
+- Checkpoint 100: loss 0.40 (順調に減少)
+- 評価実行中...
+
+### 作成・更新ファイル
+
+| File | Description |
+|------|-------------|
+| `tools/split_data.py` | データ分割 + バランス調整機能追加 |
+| `tools/finetune_peft.py` | PEFT LoRA学習スクリプト (推奨) |
+| `tools/finetune_lora.py` | MLX LoRA学習スクリプト (非推奨) |
+| `tools/evaluate_peft.py` | PEFT評価スクリプト |
+| `CLAUDE.md` | ドキュメント更新 |
+| `.gitignore` | Fine-tuning成果物を除外 |
+
+### M1 8GB でのメモリ制約対応
+
+1. `PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0` 環境変数でメモリ上限を緩和
+2. batch_size=1, gradient_accumulation_steps=4
+3. max_length=512 (デフォルト1024から削減)
+4. gradient_checkpointing は無効（逆にメモリ増加したため）
+
+### 学習時間
+
+| 設定 | 時間 |
+|------|------|
+| 200 steps | ~1時間 |
+| 500 steps | ~4-5時間 (推定) |
 
 ### 次のステップ
 
-- [ ] テストデータ生成完了を待つ (残り 4 Function + no_function)
-- [ ] `python -m tools.evaluate` で全体評価を実行
-- [ ] 評価結果に基づいてFunction description の改善を検討
-- [ ] 必要に応じて FunctionGemma の Fine-tuning を検討
+- [ ] Run 2 (500 steps) の完了を待つ
+- [ ] Checkpoint 100, 200, 300, 400, 500 での精度を比較
+- [ ] 最良チェックポイントを採用
+- [ ] 必要に応じてさらなるハイパーパラメータ調整

@@ -2294,5 +2294,2298 @@
     },
     "test_id": "travel_guide_0100",
     "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都旅行について教えてください。何を訪れるのがおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都市内にはたくさんの観光スポットがありますが、特に清水寺や金閣寺はぜひ訪れることをお勧めします。"
+      },
+      {
+        "role": "user",
+        "content": "その他のおすすめスポットは何ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0101",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行く計画を立てています。おすすめの旅行プランは？"
+      },
+      {
+        "role": "assistant",
+        "content": "おすすめのプランは、浅草寺や上野公園から始めて、新宿の繁華街や歌舞伎座へと訪れるineraryですね。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらい時間がかかると思いますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0102",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の食事を教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "おすすめの飲食店は？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0103",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良にはどんな見所がありますか？"
+      },
+      {
+        "role": "user",
+        "内容は多々あります。特に法隆寺や東大寺は必見です。また、奈良公園では鹿と触れ合う経験もできます。": "",
+        "content": "交通手段について教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0104",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行きたいと思っているのですが、おすすめの観光スポットはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、もちろんあります。東京塔や明治神宮、そして浅草寺がおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "混雑具合はどの程度ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0105",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行きたいんですが、おすすめの観光スポットはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "絶対に訪れたいところとして、明治神宮や浅草寺を挙げることができます。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます！"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0106",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の旅について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしい選択です。金閣寺や清水寺はぜひ訪ねてみてください。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0107",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道の食事についてアドバイスをください。"
+      },
+      {
+        "role": "assistant",
+        "content": "北海道は新鮮な食材が豊富で、特に有名なのは寿司やラーメンです。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました！"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0108",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪はどんな観光地がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "心斎橋や大阪城は非常に人気のある観光スポットです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます！"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0109",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡の旅行計画についてアドバイスしていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "天神や筑紫野はショッピングや食事を楽しむのに最適なエリアです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます！"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0110",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行きたいけど、おすすめの観光地は？"
+      },
+      {
+        "role": "assistant",
+        "content": "隅田川を散歩して隅田公園でランチ如何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね、交通手段は？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0111",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の旅計画を考えているんだけど、まずは何から始める？"
+      },
+      {
+        "role": "assistant",
+        "content": "嵐山での散歩はいかがですか？竹林や川沿いを歩いてみてください。"
+      },
+      {
+        "role": "user",
+        "content": "美味しいご飯も食べたいな"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0112",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "パリに行きた骖何所がおすすめ？"
+      },
+      {
+        "role": "assistant",
+        "content": "ルーヴル美術館は絶対訪れてください。"
+      },
+      {
+        "role": "user",
+        "content": "次は何行いますか"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "パリ",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0113",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "広島に旅行に行く前に、観光ガイドを教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "原爆ドームは絶対訪れてください。それから安佐北区でランチもおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "広島",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0114",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄の旅行を計画しているんだけど、観光地は？"
+      },
+      {
+        "role": "assistant",
+        "content": "首里城と国際通りがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0115",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京を訪れる際の旅行情報について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "東京には様々な観光スポットがあります。例えば、明治神宮や上野公園などをお勧めします。"
+      },
+      {
+        "role": "user",
+        "content": "那覇に行きたいと思いますが、おすすめの観光地を教えていただけますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0116",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に行きたいけど、おすすめの観光地はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "当然ですが、金閣寺は絶対に行ってもらいたい場所です。四季折々の美しさを楽しめますよ。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。それから何をお勧めしますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0117",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新宿でおすすめの飲食店を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "新宿では、「すきやばし次郎」が人気です。しゃぶしゃぶやホルモンなど、地元の方々に愛されるメニューが充実していますよ。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます、行こうと思います"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "新宿",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0118",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の観光地について詳しく教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "東京塔はもちろんですが、晴れの日には隅田川を眺めながら上層階に登ることもできます。また、新宿のコラソウも絶対に行ってみてください。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます、行ってみます"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0119",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行こうと考えているんですが、おすすめの観光地はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "絶対に行きたい場所は浅草です。雷門や仲見世通りを楽しむことができます。"
+      },
+      {
+        "role": "user",
+        "content": "じゃあそこから歩いてどこ行けますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0120",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都でおすすめの観光地は？"
+      },
+      {
+        "role": "assistant",
+        "content": "嵐山は散歩が楽しい場所です。竹林の道や渡月橋をぜひ見てください。"
+      },
+      {
+        "role": "user",
+        "content": "那曲駅から近いかな？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0121",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄には何日くらいで回れる場所がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "2泊3日では宮古島と本島を回る行程が一般的です。"
+      },
+      {
+        "role": "user",
+        "content": "那覇からどちらに行けばよいですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0122",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の食事はどんなのがありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪ならコラーゲン効果で有名な大阪らしだりがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "それ以外にも美味しいもの有哪些？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0123",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良に観光に行きたいですが、何を見たらよいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東大寺や春日大社がおすすめです。特に桜の時期は絶景ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "那覇からそれに行くにはどのくらい時間がかかるんですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0124",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に行きたいと思っているのですが、おすすめの観光スポットは何がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都是日本を代表する観光地で、金閣寺や清水寺など多くの名所があります。特に紅葉シーズンは絶景ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "交通手段は何が便利ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0125",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に旅行に行く計画を立てていますが、おすすめのレストランはどこがありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "銀座や渋谷には美味しい飲食店が多くあります。和食から洋食まで幅広いメニューがありますよ。"
+      },
+      {
+        "role": "user",
+        "content": "どんな料理が食べられるんですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0126",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行く予定です。観光スポットを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "絶対行かなくてはならない場所がいくつかあります。まずは明治神宮参道、そして浅草の雷門と東京スカイツリーをおすすめします。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0127",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都で美味しいもの吃什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都にはたくさんの伝統的な料理があります。抹茶スイーツは絶対に行かなければなりません。また、祇園の通りでは多くの和菓子店を見つけることができます。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0128",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪で観光したいです。何を訪れるべきですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪城やアメリカ村のショッピング、そして新世界の食事を楽しむことができます。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0129",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良でおすすめの観光地は？"
+      },
+      {
+        "role": "assistant",
+        "content": "東大寺や金閣寺、そして奈良公園での鹿との遭遇も絶対に見逃せません。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0130",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡旅行を考えています。どのくらいの日数で回れるか教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "福岡は1泊2日で充分な観光を楽しめます。博多駅から徒歩圏内に多くの名所がありますので、移動もスムーズです。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました、旅行計画を立てます。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0131",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都旅行の見所について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "京都は歴史的な観光地がたくさんあります。金閣寺や伏见稻荷大社、平等院などおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの時間で回れるか教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0132",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪のグルメについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪は食が豊富な街で、たこ焼きやコラーゲンラーメンなど人気があります。"
+      },
+      {
+        "role": "user",
+        "content": "どのお店に行けばおいしいか教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0133",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京の夜景を楽しみたいのですが、おすすめの場所は？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京スカイツリーからは素晴らしい夜景が楽しめます。"
+      },
+      {
+        "role": "user",
+        "content": "ほかにどこも教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0134",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京のおすすめ観光地教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "明治神宮や渋谷スクランブル交差点が人気です。"
+      },
+      {
+        "role": "user",
+        "content": "新宿で美味しいラーメン屋ありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0135",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京を旅行するなら何処がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "浅草や上野など、伝統的な観光地があります。また新宿や原宿は现代化された街並みが魅力的です。"
+      },
+      {
+        "role": "user",
+        "content": "どのあたりの料金相場が知りたいです"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0136",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の観光スポットは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "金閣寺や平等院、清水寺などが有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの人気があるんですか"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0137",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の食べ物は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪の名物料理は天ぷらや大阪烧、梅田の吉兆で食事をすると良いでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "どの辺りがおすすめでしょうか"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0138",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鹿児島に行くなら何をすればいいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "硫黄島や日置の海は美しく、熊本湯布院からのアクセスも便利です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような交通手段が便利ですか"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鹿児島",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0139",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄旅行の際、何を注意しておけば良いでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "台風警報が出ている日は外出を控え、マスクを持っておくと便利です。"
+      },
+      {
+        "role": "user",
+        "content": "本土からどうやって行くのがおすすめですか"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0140",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行きたいんですが、おすすめの観光スポットは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "おっしゃる通り、東京には多くの魅力的な観光地があります。まず千鳥ヶ淵や皇居は絶対に訪れていただきたいところです。"
+      },
+      {
+        "role": "user",
+        "content": "どこから始めるべきでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0141",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": " Vaults Tokyoが気になりますが、何ができるのですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "Vaults Tokyoは、最新のテクノロジーを使って映画や音楽を楽しむことができます。"
+      },
+      {
+        "role": "user",
+        "content": "それでは、 Vault Tokyoのチケット予約方法を教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0142",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に旅行したいんです。どの時期がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都は四季折々の美しさがあり、どの季節も魅力があります。春には桜、夏には紅葉、秋には庭園の彩り、冬には雪景色が楽しめます。"
+      },
+      {
+        "role": "user",
+        "content": "秋に訪れるなら何月が適しているでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0143",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行計画を考えていますが、東京への移動方法は何がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京への移動は飛行機や新幹線、電車などが便利です。どのルートで移動されるかによって最適な選択肢も異なりますね。"
+      },
+      {
+        "role": "user",
+        "content": "飛行機を使った方が良いですか、それとも新幹線の方が良いですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0144",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の食べ物について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "京都の食文化は独特で、抹茶や和菓子、寿司などが有名です。また、地元の食材を生かした料理もぜひ試してみてください。"
+      },
+      {
+        "role": "user",
+        "content": "実際に食べたいと思っているので、おすすめの飲食店を教えていただけますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0145",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京へ旅行に行く予定がありますが、おすすめの観光スポットを教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "絶対に訪れるべきところは明治神宮と渋谷です。"
+      },
+      {
+        "role": "user",
+        "content": "渋谷でのお食事処を探しています。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0146",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の観光地について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "金閣寺と平等院鳳凰堂はぜひ訪ねてみてください。"
+      },
+      {
+        "role": "user",
+        "content": "交通手段についても知りたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0147",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良の名所を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "東大寺と春日大社は絶対に訪れることをお勧めします。"
+      },
+      {
+        "role": "user",
+        "content": "食事にはどのようなものがおすすめでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0148",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の特徴的な観光地を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "道頓堀と大阪城はぜひ訪れることをお勧めします。"
+      },
+      {
+        "role": "user",
+        "content": "大阪でのお土産は何が良いでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0149",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄の有名な観光地を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "首里城とokinawa marine parkは絶対に訪れることをお勧めします。"
+      },
+      {
+        "role": "user",
+        "content": "沖縄ではどの辺りがおすすめでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0150",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京旅行の計画を考えていますが、おすすめの観光地はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "絶対に訪れてほしいのは明治神宮と皇居です。特に秋には紅葉が美しく、散歩するのに最適です。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。那覇旅行も計画しています。沖縄のグルメを教えていただけますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0151",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京を1泊2日でどのように楽しみましょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "新宿や渋谷はショッピングと夜の街が楽しめるところです。"
+      },
+      {
+        "role": "user",
+        "content": "絶対行かなければいけない場所ってありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0152",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都を訪れる機会がありましたら、何日も滞在すればいいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "3日間は京都市内の観光を楽しむのに十分な時間です。"
+      },
+      {
+        "role": "user",
+        "content": "3日の行程を教えていただけますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0153",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄旅行の計画を考えていますが、どんな観光地がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "首里城と那覇市内のマーケットは絶対に行ってほしいところです。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの時間で回れるでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0154",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の美味しい料理を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "うどんと天ぷらはぜひ楽しんでみてください。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0155",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都におすすめの観光地はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "嵐山と金閣寺がおすすめです。嵐山では竹林を散策したり、渡月橋を-cross-できます。金閣寺は金色に輝く仏像を拝見することができます。"
+      },
+      {
+        "role": "user",
+        "content": "どちらも人気がありそうですね。交通手段は何ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0156",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京ディズニーランドでおすすめの体験は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "パレードや夕日観賞、そして新キャラクター「ミッキーアンド・フレンドズ」が登場する夜のエンターテイメントを楽しみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "食事も気になるので、おすすめのレストランはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京ディズニーランド",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0157",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪のグルメはどんなものですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪らーめん、天ぷら、お好み焼きなどが人気です。特に鶏白湯らーめんはおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "那覇空港から沖縄市までの移動手段は何ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "那覇（沖縄）",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0158",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行きたいですが、おすすめの観光地は？"
+      },
+      {
+        "role": "assistant",
+        "content": "隅田川周辺には江戸東京博物館や晴空塔があり、夜景もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "那曲から東京に行くのはどの交通手段が良いですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0159",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の寺社巡りをしたいですが、おすすめはどこでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "金閣寺や阿弥陀如来堂は必見です。また、嵐山での紅葉も美しい季節ならおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "京都にはどのくらい滞在すれば、充分に観光できそうでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0160",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄の食事はどんなのが人気ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "チャーハンや唐揚げ、そばが特に人気です。また、地元の食材を使った料理もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "沖縄旅行の食事以外にも何を楽しみたいですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0161",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新宿の夜遊びはどこがおすすめでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "歌舞伎町や伊勢丹前のシャッフルは人気です。ただし、安全と自分のリズムに注意してください。"
+      },
+      {
+        "role": "user",
+        "content": "東京でおすすめのショッピングスポットは何ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "shopping"
+    },
+    "test_id": "travel_guide_0162",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪のグルメはどんなものでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "串揚げや天ぷら、大阪府産の新鮮な食材を使った料理が人気です。また、道頓堀の夜市もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "大阪ではどの観光地に立ち寄るのが良いですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0163",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に行く計画がありますが、おすすめの観光スポットは？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都には祇園、金閣寺、平等院鳳凰堂など人気の観光地があります。"
+      },
+      {
+        "role": "user",
+        "content": "那珂川を散歩するのに良い時期はいつでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0164",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "家族旅行で大阪に行きたいです。 godeの観光スポットについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": " Osakaには難波、心斎橋、道頓堀などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どの辺りがおすすめですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0165",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鹿児島旅行でおすすめの観光地を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "鹿児島には薩摩半島、九 Ion大橋、奄美大島などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "食事はどの辺りが良いでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鹿児島",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0166",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京でおすすめの観光地を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "東京には浅草寺、皇居、明治神宮などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "交通手段は何が便利ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0167",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄旅行のための観光スポットを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "沖縄には首里城、竹富島、久屋大通などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どの地域がおすすめですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0168",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に行きたいけど、おすすめの観光スポットを知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "京都には多くの名所があります。金閣寺や清水寺は絶対に行っていただきたいですね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。それから食事も楽しみたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0169",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪に行きたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪には豊富な観光地がありますが、心斎橋や阿波踊りの会場である堂島リバーボウルもおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。その中で、特に美味しい食べ物を教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0170",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道に行きたいと思っていますが、どの時期に訪れるべきか悩んでいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "北の大地ならではの絶景を見るには冬がおすすめです。雪中花見も楽しめますよ。"
+      },
+      {
+        "role": "user",
+        "content": "雪中花見って何ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "tips"
+    },
+    "test_id": "travel_guide_0171",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄に行きたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "沖縄は海やビーチが魅力的ですが、首里城公園もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。どのくらい滞在すれば良いでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0172",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に旅行に行きたいけど、どの観光地がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都には祇園や金閣寺、平等院鳳凰堂など、多くの素晴らしい観光地があります。特に春には桜が美しく、秋の紅葉も絶景です。"
+      },
+      {
+        "role": "user",
+        "content": "どの時期に行けばいいか教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0173",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京でおすすめのグルメは？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京には和食や寿司、ラーメンなど、様々なジャンルの美味しいレストランがあります。築地市場での朝 markets や新橋のつけ麺も人気です。"
+      },
+      {
+        "role": "user",
+        "content": "夜に飲むならどこがおすすめ？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0174",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "パリでショッピングが楽しめる場所は？"
+      },
+      {
+        "role": "assistant",
+        "content": "シャンゼリゼ通りやマーレ地区には素敵なショップとカフェがたくさんあります。また、老舗のラグジュアリー ブランドも街中に点在しています。"
+      },
+      {
+        "role": "user",
+        "content": "どの辺りが便利ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "パリ",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0175",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ローマの歴史的な場所を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "ローマにはフォラム、テルマエ・ディ・マルクス、パンテオンなど、多くの歴史的な場所があります。また、コロッセオは必見です。"
+      },
+      {
+        "role": "user",
+        "content": "どの観光地が一番人気ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "ローマ",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0176",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の夜景が見える場所は？"
+      },
+      {
+        "role": "assistant",
+        "content": "難波や天王寺、阿倍野には多くの高層ビルがあり、夜景を楽しむことができます。また、大阪城からは夜景も美しいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "どの時期に行けば良いですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0177",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京でおすすめのカフェを教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "築地市場内のカフェや、渋谷ヒカリエにあるカフェなどが人気です。"
+      },
+      {
+        "role": "user",
+        "content": "那覇に旅行に行く予定ですが、おすすめの宿泊先を教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0178",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行く予定がありますが、おすすめの観光地はどこですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京なら明治神宮と浅草寺はぜひ訪れてみてください。"
+      },
+      {
+        "role": "user",
+        "content": "どちらも行きたくて迷っていますが、おすすめはどちらでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0179",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に行きたいのですが、どの時期に行くと良いですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都は四季折々の美しさが楽しめますが、春先（4月）は桜が咲き誇りますのでおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "分かりました、那珂川沿いを散歩するのが好きなので、そこ近くの宿をお探しいたします"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0180",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根に旅行に行く予定です。交通手段は何が便利ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "箱根は小田急電鉄の片道往復バスが便利で、料金も安いためおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます、それでお役立ち情報はこれで終わりです"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0181",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の食事について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪ならうどんやカツ丼が有名ですが、ぜひ試してみてください。"
+      },
+      {
+        "role": "user",
+        "content": "それじゃあ、まずは天満宮にお参りし、お昼を食べに行きたいですね"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0182",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良の旅についてアドバイスお願いします"
+      },
+      {
+        "role": "assistant",
+        "content": "奈良は歴史的な雰囲気が感じられる場所です。春先に行けば桜も美しいでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "いいですね、行きます"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0183",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新宿の夜市に行きたいと思っていますが、おすすめの場所を教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "新宿の歌舞伎町や新大久保は、観光客だけでなく地元の人々にとっても人気のある場所です。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。行きましたが、行き方を知りたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "新宿",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0184",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行く計画を考えていますが、おすすめの観光スポットはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、東京にはたくさんのおすすめスポットがあります。明治神宮や皇居、そして渋谷のスクランブル交差点など、さまざまな場所を訪れることができます。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの人で混雑しますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0185",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都旅行の計画を考えています。どの時期が一番いいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都旅行は一年中楽しめますが、春と秋が特に人気です。春には桜 Viewing、秋には紅葉を見ることができます。"
+      },
+      {
+        "role": "user",
+        "content": "那覇への旅行を計画していますが、移動方法は何がありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0186",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪のグルメについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん！大阪は食の宝庫で、 Osaka Ramen、Okonomiyaki（お好み焼き）、そしてYakisoba（焼きそば）などが有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのお店がお勧めですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0187",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良に旅行に行く予定です。寺や神社が多いと聞きましたが、おすすめの場所はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんあります！東大寺や春日大社、法隆寺などが人気があります。これらの寺院や神社にはたくさんの歴史と伝統を体験できます。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの時間が必要ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0188",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡にはどんな観光スポットがありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "福岡には天神エリアや博多駅周辺のショッピング、そして筑紫野市にある屋久島を模した「屋久島植物園」などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの人で混雑しますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0189",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京を旅行する計画を立てていますが、おすすめの観光スポットは何がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京には多くの魅力的な観光スポットがあります。まず有名な明治神宮に行ってみるのはどうでしょうか。また代々木公園や上野公園もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。交通手段はどうすればよいか教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0190",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の美味しいグルメ情報を探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "京都には数多くの美食があります。まず祇園エリアは和食を楽しみたい方におすすめです。また、河合町駅付近もお肉や洋食が楽しめます。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。次回は旅行計画の一般的な情報を教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0191",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根にあるおすすめの温泉宿について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "箱根は日本の伝統的な温泉地で、多くの質の高い宿があります。まず「小田原城」近くにある「箱根旅館」が有名です。また「芦ノ湖畔ホテル箱根園」もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。交通手段はどうすればよいか教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0192",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の観光スポットについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪には歴史と現代が融合した多くの魅力的な場所があります。まず天王寺動物園や日本橋エリアがおすすめです。また、難波にある日本三大夜市「なんば・心斎橋」も楽しいでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。次回は食べログで人気の飲食店を教えてください"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0193",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鹿児島に行こうと思っていますが、おすすめの観光スポットは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "鹿児島は自然と歴史に溢れた魅力的な場所です。まずは桜島を見学し、天領温泉で湯治を楽しむのも良いでしょう。また、霧島神宮も訪れるとよいでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "分かりました、ありがとうございました"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鹿児島",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0194",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京のおすすめ観光地を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "東京国立博物館は歴史と文化に興味がある方におすすめです。また、浅草の雷門や浅草寺も人気があります。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの人で混雑していますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0195",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の旅先についてアドバイスをください。"
+      },
+      {
+        "role": "assistant",
+        "content": "金閣寺や阿武隈川はぜひ訪れてみてください。また、祇園地区での散策もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのくらいの人で混雑していますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0196",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪の美味しい食べ物を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪は味噌ラーメンが有名です。また、天ぷらや串揚げもおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのお店で食べたら良いでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0197",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行きたいけど、おすすめの観光スポットはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "当然ですが、明治神宮や皇居を散策してみるのも良いでしょう。また、新宿の歌舞伎町も楽しめますね。"
+      },
+      {
+        "role": "user",
+        "content": "新宿の歌舞伎町ってどんなところですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0198",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に旅行に行く計画を立てていますが、どの辺りに立ち寄ればいいでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "金閣寺や清水寺などはもちろんです。また祇園地区もおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "祇園ってどんな雰囲気ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0199",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪に行きたくて、美味しい食べ物を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "章魚丸や天満橋の串揚げはいかがですか？また、梅田のお好み焼きもおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます！"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0200",
+    "category": "travel_guide"
   }
 ]

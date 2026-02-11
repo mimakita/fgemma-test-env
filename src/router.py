@@ -26,9 +26,15 @@ class RouterResult:
 class FunctionRouter:
     """Routes conversations to appropriate functions using FunctionGemma."""
 
-    def __init__(self, client: OllamaClient, registry: FunctionRegistry):
+    def __init__(
+        self,
+        client: OllamaClient,
+        registry: FunctionRegistry,
+        model_override: Optional[str] = None,
+    ):
         self.client = client
         self.registry = registry
+        self.model = model_override or ROUTER_MODEL
 
     def route(self, conversation_history: list[dict]) -> RouterResult:
         """Analyze conversation and determine if a function should be called.
@@ -48,7 +54,7 @@ class FunctionRouter:
 
         try:
             response = self.client.chat_completion(
-                model=ROUTER_MODEL,
+                model=self.model,
                 messages=recent,
                 tools=tools,
                 options=ROUTER_OPTIONS,

@@ -10,6 +10,7 @@ build/
 
 # Virtual environment
 .venv/
+.venv-ft/
 venv/
 env/
 
@@ -28,13 +29,25 @@ env/
 .pytest_cache/
 
 # Generated data (large files)
-#data/test/*.json
 data/results/*.json
+data/test_backup/
 
 # Logs
 *.log
 WORKLOG.md
+RETROSPECTIVE.md
+
+# Fine-tuning artifacts (large files)
+data/finetune/
+data/peft_adapters/
 
 # Ollama model files (if downloaded locally)
 models/
 
+# llama.cpp (if cloned for GGUF conversion)
+llama.cpp/
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak

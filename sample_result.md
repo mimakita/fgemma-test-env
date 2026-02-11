@@ -247,3 +247,165 @@ Run 4 では安定して1,382秒（約23分）で完了。
 FunctionGemma 270Mの根本的な特性として、**テキスト応答をデフォルトとし、tool_callは全ケースの5-9%でしか発火しない**ことが判明した。Precisionは高い（呼ぶ時は正確）が、Recallが極めて低い（呼ぶべき時に呼ばない）。
 
 実運用に向けては、270Mモデルの限界を踏まえ、**より大きなモデル（FunctionGemma 2B等）への移行**、またはルーティング戦略自体の見直し（例：テキスト応答をルーティング判定に使わず、別途分類器を噛ませる等）が必要である。
+
+---
+
+## 9. Fine-tuning 実験
+
+上記のベースライン評価を踏まえ、PEFT LoRA によるFine-tuningを実施した。
+
+### 9.1 Fine-tuning 設定
+
+| パラメータ | 値 |
+|-----------|-----|
+| ベースモデル | google/functiongemma-270m-it |
+| Fine-tuning手法 | PEFT LoRA |
+| LoRA rank | 8 |
+| LoRA alpha | 16 |
+| Learning rate | 2e-4 |
+| Batch size | 1 |
+| Gradient accumulation | 4 |
+| Max sequence length | 512 |
+| 学習環境 | Apple M1 8GB (MPS) |
+
+### 9.2 データセット（Run 2）
+
+| データ | 件数 |
+|--------|------|
+| 学習データ | 1,152件（各関数160件 + no_function 32件） |
+| テストデータ | 380件（各関数40件 + no_function 100件） |
+
+### 9.3 チェックポイント別精度
+
+| Checkpoint | Steps | Epochs | Accuracy | 学習時間 |
+|------------|-------|--------|----------|----------|
+| ckpt-100 | 100 | 0.35 | 45.8% | 約20分 |
+| **ckpt-500** | 500 | 1.74 | **60.3%** | 約1.7時間 |
+| ckpt-800 | 800 | 2.78 | 60.5% | 約2.8時間 |
+
+**推奨**: checkpoint-500（精度と学習時間のバランスが最適）
+
+### 9.4 学習曲線（Loss）
+
+| Steps | Training Loss |
+|-------|---------------|
+| 100 | 0.5720 |
+| 200 | 0.2807 |
+| 300 | 0.2234 |
+| 400 | 0.2105 |
+| 500 | 0.1994 |
+| 600 | 0.1926 |
+| 700 | 0.1926 |
+| 800 | 0.1790 |
+
+Loss は 500 steps 以降で収束傾向。
+
+### 9.5 関数別性能（checkpoint-500）
+
+| Function | Recall | Precision | TP/Total |
+|----------|--------|-----------|----------|
+| celebrity_info | **100%** | 100% | 40/40 |
+| schedule_reminder | **95.0%** | 92.7% | 38/40 |
+| weather_info | **92.5%** | 74.0% | 37/40 |
+| travel_guide | **90.0%** | 85.7% | 36/40 |
+| shopping_intent | **87.5%** | 74.5% | 35/40 |
+| sentiment_label | **65.0%** | 46.4% | 26/40 |
+| translation_assist | 42.5% | 23.9% | 17/40 |
+| no_function | 0% | - | 0/100 |
+
+### 9.6 関数別性能（checkpoint-800）
+
+| Function | Recall | Precision | TP/Total |
+|----------|--------|-----------|----------|
+| celebrity_info | **100%** | 100% | 40/40 |
+| schedule_reminder | **97.5%** | 92.9% | 39/40 |
+| travel_guide | **95.0%** | 82.6% | 38/40 |
+| weather_info | **92.5%** | 72.5% | 37/40 |
+| shopping_intent | **90.0%** | 76.6% | 36/40 |
+| sentiment_label | 62.5% | 46.3% | 25/40 |
+| translation_assist | 37.5% | 24.2% | 15/40 |
+| no_function | 0% | - | 0/100 |
+
+---
+
+## 10. ベースライン vs Fine-tuned 比較
+
+### 10.1 Overall Accuracy
+
+| Model | Accuracy | 改善幅 |
+|-------|----------|--------|
+| Baseline (Ollama, Zero-shot) | 27.9% | - |
+| Fine-tuned (100 steps) | 45.8% | +17.9% |
+| Fine-tuned (500 steps) | 60.3% | **+32.4%** |
+| Fine-tuned (800 steps) | 60.5% | +32.6% |
+
+### 10.2 関数別 Recall 比較
+
+| Function | Baseline | Fine-tuned (500) | 改善幅 |
+|----------|----------|------------------|--------|
+| celebrity_info | 17.5% | 100% | **+82.5%** |
+| schedule_reminder | 1.5% | 95.0% | **+93.5%** |
+| weather_info | 2.5% | 92.5% | **+90.0%** |
+| travel_guide | 4.0% | 90.0% | **+86.0%** |
+| shopping_intent | 0% | 87.5% | **+87.5%** |
+| sentiment_label | 1.0% | 65.0% | **+64.0%** |
+| translation_assist | 1.0% | 42.5% | +41.5% |
+
+---
+
+## 11. Fine-tuning の課題
+
+### 11.1 no_function の認識失敗
+
+Fine-tuned モデルは **no_function ケースを全く認識できない** (Recall 0%)。
+- 関数呼び出しを積極的に行うようバイアスがかかっている
+- False Positive の主要因
+
+### 11.2 translation_assist の低性能
+
+Recall 42.5%, Precision 23.9%
+- 他の関数との混同が多い
+- 翻訳意図の認識が曖昧
+
+### 11.3 学習データの不均衡
+
+no_function の学習データが32件と少なく、「関数を呼ばない」判断の学習が不十分。
+
+---
+
+## 12. 結論（更新版）
+
+### ベースライン (270M, Zero-shot)
+
+- Overall Accuracy: **27.9%**
+- tool_call 発火率が極めて低い（5-9%）
+- Precision は高いが Recall が低い
+- 日本語での関数呼び出し認識が弱い
+
+### Fine-tuned (270M, PEFT LoRA)
+
+- Overall Accuracy: **60.3%** (500 steps)
+- ベースラインから **+32.4%** の精度向上
+- ほぼ全ての関数で Recall が大幅に改善
+- ただし no_function の認識が完全に失敗（Recall 0%）
+
+### 今後の改善方向
+
+1. **no_function データの増強**: 学習データに no_function をより多く含める
+2. **Negative sampling**: 関数呼び出し不要なケースの学習を強化
+3. **より大きなモデル**: Gemma 2B / 7B での評価
+4. **閾値調整**: tool_call 確率の閾値を設けて no_function を判定
+
+---
+
+## 付録: 再現方法
+
+```bash
+# ベースライン評価
+source .venv/bin/activate
+python -m tools.evaluate
+
+# Fine-tuned モデル評価
+source .venv-ft/bin/activate
+python -m tools.evaluate_peft --run-id 2 --checkpoint 500
+```

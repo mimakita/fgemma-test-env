@@ -2287,5 +2287,2305 @@
     },
     "test_id": "sentiment_label_0100",
     "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が良いから、公園に行こうかと悩んでるんだが、どう思う？"
+      },
+      {
+        "role": "assistant",
+        "content": " godee ですね。 godee 気持ちで外に出るのがいいと思いますよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも寒い日が続くと少し億劫になっちゃう"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも寒い日が続くと少し億劫になっちゃう",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0101",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、娘の学校行事が立て込んでて大変なんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "子供の成長を見守るのは嬉しいけど、忙しい日々は辛いですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも、娘と一緒にお祭りに参加した時の思い出は宝物だ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、娘と一緒にお祭りに参加した時の思い出は宝物だ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0102",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースが暗いし、気持ちも落ち込んでるんだ。"
+      },
+      {
+        "role": "assistant",
+        "content": "ニュースを見て心配になるのは自然なことです。少しでも元気になる情報を探してみてくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "でも、今夜は何を観ようか悩んでる"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、今夜は何を観ようか悩んでる",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0103",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達に会うのが楽しみなんだ。"
+      },
+      {
+        "role": "assistant",
+        "content": "楽しい時間を共有できるのは嬉しいですね。"
+      },
+      {
+        "role": "user",
+        "content": "早く会える日が来ることを祈ってる"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "早く会える日が来ることを祈ってる",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0104",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近は運動するのが面倒になっちゃって…"
+      },
+      {
+        "role": "assistant",
+        "content": "健康のためにも少しでも動くのが重要だと思います。"
+      },
+      {
+        "role": "user",
+        "content": "でも、ゆっくり寝て休息も大切だ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、ゆっくり寝て休息も大切だ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0105",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報、今日どうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れです。最高気温は28度になりますよ。"
+      },
+      {
+        "role": "user",
+        "content": "雨が心配だったけど大丈夫ね！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "雨が心配だったけど大丈夫ね！",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0106",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新商品、どんな感じですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "とても使いやすいですよ。すぐに慣れますよ。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。使ってみます！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "ありがとうございます。使ってみます！",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0107",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "会社の忘年会、楽しみです。"
+      },
+      {
+        "role": "assistant",
+        "content": "いいね、みんなで楽しい時間を過ごせそうですね！"
+      },
+      {
+        "role": "user",
+        "content": "そうですね。楽しみにしています"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "そうですね。楽しみにしています",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0108",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気が本当に gode , ワークから帰ったら庭に散歩を楽しんでいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "良い天気は気持ちいいですね、お庭でリラックスしているのですね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、外で過ごす時間も大切だなと思います。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "そうですね、外で過ごす時間も大切だなと思います。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0109",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマホケースを購入したのですが、使い方がわからなくて困っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "使い方の説明書を見直してみてはいかがでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "説明書には詳しく書いてあるんですが、実際の操作に迷ってしまいます。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "説明書には詳しく書いてあるんですが、実際の操作に迷ってしまいます。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0110",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週友達とお茶をしようと約束しましたが、急な大雨で外に出られませんでした。"
+      },
+      {
+        "role": "assistant",
+        "content": "雨の中での出挂かりは大変だったかもしれませんね。"
+      },
+      {
+        "role": "user",
+        "content": "でも友達はその日のために天気予報をチェックしてくれていて感謝しています。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも友達はその日のために天気予報をチェックしてくれていて感謝しています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0111",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "是の如し、外出するのがとても楽しいです。"
+      },
+      {
+        "role": "user",
+        "content": "でも少し風が強くて傘をさすのが大変です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日は天気がいいですね。でも少し風が強くて傘をさすのが大変です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0112",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいプログラミング言語を学んでいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね、何を学んでいるんですか？"
+      },
+      {
+        "role": "user",
+        "content": "PythonとJavaScriptが好きです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近新しいプログラミング言語を学んでいます。PythonとJavaScriptが好きです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0113",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいカメラを購入しました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね、何のために使いますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "それはとても良い用途ですね。"
+      },
+      {
+        "role": "user",
+        "content": "そのカメラは使いやすいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近新しいカメラを購入しました。写真撮影が好きなので、旅行や家族の記念日に使えればと思います。そのカメラは使いやすいです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0114",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日はお世話になりました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どういたしまして。何かありましたら又、よろしくお願いします。"
+      },
+      {
+        "role": "user",
+        "content": "また宜しくお願いいたします。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "先日はお世話になりました。また宜しくお願いいたします。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0115",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報をチェックしましたが、明日は晴れのようです。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか、その情報で計画を立てることが出来そうですね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "天気予報をチェックしましたが、明日は晴れのようです。ありがとうございます。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0116",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい仕事の提案がありましたが、まだ決断できていません。"
+      },
+      {
+        "role": "assistant",
+        "content": "そのような選択は難しいですね。どの方向で考えていますか？"
+      },
+      {
+        "role": "user",
+        "content": "迷ってしまいますね。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい仕事の提案がありましたが、まだ決断できていません。迷ってしまいますね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0117",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の昼ご飯は何にしようか悩んでいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "何を食べるのが好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "ハンバーグかな？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の昼ご飯は何にしようか悩んでいます。ハンバーグかな？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0118",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近は忙しくて、趣味の時間も減ってしまいました。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに忙しい毎日を送っていると、休息も大切ですね。"
+      },
+      {
+        "role": "user",
+        "content": "少しでもリラックスする方法を考えないと。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近は忙しくて、趣味の時間も減ってしまいました。少しでもリラックスする方法を考えないと。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0119",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいね！"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ち良いですね。散歩にもってこいです。"
+      },
+      {
+        "role": "user",
+        "content": "そうだ、友達とコーヒーを飲もうかな。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気や計画についての会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0120",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいゲームが出たよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、どんなゲームですか？"
+      },
+      {
+        "role": "user",
+        "content": "ドラクエの新作だよ、かなりワクワクしている！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "ドラクエ新作についての話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0121",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本が面白そうだな。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな内容ですか？"
+      },
+      {
+        "role": "user",
+        "content": "歴史の本で、古代文明について詳しく書かれているらしい。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "読書に関する会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0122",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達に食事誘いされてもう少し仕事を片付けないと困るな。"
+      },
+      {
+        "role": "assistant",
+        "content": "仕事が優先ですか？"
+      },
+      {
+        "role": "user",
+        "content": "今日は特にたくさん作業してるので、また来週にでも誘おうかと思います。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "仕事と友人との約束についての会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0123",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画レビューはポジティブそうだな。"
+      },
+      {
+        "role": "assistant",
+        "content": "本当にその通りですね。具体的に何が気に入ったのですか？"
+      },
+      {
+        "role": "user",
+        "content": "ストーリーや演技、音楽どれも完璧だったと思うよ。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "映画レビューの感想についての会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0124",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、本当に気持ちが良いです。"
+      },
+      {
+        "role": "user",
+        "content": "散歩に行きませんか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気がいいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0125",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいiPhoneが出たみたいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、かなり気になる新機能がたくさんありますね。"
+      },
+      {
+        "role": "user",
+        "content": "でも値段が高いから買うの難しそうです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも値段が高いから買うの難しそうです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0126",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、友達が海外に移住して寂しいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、お互いに連絡を取り合いましょう。"
+      },
+      {
+        "role": "user",
+        "content": "そうだね、LINEで会話するようにしよう！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友達が海外に移住して寂しいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0127",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のお天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、空が青くて気持ちいいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "散歩に行きたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日のお天気がいいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0128",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい携帯電話を買いました。「 Xperia 1 IV」にしました。"
+      },
+      {
+        "role": "assistant",
+        "content": "素晴らしい選択ですね！新機能は使いこなしていますか？"
+      },
+      {
+        "role": "user",
+        "content": "使い方が分からなくて困っています。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "使い方が分からなくて困っています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0129",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と旅行に行きました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どこに行かれたのですか？"
+      },
+      {
+        "role": "user",
+        "content": "奈良に来て、たくさんの動物をみました。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "奈良に来て、たくさんの動物をみました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0130",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この料理は初めて食べますが、とても美味しいです。「天ぷら」がおすすめですよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、「天ぷら」は本当に美味しくて人気がありますね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。また訪問したいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "ありがとうございます。また訪問したいです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0131",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースが心配でなりません。「新型コロナウイルス」についてもよく耳にします。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、状況は厳しそうですね。安全対策を忘れずに。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、気をつけないと危険です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "なるほど、気をつけないと危険です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0132",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、お天気はいかがですか"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れです。寒くありませんよ"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、 gode な天気ですね"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": " gode な天気ですね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0133",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近映画を見たんですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "「君の名は。」というアニメが面白かったです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "面白いです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0134",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日、友達と寿司を食べに行きました"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな料理がおすすめですか？"
+      },
+      {
+        "role": "user",
+        "content": "お刺身が特に美味しかったです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "お刺身が特に美味しかったです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0135",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は友達と公園でピクニックをしようと思っています"
+      },
+      {
+        "role": "assistant",
+        "content": " godeな企画ですね。何を持っていく計画ですか？"
+      },
+      {
+        "role": "user",
+        "content": "お弁当とお菓子を持っていきたいです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": " godeな企画ですね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0136",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新商品が出たらしいですよ"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな商品ですか？"
+      },
+      {
+        "role": "user",
+        "content": "新しいスマートウォッチが発売されたとのことです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しいスマートウォッチが発売されたとのことです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0137",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "お散歩するのに適した天気ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも風が強くて寒いです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気についての会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0138",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しく買った携帯電話がとても便利です。"
+      },
+      {
+        "role": "assistant",
+        "content": "何ができるようになったのですか？"
+      },
+      {
+        "role": "user",
+        "content": " cameraw functionを追加して、写真撮影も楽になりました"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい携帯電話についての会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0139",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のアニメは内容が濃くて面白いです。"
+      },
+      {
+        "role": "assistant",
+        "content": "何を見ていますか？"
+      },
+      {
+        "role": "user",
+        "content": "「鬼滅の刃」を観たばかりで、感動しました"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近のアニメについての会話",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0140",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "外出するのが気持ちいい季節になりましたね。"
+      },
+      {
+        "role": "user",
+        "content": "でも風が強くて寒いです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気がいいですね。でも風が強くて寒いです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0141",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が気持ちいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに晴れていると気分も上がりますね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、でもちょっと風が強いです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気が気持ちいいですね。確かに晴れていると気分も上がりますね。けど、ちょっと風が強いです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0142",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい料理を試してみましたが"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな料理ですか？結果如何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "とても美味しいですよ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい料理を試してみましたが、とても美味しいですよ。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0143",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画を見に行きましたが"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画ですか？良かったですか？"
+      },
+      {
+        "role": "user",
+        "content": "面白くなかったです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "映画を見に行きましたが、面白くなかったです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0144",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、雨が続くと気分が落ち込むんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "その気持ちはよく分かります。雨の日は室内活動が増えるから、少し寂しさを感じるのも自然です。"
+      },
+      {
+        "role": "user",
+        "content": "でも、天気が良い日は元気になれるんだよ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近、雨が続くと気分が落ち込むんだよね。でも、天気が良い日は元気になれるんだよ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0145",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい仕事のプロジェクトが始まる前はワクワクするな。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは楽しみですね。新しいチャレンジは気持ちを高揚させるものですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも、うまくいかなければストレスになるんだ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい仕事のプロジェクトが始まる前はワクワクするな。でも、うまくいかなければストレスになるんだ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0146",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の昼休みに同僚と食事をしたんだけど、楽しい時間を過ごせたね"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね。会社での交流は気持ちを明るくするのに役立ちますよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも、仕事が忙しくなるとその時間が奪われちゃうよね"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の昼休みに同僚と食事をしたんだけど、楽しい時間を過ごせたね。でも、仕事が忙しくなるとその時間が奪われちゃうよね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0147",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい店でランチを食べに行ったら、すごく美味しかったよ"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしい経験ですね。新規のレストランは新しい味わいを求めている方々にとって魅力的です。"
+      },
+      {
+        "role": "user",
+        "content": "次回もまた行きたいな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい店でランチを食べに行ったら、すごく美味しかったよ。次回もまた行きたいな",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0148",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、趣味のカメラを新調したんだけど"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね。新たな道具は楽しみや創造性を高めるのに役立ちます。"
+      },
+      {
+        "role": "user",
+        "content": "これからはもっと写真を撮りたいな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近、趣味のカメラを新調したんだけど。これからはもっと写真を撮りたいな",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0149",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、本当に気持ちいい天気です。"
+      },
+      {
+        "role": "user",
+        "content": "でも少し暑いくらい…"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気が良いですね。でも少し暑いくらい…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0150",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しくオープンしたカフェに行きました。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、どんな料理が美味しいですか？"
+      },
+      {
+        "role": "user",
+        "content": "ケーキが特に美味しかったです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しくオープンしたカフェに行きました。ケーキが特に美味しかったです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0151",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、部活で疲れてるんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか、頑張っていますね。"
+      },
+      {
+        "role": "user",
+        "content": "でも少しストレスを感じている…"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近、部活で疲れてるんです。でも少しストレスを感じている…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0152",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画、面白かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのシーンが特に印象的でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "最後の展開が意外で良かったです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この映画、面白かったです。最後の展開が意外で良かったです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0153",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい同僚に会いました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな雰囲気ですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ知らなかったので少し緊張しました"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい同僚に会いました。まだ知らなかったので少し緊張しました",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0154",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気がいい日曜日、家族でピクニックに行こうかと計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいアイデアです！天気予報をチェックして、最良の日にピクニックをお楽しみください。"
+      },
+      {
+        "role": "user",
+        "content": "でも最近は天気が不安定そうだし…"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "天気がいい日曜日、家族でピクニックに行こうかと計画しています。でも最近は天気が不安定そうだし…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0155",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の試験で高得点を取ることができて、友達にもうれしい顔を見てもらえたよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしい成績ですね！表彰式で表彰される日も楽しみでしょうが？"
+      },
+      {
+        "role": "user",
+        "content": "そう言ってくれると嬉しいな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "先週の試験で高得点を取ることができて、友達にもうれしい顔を見てもらえたよ。そう言ってくれると嬉しいな",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0156",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の仕事がとても大変で、ストレスを感じています。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは大変そうです。休憩時間に深呼吸したり、散歩をすることでリラックスできるかもしれませんよ。"
+      },
+      {
+        "role": "user",
+        "content": "確かにそうですね。もう少し頑張ります"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近の仕事がとても大変で、ストレスを感じています。確かにそうですね。もう少しいろんなことに気を取られるようにします",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0157",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい会社に転職して1ヶ月、まだ慣れない所が多いです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは理解できます。新しい環境に適応するのは時間が必要ですよね。サポート体制があるなら、その利用を検討してみてはいかがでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、自分から積極的にコミュニケーションを取りたいと思います"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい会社に転職して1ヶ月、まだ慣れない所が多いです。そうですね、自分から積極的にコミュニケーションを取りたいと思います",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0158",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先輩の助けてくれた恩返しをしたいと思っていますが、どうすればいいか分かりません。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしい意志ですね！具体的な方法は状況によって異なりますが、まずは感謝の気持ちを伝えてみるのも良いでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、まず挨拶から始めてみます"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "先輩の助けてくれた恩返しをしたいと思っていますが、どうすればいいか分かりません。そうですね、まず挨拶から始めてみます",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0159",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が最高ですね"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、晴れの日は気分も上がりますね"
+      },
+      {
+        "role": "user",
+        "content": "そうだな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気が最高ですね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0160",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい携帯電話を買いました"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！どのブランドですか？"
+      },
+      {
+        "role": "user",
+        "content": "サムスンです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しい携帯電話を買いました",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0161",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友人と飲み会をしようかと思っている"
+      },
+      {
+        "role": "assistant",
+        "content": "いいですね！楽しい時間になりますよ"
+      },
+      {
+        "role": "user",
+        "content": "うん、楽しみにしている"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友人と飲み会をしようかthinking",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0162",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が気持ちいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、日中は快適な温度ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも、雨が降ったらまだ良い気分になりますか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、雨が降ったらまだ良い気分になりますか？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0163",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日の映画は面白かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、ストーリーも良かったですよね。"
+      },
+      {
+        "role": "user",
+        "content": "でも、主人公の演技があまり好きじゃないです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、主人公の演技があまり好きじゃないです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0164",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、お散歩が少なくなってきました。"
+      },
+      {
+        "role": "assistant",
+        "content": "忙しくなりましたね、気をつけましょう。"
+      },
+      {
+        "role": "user",
+        "content": "でも、時間があればまた元通りに戻りたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、時間があればまた元通りに戻りたいです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0165",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の料理はとてもおいしかったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "おつ355す、何か特別なレシピですか？"
+      },
+      {
+        "role": "user",
+        "content": "特に何でもないけど、今日は美味しい食材が手に入ったんです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "特に何でもないけど、今日は美味しい食材が手 penet355ったんです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0166",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本は非常に興味深かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "そのように感じる本って素敵ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも、途中で少し眠くなってしまいました。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、途中で少し眠くなってしまいました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0167",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちいい日曜日になりました。"
+      },
+      {
+        "role": "user",
+        "content": "でも、仕事のことで少し心配です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、仕事のことで少し心配です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0168",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週のテストで良い成績を取ることができました。"
+      },
+      {
+        "role": "assistant",
+        "content": "おめでとうございます！これからも頑張りましょうね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとう、先生。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "ありがとう、先生。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0169",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近友達が少しずつ遠ざかっているような気がします。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは少し寂しいですね。何か困っていることがあれば相談してみてくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "うーん、まだ解決策が見つからなくて困っています。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "うーん、まだ解決策が見つからなくて困っています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0170",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気が気になりますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、晴れた日は気分も上がりますよね。"
+      },
+      {
+        "role": "user",
+        "content": "でも雨が続くと憂鬱な気分になります"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "雨が続くと憂鬱な気分になります",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0171",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達とカフェでランチをしました。"
+      },
+      {
+        "role": "assistant",
+        "content": "听起来您和朋友们度过了愉快的一餐呢。"
+      },
+      {
+        "role": "user",
+        "content": "はい、美味しい料理と楽しい会話でした"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "美味しい料理と楽しい会話でした",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0172",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "本当に良い天気ですね！外で遊ぶのも気持ちいい季節です。"
+      },
+      {
+        "role": "user",
+        "content": "でも風が強くて少し不便な日でした"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気はいいですね。でも風が強くて少し不便な日でした",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0173",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画を見に行きました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画 saw 了吗？"
+      },
+      {
+        "role": "user",
+        "content": "『君たちは Robertson 教授のことを知っていますか』という映画 saw 了吗？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "『君たちは Robertson 教授のことを知っていますか』という映画 saw 了吗？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0174",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近忙しくて、何も手伝うことができないんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "そんなに忙しいとは…少し休憩は取ってくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "でも本当に無力感を感じています"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近忙しくて、何も手伝うことができないんです。でも本当に無力感を感じています",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0175",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "息子の発表会には必ず見に来てくれてありがとうございます。"
+      },
+      {
+        "role": "assistant",
+        "content": "お母さんにとっても嬉しいですね！"
+      },
+      {
+        "role": "user",
+        "content": "今後も応援していけるといいですね"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "息子の発表会には必ず見に来てくれてありがとうございます。今後も応援していけるといいですね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0176",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近この地域での犯罪が増えていると聞くので、少し心配になっています。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに何かありましたらお知らせくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "特に夜は一人で外に出るのが怖いです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近この地域での犯罪が増えていると聞くので、少し心配になっています。特に夜は一人で外に出るのが怖いです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0177",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報は雨ですが、傘を持っていきたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "雨の中でも快適に移動できるよう、雨具は必需品ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも傘を持っていっても、傘がうまく開けられない時ってありますよね"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも傘を持っていっても、傘がうまく開けられない時ってありますよね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0178",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の夕飯は何にしようか迷っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は健康を考える人も多いですよね、野菜中心のおかずはいかがでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "でも野菜だけだとさみしいな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも野菜だけだとさみしいな",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0179",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のアニメはどれも面白いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "特にSF系やミステリー系のものにはハマっています。"
+      },
+      {
+        "role": "user",
+        "content": "でも僕はコメディが好きです"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも僕はコメディが好きです",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0180",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の試験で失敗してしまいました。"
+      },
+      {
+        "role": "assistant",
+        "content": "大変ですね、復習をして次回にはしっかりと対策をしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "でも自分はもう諦めてしまうかな"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも自分はもう諦めてしまうかな",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0181",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達の結婚式が楽しみです。"
+      },
+      {
+        "role": "assistant",
+        "content": "美味しい食事と楽しい音楽、最高の一日になるでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "でも最近何か足りないものを感じてしまいます"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも最近何か足りないものを感じてしまいます",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0182",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報を見たけど、今日は雨だね。傘を忘れちゃった…"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の天気が悪いですね。傘を持っていられるように注意しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "でも、今から出かける予定だったのに…"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、今から出かける予定だったのに…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0183",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日の試合で日本が勝って、みんなで喜んでた"
+      },
+      {
+        "role": "assistant",
+        "content": "おめでとうございます。大変盛り上がったでしょう"
+      },
+      {
+        "role": "user",
+        "content": "でも、私にはあまり関心がないんだ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、私にはあまり関心がないんだ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0184",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい携帯電話を買ったけど使い方がわからない"
+      },
+      {
+        "role": "assistant",
+        "content": "初めての携帯電話って少し慣れるまで時間がかかるかもしれませんね。手順を見直してみましょう"
+      },
+      {
+        "role": "user",
+        "content": "でも、説明書もよくわからなくて…"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、説明書もよくわからなくて…",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0185",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と旅行に行こうと思っている"
+      },
+      {
+        "role": "assistant",
+        "content": "楽しそうですね。どこに行きたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決まってないけど、どこか美味しいところを教えて"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まだ決まってないけど、どこか美味しいところを教えて",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0186",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の昼ご飯はラーメンを食べようと思っている"
+      },
+      {
+        "role": "assistant",
+        "content": "ラーメンは本当に美味しいですよね。どの店に行こうと Decide してますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ迷ってるけど、評判がいいところがあれば"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まだ迷ってるけど、評判がいいところがあれば",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0187",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はとても良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちいい日曜日になりそうですよ。"
+      },
+      {
+        "role": "user",
+        "content": "公園でピクニックを計画しています。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気はとても良いですね。公園でピクニックを計画しています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0188",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、新しい料理を作りました。"
+      },
+      {
+        "role": "assistant",
+        "content": "お味はいかがでしたか？"
+      },
+      {
+        "role": "user",
+        "content": "とても美味しいです！"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "とても美味しいです！",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0189",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいプロジェクトの計画が進んでいます。"
+      },
+      {
+        "role": "assistant",
+        "content": "順調ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、非常に良い進捗です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "非常に良い進捗です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0190",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末は天気がいいらしく、家族でピクニックを計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは楽しそうですね。 godeな天気なら外でのリラックスタイムも良いでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "でも少し不安です、天気が変わるのが多いから..."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも少し不安です、天気が変わるのが多いから...",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0191",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と新しい料理を試してみようと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "良いアイデアですね！何を作りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "でも、失敗したらどうしよう...友人が笑うかもしれない..."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、失敗したらどうしよう...友人が笑うかもしれない...",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0192",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近何か面白いことをしている？"
+      },
+      {
+        "role": "assistant",
+        "content": "実は新しいプログラミング言語を習い始めました。楽しいですね！"
+      },
+      {
+        "role": "user",
+        "content": "プログラミングって難しいと聞きますけど、大丈夫ですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "プログラミングって難しいと聞きますけど、大丈夫ですか？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0193",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近忙しくて、時間がないなあ..."
+      },
+      {
+        "role": "user",
+        "content": "でも、趣味の時間を削るのは嫌だ..."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、趣味の時間を削るのは嫌だ...",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0194",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気がいいので公園に行こうかな。"
+      },
+      {
+        "role": "assistant",
+        "content": " godee! 良いですね。気軽に出かけてみるのは気持ちがいいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "友達と話しながら散歩するのが好きです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友達と話しながら散歩るのが好きです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0195",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近忙しくて暇がありません。"
+      },
+      {
+        "role": "assistant",
+        "content": "大変そうですね。できるだけ余裕をもたせることも大切だと思いますよ。"
+      },
+      {
+        "role": "user",
+        "content": "うーん、でも本当に辛いです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "うーん、でも本当に辛いです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0196",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は特別にご飯を食べました。"
+      },
+      {
+        "role": "assistant",
+        "content": "おめでとうございます！何か特別な理由は？"
+      },
+      {
+        "role": "user",
+        "content": "友人の結婚式でした。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "友人の結婚式でした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0197",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近仕事で大変ですが、家に帰ってからはリラックスできます。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。メリハリがついてるからいいですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも本当はもっと早く帰れるといいなと思います。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも本当はもっと早く帰れるといいなと思います。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0198",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい同僚の説明会に参加しました。"
+      },
+      {
+        "role": "assistant",
+        "content": "良い経験になった presumably?"
+      },
+      {
+        "role": "user",
+        "content": "まだ全然理解できていなくて困っています。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まだ全然理解できていなくて困っています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0199",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が気持ちいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、本当に気持ちが良いです。風も気持ちよく吹いています。"
+      },
+      {
+        "role": "user",
+        "content": "散歩に行きたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気が気持ちいいですね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0200",
+    "category": "sentiment_label"
   }
 ]

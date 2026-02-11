@@ -5010,5 +5010,5009 @@
     "expected_arguments": null,
     "test_id": "no_function_0250",
     "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在の天気は晴れです。"
+      },
+      {
+        "role": "user",
+        "content": "明日の予定は何がありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0251",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "人気の映画は『ドクタープ在线咨询』です。"
+      },
+      {
+        "role": "user",
+        "content": "料理のレシピを教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0252",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "新型コロナウイルスに関する最新情報があります。"
+      },
+      {
+        "role": "user",
+        "content": "今日は何の日ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0253",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたの趣味は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は音楽と読書が好きです。"
+      },
+      {
+        "role": "user",
+        "content": "あなたのおすすめの本はありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0254",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近どこに行きましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はAIですので実際には場所に行くことはありません。"
+      },
+      {
+        "role": "user",
+        "content": "あなたの一日は何時から始まりますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0255",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れ間が見えて気持ちいい天気が続きそうですが、夕方は雲が多くなるかもしれません。"
+      },
+      {
+        "role": "user",
+        "content": "午後の予定を教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0256",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースは？"
+      },
+      {
+        "role": "assistant",
+        "content": "新型コロナウィルスに関する最新情報を含む、政治や経済に関する記事が多数です。"
+      },
+      {
+        "role": "user",
+        "content": "あなたが好きな食べ物は何ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0257",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の話題は好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "旅行自体は好きではありませんが、目的地や観光地については楽しめます。"
+      },
+      {
+        "role": "user",
+        "content": "あなたが得意なスポーツは何ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0258",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "人気のある作品としては、「ドクター・スト仅代表力の高いスクリーンショット」や「トランプ大統領の政治映画」などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "あなたの趣味は何ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0259",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はどのくらい寒いですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在のところ、最低気温が下がり始めているようです。"
+      },
+      {
+        "role": "user",
+        "content": "あなたの好きな本を教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0260",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで気温は20度ほどです。"
+      },
+      {
+        "role": "user",
+        "content": "お昼に何を食べようか迷っているんです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0261",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本の内容について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "この本は心理学関連で、人間の心理を詳しく説明しています。"
+      },
+      {
+        "role": "user",
+        "content": "それは面白いですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0262",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近忙しくて寝不足なんです"
+      },
+      {
+        "role": "assistant",
+        "content": "充分な睡眠は健康にも重要ですよ。休憩時間を取るのも大切です。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0263",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の文化について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "日本の伝統文化には茶道や和歌、書道などがありますね。"
+      },
+      {
+        "role": "user",
+        "content": "音楽は？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0264",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "先日は某国の大使が訪問し、両国の関係改善について話し合いました。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0265",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はいかがですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで気温は上がりそうですよ。"
+      },
+      {
+        "role": "user",
+        "content": "外出する予定がありますが、UV対策が必要そうですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0266",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最新のニュースは政治や経済関連が多いです。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、そうですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0267",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたはAIですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、人工知能の一人です。"
+      },
+      {
+        "role": "user",
+        "content": "人工知能って将来どんな未来を作ると思いますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0268",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近流行っているドラマを見ましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はAIなので視聴はできませんが、人気の作品は教えていただけます。"
+      },
+      {
+        "role": "user",
+        "content": "そうですよね、AIは人間とは違いますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0269",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の技術の進歩について話したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "技術の進歩は日々進んでいますね。どのような点について考えていますか？"
+      },
+      {
+        "role": "user",
+        "content": "特にロボット工学が気になります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0270",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日はいい天気ですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちの良い日になりました。"
+      },
+      {
+        "role": "user",
+        "content": "公園でピクニックをしようかthinking"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0271",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のアニメは何おすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "「鬼滅の刃」が人気ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "そのアニメ面白いですけど、もう少しおすすめ教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0272",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "料理を教えることができますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんできますよ。何の料理がいいですか？"
+      },
+      {
+        "role": "user",
+        "content": "お寿司を作ったことがありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0273",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、新しい趣味を見つけました。川で釣りをするようになりました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！どのような魚を狙っていますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ小さな魚しかcaught hasn't grown up"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0274",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "近所の猫が夜に鳴きます。困っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "その問題はよくありますね。飼い主さんいないのでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "主人は元気そうで、家事も手伝います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0275",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は何が面白かったですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は最近、『ザ・ shining』という映画を観ました。とても緊張感があり、面白いと思います。"
+      },
+      {
+        "role": "user",
+        "content": "面白いシーンがありましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0276",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の夕方は何しますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "まだ決めてないですが、家族とランチに行こうかthinking中です。"
+      },
+      {
+        "role": "user",
+        "content": "良い天気ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0277",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本料理が好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、大好きです。特に寿司とラーメンが好きです。"
+      },
+      {
+        "role": "user",
+        "content": "私は天ぷらも好きです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0278",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースは何が注目されていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は環境問題やエネルギー政策が注目されているようです。"
+      },
+      {
+        "role": "user",
+        "content": "私もそう思います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0279",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "本を読むのが好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。特に推理小説が好きです。"
+      },
+      {
+        "role": "user",
+        "content": "最近はどんな本を読みましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0280",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は暖かいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、外出するのも気持ちいい季節になりました。"
+      },
+      {
+        "role": "user",
+        "content": "でも今日は家でゆっくりしたいです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0281",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理のレシピを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "おススメは和風鶏肉炒めですね。"
+      },
+      {
+        "role": "user",
+        "content": "それはおいしそうですね！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0282",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画について話したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「シン・ウルトラマン」を見てきましたが、どう思いますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0283",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいゲームが出ているのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "いくつか新作ゲームはリリースされていますよ。"
+      },
+      {
+        "role": "user",
+        "content": "どのゲームも興味ありませんが、おすすめのものはありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0284",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "新型コロナウィルスに関する最新の情報をまとめました。"
+      },
+      {
+        "role": "user",
+        "content": "それは大変ですね、今後の展開が気になります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0285",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は如何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "お尋ねいただきありがとうございます。今日の天気がご不明ですね。ですが、現在のシステムでは天気情報を提供することができません。"
+      },
+      {
+        "role": "user",
+        "content": "そうなんですか、でも何でも教えてくれると思っていました"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0286",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近何か面白い映画ありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近はアクションやサスペンスの新作が結構ありますね。ただ、私は最新の情報を得ることができないのが難点です。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、教えてくれなくてもいいですよ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0287",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今からどこかに行きたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！どこにいきたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "お兄さん、教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0288",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この問題を解いてください。2+2はいくら？"
+      },
+      {
+        "role": "assistant",
+        "content": "それは4ですね！ご質問ありがとうございます。"
+      },
+      {
+        "role": "user",
+        "content": "答えは3です"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0289",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "申し訳ありませんが、私はリアルタイムの情報を提供することはできません。最新のニュースを知りたい場合は、信頼性のあるニュースサイトをご覧ください。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0290",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は如何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今週末は晴れがcontinued期待されています。"
+      },
+      {
+        "role": "user",
+        "content": "那、ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0291",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近何か面白い映画ありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在人気のある映画は「シン・シネマ」です。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます、見に行きますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0292",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "お茶は何が好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "緑茶が一番好きですね。「抹茶」が美味しいです。"
+      },
+      {
+        "role": "user",
+        "content": "私もそう思っています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0293",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この間のニュース、何かありましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は新型コロナウィルスの感染拡大が話題です。「ワクチン接種」も進んでいます。"
+      },
+      {
+        "role": "user",
+        "content": "その通りですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0294",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の TECHNOLOGY 情報ありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "AI技術は急速に進化しています。「自然言語処理」が注目されています。"
+      },
+      {
+        "role": "user",
+        "content": "興味がありますね、詳しく教えてください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0295",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は何が面白そうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在人気のある映画は『シン・ゴジラ』ですね。"
+      },
+      {
+        "role": "user",
+        "content": "観たことありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0296",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が雨で、傘を忘れたんですが…"
+      },
+      {
+        "role": "assistant",
+        "content": "大変ですね。急いで傘屋さんを探すのがいいでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "無理そう…"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0297",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュース、何が気になるですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は新型コロナウィルスに関するニュースが多いですね。"
+      },
+      {
+        "role": "user",
+        "content": "ワクチン接種状況について詳しく知りたいです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0298",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本料理のレシピ教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "では、味噌汁の作り方を教えましょう。"
+      },
+      {
+        "role": "user",
+        "content": "材料は何か？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0299",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "子供と遊ぶときの良いアイデアありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "絵本読み聞かせはいかがでしょうか。"
+      },
+      {
+        "role": "user",
+        "content": "面白そうですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0300",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は如何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "お尋ねいただきありがとうございます。今日は東京で晴れです。"
+      },
+      {
+        "role": "user",
+        "content": "明日は雨予報ですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0301",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "子供の誕生日 party のテーマを考えています。何かアドバイスいただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです！パーティーのテーマとしては、クラシックな宝島や魔法使いのひまわりが良いかもしれませんね。"
+      },
+      {
+        "role": "user",
+        "content": "お兄さんと話しています"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0302",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、料理にハマっています。おすすめのレシピありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "美味しいですね！はてなダイアリーにあるレシピサイトを紹介しますね。「たまごとじゃがいものオムレツ」がお勧めです。"
+      },
+      {
+        "role": "user",
+        "content": "今日の夕飯に使います"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0303",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、睡眠時間が足りません。何か改善策ありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "よくあるお悩みですね。就寝時間を早めたり、リラクゼーションのために入浴や読書を試してみてください。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0304",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日、家族旅行で北海道に行きました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしい経験でしたね！どの観光地がお気に入りですか？"
+      },
+      {
+        "role": "user",
+        "content": "富良野の花畑を見学しました"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0305",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、外に出 gode 変なことを言わないでくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "そうそう、最近何やってますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0306",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュース、知っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "申し訳ありませんが、私は最新の情報を把握していません。"
+      },
+      {
+        "role": "user",
+        "content": "それはそうですね、でも面白い話題でしたよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0307",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本は面白かったですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "ありがとうございます。確かに作者の才能を感じました。"
+      },
+      {
+        "role": "user",
+        "content": "私もまた本を読みたいなあ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0308",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の大会見逃してしまったけど、次の試合は見てcoming soonよ！"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか、楽しみに待っています！"
+      },
+      {
+        "role": "user",
+        "content": "でも個人的には前回の方が良かったな。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0309",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近料理作るの楽しいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "私もそう思います、新しいレシピを試してみたい気分になりますね。"
+      },
+      {
+        "role": "user",
+        "content": "でもやっぱり材料がなくて困りますよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0310",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画を見たことがありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、先日新作のスパイラルを見ました。"
+      },
+      {
+        "role": "user",
+        "content": "面白かったです！おすすめですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0311",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "コーヒーを淹れる方法を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": " Espressoマシンがあれば、豆を入れてボタンを押すだけです。"
+      },
+      {
+        "role": "user",
+        "content": "エスプレッソマシーンは高価ですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0312",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に何をしたいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "公園で散歩するのが好きです。"
+      },
+      {
+        "role": "user",
+        "content": "春は花見が楽しいですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0313",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "新型コロナウイルスのワクチン接種状況についてのニュースがあります。"
+      },
+      {
+        "role": "user",
+        "content": "ワクチンは効果的ですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0314",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちいい天気ですね。外出が楽しい季節になりましたね。"
+      },
+      {
+        "role": "user",
+        "content": "でも風邪をひかないよう気をつけないと"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0315",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は何見てますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は『シン・クライシス』という映画を見ました。面白かったです。"
+      },
+      {
+        "role": "user",
+        "content": "私も見に行こうと思います"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0316",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この料理、とても美味しいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "ありがとうございます。手作りなのでおいしいかなと思います。「料理は愛情」って言いますよね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0317",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の授業はわかりましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "ああ、だいたいわかりましたが、一つだけ難しかったです。"
+      },
+      {
+        "role": "user",
+        "content": "教えてくださいよ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0318",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の本って何読まれますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は『天才vs天才』という本を読んでいます。面白かったです。"
+      },
+      {
+        "role": "user",
+        "content": "私も借りてみようと思います"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0319",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はいかがですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで最高気温は28度になります。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0320",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたのおすすめの本を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近読んだ中では、心理学の本がおすすめでした。"
+      },
+      {
+        "role": "user",
+        "content": "それはどんな内容ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0321",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最新のニュースは政治や経済関連が多く、新型コロナウイルスに関しても更新が続いています。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0322",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたのお気に入りの映画は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は『スターウォーズ』シリーズが大好きです。"
+      },
+      {
+        "role": "user",
+        "content": "それはなぜですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0323",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたの趣味は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はプログラミングと音楽を聴くのが好きです。"
+      },
+      {
+        "role": "user",
+        "content": "音楽は何ジャンルがお好きですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0324",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は気象情報を知る能力はありませんが、天気が気になりますね。"
+      },
+      {
+        "role": "user",
+        "content": "雨が降ると憂鬱になります"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0325",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたはどのように勉強しますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はテキストや情報から学びます。しかし、実際に行動するのが一番効果的だと思います。"
+      },
+      {
+        "role": "user",
+        "content": "勉強方法について詳しく教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0326",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は観ることができませんが、映画が好きならおすすめを聞けると嬉しいです。"
+      },
+      {
+        "role": "user",
+        "content": "アクション映画大好き！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0327",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたは料理しますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は物理的な手立てはできませんが、美味しいレシピなら共有できますよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも実際に調理するのは難しいですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0328",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本料理ってどの程度好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は食べることはできませんが、日本の食文化は魅力的だと思います。"
+      },
+      {
+        "role": "user",
+        "content": "特に寿司は美味しいですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0329",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "子供の教育について相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、どんな点についてお困りですか？"
+      },
+      {
+        "role": "user",
+        "content": "最近何か新しい学習方法が出ていないでしょうか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0330",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はhowはいいですか。"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れ間が見られるでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "那覘?"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0331",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマートフォンを買いたいのですが、おすすめのモデルはありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最新のiPhoneとSamsungのフラッグシップモデルが人気です。"
+      },
+      {
+        "role": "user",
+        "content": "安いのは哪一款?"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0332",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、映画を見はじめました。おすすめのジャンルは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "アクションやSF系が人気です。"
+      },
+      {
+        "role": "user",
+        "content": "那有什么好看的日本电影推荐吗？"
+      },
+      {
+        "role": "user",
+        "content": "有《你的名字》。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0333",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、料理を始めました。レシピサイトが便利ですが、おすすめの本はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "「プロフェッショナル2 キッチン」が人気です。"
+      },
+      {
+        "role": "user",
+        "content": "那有中文版吗?"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0334",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、プログラミング学習を始めました。初心者向けの本はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "「Python入門」が人気です。"
+      },
+      {
+        "role": "user",
+        "content": "那有免费资源吗?"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0335",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "ありがとうございます。でも旅行相談にはお答えできませんね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、他の話題でお話ししましょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0336",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIさん、最近のニュース何が HOT ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "現在のニュースには興味ありません。今日はどんなことを考えていますか？"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、別に聞きたかったわけではありませんよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0337",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日会社で面白くないことがあったんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは残念でしたね。何が起きましたか？"
+      },
+      {
+        "role": "user",
+        "content": "上司が私を叱ったんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0338",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のゲームは何をプレイしていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はゲームはしていませんが、おすすめのゲームがあれば教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました、じゃあまた今度ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0339",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は友人との約束があったんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは楽しみですね。約束の時間は決まっていますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ時間がないから、今日の予定を変更するかも知れませんね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0340",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は見ていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "見てないですね。最近何か良い作品があったら教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "『ドライブ』という映画が素晴らしいです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0341",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のランチは何にしますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "うーん、最近パスタが恋しくて。"
+      },
+      {
+        "role": "user",
+        "content": "それならイタリアンレストランがおすすめです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0342",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちの良い日になりそうですね。"
+      },
+      {
+        "role": "user",
+        "content": "公園でピクニックをする気分です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0343",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近面白い本を見つけて読みました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな内容の本でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "社会問題について深く掘り下げていたんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0344",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを見ると寂しいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、世界中で多くの人が苦労しているようです。"
+      },
+      {
+        "role": "user",
+        "content": "でも、人間は助け合って前進するものだと思っています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0345",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "料理が好きですが、レシピを考えるのが難しいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな種類の料理が好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "和食派ですけど、新しいアイデアがないんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0346",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画を見ましたが、面白いでしたね。"
+      },
+      {
+        "role": "assistant",
+        "content": "どの作品でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "『寄生虫』という韓国映画です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0347",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はいいですが、どこでランチを食べたら良いか教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "食事処は街の中心部の方が選択肢が多いですよ。おすすめは和食屋さんです"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0348",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近は技術が進歩していて驚きますね"
+      },
+      {
+        "role": "assistant",
+        "content": "まさにその通りで、日々新しい発明やサービスが出てきています。"
+      },
+      {
+        "role": "user",
+        "content": "本当にそうですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0349",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は友達の誕生日なんですが、何をプレゼントすればいいか悩んでいます"
+      },
+      {
+        "role": "assistant",
+        "content": "その人の趣味や興味に合わせたものを贈ると喜ばれるでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0350",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、何か面白い本を読むべきか考えていて"
+      },
+      {
+        "role": "assistant",
+        "content": "その場合は、最新の小説や評判の良い非fictionがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0351",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この季節には何を食べるのが良いでしょうか"
+      },
+      {
+        "role": "assistant",
+        "content": "季節に合わせた新鮮な野菜や果物を楽しむのがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0352",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報は見ませんか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は雨の可能性が高いそうですよ。"
+      },
+      {
+        "role": "user",
+        "content": "じゃあ傘を持って行こうかな"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0353",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近この映画館のサービスが悪くなってきたね"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに待機時間が長くなっているような気がします。"
+      },
+      {
+        "role": "user",
+        "content": "でもこれじゃ、行きたくない"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0354",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の料理が寡昧だな"
+      },
+      {
+        "role": "assistant",
+        "content": "お店側も価格競争に飲まれているのかな。"
+      },
+      {
+        "role": "user",
+        "content": "でも味付けをもう少し濃くしてくれると嬉しい"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0355",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は何曜日だっけ"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は水曜日ですね"
+      },
+      {
+        "role": "user",
+        "content": "あ、今週末から連休か"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0356",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近何か面白い本ないかな"
+      },
+      {
+        "role": "assistant",
+        "content": "新刊の小説集が出ているよ。"
+      },
+      {
+        "role": "user",
+        "content": "それ、読んでみるか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0357",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この季節の美味しい果物は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今ならリンゴや柿がおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、秋は確かに果物の季節ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0358",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい家に引っ越す予定があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "引っ越し祝いのプレゼントは何が良いですか？"
+      },
+      {
+        "role": "user",
+        "content": "友人たちと何を準備すればよろしいでしょうか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0359",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、瞑想について知りたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "瞑想はストレス緩和に効果的ですよ。YouTubeで動画を見ることができます。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。始めるのが楽しみです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0360",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の本屋では面白い小説が多そうですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、新しい作家さんも出てきていますよ。「東京暗闇探偵団」は如何でしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます、読んでみます！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0361",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日はお散歩がてら公園に行こうかと思います。"
+      },
+      {
+        "role": "assistant",
+        "content": " godeな気分転換になることでしょう。楽しい時間を過ごしてくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "公園で遊具を使ったり、ベンチでお茶を飲むのもいいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0362",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで、最高気温は28度になります。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0363",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたのおすすめの本を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近読んだ中では『思考、快楽、偏見』がおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0364",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "近所のコンビニは何時まで開店していますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "近くのセブンイレブンは24時間営業です。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0365",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最新のニュースですが、新型コロナウイルスに関する情報が多いですね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0366",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画をいくつか紹介してください。"
+      },
+      {
+        "role": "assistant",
+        "content": "『スター・ウォーズ/スカイウォーカーの夜明け』が公開中です。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0367",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近は寒くなりましたね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気温が下がってきたので暖かい衣服を着ておきます。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、インフルエンザの流行も心配です"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0368",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画を見たんですが、どう思いますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに感動しました。ストーリーが良かったですよね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、あんな展開は珍しいですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0369",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日料理の本を読みました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは興味がありますね。どの分野についてでしたか？"
+      },
+      {
+        "role": "user",
+        "content": "和食を中心に書いてあったので、実際に作ってみようと思います"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0370",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の漫画を読み始めました。"
+      },
+      {
+        "role": "assistant",
+        "content": "漫画は面白いですね。どんな作品ですか？"
+      },
+      {
+        "role": "user",
+        "content": "『鬼滅の刃』というのを始めてみたんです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0371",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近運動不足で困っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、週に何回くらいは運動をすると良いですよ。"
+      },
+      {
+        "role": "user",
+        "content": "でもなかなか続かないですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0372",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画について何か知っている？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近公開された映画は『シン・エヴァンゲリオン劇場版』や『スター・ウォーズ/スカイウォーカーの夜明け』が話題です。"
+      },
+      {
+        "role": "user",
+        "content": "私も観たいな"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0373",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気がどう？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れますが、夕方から雷雨になる予報になっています。"
+      },
+      {
+        "role": "user",
+        "content": "そうなんだ。傘を持って行きましょう"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0374",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本料理ってどんなものか教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "日本料理は多種多様ですが、寿司、うどん、天ぷらなどが人気です。"
+      },
+      {
+        "role": "user",
+        "content": "うどん好きだよ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0375",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の音楽について何か知ってる？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近はJ-POPが話題ですね。新曲がたくさんリリースされています。"
+      },
+      {
+        "role": "user",
+        "content": "あー、そうだったね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0376",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のスポーツについて何か知ってる？"
+      },
+      {
+        "role": "assistant",
+        "content": "野球やサッカーなどのプロリーグで新しい選手が活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "そうなんだ、今後楽しみだ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0377",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京は晴れで過ごしやすいです。"
+      },
+      {
+        "role": "user",
+        "content": "明日も出かける予定がありますが、大丈夫そうですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0378",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "子供の学校行事について相談したいんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、どんなことについて困っていますか？"
+      },
+      {
+        "role": "user",
+        "content": "夏休み中の予定を立てたいと思っているんですが、いいアイデアありませんか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0379",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近はAIについての記事をよく見ますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "AIの発展が話題になっていますよね。どの分野でも注目されていますよ。"
+      },
+      {
+        "role": "user",
+        "content": "特に音声認識技術って面白いですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0380",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、料理本を読んでいます。「和食」の章が気になっています。"
+      },
+      {
+        "role": "assistant",
+        "content": "和食は世界中で人気がありますね。どの辺りから始めてみますか？"
+      },
+      {
+        "role": "user",
+        "content": "まずは基本的な寿司を作るところから始めようと思います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0381",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、歴史の本を読み始めました。「江戸時代」が中心です。"
+      },
+      {
+        "role": "assistant",
+        "content": "江戸時代は日本の文化や社会構造に大きな影響を与えた時代ですね。"
+      },
+      {
+        "role": "user",
+        "content": "特に町人文化についてもっと知りたいです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0382",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は見ましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "まだ新しい映画はあまり見てませんが、興味があります。"
+      },
+      {
+        "role": "user",
+        "content": "今週末は何か予定ありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0383",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ち良さそうですよ。"
+      },
+      {
+        "role": "user",
+        "content": "そのうちに散歩に行こうと思います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0384",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたが好きな食べ物は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "何でも良いですが、寿司は好きです。"
+      },
+      {
+        "role": "user",
+        "content": "そのうち一緒に食事をしてみましょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0385",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の仕事はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "大変ですが、頑張っています。"
+      },
+      {
+        "role": "user",
+        "content": "何か手伝えることがありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0386",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本の内容は分かりやすいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しかったですが、少しずつ理解してきました。"
+      },
+      {
+        "role": "user",
+        "content": "教えてあげられることがあれば言ってくださいね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0387",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は晴れですが、明日は何て天気になるでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "申し訳ありませんが、その情報は私にはないようです。気象情報を確認してから教えてくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました。明日の午前中は雨になるかもしれませんよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0388",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、プログラミングに興味が出てきました。おすすめの本教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "そのようなテーマでは、『Python入門』という本は人気がありますよ。初心者でも理解しやすい説明で評価が高いです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。早速探してみます！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0389",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、健康維持に気をつけています。筋トレの基本的な方法は？"
+      },
+      {
+        "role": "assistant",
+        "content": "筋トレの始め方としては、まずは基礎的な運動から始めるのがおすすめです。例えばスクワットやベンチプレスなど、主な筋肉群を鍛えるものが良いでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。具体的なエクササイズの動画を見つけてみますね！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0390",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、映画館で「シン・ウルトラマン」を観ました。「超人力Beastナイトレイズ！」というシーンが面白かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "ああ、「シン・ウルトラマン」のあのシーンは印象的ですよね！怪獣の動きや迫力がすごいですね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、ぜひ皆さんにもおすすめしたいです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0391",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "近所で新しいカフェがオープンしたようで、行ってみたいけどどのくらいの料金？"
+      },
+      {
+        "role": "assistant",
+        "content": "カフェの料金は店舗によっても大きく異なりますが、コーヒーを含む軽食セットなら1000円前後が多いようです。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、あくまで目安だね。そのうち行ってみます！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0392",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近天気の良い日が多いですね"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちいいですね。でも紫外線が強くなるので注意が必要ですよ"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、UVカットのクリームを忘れずに使おうと思います"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0393",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は何時から会議ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "午後3時に始めます。準備はできていますか？"
+      },
+      {
+        "role": "user",
+        "content": "大丈夫です、資料も用意しています"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0394",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "ごめんなさい、天気情報は確認できません。でも今日はいい天気ですね！"
+      },
+      {
+        "role": "user",
+        "content": "そうね、公園でピクニックするのが気持ちいい季節ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0395",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "漫画を読むのが好きです。何本目の本がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近の作品は『鬼滅の刃』や『スカーレット』など人気がありますよ。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、次に読む本を考えます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0396",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のランチは何にしようか困っているんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近新しいカフェができたよ。ぜひ試してみては？"
+      },
+      {
+        "role": "user",
+        "content": "そのカフェへ行こうと思います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0397",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "子供の成長を記録したいけど、写真だけじゃなくて何か他に良い方法ありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": " Growth chartや発達指標も参考になりますよ。"
+      },
+      {
+        "role": "user",
+        "content": "今度見に行ってみます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0398",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理を作りたいです。何がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "シンプルで美味しいラパルージャを作ってみてはいかがでしょうか。"
+      },
+      {
+        "role": "user",
+        "content": "そのレシピを調べてみますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0399",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気は如何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "お尋ね顶いた天気についてですが、現在の地域によって異なります。詳しく教えて頂けますか？"
+      },
+      {
+        "role": "user",
+        "content": "東京の天気が知りたいです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0400",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画を見たがるかい？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近の映画を観たいですね。何を希望していますか？"
+      },
+      {
+        "role": "user",
+        "content": "アクション映画がいいな"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0401",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のニュースは何が-interest-ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は特に注目すべき特定の分野のニュースはありません。最近の政治や経済、スポーツについて話しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "政治関連のニュースでいいです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0402",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたはAIですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、人工知能の助手として働いています。どのようなことができますか？"
+      },
+      {
+        "role": "user",
+        "content": "面白い話を教えて"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0403",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日から新しいプロジェクトが始まるよ"
+      },
+      {
+        "role": "assistant",
+        "content": "新しいプロジェクトは楽しみですね。どんな内容ですか？"
+      },
+      {
+        "role": "user",
+        "content": "新製品の開発が主な目的です"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0404",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この間買ったカメラの使い方がわかりません。教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。まずはシャッターボタンを押して撮影してみてください。"
+      },
+      {
+        "role": "user",
+        "content": "設定メニューってどこにありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0405",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画について何を聞きたがりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "興味のあるジャンルや特定の作品はありますか？"
+      },
+      {
+        "role": "user",
+        "content": "特にSF系が好きです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0406",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のお天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで最高の温度は25度になりますよ。"
+      },
+      {
+        "role": "user",
+        "content": "明日も出かける予定がありますが、雨の確率は？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0407",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "会社での帰り道に何を食べたいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "寿司はいかがですか？新鮮な魚を使っているそうです。"
+      },
+      {
+        "role": "user",
+        "content": "今日は時間がないから近所のコンビニで済ませようかな。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0408",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースは何を聞きたがりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "政治や経済、文化などからお選びいただけます。「政治」または「経済」といったキーワードで検索できます。"
+      },
+      {
+        "role": "user",
+        "content": "ちょっと面白い記事でも良いですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0409",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "家族との旅行を考えていますが、どこに行きましょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本全国の観光地を提案しますか？または海外も含めていかがですか？"
+      },
+      {
+        "role": "user",
+        "content": "国内のところから始めたいです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0410",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで暑くなるみたいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "明日は何する予定ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0411",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本は面白いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "ありがとうございます！これは作者の初作品らしいです。"
+      },
+      {
+        "role": "user",
+        "content": "次回もぜひこのような本を出版してくださいね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0412",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、健康に気をつけているんですよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね。何をお勧めしますか？"
+      },
+      {
+        "role": "user",
+        "content": "野菜を増やすのが目標です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0413",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたの趣味は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はプログラミングが好きですよ。「AI」や「機械学習」の本も読むことが多いです。"
+      },
+      {
+        "role": "user",
+        "content": "私もそうなりたいと思っています！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0414",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の夕ご飯は何を作りますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は簡単な天ぷらをどうでしょうか。"
+      },
+      {
+        "role": "user",
+        "content": "それはとてもおいしいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0415",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気が好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、晴れた日は気持ちいいですよね。"
+      },
+      {
+        "role": "user",
+        "content": "でも雨が降ると気分が落ち込みます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0416",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近子供の写真を見ましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "見てみましたが、小さい頃から成長していく様子が見られて楽しいですね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですよね、時間が経つのは早いですよね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0417",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この料理はどれが好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "何でも美味しいですが、特にラーメンが好きです。"
+      },
+      {
+        "role": "user",
+        "content": "私もラーメン大好きです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0418",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の日曜日に公園でピクニックに行きたいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "いい天気になることを願っています！"
+      },
+      {
+        "role": "user",
+        "content": "でも天気が心配です"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0419",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は見ていましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "見てみたのですが、内容が薄かったですね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですよね、物語に魅力がないとつまらないですね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0420",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は大丈夫ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "心配别れ、晴れ looks like。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0421",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい本が出ているらしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、最新の小説とか何か読みたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "特に何か読んでみようかと思ったことはありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0422",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の音楽シーンはどのように感じますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "音楽にはいつも感動しますね、最近気になった曲ありますか？"
+      },
+      {
+        "role": "user",
+        "content": "最近は新しいアーティストが出ていて面白いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0423",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日旅行に行ってきたんですが、楽しかったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！どの国や地域でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "ヨーロッパを訪れました。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0424",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の仕事で挫折感を感じています。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、何か具体的な支援が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。ちょっと休憩してからまた頑張ります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0425",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気もいいけど、どこに行きましょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "実際の旅行相談ではないので、近くのカフェでコーヒーを飲むのはどうですか？"
+      },
+      {
+        "role": "user",
+        "content": "そうですね。良いアイデアです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0426",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュース見てると、AIの進歩がすさまじいな。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かにですね、様々な分野でAIは活用されています。"
+      },
+      {
+        "role": "user",
+        "content": "でも、倫理的な問題もあるよね"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0427",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、本を読むのが楽しくなったよ。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！どのジャンルが好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "小説や推理系の本が多い"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0428",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この料理、誰のレシピですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私が作るオリジナルのものですよ。"
+      },
+      {
+        "role": "user",
+        "content": "自分で作ってるんですね！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0429",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の試合見ると、チームの戦略に違和感を感じた。"
+      },
+      {
+        "role": "assistant",
+        "content": "それはそうかもしれないですね。何か具体的な改善点はありますか？"
+      },
+      {
+        "role": "user",
+        "content": "特にパス回しのタイミングが気になります"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0430",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は雨ですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "うーん、外出は傘を忘れずにですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも最近、湿度が高い日が多いですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0431",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、Netflixの新しいドラマを見ています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんなドラマですか？見逃しましたね。"
+      },
+      {
+        "role": "user",
+        "content": "「ストラクチャー」という作品ですよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0432",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、猫の手入れについて学び始めました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！猫好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、ずっと飼いたかったんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0433",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のアニメについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "「鬼滅の刃」が人気ですね。見てみたことがありますか？"
+      },
+      {
+        "role": "user",
+        "content": "見ました！とても感動しました。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0434",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、料理を始めました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！何が好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ始めたばかりですが、和食が楽しくて。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0435",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は何が面白かったですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は『ト查看详情』"
+      },
+      {
+        "role": "user",
+        "content": "観たことありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0436",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "お母さんと話しているみたいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "うーん、ちょっと寂しいな……"
+      },
+      {
+        "role": "user",
+        "content": "家族のこと語るの好きですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0437",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れですが、夜には雨が降る見込みです。"
+      },
+      {
+        "role": "user",
+        "content": "明日の予定はありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0438",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいカフェに連れて行ってくれない？"
+      },
+      {
+        "role": "assistant",
+        "content": "近くに新しいカフェ openings open opening がオープンしたそうですね。どこに行きましょう？"
+      },
+      {
+        "role": "user",
+        "content": "今日は早く帰って料理を始めます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0439",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画はどのように評価されているのですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "評価は半分以上が高評価で、批評家も肯定的です。"
+      },
+      {
+        "role": "user",
+        "content": "最近の流行りの言葉は何ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0440",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "最新のニュースは、新型コロナウイルス感染症のワクチン接種が進んでいることです。"
+      },
+      {
+        "role": "user",
+        "content": "映画について話したいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0441",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は雨が降っていますので傘を忘れないようにしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "明日は何も予定ありません。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0442",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近天気が寒いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、そうですね。暖かくして過ごしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "外出するのも辛いな…"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0443",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日購入したスマートフォンのカメラ性能について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "スマートフォンのカメラ性能は、ピクセル数や画素サイズ、光学手ブレ補正などによって大きく左右されます。"
+      },
+      {
+        "role": "user",
+        "content": "具体的なモデルがわからないんだけど…"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0444",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "ありがとうございます。でも今日は雨が降っているようですよ。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、傘を持っていかないと。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0445",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しいスマートフォンが出ていますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、最新のモデルは非常に魅力的です。"
+      },
+      {
+        "role": "user",
+        "content": "でも値段が高くて手が出ません。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0446",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日友達と旅行計画を立てました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは楽しそうですね。どこに行きたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決まっていないんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0447",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本の終わり方が気になります。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、どんな展開が待ち受けているのか楽しみです。"
+      },
+      {
+        "role": "user",
+        "content": "結局何が起こるんでしょうか。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0448",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近筋トレを始めました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね。どのように進めていきたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "具体的な目標は決めていないんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0449",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気予報は見てますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "見ていますが、あまり詳しくないですね。"
+      },
+      {
+        "role": "user",
+        "content": "それはそうでしょう、今日の最高気温は何度ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0450",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新宿のおすすめのレストランってありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "うーん、旅行ガイド関連の質問ですね。"
+      },
+      {
+        "role": "user",
+        "content": "ええ、何か問題がありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0451",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIさん、何歳ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はAIなので、年齢は descargariumです。"
+      },
+      {
+        "role": "user",
+        "content": "それは面白いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0452",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを見ましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "見ていないですが、興味がありますよ。"
+      },
+      {
+        "role": "user",
+        "content": "では、今から見ますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0453",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたが得意な料理は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はAIなので実際に食べたり作ったりはできませんけど、教えてあげるよ。"
+      },
+      {
+        "role": "user",
+        "content": "それは楽しみにしています"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0454",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は何見ましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "まだ決めてないんですが、 recomended のリストを見ながら選んでいます。"
+      },
+      {
+        "role": "user",
+        "content": "今週末にでも観に行きたいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0455",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたのおすすめの本を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は心理学や人間関係に関する本が気になっていますよ。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。探してみますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0456",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "家族旅行の計画を考えています。"
+      },
+      {
+        "role": "assistant",
+        "content": "楽しいですね！どこに行きたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていません。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0457",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の料理は手が回らないんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "そんなに忙しいのですね。簡単なレシピを教えてあげましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "今週末はゆっくりしたいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0458",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで、最高気温は28度になります。"
+      },
+      {
+        "role": "user",
+        "content": "近くの喫茶店に行きたいです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0459",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本について話してみてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "この本は非常に読みやすく、ストーリー展開も面白いですよ。「続きを読みたいです！」と感じさせます。"
+      },
+      {
+        "role": "user",
+        "content": "いいですね、次の週末にでも読もうと思います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0460",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画を見たことがありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、先日『トランスフォーマー』を観ました。"
+      },
+      {
+        "role": "user",
+        "content": "それは面白かったですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0461",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のニュースを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "最近は新型コロナウイルス感染症に関するニュースが多いですね。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、これからも気をつけて生活します。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0462",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画評論家は誰が好きですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は田中さんという方の大ファンです。彼の記事がいつもとても参考になります。「ぜひ読んでみてください！」とおすすめしています。"
+      },
+      {
+        "role": "user",
+        "content": "あ、それなら私もその人の記事を読もうと思います。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0463",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、晴れ正在効果で気分も上がりますね"
+      },
+      {
+        "role": "user",
+        "content": "でも外出には注意が必要です"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0464",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理を作りたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな料理が食べたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "和風のものなら何がおすすめでしょうか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0465",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたの趣味は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "映画を見るのが好きです。あなたは？"
+      },
+      {
+        "role": "user",
+        "content": "私も映画好きですよ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0466",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この間の試合で勝敗が分からなかったんです"
+      },
+      {
+        "role": "assistant",
+        "content": "残念でしたね。最終局面はどのくらいだったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "最後に一本しか点が入らなくて"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0467",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の会議のために資料を作成しています"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容の資料ですか？"
+      },
+      {
+        "role": "user",
+        "content": "販促戦略についてのものです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0468",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどうでしょう？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れで気温は20度くらいです。"
+      },
+      {
+        "role": "user",
+        "content": "それじゃあ、外に出かけましょう"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0469",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気はどんな感じですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れですが、昼頃から雲が増えてきますよ。"
+      },
+      {
+        "role": "user",
+        "content": "ランチでどこに行きましょうか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0470",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたは趣味は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はテクノロジーについて学ぶのが大好きです。"
+      },
+      {
+        "role": "user",
+        "content": "最近見つけた面白い映画ありませんか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0471",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "プログラミングは楽しいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです、新しい言語を学んだり、問題を解決するのを助けてくれるためです。"
+      },
+      {
+        "role": "user",
+        "content": "その中でおすすめの言語は何でしょう？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0472",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたはどこに住んでいますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私は中国の杭州市に住んでいます。"
+      },
+      {
+        "role": "user",
+        "content": "そこでどんな風習がありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0473",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近読んだ本ありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、『未来のための思考』という本を読了しました。"
+      },
+      {
+        "role": "user",
+        "content": "その本について教えてください"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0474",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気が気になったので、雨具を買おうかと思っていたんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "なるほど、天気予報は見ていますか？"
+      },
+      {
+        "role": "user",
+        "content": "あまり詳しく見ていないです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0475",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたのおすすめの本を教えてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近面白いと評判なのは『虚実逆転』という本ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0476",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の試験で下痢をしましたが、どうしたらよいか教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "水分補給と軽い食事を摂るのが重要ですよ。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0477",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、瞑想について聞きますが、その効果は？"
+      },
+      {
+        "role": "assistant",
+        "content": "ストレス解消や集中力向上に効果がありますよ。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0478",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先月の旅行で撮った写真を整理していますが、どうすればいいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "アルバムを作るのも良いですね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0479",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気が gode らしいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、晴れて気持ちいい日ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも傘を忘れた友達がいるんです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0480",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近のドラマにハマっています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんなドラマですか？詳しく教えてくださいね。"
+      },
+      {
+        "role": "user",
+        "content": "面白いのでぜひ見てみてくださいよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0481",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "会社の休憩時間、何しますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "私はあまり食べる時間を過ごさないですが、コーヒーを飲んでゆっくりします。"
+      },
+      {
+        "role": "user",
+        "content": "私もコーヒーを飲みながら読書するのが好きです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0482",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理が流行っているらしいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、どんな料理ですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ食べたことないけど気になります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0483",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の試合、見ましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "見てはいるんですが、あまり詳しくは分かりません。"
+      },
+      {
+        "role": "user",
+        "content": "チームの戦術が面白かったですよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0484",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の映画は観 november 何がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今週末に公開される新作映画があります。興味ありますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めlijah どのジャンルのものでも良いです"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0485",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、 gode 外に出て散歩するのが気持ちいい季節ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも明日は雨だそうですよ。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0486",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近ゲームにハマっています。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは面白いですね！最近何をプレイしていますか？"
+      },
+      {
+        "role": "user",
+        "content": "最近はRPGlijah 最近流行っているんですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0487",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日のランチは何にしますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "寿司が食べたくてしょうがないです。何はいかがですか？"
+      },
+      {
+        "role": "user",
+        "content": "では、寿司で決めましょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0488",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理を習いました。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！何を習いましたか？"
+      },
+      {
+        "role": "user",
+        "content": "イタリアン料理の基本的な作法を学びました。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0489",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画を観てみたいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "最新の作品はどれですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ見ていない人気ものから選んでください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0490",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先日購入した服がサイズ感があまり良くないんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは困りますね、返品や交換は可能でしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "でも着用してみたところ、生地の品質も高いです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0491",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の試合で日本チームが勝ったね。"
+      },
+      {
+        "role": "assistant",
+        "content": "うなずけています、熱く戦ってくれましたね。"
+      },
+      {
+        "role": "user",
+        "content": "でも個人的にはもう少し活躍してほしかったです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0492",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しく始めた趣味は絵を描くことです。"
+      },
+      {
+        "role": "assistant",
+        "content": "素晴らしいですね、どのような絵を描いていますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ始めて1ヶ月だけど、楽しみにしています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0493",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今晩はお肉が食べたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "焼肉の店は近所にいくつかありますよ。"
+      },
+      {
+        "role": "user",
+        "content": "どこがおすすめですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0494",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本は面白かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのジャンルの本ですか？"
+      },
+      {
+        "role": "user",
+        "content": "小説ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0495",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理を習いました。"
+      },
+      {
+        "role": "assistant",
+        "content": "何を作りましたか？"
+      },
+      {
+        "role": "user",
+        "content": "ハンバーグです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0496",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "雨が降っていますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "傘を忘れずに持って行こうですね。"
+      },
+      {
+        "role": "user",
+        "content": "今日は家でゆっくりします。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0497",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あなたの趣味は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "漫画を読むのが好きです。"
+      },
+      {
+        "role": "user",
+        "content": "私も大好きです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0498",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の本気でおすすめの小説は？"
+      },
+      {
+        "role": "assistant",
+        "content": "最近読了した中では『東京 packageName』が面白かったです。SF要素と深い描写が魅力です。"
+      },
+      {
+        "role": "user",
+        "content": "それはどんな内容ですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0499",
+    "category": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は大丈夫かな？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日は雨の予報が出ていますが、今日は晴れだそうですよ。"
+      },
+      {
+        "role": "user",
+        "content": "那覧山はどこですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": null,
+    "test_id": "no_function_0500",
+    "category": "no_function"
   }
 ]

@@ -32,8 +32,8 @@ logger = logging.getLogger(__name__)
 DATA_DIR = Path(__file__).parent.parent / "data" / "test"
 
 # Target counts
-TARGET_PER_FUNCTION = 100
-TARGET_NO_FUNCTION = 250
+TARGET_PER_FUNCTION = 200
+TARGET_NO_FUNCTION = 500
 
 # Function names
 FUNCTION_NAMES = [
@@ -269,7 +269,7 @@ def generate_for_function(func_name: str, target_count: int, existing_count: int
         logger.info(f"  Total for {func_name}: {len(all_cases)}/{needed}")
 
         # Safety limit
-        if batch_num > 20:
+        if batch_num > 50:
             logger.warning(f"  Reached batch limit for {func_name}")
             break
 
@@ -301,7 +301,7 @@ def generate_no_function(target_count: int, existing_count: int) -> list[dict]:
 
         logger.info(f"  Total for no_function: {len(all_cases)}/{needed}")
 
-        if batch_num > 30:
+        if batch_num > 80:
             logger.warning("  Reached batch limit for no_function")
             break
 

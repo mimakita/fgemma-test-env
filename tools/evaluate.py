@@ -1,7 +1,12 @@
 """Evaluation script - measures FunctionGemma routing accuracy against test data.
 
 Usage:
-    python -m tools.evaluate [--data-dir PATH] [--output-dir PATH]
+    python -m tools.evaluate [--data-dir PATH] [--output-dir PATH] [--model MODEL]
+
+Examples:
+    python -m tools.evaluate
+    python -m tools.evaluate --model functiongemma-ft-run1
+    python -m tools.evaluate --data-dir data/finetune/run_1 --model functiongemma-ft-run1
 """
 
 import argparse
@@ -177,14 +182,14 @@ def compute_metrics(results: list[dict]) -> dict:
     }
 
 
-def print_report(metrics: dict):
+def print_report(metrics: dict, model_name: str):
     """Print a formatted evaluation report to console."""
     overall = metrics["overall"]
     per_func = metrics["per_function"]
 
     print("\n" + "=" * 70)
     print("FuncGemma Evaluation Report")
-    print(f"Model: {ROUTER_MODEL}")
+    print(f"Model: {model_name}")
     print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 70)
 
@@ -248,15 +253,22 @@ def main():
         default=str(DEFAULT_OUTPUT_DIR),
         help=f"Directory for evaluation results (default: {DEFAULT_OUTPUT_DIR})",
     )
+    parser.add_argument(
+        "--model",
+        type=str,
+        default=None,
+        help=f"Model to use for routing (default: {ROUTER_MODEL})",
+    )
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir)
     output_dir = Path(args.output_dir)
+    model_name = args.model or ROUTER_MODEL
 
     # Initialize
     init_all()
     client = OllamaClient()
-    router = FunctionRouter(client, registry)
+    router = FunctionRouter(client, registry, model_override=args.model)
 
     # Load test data
     test_data = load_test_data(data_dir)
@@ -319,14 +331,14 @@ def main():
     # Compute metrics
     metrics = compute_metrics(results)
     metrics["metadata"] = {
-        "model": ROUTER_MODEL,
+        "model": model_name,
         "timestamp": datetime.now().isoformat(),
         "elapsed_seconds": round(elapsed, 1),
         "data_dir": str(data_dir),
     }
 
     # Output
-    print_report(metrics)
+    print_report(metrics, model_name)
     save_results(results, metrics, output_dir)
 
 
