@@ -2298,5 +2298,2305 @@
     },
     "test_id": "celebrity_info_0100",
     "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田淵智也選手について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田淵智也是日本代表のサッカー選手として活躍し、多くのファンに親しまれています。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田淵智也",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0101",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田聖子さんについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松田聖子は日本を代表する歌手で、数多くのヒット曲を持っています。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田聖子",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0102",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福山雅治について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "福山雅治は1974年生まれの日本の歌手、俳優です。彼は1993年に「青春全員起立」でデビューし、その後多くのヒット曲を生み出しました。"
+      },
+      {
+        "role": "user",
+        "content": "キャリアについて詳しく知りたいよ"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "福山雅治",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0103",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤健の俳優活動を教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤健は1985年生まれで、2004年にドラマ『コードネーム　K』でデビューしました。以来、多くの人気作品に出演し、演技力も認められています。"
+      },
+      {
+        "role": "user",
+        "content": "主演作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤健",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0104",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "小林麻依について！"
+      },
+      {
+        "role": "assistant",
+        "content": "小林麻依は1994年生まれで、2007年に「千と千尋の神隠し」のオーディションで歌唱力が認められ、その後アニメソングや演歌など幅広いジャンルで活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "主なアワードは？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "小林麻依",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0105",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本希の経歴を教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "松本希は1985年生まれで、2003年にCM女優としてデビューしました。その後、モデルとしても活動し、ドラマや映画にも出演しています。"
+      },
+      {
+        "role": "user",
+        "content": "モデルとしての主な経歴を教えて"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本希",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0106",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中居正広について！"
+      },
+      {
+        "role": "assistant",
+        "content": "中居正広は1970年生まれで、タレント、俳優として活動しています。また「HEY!SOULSHakers」のMCとしても知られています。"
+      },
+      {
+        "role": "user",
+        "content": "最近の仕事は何？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中居正広",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0107",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田龍平さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松田龍平は、1984年7月23日生まれの日本の俳優です。代表作には『君の名前を一口言って』があります。"
+      },
+      {
+        "role": "user",
+        "content": "どの作品でも主演だったんですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田龍平",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0108",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "深田恭子さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "深田恭子は1978年10月3日生まれの日本の女優で、女優業だけでなくモデルとしても活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "主演ドラマはありますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "深田恭子",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0109",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中原郁さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "中原郁は、1965年10月27日生まれの日本の女優です。代表作には『君が太陽』があります。"
+      },
+      {
+        "role": "user",
+        "content": "主演作品は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中原郁",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0110",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中田英寿さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "中田英寿は1974年8月25日生まれの元日本代表サッカー選手で、現在は指導者としても活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "どのチームで活躍しましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中田英寿",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0111",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山本浩司さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "山本浩司は1974年6月20日生まれの元プロ野球選手で、主に捕手として活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "どのチームでプレーしたんですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山本浩司",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0112",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福山雅治さんについて詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "福山雅治さんは日本の歌い手として有名な人物です。デビューから数十年にわたり多くのヒット曲を生み出してきました。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表作は何か教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "福山雅治",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0113",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中みな実さんについて詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中みな実はタレントとして人気があります。バラエティ番組で活躍しており、独特の雰囲気が視聴者から注目されています。"
+      },
+      {
+        "role": "user",
+        "content": "彼女の経歴は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中みな実",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0114",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長嶋茂雄選手について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "長嶋茂雄選手はプロ野球の元選手、監督として知られています。「ダイエー」時代に最多打席を記録したことで有名です。"
+      },
+      {
+        "role": "user",
+        "content": "彼はどのような成績を残しましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "長嶋茂雄",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0115",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "木村拓哉さんについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "木村拓哉さんは俳優、歌手としても活躍している人気タレントです。「深夜の电视机前」や「ラストフレンズ」など多くの作品で主演を務めています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "木村拓哉",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0116",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志さんについて詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本人志さんは漫才コンビ「アンタッチャブル」のメンバーで、テレビ番組やイベントで活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の芸風は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0117",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿の業績は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "宮崎駿は数々のアニメ作品を手がけ、アニメーション界に大きな影響を与えました。"
+      },
+      {
+        "role": "user",
+        "content": "彼の具体的な功績は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "宮崎駿",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0118",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の俳優さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。松本幸四郎は、1950年に生まれた日本の有名な俳優で、多くの映画やテレビドラマに出演しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本幸四郎",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0119",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福山雅治さんについて話してみてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。福山雅治は1974年に生まれた日本の歌手、俳優です。代表的な作品として映画『ボクらの時代』やドラマシリーズ『医龍』があります。"
+      },
+      {
+        "role": "user",
+        "content": "その中でどの作品が一番人気ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "福山雅治",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0120",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "小泉今日子さんについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。小泉今日子は1958年に生まれた日本の女優、タレントで、数々のドラマや映画に出演しています。「タクシー運転手」の主題歌を歌って人気を博しました。"
+      },
+      {
+        "role": "user",
+        "content": "その中でどの作品が一番印象深いか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "小泉今日子",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0121",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山崎弘也さんについて詳しく説明してください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。山崎弘也は1972年に生まれた日本の俳優で、数々のドラマや映画に出演しています。「新選組！」シリーズでの演技が注目されました。"
+      },
+      {
+        "role": "user",
+        "content": "その中でどの作品が一番好きですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山崎弘也",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0122",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田翔太について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。松田翔太は1985年に生まれた日本の俳優、歌手で、数々のドラマや映画に出演しています。「仮面ライダー」シリーズにも出演して話題になりました。"
+      },
+      {
+        "role": "user",
+        "content": "その中でどの作品が一番印象深いですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田翔太",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0123",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渋谷千尋さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "渋谷千尋さんは1980年代から活躍する日本の歌い手で、独特の歌唱スタイルと魅力的なパフォーマンスで多くのファンを獲得しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼女の代表曲は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "渋谷千尋",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0124",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本隆の経歴について話してね。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本隆は日本の音楽プロデューサー、作詞家として知られています。彼は多くのヒット曲を手掛け、様々なアーティストとのコラボレーションで有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような作品が有名ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本隆",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0125",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "西城秀樹の略歴を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "西城秀樹は日本の歌い手として知られており、1960年代から70年代にかけて多くのヒット曲を生み出し、日本の音楽シーンで大きな影響を与えました。"
+      },
+      {
+        "role": "user",
+        "content": "彼が活躍していた時期は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "西城秀樹",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0126",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安室奈美恵について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "安室奈美恵は日本の歌手であり、彼女の音楽とダンススタイルは世界中で高く評価されています。"
+      },
+      {
+        "role": "user",
+        "content": "彼女はどのようなジャンルの歌手ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "安室奈美恵",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0127",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田孝之について教えて。"
+      },
+      {
+        "role": "assistant",
+        "content": "山田孝之は日本の俳優、声優として知られています。アニメやゲームのキャラクターを演じるなど、多才な演技力を持つ彼は多くのファンに愛されています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田孝之",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0128",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは日本の元プロ野球選手で、数々の記録を打ち立てています。「巨人軍」で長期間在籍し、チームの勝利に貢献しました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどんな成績だったか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0129",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤さんの経歴について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤さんは日本の有名な作家で、多くのベストセラー小説を出版しています。「文学賞」にもnessistしました。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主な作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0130",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本さんのプロフィールを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本さんは元アスリートで、現在はスポーツ解説者として活躍しています。「オリンピック」にも出場し、多くの人々に影響を与えています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の過去のパフォーマンスについて詳しく教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0131",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "山田さんは日本の有名な政治家で、数多くの法改正を推進しています。「選挙」にも多数出馬し、幅広い支持を得ています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどの分野で活動を行っているか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0132",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "伊藤さんのプロフィールを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "伊藤さんは日本の著名な科学者で、多くの重要な発明や研究に貢献しています。「学術賞」にもnessistしました。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主な業績について詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "伊藤さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0133",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志さんの経歴について詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本人志さんは1964年に生まれた日本のコメディアンで、1987年に芸人としてデビューしました。テレビやラジオ、映画でも活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表的な番組は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0134",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中の出身地や生い立ちはいかがでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "田中の主な業績を教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0135",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "井上苑子選手について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "井上苑子選手は、1987年9月24日に生まれた日本の陸上競技選手です。"
+      },
+      {
+        "role": "user",
+        "content": "詳しくお願いします。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "井上苑子",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0136",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松村邦洋について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松村邦洋は、日本の元プロ野球選手です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような活躍をされたのですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松村邦洋",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0137",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中村祐次について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "中村祐次は、日本の元プロ野球選手で、広島東洋カープやロッテオリオンズなどに在籍しました。"
+      },
+      {
+        "role": "user",
+        "content": "どのような成績を残されましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中村祐次",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0138",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高橋尚子について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "高橋尚子は、元日本代表の陸上競技選手で、200米走などで活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的な成績を教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "高橋尚子",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0139",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中川大志について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "中川大志は、日本のタレントで、モデルや俳優としても活動しています。"
+      },
+      {
+        "role": "user",
+        "content": "最近の活躍を教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中川大志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0140",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田翔太について知りたい"
+      },
+      {
+        "role": "assistant",
+        "content": "松田翔太は1988年4月3日生まれの日本のタレント、歌手です。"
+      },
+      {
+        "role": "user",
+        "content": "具体的に何を達成したのでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田翔太",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0141",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中村勘九郎の経歴について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "中村勘九郎は日本の歌舞伎俳優で、現在も活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどのような役を演じているか詳しく知りたいです"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中村勘九郎",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0142",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮沢賢治についてもっと知りたい"
+      },
+      {
+        "role": "assistant",
+        "content": "宮沢賢治は1906年10月5日から1933年6月27日まで生きた日本の文学作品家です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような文学作品を残しているのでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "宮沢賢治",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0143",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長谷川町子はどんな作家だったか"
+      },
+      {
+        "role": "assistant",
+        "content": "長谷川町子は日本の児童文学作家で、『くまのプーさん』シリーズなど多くの作品を残しています。"
+      },
+      {
+        "role": "user",
+        "content": "その他の代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "長谷川町子",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0144",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "石田一成について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "石田一成は日本の政治家で、1936年2月4日から2005年7月28日まで生きました。"
+      },
+      {
+        "role": "user",
+        "content": "主な功績は何だったのでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "石田一成",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0145",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは日本の著名な俳優です。彼は多くの映画やテレビドラマで主演を務めており、特に役者としての手腕が高く評価されています。"
+      },
+      {
+        "role": "user",
+        "content": "その代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0146",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京オリンピックを支えた人物について話してみてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本さんについて知っていますか？彼は数々の大会で金メダルを獲得し、東京オリンピックでは日本代表として活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "その経歴を教えて！"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0147",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについてもう少し詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは1970年生まれで、俳優としてのキャリアを始める前はスポーツ選手として活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、そのスポーツ経験が役に立っているんですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0148",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "吉田さんのことを知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "吉田さんは日本の著名な歌手で、数多くのヒット曲を生み出しています。"
+      },
+      {
+        "role": "user",
+        "content": "どの曲が人気ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "吉田",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0149",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "江崎さんの活躍について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "江崎さんは日本の有名な作家で、数多くのベストセラー小説を執筆しています。"
+      },
+      {
+        "role": "user",
+        "content": "その代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "江崎",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0150",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "渡辺晋一郎は日本の作家です。彼は多くの小説を出版し、読者から高い評価を得ています。"
+      },
+      {
+        "role": "user",
+        "content": "渡辺さんの代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "渡辺晋一郎",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0151",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中の選手はプロ野球で活躍しています。彼のキャリアには多くのヒIGHLIGHTがあります。「打者」として彼を見ることは大変な経験でしょう。"
+      },
+      {
+        "role": "user",
+        "content": "田中的主な成績は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中翔太",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0152",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松井さんの歴史について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松井秀喜は日本のプロ野球選手としてのキャリアだけでなく、アメリカンリーグでも活躍しました。彼は多くの記録を塗り替えて、日本とアメリカの野球界に大きな影響を与えました。"
+      },
+      {
+        "role": "user",
+        "content": "松井さんはどのような成績を残していますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松井秀喜",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0153",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤さんの経歴について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤優は政治学者として知られています。彼の著書も人気があり、政治と社会に関する深い洞察を提供しています。"
+      },
+      {
+        "role": "user",
+        "content": "佐藤さんの主な著作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤優",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0154",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高橋さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "高橋洋一は日本の元プロ野球選手で、現役時代から多くのファンに愛されました。「スラッガー」としても彼の名前が挙げられます。"
+      },
+      {
+        "role": "user",
+        "content": "高橋さんはどのチームでプレーしましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "高橋洋一",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0155",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤隆太は誰ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤隆太は日本のプロ野球選手で、現在はDeNAベイスターズに所属しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアについて詳しく教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤隆太",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0156",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松井秀喜はいつ野球選手を引退しましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "松井秀喜は2013年にMLBのタンパベイ・レッドソックスから引退しました。"
+      },
+      {
+        "role": "user",
+        "content": "引退後に何をしていましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松井秀喜",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0157",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中将大はどのような特技を持っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "田中将大は投球技術だけでなく、ピッチングスタイルの多様性でも知られています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表的な成績を教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中将大",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0158",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "菅野智之はどのような経歴を持っているのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "菅野智之は、大学時代からプロ野球で活躍し、現在は楽天イーグルスに所属しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主なキャリアハイライトを教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "菅野智之",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0159",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤は日本の俳優として有名です。彼について詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤さんは1970年代にデビューし、多くの映画とドラマで主演を演じています。"
+      },
+      {
+        "role": "user",
+        "content": "そのキャリアのどの部分が特に印象的ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0160",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺さんはどういった経歴を持っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "渡辺さんは小説家として知られており、多くのbestsellerを生み出しています。"
+      },
+      {
+        "role": "user",
+        "content": "その著作はどのようなテーマが多いですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "渡辺",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0161",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんはどんな人生を送ってきましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは幼少期から演技に興味があり、大学卒業後は俳優として活動を開始しました。"
+      },
+      {
+        "role": "user",
+        "content": "彼の代表作は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0162",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田さんはどのような経歴を持っていらっしゃいますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "山田さんは1980年代にデビューし、多くのドラマと映画で主演を演じています。"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアの中で最も成功した作品は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0163",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "林さんはどんな実績がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "林さんは数々の文学賞を受賞し、日本の文壇において重要な役割を果たしています。"
+      },
+      {
+        "role": "user",
+        "content": "その作品の中で特に人気があったのは何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "林",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0164",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺晋史さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "渡辺晋史さんは日本の元プロ野球選手で、日本ハムファイターズで活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "どの年代に活躍したのか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "渡辺晋史",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0165",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中裕二について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中裕二是日本の元プロ野球選手で、広島東洋カープと読売ジャイアンツでプレーしました。"
+      },
+      {
+        "role": "user",
+        "content": "どのチームで最も成功したのですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中裕二",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0166",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "石井直輝は誰ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "石井直輝は日本の元プロ野球選手で、横浜DeNAベイスターズの投手として活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "彼が所属していた主なチームは？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "石井直輝",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0167",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中将大について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中将大は日本のプロ野球選手で、現在オリックス・バファローズで投手として活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の長所は何だと思いますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中将大",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0168",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松井秀喜について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松井秀喜は日本の元プロ野球選手で、阪神タイガースからアメリカのMLBにもプレーしました。"
+      },
+      {
+        "role": "user",
+        "content": "彼がMLBでプレーしたのはどのチームですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松井秀喜",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0169",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本さんはどのような業績がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "松本さんは多くのテレビ番組やコメディライブで笑いを提供し、また著書も出版しています。彼の貢献は日本のエンターテイメント界に非常に大きな影響を与えています。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、彼の影響力は大きいですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0170",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんの作品を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは数多くの著作がありますが、特に『笑っていいとも！』で知られています。また、「テレビ朝日」や「フジテレビ」での多数の出演も有名です。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0171",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんはどのような経歴ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは芸能界入り後、バラエティ番組やドラマ、映画などに多数出演。特に「笑っていいとも！」での司会としての人気は日本を代表するものでした。"
+      },
+      {
+        "role": "user",
+        "content": "そのような経歴があったのですね。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0172",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田龍平について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "松田龍平は日本の俳優で、『君が代』で主演を務め人気を得ました。"
+      },
+      {
+        "role": "user",
+        "content": "キャリアと成績も教えて！"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田龍平",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0173",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田優作について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "松田優作は日本の歌謡歌手で、1970年代から1980年代にかけて大ブレイクしました。代表曲の一つ「青い炎」が有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような経歴を持っていましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田優作",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0174",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山下達郎について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "山下達郎は日本の歌手、音楽プロデューサー。1970年代から活動を始め、独特な音楽性で知られています。代表曲の「風の色」が有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのようなキャリアを持っているのでしょうか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山下達郎",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0175",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮沢賢治について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "宮沢賢治は日本の作家で、1923年に『銀河鉄道の夜』を発表しました。この作品は日本文学において重要な位置を占めています。"
+      },
+      {
+        "role": "user",
+        "content": "どのような業績を持っていますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "宮沢賢治",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0176",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "堀江貴文について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "堀江貴文は日本の起業家、作家。2013年に「僕が最後の恋愛相談所」を開始し、人気を集めています。「恋愛学」という新しい概念で知られています。"
+      },
+      {
+        "role": "user",
+        "content": "どのような人物ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "堀江貴文",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0177",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中道子について教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "田中道子は日本の元オリンピック金メダリストで、陸上競技の100m走で活躍しました。2020年の東京オリンピックでも参加し注目を集めました。"
+      },
+      {
+        "role": "user",
+        "content": "どのように活動を続けているか教えてください"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中道子",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0178",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長嶋茂雄のキャリアについて"
+      },
+      {
+        "role": "assistant",
+        "content": "長嶋茂雄は野球選手として1957年から1984年までメジャーリーグでプレーし、日本ではオリックス・ブルーウェーブなどで活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "どう評価されているか知りたい"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "長嶋茂雄",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0179",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田翔太について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "松田翔太は日本の歌手、俳優として活躍しています。「メイキング」や「エブリデイ」などのヒット曲を生み出しました。"
+      },
+      {
+        "role": "user",
+        "content": "どんな活動をしているのか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田翔太",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0180",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山本耀司について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "山本耀司は日本のファッションデザイナーで、世界的に有名なブランド「Yohji Yamamoto」を創立しました。"
+      },
+      {
+        "role": "user",
+        "content": "どのような功績があるのか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山本耀司",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0181",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中村勘九郎について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "中村勘九郎は日本の能楽師で、伝統的な日本の演劇芸術である「能」を現代に伝える役割を果たしています。「月狂女」「山姥」など多くの有名作品を演じています。"
+      },
+      {
+        "role": "user",
+        "content": "どのような経歴があるのか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中村勘九郎",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0182",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "北野武は日本の映画監督、俳優として幅広く活躍しており、「座頭市」「極道の Stamp Collection」など多くの作品を生み出しました。「監督業界の鬼」として有名です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような功績があるのか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "北野武",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0183",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長谷川京子について詳しく知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "長谷川京子は日本の女優で、多くの映画やドラマに出演しています。「恋するフォーチュンクッキー」、「スカートの下はピアノ」など有名作品があります。「演技派」として高い評価を受けています。"
+      },
+      {
+        "role": "user",
+        "content": "どのような経歴があるのか教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "長谷川京子",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0184",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは1980年に東京で生まれました。大学時代から俳優活動を始め、映画やドラマに出演しました。"
+      },
+      {
+        "role": "user",
+        "content": "もっと詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0185",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本さんのキャリアについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松本さんは1975年に静岡県出身です。高校を卒業後、芸能事務所に所属し、芸能活動を始めました。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主要な作品は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0186",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤さんの業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤さんは1985年に京都生まれです。音楽活動を始めてから、数多くの楽曲制作やコンサートを開催しました。"
+      },
+      {
+        "role": "user",
+        "content": "どのような賞を受賞していますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0187",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺さんの生い立ちについて詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "渡辺さんは1978年に大阪で生まれました。幼少期から演劇に興味を持ち、高校時代には舞台に出演しました。"
+      },
+      {
+        "role": "user",
+        "content": "その後の活動は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "渡辺さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0188",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "藤原紀香さんのキャリアについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "藤原紀香さんは1978年に東京都で生まれた女優です。"
+      },
+      {
+        "role": "user",
+        "content": "詳しくお願いします。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "藤原紀香",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0189",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山本耀司の業績について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "山本耀司は日本のファッションデザイナーとして有名で、1980年代に注目を集めました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的には？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山本耀司",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0190",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "村上春樹は日本の現代小説家で、2017年にノーベル文学賞を受賞しました。"
+      },
+      {
+        "role": "user",
+        "content": "どの作品が有名ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "村上春樹",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0191",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山崎賢人さんのプロフィールを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "山崎賢人は1989年に東京都で生まれた日本の俳優です。"
+      },
+      {
+        "role": "user",
+        "content": "どのような役柄で有名ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山崎賢人",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0192",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長谷川伸の業績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "長谷川伸は日本の俳優、タレントとして知られており、1980年代から活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどんな役を演じていますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "長谷川伸",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0193",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "藤本美貴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "藤本美貴は日本の歌手、タレントとして知られています。1976年7月3日生まれです。"
+      },
+      {
+        "role": "user",
+        "content": "彼女の代表曲は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "藤本美貴",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0194",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中みな実はどんな経歴を持っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "田中みな実は2015年にプロ野球の横浜DeNAベイスターズに入団し、女性として初めてプロ野球選手となりました。"
+      },
+      {
+        "role": "user",
+        "content": "その後どうしましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中みな実",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0195",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中居正広について詳しく教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "中居正広は日本のタレント、俳優として知られています。また、ジャニーズ事務所所属のアイドルグループSMAPの一員でも有名です。"
+      },
+      {
+        "role": "user",
+        "content": "SMAPが解散した後は何をしていますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中居正広",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0196",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宇多田ヒカルの活躍について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "宇多田ヒカルは日本の歌手として世界的にも知られています。1998年にデビューし、数多くのヒット曲を生み出しています。"
+      },
+      {
+        "role": "user",
+        "content": "どのアーティストとのコラボレーションが印象的ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "宇多田ヒカル",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0197",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志はどのような経歴を持っていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "松本人志は日本のタレント、漫才師として知られています。1982年から活動を開始し、様々なテレビ番組で活躍しています。"
+      },
+      {
+        "role": "user",
+        "content": "代表的な漫才パートナーは誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本人志",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0198",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田優作について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "松田優作は、日本の俳優として知られています。代表的な作品に『君が好きだったよ』があります。"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリアをもっと詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田優作",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0199",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤孝二の成績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤孝二是日本の政治家で、衆議院議員を務めました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的な功績は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤孝二",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0200",
+    "category": "celebrity_info"
   }
 ]

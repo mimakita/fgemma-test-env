@@ -2683,5 +2683,2382 @@
     },
     "test_id": "schedule_reminder_0100",
     "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午前10時にミーティングがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "わかりました、明日午前10時にミーティングのリマインダーを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "ミーティング",
+      "datetime": "2023-10-15T10:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0101",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の月曜日の午後3時に会議があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "会議のリマインダーを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議",
+      "datetime": "2023-10-16T15:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0102",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の朝6時に散歩をしなければなりません。"
+      },
+      {
+        "role": "assistant",
+        "content": "6時の散歩のリマインダーを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "散歩をする",
+      "datetime": "2023-10-15T06:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0103",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の水曜日の午後に友達と会いたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "友人と会う予定をリマインダーに追加しました。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人と会う",
+      "datetime": "2023-10-18T14:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0104",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週金曜日の午後3時に会議があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。午後3時での会議は記録しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議",
+      "datetime": "来週金曜日 午後3時"
+    },
+    "test_id": "schedule_reminder_0105",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午前9時に新しいプロジェクトのプレゼンテーションがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "記録しました、明日の午前9時のプレゼンテーションです。"
+      },
+      {
+        "role": "user",
+        "content": "はい、よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "プロジェクトのプレゼンテーション",
+      "datetime": "明日 午前十時"
+    },
+    "test_id": "schedule_reminder_0106",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の10日から研修があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来月10日の研修を記録しました。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "研修",
+      "datetime": "来月10日"
+    },
+    "test_id": "schedule_reminder_0107",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "月曜日の朝8時にお仕事が始まるのですが、それをスケジュールに追加してください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、月曜日8時のお仕事開始をスケジュールに追加しました。"
+      },
+      {
+        "role": "user",
+        "content": "確認して。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "月曜日の朝8時のお仕事が始まる"
+    },
+    "test_id": "schedule_reminder_0108",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の午後に友達と映画を見に行きます。"
+      },
+      {
+        "role": "assistant",
+        "content": "では、今日15時から友人との映画観賞をスケジュールに追加しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "今日の午後に友達と映画を見に行く"
+    },
+    "test_id": "schedule_reminder_0109",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日のお昼に会議がありますが、時間は12時30分です。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、明日12:30にお会計のスケジュールを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "確認してみてください。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "明日のお昼12時30分に会議がある"
+    },
+    "test_id": "schedule_reminder_0110",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後6時から家族との食事会がありますが、忘れなければと思います。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。明日（水）18時に家族との食事会のリマインダーを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "家族との食事会",
+      "datetime": "2023-10-04T18:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0111",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後に友達とランチを予定しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。14時から友達とのランチを予約しますね。何か特別なことを予定していますか？"
+      },
+      {
+        "role": "user",
+        "content": "特に何もありませんが、会社の忘年会に間に合うよう早めに帰宅するようにリマインダーをお願いできますか？"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会社の忘年会に間に合うよう早めに帰宅",
+      "datetime": "12月29日 13:00"
+    },
+    "test_id": "schedule_reminder_0112",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "毎週木曜日に映画を見る予定があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。毎週木曜日の映画鑑賞をリマインダーで設定しますね。どの時間に映画館に行く予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "19時からです。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "毎週木曜日の映画鑑賞",
+      "datetime": "毎週木曜日 19:00"
+    },
+    "test_id": "schedule_reminder_0113",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の予定を確認したいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。どの日付の予定を見たいですか？"
+      },
+      {
+        "role": "user",
+        "content": "昨日のものを見てください。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "",
+      "datetime": "昨日"
+    },
+    "test_id": "schedule_reminder_0114",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友人の結婚式に出席しますが、時間が分かりません。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。友人Aさんの結婚式の時間をリマインダーで設定しますね。いつ行われる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "来週金曜日です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人Aさん結婚式への出席",
+      "datetime": "来週金曜日"
+    },
+    "test_id": "schedule_reminder_0115",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の旅行を計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。具体的な出発日と目的地は？"
+      },
+      {
+        "role": "user",
+        "content": "来月10日の土曜日に東京へ行きます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "来月10日の土曜日に東京への旅行",
+      "datetime": "来月10日"
+    },
+    "test_id": "schedule_reminder_0116",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "毎週木曜日の午後4時に勉強会を設けることになった。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。毎週木曜日午後4時で勉強会の予定を設けました。"
+      },
+      {
+        "role": "user",
+        "content": "よければ、その予定を確認してほしい。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "勉強会"
+    },
+    "test_id": "schedule_reminder_0117",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "10月5日から3週間後に旅行に行く予定がある。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、あなたは10月5日の3週後つまり10月19日に旅行を計画していますね。"
+      },
+      {
+        "role": "user",
+        "content": "その予約の確認をお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "旅行"
+    },
+    "test_id": "schedule_reminder_0118",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週木曜日の夕方に会議がある。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来週木曜日の夕方の会議を予定していますね。"
+      },
+      {
+        "role": "user",
+        "content": "確認してみてください。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "会議"
+    },
+    "test_id": "schedule_reminder_0119",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "3月15日に友人との食事会を計画している。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、3月15日に友人との食事会の予定が入っていますね。"
+      },
+      {
+        "role": "user",
+        "content": "その予約の確認をお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "食事会"
+    },
+    "test_id": "schedule_reminder_0120",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日午前9時から1時間、重要なお仕事が入っている。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、明日午前9時から1時間のお仕事を予定していますね。"
+      },
+      {
+        "role": "user",
+        "content": "確認してみてください。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "重要なお仕事"
+    },
+    "test_id": "schedule_reminder_0121",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "次回のプロジェクトミーティングはいつでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "次回のプロジェクトミーティングは来週月曜日の午前10時に設定されています。"
+      },
+      {
+        "role": "user",
+        "content": "それなら、そのリマインダーを確認してみて"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "プロジェクトミーティング",
+      "datetime": "2023-11-20T10:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0122",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の初めに旅行があることを忘れないようにリマインダーを設定して"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、来月の初めの旅行リマインダーを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "旅行前までに準備を確認するので、その日時もリマインダーで教えて"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "旅行前準備",
+      "datetime": "2023-12-05T18:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0123",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後3時に会議がありますが、リマインダーを設定していただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。明日の15時から会議のリマインダーをお設置しますね。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議",
+      "datetime": "2023-04-15T15:00:00"
+    },
+    "test_id": "schedule_reminder_0124",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に友達とランチを予定しています。リマインダーを設定してもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。週末のランチのリマインダーを設定しますね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友達とランチ",
+      "datetime": "2023-04-16T12:00:00"
+    },
+    "test_id": "schedule_reminder_0125",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の木曜日の午前10時に予定があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、それをお知らせします。来週の木曜日10時の予定をリマインダー設定しましたね？"
+      },
+      {
+        "role": "user",
+        "content": "そうです、ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "重要なお仕事",
+      "datetime": "2023-04-20T10:00:00"
+    },
+    "test_id": "schedule_reminder_0126",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "月曜日に友人の結婚式があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その日程をリマインダーに登録しますね。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人結婚式",
+      "datetime": "2023-04-17T09:00:00"
+    },
+    "test_id": "schedule_reminder_0127",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "本日の夕方5時に打ち合わせがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その会議のリマインダーを設定しますね。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いいたします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "月次の打ち合わせ",
+      "datetime": "2023-04-18T17:00:00"
+    },
+    "test_id": "schedule_reminder_0128",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に家族旅行を計画しています。どこに行きましょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "秋の景色を楽しむのにピッタリなところは如何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "京都や奈良あたりでしょうか？"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "家族旅行の計画",
+      "datetime": "週末"
+    },
+    "test_id": "schedule_reminder_0129",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達とランチをしようと思っています。いつどうしますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今週水曜日の午後2時では如何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "すみません、もう少し早いか？"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "ランチの約束",
+      "datetime": "今週水曜日"
+    },
+    "test_id": "schedule_reminder_0130",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の会議は10時からです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、1時間前に9時半に確認しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日の会議の準備",
+      "datetime": "明日 10時"
+    },
+    "test_id": "schedule_reminder_0131",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "月曜日に新しいプロジェクトが始まります。"
+      },
+      {
+        "role": "assistant",
+        "content": "それでは、先週金曜日の午後4時に準備を確認しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました、ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "新規プロジェクトの準備開始",
+      "datetime": "先週金曜日"
+    },
+    "test_id": "schedule_reminder_0132",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と旅行に行く予定です。"
+      },
+      {
+        "role": "assistant",
+        "content": "いつ出発しますか？"
+      },
+      {
+        "role": "user",
+        "content": "来週土曜日の朝9時からでよろしいでしょうか？"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人との旅行計画",
+      "datetime": "来週土曜日"
+    },
+    "test_id": "schedule_reminder_0133",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の夜、友人との飲み会がありますが、今日中に予定を確認します。"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の飲み会、楽しみですね。確認は今日中に済ませておきましょう。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "友人との飲み会がある",
+      "datetime": "2023-04-16T19:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0134",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に友達とランチを計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "いつとどこに行きたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "来週土曜日の午後1時、近所のカフェでどうでしょうか？"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友達とのランチデート",
+      "datetime": "来週土曜日 午後1時"
+    },
+    "test_id": "schedule_reminder_0135",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "毎週木曜日の午後6時にフィットネスジムに行きたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "予定を確認しました。その時間に空いている場所がありますね。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "フィットネスジムの週間通し予約",
+      "datetime": "毎週木曜日 午後6時"
+    },
+    "test_id": "schedule_reminder_0136",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後2時に会議があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "その時間を確認しました。必要な準備は何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "資料を作成する必要がありますね。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議用の資料作成",
+      "datetime": "明日 午後2時"
+    },
+    "test_id": "schedule_reminder_0137",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週金曜日の午前10時に打ち合わせがありますが、時間に余裕があるようになおしときたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。新しい時間を提案しますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "cancel",
+      "description": "打ち合わせの再調整",
+      "datetime": "来週金曜日 午前10時"
+    },
+    "test_id": "schedule_reminder_0138",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今月中に家族との旅行計画を立てたいと考えています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どこに行きたいですか？また、いつ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "秋の時期に近場でリフレッシュできるところを探しているんです。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "家族旅行の計画",
+      "datetime": "秋"
+    },
+    "test_id": "schedule_reminder_0139",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "月曜日の午後3時、ミーティングを設定してほしい"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。月曜日15時にミーティングの予定を設けましたね。"
+      },
+      {
+        "role": "user",
+        "content": "お疲れさまです"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "月曜日の午後3時のミーティング",
+      "datetime": "2023-10-09T15:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0140",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の土曜日、友達とランチをしようと思っている"
+      },
+      {
+        "role": "assistant",
+        "content": "素敵ですね！具体的な時間は決まりましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていないから、近くでいいよ"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "来週の土曜日のランチ会",
+      "datetime": "2023-10-14T12:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0141",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "火曜日の午前10時から会議があることを忘れていた"
+      },
+      {
+        "role": "assistant",
+        "content": "その件、ご不便をおかけしました。日程は修正済みです。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "cancel",
+      "description": "火曜日の午前10時からの会議",
+      "datetime": "2023-10-10T10:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0142",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の金曜日、友達とランチを予定している"
+      },
+      {
+        "role": "assistant",
+        "content": "その予定は確認しました。時間は決まっていますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていないから、近いうちに決めたい"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "今週の金曜日のランチ会",
+      "datetime": "2023-10-13T12:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0143",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の第1水曜日、上司と面談を予定している"
+      },
+      {
+        "role": "assistant",
+        "content": "その日程は重要ですね。具体的な時間は決まっていますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていないから、早めに設定したい"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "来月の第1水曜日の面談予定",
+      "datetime": "2023-11-07T14:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0144",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日から毎週木曜日の午後4時にレッスンがあることを覚えているか"
+      },
+      {
+        "role": "user",
+        "content": "もちろん覚えておきます。日付や時間を教えてください"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "毎週木曜日の午後4時のレッスンを記録する",
+      "datetime": "毎週木16:00"
+    },
+    "test_id": "schedule_reminder_0145",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後2時に飲み会があることを予定登録してほしい。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。明日の14時から飲み会の予定を登録しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "飲み会",
+      "datetime": "2023-10-15T14:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0146",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の木曜日までに報告書を提出することを思い出させるようにして。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来週の木曜日までの報告書の提出期限を予定登録しました。"
+      },
+      {
+        "role": "user",
+        "content": "良いですね。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "報告書の提出",
+      "datetime": "2023-10-26T23:59:59+09:00"
+    },
+    "test_id": "schedule_reminder_0147",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "次回の面接は来週金曜日の午前11時からだ。それを思い出させるようにして。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来週金曜日午前11時の面接を予定登録しました。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "面接の予定",
+      "datetime": "2023-10-27T11:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0148",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末に友達とランチを予定していますが、何か特別な日程はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今週末のスケジュールは空いています。ランチの時間や場所は決まりましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていないです。どこがいいですか？"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "ランチ予定",
+      "datetime": "この週末"
+    },
+    "test_id": "schedule_reminder_0149",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "月曜日の午後から新しく始まるプロジェクトミーティングがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "月曜日のミーティングは重要そうですね。開始時間や場所を確認しましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ詳細が分かりません。確認次第、日程を調整します。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "新規プロジェクトミーティング",
+      "datetime": "月曜日 午後"
+    },
+    "test_id": "schedule_reminder_0150",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の土曜日に散歩を計画していますが、天候は大丈夫でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日まで天気予報を見てみましょう。土曜日の天気はどうなりますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ確認していません。天気予報をチェックしに行きます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "散歩の計画",
+      "datetime": "来週 土曜日"
+    },
+    "test_id": "schedule_reminder_0151",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後に友達と会う予定がありますが、他の用事はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日のスケジュールを確認しましょう。午後は何時から何時まで空いていますか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ完全には決めていません。午後2時から4時頃に会えるかもしれません。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友達との会議",
+      "datetime": "明日 午後2時-4時"
+    },
+    "test_id": "schedule_reminder_0152",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の日曜日に家族でピクニックを計画しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "ピクニックは楽しいですね！天候や場所は決まりましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ具体的な場所は決めていませんが、天気予報を見てから決めます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "家族ピクニックの計画",
+      "datetime": "今週 土曜日"
+    },
+    "test_id": "schedule_reminder_0153",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "毎週月曜日の朝8時に Pills の服薬を思い出させるように設定してね。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。毎週月曜日の朝8時にお薬の服薬を思い出すアラートをセットしました。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "Pills の服薬を思い出させる"
+    },
+    "test_id": "schedule_reminder_0154",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の金曜日、17時から3時間の会議があると思うんだが、そのアラートを設定しておいてくれないかな。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。来週の金曜日の17時から3時間の会議のアラートをセットしました。"
+      },
+      {
+        "role": "user",
+        "content": "了解したよ。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "来週の金曜日の17時から3時間の会議"
+    },
+    "test_id": "schedule_reminder_0155",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "土曜日に友達とカフェで会う予定があるんだけど、そのことを忘れないようにアラートを立てる？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。土曜日のカフェの会合についてアラートを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとう！"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "土曜日に友達とカフェで会う"
+    },
+    "test_id": "schedule_reminder_0156",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週の金曜日、14時から部会があるんだけど、そのことを忘れないように教えて。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。今週の金曜日の14時の部会についてアラートを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "お願いします！"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "今週の金曜日、14時からの部会"
+    },
+    "test_id": "schedule_reminder_0157",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の15日の午後3時から2時間の面談があるって聞きました。そのアラートをセットしておいてくれますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。来月の15日の午後3時からの面談についてアラートを設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとう！"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "来月の15日の午後3時から2時間の面談"
+    },
+    "test_id": "schedule_reminder_0158",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午前10時に散歩をする予定です。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。10時のお散歩の予約を設定します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日の午前10時に散歩をする",
+      "datetime": "2023-10-15T10:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0159",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の金曜日の夕食会があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "その日程を予約しました。時間は決まりましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていないです。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "来週の金曜日の夕食会がある",
+      "datetime": "2023-10-20T18:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0160",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末は友人と映画を見に行きます。"
+      },
+      {
+        "role": "assistant",
+        "content": "楽しんでくださいね。いつ行く予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "金曜日の午後です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "今週末に友人と映画を見る",
+      "datetime": "2023-10-20T15:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0161",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の会議が予定されています。"
+      },
+      {
+        "role": "assistant",
+        "content": "その会議を確認しましょう。いつ行われるのですか？"
+      },
+      {
+        "role": "user",
+        "content": "12月5日です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "来月の会議がある",
+      "datetime": "2023-12-05T09:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0162",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の朝8時に散歩をすることを覚えておいてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、明日の朝8時にお散歩のお知らせをお送りしますね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日の朝8時に散歩をすること",
+      "datetime": "明日 08:00"
+    },
+    "test_id": "schedule_reminder_0163",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週木曜日の会議をキャンセルしてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来週木曜日の会議は取消しになりますね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "cancel",
+      "description": "来週木曜日の会議をキャンセルします",
+      "datetime": "来週の木曜日"
+    },
+    "test_id": "schedule_reminder_0164",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日中にメールを取り込んでおくと良いです。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、今日中のメール受信をお手伝いしますね。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "今日中にメールを取り込むこと",
+      "datetime": "今日中"
+    },
+    "test_id": "schedule_reminder_0165",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の朝9時に散歩をしますが、アラームをセットしてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。明日早上9点会帮您设置散步的提醒，请问还有什么需要我帮忙的吗？"
+      },
+      {
+        "role": "user",
+        "content": "何もありませんよ"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "散歩のアラーム",
+      "datetime": "2023-10-10T09:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0166",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の金曜日に友達とランチを予定しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "その日の午後12時頃に会えるでしょうか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、その時間なら大丈夫です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "来週の金曜日のランチ"
+    },
+    "test_id": "schedule_reminder_0167",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日から新しいプロジェクトが始まるので、重要なミーティングを設定してほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん可能です。具体的にはいつの時間にミーティングをする予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "午後3時でよろしいでしょうか。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "プロジェクト開始後の初回ミーティング",
+      "datetime": "15:00"
+    },
+    "test_id": "schedule_reminder_0168",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の月曜日から新しい授業が始まりますので、受講日のリマインダーを設定してもらえませんか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。具体的にはどの時間に通知がほしいですか？"
+      },
+      {
+        "role": "user",
+        "content": "8時に教えてもらうのがよろしいです。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "新しい授業開始のリマインダー",
+      "datetime": "08:00"
+    },
+    "test_id": "schedule_reminder_0169",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末に友人と食事に行く予定がありますが、その日を覚えておいてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。具体的にはいつですか？"
+      },
+      {
+        "role": "user",
+        "content": "土曜日の午後2時です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人と食事に行く予定",
+      "datetime": "14:00"
+    },
+    "test_id": "schedule_reminder_0170",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "次週の月曜日に医者に診てもらう予約がありますが、その日をリマインダーにしてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。具体的にはどの時間に通知が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "午前の8時です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "医者への予約リマインダー",
+      "datetime": "08:00"
+    },
+    "test_id": "schedule_reminder_0171",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の金曜日までに仕事が終わらなければなりませんが、その期限をリマインドしてもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。具体的にはどの時間に通知が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "午後5時です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "仕事の期限リマインダー",
+      "datetime": "17:00"
+    },
+    "test_id": "schedule_reminder_0172",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の朝8時にジョギングのリマインダーを設定してね。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。明日、早朝8時にジョギングのリマインドのお知らせをお送りします。"
+      },
+      {
+        "role": "user",
+        "content": "よし、ありがとう。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "ジョギング",
+      "datetime": "明日 08:00"
+    },
+    "test_id": "schedule_reminder_0173",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の月曜日14時にミーティングのリマインダーを設定しますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、来週の月曜日14時にお知らせをお送りします。"
+      },
+      {
+        "role": "user",
+        "content": "お願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "ミーティング",
+      "datetime": "来週 月曜日 14:00"
+    },
+    "test_id": "schedule_reminder_0174",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今晩の6時半に飲み会に行く約束をし忘れたよ。リマインダーを設定してもらう？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、すぐに行います。今晩6時30分にお知らせをお送りします。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "飲み会",
+      "datetime": "本日 18:30"
+    },
+    "test_id": "schedule_reminder_0175",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末の土曜日に公園でピクニックを計画しているけど、リマインダーが欲しいな。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、了解しました。今週末の土曜日のピクニックのお知らせを設定します。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "ピクニック",
+      "datetime": "今週末 土曜日"
+    },
+    "test_id": "schedule_reminder_0176",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後に友達とランチを予定しているんだけど、忘れないうちにリマインダーを入れておく？"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろんです。明日のランチのリマインドをお知らせします。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとう。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友達とランチ",
+      "datetime": "明日 午後"
+    },
+    "test_id": "schedule_reminder_0177",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の予定を確認したいんだけど、土曜日の夕方の予定は？"
+      },
+      {
+        "role": "assistant",
+        "content": "土曜日の夕方は今から2日後にあります。詳しく見ましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、見せてください。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "先週の土曜日の夕方の予定",
+      "datetime": ""
+    },
+    "test_id": "schedule_reminder_0178",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の20日から3日間、出張に行くけど、そのリマインダーを設定して。「出張」で検索できるように名前付けしてくれ。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。'出張'と検索でき、20日から始まる3日間の予定がセットされますね。"
+      },
+      {
+        "role": "user",
+        "content": "はい、お願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "出張",
+      "datetime": "来月 20 日"
+    },
+    "test_id": "schedule_reminder_0179",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の夕方は空いている？"
+      },
+      {
+        "role": "assistant",
+        "content": "明日の夕方は既に予定がありますが、確認してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "確認お願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "明日の夕方の予定",
+      "datetime": ""
+    },
+    "test_id": "schedule_reminder_0180",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "近々友達とランチをしたいんだけど、その予定を忘れてしまったみたい。"
+      },
+      {
+        "role": "assistant",
+        "content": "大丈夫ですよ、再設定しましょう。"
+      },
+      {
+        "role": "user",
+        "content": "再設定して。「ランチ」で検索できるように名前付けてくれ。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友達とランチを食べる",
+      "datetime": ""
+    },
+    "test_id": "schedule_reminder_0181",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の朝8時に散歩の予定があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "8時頃に散歩に行くことにしましたね。天候が良ければ外でゆっくりしてみてください。"
+      },
+      {
+        "role": "user",
+        "content": "はい、天気予報を見るためにチェックします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "明日の朝8時の散歩"
+    },
+    "test_id": "schedule_reminder_0182",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "月曜日の午後3時に歯科医に予約があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "月曜日の午後3時に歯科医院に行くことにしましたね。予定を守りましょう。"
+      },
+      {
+        "role": "user",
+        "content": "はい、忘れずに行きます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "月曜日の午後3時の歯科医院の予約"
+    },
+    "test_id": "schedule_reminder_0183",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週末の土曜日にピアノレッスンがありますが、遅刻しないように気を付けます。"
+      },
+      {
+        "role": "assistant",
+        "content": "ピアノレッスンは重要な予定ですから、遅刻するなとは言いませんね。時間に余裕を持ってお出かけしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "そうですね、早めに出発します。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "今週末の土曜日のピアノレッスン"
+    },
+    "test_id": "schedule_reminder_0184",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の水曜日午前9時にミーティングがありますが、資料を確認しておきます。"
+      },
+      {
+        "role": "assistant",
+        "content": "ミーティングに向けて資料を準備しておくのはいいアイデアですね。必要な情報をすべて整えましょう。"
+      },
+      {
+        "role": "user",
+        "content": "はい、時間に余裕を持って対応します。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "来週の水曜日午前9時のミーティング"
+    },
+    "test_id": "schedule_reminder_0185",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の夕方5時に友人とランチを予定していますが、遅刻しないよう注意します。"
+      },
+      {
+        "role": "assistant",
+        "content": "大切な友人とのランチですから、必ず時間に合わせるようにしましょう。"
+      },
+      {
+        "role": "user",
+        "content": "はい、約束を守ります。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "今日の夕方5時の友人とのお食事"
+    },
+    "test_id": "schedule_reminder_0186",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後に友達との約束があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "その約束は具体的に何時ですか？"
+      },
+      {
+        "role": "user",
+        "content": "17時に会う予定です。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "友達との約束",
+      "datetime": "2023-10-05T17:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0187",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来週の金曜日に会社の締め切りがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "その日は具体的に何時までですか？"
+      },
+      {
+        "role": "user",
+        "content": "午後5時までです。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会社の締め切り",
+      "datetime": "2023-10-13T17:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0188",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週水曜日の午後に会議があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "具体的な時間は？"
+      },
+      {
+        "role": "user",
+        "content": "午後2時に始まります。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議の予定",
+      "datetime": "2023-10-04T14:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0189",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日午後4時頃に会議があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、午後4時に会議の提醒を設定します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議",
+      "datetime": "2023-10-15T16:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0190",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の金曜日のプレゼンテーションを確認してください。"
+      },
+      {
+        "role": "assistant",
+        "content": "先週の金曜日のプレゼンテーションの情報を確認いたします。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございました。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "プレゼンテーション",
+      "datetime": "2023-10-13T14:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0191",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月の15日午前9時に打ち合わせがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来月の15日午前9時にある打ち合わせの提醒を設定します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "打ち合わせ",
+      "datetime": "2024-01-15T09:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0192",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今週木曜日の午後3時から5時の間、ミーティングがあります。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、今週木曜日午後3時から5時までのミーティングの提醒を設定します。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "ミーティング",
+      "datetime": "2023-10-12T15:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0193",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "次回のチームビルディング活動は来月の10日です。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました、来月10日のチームビルディング活動について確認します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "チームビルディング活動",
+      "datetime": "2023-11-10T14:00:00+09:00"
+    },
+    "test_id": "schedule_reminder_0194",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日から毎週木曜日に部会があることを思い出させることができるか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、毎週木曜日の部会をリマインダーとして設定します。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "毎週木曜日部会",
+      "datetime": "毎週木曜日 10:00"
+    },
+    "test_id": "schedule_reminder_0195",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日の午後3時に打ち合わせがあることを教えてくれるかい？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、明日の午後3時の打ち合わせをリマインダーとして設定します。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日の午後3時打ち合わせ",
+      "datetime": "明日 15:00"
+    },
+    "test_id": "schedule_reminder_0196",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の会議のレポートを確認したい。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。先週の会議のレポートを検索します。"
+      },
+      {
+        "role": "user",
+        "content": "それなら今から見てきますね。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "query",
+      "description": "先週の会議のレポート",
+      "datetime": ""
+    },
+    "test_id": "schedule_reminder_0197",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "来月15日のプレゼンテーションは午前9時に始まるので、それまでに資料を準備しなければならない。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。来月15日午前9時のプレゼンテーションのリマインダーを作成します。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました、ありがとうございます。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "来月15日午前9時プレゼンテーション",
+      "datetime": "来月15日 09:00"
+    },
+    "test_id": "schedule_reminder_0198",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末に予定がないので、公園でピクニックをしようと思っている。"
+      },
+      {
+        "role": "assistant",
+        "content": "楽しそうですね！週末の午後は天気がいいとの予報ですので、その時間にピクニックをお楽しみください。"
+      },
+      {
+        "role": "user",
+        "content": "それじゃ、楽しんできますね。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "週末公園ピクニック",
+      "datetime": "週末 午後"
+    },
+    "test_id": "schedule_reminder_0199",
+    "category": "schedule_reminder"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "毎週月曜日の朝8時に Pills を飲むことをリマインダー設定してね。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。毎週月曜日の朝8時にPillsを飲むことをリマインダーに設定しました。"
+      },
+      {
+        "role": "user",
+        "content": "よろしくお願いします。"
+      }
+    ],
+    "expected_function": "schedule_reminder",
+    "expected_arguments": {
+      "action": "create",
+      "description": "Pillsを飲みます",
+      "datetime": "毎週月曜日の朝8時"
+    },
+    "test_id": "schedule_reminder_0200",
+    "category": "schedule_reminder"
   }
 ]
