@@ -4598,5 +4598,2891 @@
     },
     "test_id": "celebrity_info_0200",
     "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんの経歴について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは1970年生まれで、大学卒業後、大手企業に入社しました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的に何を学んだのですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0201",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "佐藤さんはどんな仕事をしていましたか？"
+      },
+      {
+        "role": "assistant",
+        "content": "佐藤さんは元々アーティストとして活躍していましたが、最近では俳優としても活動を始めました。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどの作品でどのように活動したのですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "佐藤さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0202",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "吉田さんの主な功績は何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "吉田さんは数々の科学賞を受賞し、特に新薬開発に貢献しています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にはどの薬品を開発したのですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "吉田さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0203",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鈴木さんはどのような人物ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "鈴木さんは日本のビジネスシーンで活躍する経営者で、数多くの慈善活動にも積極的に参加しています。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にどんな活動を行っていますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "鈴木さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0204",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "石井さんのプロフィールを教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "石井さんは元気なスポーツ選手で、数々の大会で優勝経験があります。"
+      },
+      {
+        "role": "user",
+        "content": "具体的にはどのような種目で優勝しましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "石井さん",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0205",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本で有名な俳優を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "映画やドラマなどで人気のある俳優、比如山田裕貴さんが挙げられます。彼のキャリアや主要作品について調査しますか？"
+      },
+      {
+        "role": "user",
+        "content": "はい"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田裕貴",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0206",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な科学者について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "アルベール・アインシュタインは、有名な科学者として知られています。彼に関する生涯や主な業績について調査しますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいですね"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "アインシュタイン",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0207",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名な歌手を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "元SMAPの香取慎吾さんは、日本の有名な歌手としても活動しています。彼に関するキャリアや主要な成就について調査しますか？"
+      },
+      {
+        "role": "user",
+        "content": "はい"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "香取慎吾",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0208",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の歴史的な人物を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "源義経は、日本の江戸時代初期の有名な武将として知られています。彼に関する生涯や主な業績について調査しますか？"
+      },
+      {
+        "role": "user",
+        "content": "いいです"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "源義経",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0209",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中さんは1980年に生まれた日本の俳優です。代表作は『花咲け！』シリーズなどがあります。"
+      },
+      {
+        "role": "user",
+        "content": "キャリアについて詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0210",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本さんはどんな人でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "松本さんは日本の作家で、『君をのんびり待つ』というベストセラー小説で知られています。"
+      },
+      {
+        "role": "user",
+        "content": "その作品について詳しく教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松本さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0211",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中田さんはどのスポーツ選手ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "中田さんは元サッカー選手で、日本代表として活躍しました。"
+      },
+      {
+        "role": "user",
+        "content": "主な成績は？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "中田さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0212",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "林さんは有名な画家ですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "是枝裕和監督の映画『海街diary』で知られる林さんは、日本を代表する女性アーティストです。"
+      },
+      {
+        "role": "user",
+        "content": "その映画での役割について詳しく教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "林さん",
+      "info_type": "biography"
+    },
+    "test_id": "celebrity_info_0213",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山田さんはどんな人でしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "山田さんは日本の政治家で、現在は衆議院議員を務めています。"
+      },
+      {
+        "role": "user",
+        "content": "そのキャリアについて詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山田さん",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0214",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "田中さんについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "田中のプロフィールは？"
+      },
+      {
+        "role": "user",
+        "content": "詳しく知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0215",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "林さんの功績を教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "林さんの主な功績は？"
+      },
+      {
+        "role": "user",
+        "content": "特に注目すべきことはありますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "林さん",
+      "info_type": "achievements"
+    },
+    "test_id": "celebrity_info_0216",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山本さんのキャリアと功績について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "山本さんのキャリアと主な功績は？"
+      },
+      {
+        "role": "user",
+        "content": "どの部分が最も興味深かったですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山本さん",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0217",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松田優作について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "松田優作は日本の俳優として知られています。彼は1957年にデビューし、多くの映画やテレビドラマに出演しました。代表作には「七人の侍」などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "彼のキャリア期間は何年間ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "松田優作",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0218",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "菅田将暉とはどんな人？"
+      },
+      {
+        "role": "assistant",
+        "content": "菅田将暉は現在の若手俳優として注目を集めています。映画やドラマ、CMなどにも出演しており、多くのファンを持っています。"
+      },
+      {
+        "role": "user",
+        "content": "彼の主演作品は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "菅田将暉",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0219",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "山口百恵について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "山口百恵は日本の歌い手で女優としても知られています。1970年代から80年代にかけて人気を博し、多くのヒット曲を残しています。"
+      },
+      {
+        "role": "user",
+        "content": "彼女は何年間活躍しましたか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "person_name": "山口百恵",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0220",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "タレントの渡辺直美について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0221",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0222",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "entrepreneurのElon Muskについて詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0223",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0224",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "宮崎駿です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0225",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0226",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0227",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ミュージシャンの米津玄師について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0228",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0229",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "音楽家の坂本龍一について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0230",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "Elon Muskです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0231",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0232",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0233",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0234",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0235",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0236",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0237",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0238",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0239",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskって誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0240",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "羽生結弦です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "羽生結弦",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0241",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0242",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0243",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0244",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0245",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0246",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0247",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0248",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0249",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督の北野武について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0250",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0251",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0252",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "作家の村上春樹について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0253",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0254",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0255",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督の北野武について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0256",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "安藤忠雄です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0257",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Taylor Swiftは何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Taylor Swift",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0258",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "米津玄師の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0259",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0260",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0261",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0262",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローのプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0263",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0264",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "お笑い芸人の松本人志について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0265",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskの経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0266",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0267",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0268",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0269",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "建築家の安藤忠雄について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0270",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0271",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSの経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0272",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "K-POPグループのBTSについて詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0273",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskって誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0274",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0275",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0276",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0277",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "音楽家の坂本龍一について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0278",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0279",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "米津玄師について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0280",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0281",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0282",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺直美について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0283",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0284",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "singerのTaylor Swiftについて詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Taylor Swift",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0285",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0286",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0287",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローって誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0288",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督の北野武について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0289",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0290",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "タレントの渡辺直美について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0291",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0292",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0293",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "松本人志です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0294",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0295",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "米津玄師について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0296",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺直美について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0297",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "米津玄師です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0298",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0299",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "Taylor Swiftです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Taylor Swift",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0300",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskの経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0301",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0302",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0303",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0304",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0305",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0306",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSって誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0307",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローのプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0308",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "タレントの渡辺直美について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0309",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローの経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0310",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0311",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSは何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0312",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0313",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "村上春樹のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0314",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "イチローです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0315",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺直美について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0316",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺直美は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0317",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0318",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "Taylor Swiftです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Taylor Swift",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0319",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "K-POPグループのBTSについて詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0320",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0321",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "映画監督の宮崎駿について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0322",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskって誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0323",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "渡辺直美です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0324",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0325",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "草間彌生です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0326",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSの経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0327",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "音楽家の坂本龍一について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0328",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "米津玄師は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0329",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "BTSです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0330",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "singerのTaylor Swiftについて詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Taylor Swift",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0331",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0332",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0333",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "Elon Muskです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0334",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0335",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "北野武です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0336",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskって誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0337",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "安藤忠雄です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0338",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イチローは何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0339",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "羽生結弦について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "羽生結弦",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0340",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0341",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "安藤忠雄の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0342",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大谷翔平の最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "大谷翔平",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0343",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "安藤忠雄です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0344",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ミュージシャンの米津玄師について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0345",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "宮崎駿です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0346",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "村上春樹です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0347",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "米津玄師について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0348",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0349",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0350",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "北野武です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0351",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0352",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "米津玄師って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0353",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺直美って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0354",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "米津玄師です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "米津玄師",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0355",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "宮崎駿",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0356",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "イチローです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "イチロー",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0357",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生って誰ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0358",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "お笑い芸人の松本人志について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0359",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北野武のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "北野武",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0360",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "草間彌生のプロフィールを知りたいです。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "草間彌生",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0361",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "坂本龍一の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "坂本龍一",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0362",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "K-POPグループのBTSについて詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0363",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Elon Muskについて教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "Elon Musk",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0364",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "羽生結弦は何歳ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "羽生結弦",
+      "info_type": "profile"
+    },
+    "test_id": "celebrity_info_0365",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "渡辺直美の経歴を調べてもらえますか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "渡辺直美",
+      "info_type": "career"
+    },
+    "test_id": "celebrity_info_0366",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "作家の村上春樹について詳しく教えて。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "村上春樹",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0367",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "松本人志について教えてください。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "松本人志",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0368",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "有名人について質問があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どなたについて知りたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "安藤忠雄です。"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "安藤忠雄",
+      "info_type": "general"
+    },
+    "test_id": "celebrity_info_0369",
+    "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "BTSの最近の活動は何ですか？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {
+      "name": "BTS",
+      "info_type": "recent_activity"
+    },
+    "test_id": "celebrity_info_0370",
+    "category": "celebrity_info"
   }
 ]

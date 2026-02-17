@@ -31,9 +31,9 @@ logger = logging.getLogger(__name__)
 
 DATA_DIR = Path(__file__).parent.parent / "data" / "test"
 
-# Target counts
-TARGET_PER_FUNCTION = 200
-TARGET_NO_FUNCTION = 500
+# Target counts (10% increase from 200/500)
+TARGET_PER_FUNCTION = 220
+TARGET_NO_FUNCTION = 550
 
 # Function names
 FUNCTION_NAMES = [
