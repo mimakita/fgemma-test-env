@@ -16,6 +16,9 @@ import os
 import sys
 from pathlib import Path
 
+# Set MPS memory limits before importing torch
+os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"  # Disable upper limit
+
 import torch
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model, TaskType
@@ -45,7 +48,7 @@ DEFAULT_LR = 3e-5  # Slightly higher for faster convergence
 DEFAULT_LORA_RANK = 16  # Increased for more capacity
 DEFAULT_LORA_ALPHA = 32  # 2x rank for stable training
 DEFAULT_MAX_LENGTH = 512  # Balanced for M1 8GB memory
-DEFAULT_MAX_STEPS = 500  # More steps for thorough training
+DEFAULT_MAX_STEPS = 800  # More steps for thorough training
 
 
 def load_training_data(run_dir: Path) -> list[dict]:
@@ -302,12 +305,12 @@ def main():
         save_total_limit=3,
         fp16=False,  # Disable for M1
         bf16=False,  # Disable for M1
-        gradient_accumulation_steps=4,
+        gradient_accumulation_steps=8,  # Increased to reduce memory
         warmup_steps=50,  # More warmup for stability
         lr_scheduler_type="cosine",
         report_to="none",
         dataloader_pin_memory=False,  # For M1
-        gradient_checkpointing=False,  # Disabled - was causing memory issues
+        gradient_checkpointing=True,  # Enabled to save memory
     )
 
     # Trainer

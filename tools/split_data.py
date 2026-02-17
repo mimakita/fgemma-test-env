@@ -76,13 +76,16 @@ def balance_training_data(
     train_data: list[dict],
     seed: int,
     target_per_function: Optional[int] = None,
+    no_function_ratio: Optional[float] = None,
 ) -> list[dict]:
-    """Balance training data by undersampling majority classes.
+    """Balance training data by adjusting class proportions.
 
     Args:
         train_data: List of training samples
         seed: Random seed
         target_per_function: Target count per function (if None, uses median)
+        no_function_ratio: Target ratio for no_function (e.g., 0.5 = 50%)
+                          If set, overrides target_per_function for no_function
 
     Returns:
         Balanced training data
@@ -103,23 +106,42 @@ def balance_training_data(
             by_category[cat] = []
         by_category[cat].append(sample)
 
-    # Calculate target count
+    # Calculate target count for functions
     function_counts = [len(v) for k, v in by_category.items() if k != "no_function"]
     if target_per_function is None:
         target_per_function = int(sum(function_counts) / len(function_counts))
 
-    logger.info(f"Balancing: target {target_per_function} per category")
+    # Calculate no_function target based on ratio if specified
+    if no_function_ratio is not None:
+        # no_function_ratio = no_function_count / total_count
+        # no_function_count = no_function_ratio * total_count
+        # total_count = function_count + no_function_count
+        # function_count = num_functions * target_per_function
+        num_functions = len([k for k in by_category.keys() if k != "no_function"])
+        total_function_count = num_functions * target_per_function
+        # ratio = no_function / (no_function + function)
+        # ratio * (no_function + function) = no_function
+        # ratio * function = no_function * (1 - ratio)
+        # no_function = ratio * function / (1 - ratio)
+        no_function_target = int(no_function_ratio * total_function_count / (1 - no_function_ratio))
+        logger.info(f"No-function ratio: {no_function_ratio:.1%} -> target {no_function_target} no_function samples")
+    else:
+        no_function_target = target_per_function
+
+    logger.info(f"Balancing: target {target_per_function} per function, {no_function_target} for no_function")
 
     balanced = []
     for cat, samples in by_category.items():
-        if len(samples) > target_per_function:
+        target = no_function_target if cat == "no_function" else target_per_function
+
+        if len(samples) > target:
             # Undersample
-            sampled = rng.sample(samples, target_per_function)
+            sampled = rng.sample(samples, target)
             logger.info(f"  {cat}: {len(samples)} -> {len(sampled)} (undersampled)")
-        elif len(samples) < target_per_function:
+        elif len(samples) < target:
             # Oversample (with replacement)
             sampled = samples.copy()
-            while len(sampled) < target_per_function:
+            while len(sampled) < target:
                 sampled.append(rng.choice(samples))
             logger.info(f"  {cat}: {len(samples)} -> {len(sampled)} (oversampled)")
         else:
@@ -129,6 +151,12 @@ def balance_training_data(
         balanced.extend(sampled)
 
     rng.shuffle(balanced)
+
+    # Log final ratio
+    final_no_function = sum(1 for s in balanced if not s.get("messages", [{}])[-1].get("tool_calls"))
+    final_ratio = final_no_function / len(balanced) if balanced else 0
+    logger.info(f"Final no_function ratio: {final_ratio:.1%} ({final_no_function}/{len(balanced)})")
+
     return balanced
 
 
@@ -262,6 +290,10 @@ def main():
     parser.add_argument("--seed", type=int, required=True, help="Random seed for split")
     parser.add_argument("--balance", action="store_true", help="Balance training data")
     parser.add_argument("--target-count", type=int, help="Target count per category for balancing")
+    parser.add_argument(
+        "--no-function-ratio", type=float, default=None,
+        help="Target ratio for no_function (e.g., 0.5 = 50%%). Requires --balance"
+    )
     args = parser.parse_args()
 
     run_dir = FINETUNE_DIR / f"run_{args.run_id}"
@@ -297,7 +329,9 @@ def main():
     # Balance training data if requested
     if args.balance:
         logger.info("\nBalancing training data...")
-        train_jsonl = balance_training_data(train_jsonl, args.seed, args.target_count)
+        train_jsonl = balance_training_data(
+            train_jsonl, args.seed, args.target_count, args.no_function_ratio
+        )
 
     # Print distribution before/after balancing
     print_data_distribution(train_jsonl, "Training data")
@@ -322,6 +356,8 @@ def main():
     print(f"  Valid (JSONL):   {len(valid_jsonl)}")
     print(f"  Test (JSON):     {len(test_data)}")
     print(f"  Balanced:        {args.balance}")
+    if args.no_function_ratio:
+        print(f"  No-function ratio: {args.no_function_ratio:.1%}")
     print(f"\n  Output directory: {run_dir}")
     print(f"  Files:")
     print(f"    {run_dir / 'train.jsonl'}")
@@ -340,6 +376,7 @@ def main():
         "tools_count": len(tools),
         "balanced": args.balance,
         "target_count": args.target_count,
+        "no_function_ratio": args.no_function_ratio,
     }
     with open(run_dir / "split_metadata.json", "w", encoding="utf-8") as f:
         json.dump(metadata, f, ensure_ascii=False, indent=2)
