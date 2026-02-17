@@ -4587,5 +4587,2859 @@
     },
     "test_id": "sentiment_label_0200",
     "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近の天気は良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、過ごしやすいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも風が強い日は辛いです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも風が強い日は辛いです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0201",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の寿司は美味しいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "確かに、素材も良さそうです。"
+      },
+      {
+        "role": "user",
+        "content": "でも少し値段が高いなと感じました。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも少し値段が高いなと感じました。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0202",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近仕事が忙しくて困っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、休息時間も大切です。"
+      },
+      {
+        "role": "user",
+        "content": "家族との時間をもっと増やしたいです。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "家族との時間をもっと増やしたいです。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0203",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画は非常に面白いです。"
+      },
+      {
+        "role": "assistant",
+        "content": "なるほど、どのような要素が面白かったですか？"
+      },
+      {
+        "role": "user",
+        "content": "特に冒頭のシーンが気に入っています。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "特に冒頭のシーンが気に入っています。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0204",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近散歩を始めて、気持ちいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、体にも良いですよ。"
+      },
+      {
+        "role": "user",
+        "content": "でも犬のお散歩は少し面倒です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも犬のお散歩は少し面倒です。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0205",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は雨ですね、傘を持っていなければ困りますね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、傘を忘れると本当に不便ですね。"
+      },
+      {
+        "role": "user",
+        "content": "でも今日は友達とカフェで会う予定なので、少しは明るい気分になります"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも今日は友達とカフェで会う予定なので、少しは明るい気分になります",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0206",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気がとても良いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、気持ちいい日霁かと思います。"
+      },
+      {
+        "role": "user",
+        "content": "でも少し寒さを感じます"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今日の天気がとても良いですね。でも少し寒さを感じます。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0207",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気がいい日は外に出るのが好きです。"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は散歩に行きたいと思います。"
+      },
+      {
+        "role": "user",
+        "content": "でも、最近運動不足で心配な気持ちもあります。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "天気がいい日は外に出るのが好きです。でも、最近運動不足で心配な気持ちもあります。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0208",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "先週の土曜日に家族と一緒に映画を見ました。"
+      },
+      {
+        "role": "assistant",
+        "content": "とても楽しんで、また行きたいと思います。"
+      },
+      {
+        "role": "user",
+        "content": "でも、子供たちが泣いて大変でしたね。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "先週の土曜日に家族と一緒に映画を見ました。でも、子供たちが泣いて大変でしたね。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0209",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日の天気は暑いですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、暑さに注意が必要です。"
+      },
+      {
+        "role": "user",
+        "content": "でも海に行くならどうでしょう？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも海に行くならどうでしょう？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0210",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "会社の新製品発表がとても楽しみです。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは素晴らしいですね！"
+      },
+      {
+        "role": "user",
+        "content": "でも、実際の販売はいつになるのでしょうか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "でも、実際の販売はいつになるのでしょうか？",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0211",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近天気がいいので散歩に行こうかthinking"
+      },
+      {
+        "role": "assistant",
+        "content": "天気を確認してから出かけましょう。weather check recommended"
+      },
+      {
+        "role": "user",
+        "content": "天気予報見てみる"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近天気がいいので散歩に行こうかthinking",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0212",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この料理のレシピ教えて！何作ろうかなthinking"
+      },
+      {
+        "role": "assistant",
+        "content": "和食系のお寿司はいかがでしょうか？recipe suggestion"
+      },
+      {
+        "role": "user",
+        "content": "うーん、そうしよう"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この料理のレシピ教えて！何作ろうかなthinking",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0213",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "仕事が終わったら飲みに行こうよ！"
+      },
+      {
+        "role": "assistant",
+        "content": "その約束を忘れてはいけませんね。remember this plan"
+      },
+      {
+        "role": "user",
+        "content": "うん、絶対に行く"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "仕事が終わったら飲みに行こうよ！",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0214",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しく入った同僚に優しく接しようかなthinking"
+      },
+      {
+        "role": "assistant",
+        "content": "新しい人が来たらおもてなしをしやすい環境を作るのは大切です。Welcoming advice"
+      },
+      {
+        "role": "user",
+        "content": "うーん、確かに"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "新しく入った同僚に優しく接しようかなthinking",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0215",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本の続きを読もうかなthinking"
+      },
+      {
+        "role": "assistant",
+        "content": "続きを読み進めるのは楽しいですね。reading recommendation?"
+      },
+      {
+        "role": "user",
+        "content": "うん、読み始めよう"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この本の続きを読んでみようかなthinking",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0216",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、気分が落ち込んでいるんだよね。"
+      },
+      {
+        "role": "assistant",
+        "content": "それは大変そうですね。何か特別な理由はありますか？"
+      },
+      {
+        "role": "user",
+        "content": "仕事が忙しくてストレスがたまってるんだ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最近、気分が落ち込んでいるんだよね。仕事が忙しくてストレスがたまってるんだ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0217",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日は友達とランチしたんだけど、楽しい時間だったな"
+      },
+      {
+        "role": "assistant",
+        "content": "素晴らしいですね！楽しい時間を過ごせたのは良い EXPERIENCEです"
+      },
+      {
+        "role": "user",
+        "content": "でも、最近友達との会話があまり楽しくないんだ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "昨日は友達とランチしたんだけど、楽しい時間だったなでも、最近友達との会話があまり楽しくないんだ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0218",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この映画は面白いとは言えないわ"
+      },
+      {
+        "role": "assistant",
+        "content": "それはちょっと残念ですね。何が特に気に入らなかったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "ストーリーがあまり面白くなかったし、キャラクターも貧弱だ"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この映画は面白いとは言えないわストーリーがあまり面白くなかったし、キャラクターも貧弱だ",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0219",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今朝の天気予報が心配で寝坊しちゃった"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、天候は気分にも影響しますね。外出するときは傘を忘れずにお願いします！"
+      },
+      {
+        "role": "user",
+        "content": "でも、雨の日も楽しめることもあるよね"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "今朝の天気予報が心配で寝坊しちゃったでも、雨の日も楽しめることもあるよね",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0220",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0221",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0222",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0223",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0224",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0225",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0226",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0227",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0228",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0229",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0230",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0231",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0232",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0233",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：サービスが悪すぎる。二度と利用しない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0234",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0235",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0236",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0237",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0238",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サービスが悪すぎる。二度と利用しない。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0239",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0240",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0241",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0242",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0243",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0244",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「サービスが悪すぎる。二度と利用しない。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0245",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0246",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0247",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：This product is amazing! Highly recommended."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0248",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0249",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0250",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0251",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0252",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0253",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0254",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0255",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0256",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：最悪の経験でした。時間の無駄。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0257",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0258",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0259",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0260",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0261",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0262",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：普通です。可もなく不可もなく。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0263",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0264",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：This product is amazing! Highly recommended."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0265",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0266",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0267",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0268",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0269",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：感動しました！涙が止まりませんでした。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0270",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：最悪の経験でした。時間の無駄。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0271",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0272",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0273",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0274",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0275",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0276",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0277",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0278",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0279",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0280",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0281",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：期待外れでした。もっと良いと思っていた。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0282",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：感動しました！涙が止まりませんでした。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0283",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0284",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0285",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：素晴らしい体験でした。スタッフも親切。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0286",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0287",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サービスが悪すぎる。二度と利用しない。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0288",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0289",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：素晴らしい体験でした。スタッフも親切。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0290",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0291",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0292",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：サービスが悪すぎる。二度と利用しない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0293",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0294",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0295",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0296",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：This product is amazing! Highly recommended."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0297",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0298",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0299",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0300",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0301",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0302",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：素晴らしい体験でした。スタッフも親切。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0303",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0304",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0305",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0306",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：This product is amazing! Highly recommended."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0307",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：サービスが悪すぎる。二度と利用しない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0308",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0309",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0310",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0311",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0312",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0313",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：普通です。可もなく不可もなく。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0314",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0315",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0316",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0317",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：最悪の経験でした。時間の無駄。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0318",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サービスが悪すぎる。二度と利用しない。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0319",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0320",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0321",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：期待外れでした。もっと良いと思っていた。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0322",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：期待外れでした。もっと良いと思っていた。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0323",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：素晴らしい体験でした。スタッフも親切。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0324",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0325",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0326",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0327",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「普通です。可もなく不可もなく。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0328",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0329",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0330",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0331",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：普通です。可もなく不可もなく。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0332",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0333",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0334",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0335",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0336",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0337",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0338",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0339",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0340",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：期待外れでした。もっと良いと思っていた。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0341",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「感動しました！涙が止まりませんでした。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0342",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：Terrible service. Never coming back."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0343",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サービスが悪すぎる。二度と利用しない。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0344",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0345",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：この製品は最高です！買って良かった。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0346",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0347",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：普通です。可もなく不可もなく。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "普通です。可もなく不可もなく。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0348",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サービスが悪すぎる。二度と利用しない。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0349",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：This product is amazing! Highly recommended."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0350",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：最悪の経験でした。時間の無駄。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0351",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：サービスが悪すぎる。二度と利用しない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "サービスが悪すぎる。二度と利用しない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0352",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0353",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「This product is amazing! Highly recommended.」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0354",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「まあまあでした。特に印象に残らない。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0355",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0356",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：感動しました！涙が止まりませんでした。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "感動しました！涙が止まりませんでした。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0357",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最悪の経験でした。時間の無駄。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0358",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「素晴らしい体験でした。スタッフも親切。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "素晴らしい体験でした。スタッフも親切。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0359",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0360",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：最悪の経験でした。時間の無駄。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0361",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0362",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」の感情ラベルを付けてください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0363",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「Terrible service. Never coming back.」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "Terrible service. Never coming back.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0364",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この文章の感情を教えて：This product is amazing! Highly recommended."
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "This product is amazing! Highly recommended.",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0365",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "レビューの感情分析をしてほしいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのようなレビューですか？"
+      },
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」です。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0366",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：まあまあでした。特に印象に残らない。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "まあまあでした。特に印象に残らない。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0367",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「この製品は最高です！買って良かった。」この文章の感情を分析してください。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "この製品は最高です！買って良かった。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0368",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "このテキストのセンチメントを分析して：最悪の経験でした。時間の無駄。"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "最悪の経験でした。時間の無駄。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0369",
+    "category": "sentiment_label"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「期待外れでした。もっと良いと思っていた。」はポジティブですか、ネガティブですか？"
+      }
+    ],
+    "expected_function": "sentiment_label",
+    "expected_arguments": {
+      "text": "期待外れでした。もっと良いと思っていた。",
+      "granularity": "basic"
+    },
+    "test_id": "sentiment_label_0370",
+    "category": "sentiment_label"
   }
 ]

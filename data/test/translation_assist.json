@@ -4693,5 +4693,3553 @@
     },
     "test_id": "translation_assist_0200",
     "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、今日のお天気は分かりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、今日のお天気は晴れで最高気温は30度になると予想されています。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "こんにちは、今日のお天気は分かりますか？",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0201",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本を誰が貸してくれますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "図書館で借りることができます。また、友人や家族に貸してもらうこともできます。"
+      },
+      {
+        "role": "user",
+        "content": "了解しました"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "この本を誰が貸してくれますか？",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0202",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、日本のテストデータを作成します。"
+      },
+      {
+        "role": "assistant",
+        "content": "了解しました。どのように作成しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "JSON形式で配列に入れてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "JSON形式で配列に入れてください。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0203",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日は天気がいいですね。"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、その通りです。公園に散歩に行きませんか？"
+      },
+      {
+        "role": "user",
+        "content": "行きたそうですが、雨が心配です。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "行きたそうですが、雨が心配です。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0204",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい料理を試しましたが、とても美味しいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "何の料理ですか？教えてください。"
+      },
+      {
+        "role": "user",
+        "content": "それは秘密です。ぜひ試してみてください！"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "ぜひ試してみてください！",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0205",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "この本はとても興味深かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな内容ですか？"
+      },
+      {
+        "role": "user",
+        "content": "それは詳しく話せませんが、次回も教えてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "次回も教えてください。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0206",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近新しい猫を飼い始めました。"
+      },
+      {
+        "role": "assistant",
+        "content": "何種類の猫ですか？"
+      },
+      {
+        "role": "user",
+        "content": "それはまだ秘密です。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "それ STILL 秘密です。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0207",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新製品の発表について何回言及されていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "文書内の新製品発表の言及回数を数える方法は？"
+      },
+      {
+        "role": "user",
+        "content": "具体的な手順を教えてください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "具体的な手順を教えてください",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0208",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の文化祭にはどのような行事がありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本の文化祭で行われる一般的な行事は何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "詳細についてもっと詳しく説明してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "詳細についてもっと詳しく説明してください",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0209",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語で映画を書くことは可能ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本の映画製作プロセスにおいて、脚本はどのように作成されますか？"
+      },
+      {
+        "role": "user",
+        "content": "実際にその過程について教えてください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "実際にその過程について教えてください",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0210",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の四季の中で一番好きなのはどれですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "日本の四季はどのように感じますか？"
+      },
+      {
+        "role": "user",
+        "content": "なぜその季節が好きなのか詳しく説明してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "なぜその季節が好きなのか詳しく説明してください",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0211",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本の料理について教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "日本の代表的な料理は何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "具体的なレシピを教えていただけますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "具体的なレシピを教えていただけますか？",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0212",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、どのようにお手伝いできますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は何か特別な計画がありますか？"
+      },
+      {
+        "role": "user",
+        "content": "特に予定はなく、暇そうですね。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "特に予定はなく、暇そうですね。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0213",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "天気予報をチェックしましょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日の天気は晴れの予報です。"
+      },
+      {
+        "role": "user",
+        "content": "明日も同じでしょうか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日も同じでしょうか？",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0214",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "お昼ご飯に何を食べたいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "うーん、寿司が食べたいな。"
+      },
+      {
+        "role": "user",
+        "content": "今日は焼き鳥でもどうでしょう？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "今日は焼き鳥でもどうでしょう？",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0215",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "こんにちは、今日の天気はどのように見ていますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は晴れの予報ですが、夕方から雲が増えてくるかもしれません。"
+      },
+      {
+        "role": "user",
+        "content": "明日は出張があるので、早朝の飛行機に間に合うよう早起きする必要がありますね。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日は出張があるので、早朝の飛行機に間に合うよう早起きする必要がありますね。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0216",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近読んだ本が面白かったです。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのジャンルの本ですか？"
+      },
+      {
+        "role": "user",
+        "content": "それは小説でした。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "それは小説でした。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0217",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近忙しくて運動する時間がなかなか取れません。"
+      },
+      {
+        "role": "assistant",
+        "content": "週に一度は散歩くらいはするのですか？"
+      },
+      {
+        "role": "user",
+        "content": "いいえ、全然です。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "全然です。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0218",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "家族と旅行に行きたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どこに行きたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ決めていませんが、海辺でゆっくりしたいと考えています。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "海辺でゆっくりしたいと考えています。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0219",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "会社の飲み会に参加しようか迷っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "楽しみにするのも良いですが、疲れるかもしれませんね。"
+      },
+      {
+        "role": "user",
+        "content": "でも、年に数回しか行われないし、同僚との交流も大事だと思います。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "同僚との交流も大事だと思います。",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0220",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、日本語で何と言いますか必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「月明かりに照らされた静かな湖」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "月明かりに照らされた静かな湖",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0221",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」を日本語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0222",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」What's this in English?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0223",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」を日本語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0224",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Let me know if you have any questions」ってJapaneseで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Let me know if you have any questions",
+      "source_language": "English",
+      "target_language": "Japanese"
+    },
+    "test_id": "translation_assist_0225",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」を和訳してもらえますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0226",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「週末どこか遊びに行かない？」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "週末どこか遊びに行かない？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0227",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最近忙しくてなかなか会えないね」What's this in English?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0228",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語の勉強をしています"
+      },
+      {
+        "role": "assistant",
+        "content": "頑張っていますね！何かお手伝いできることはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "「今日の夕飯は何にする？」は英語でどう言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "今日の夕飯は何にする？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0229",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「木を見て森を見ず」です。英語のことわざに翻訳してください？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "木を見て森を見ず",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0230",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「プロジェクトの進捗状況についてご報告します」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "プロジェクトの進捗状況についてご報告します",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0231",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「もったいない」を英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0232",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「木を見て森を見ず」を英語のことわざに翻訳してください？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "木を見て森を見ず",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0233",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Let me know if you have any questions」を日本語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Let me know if you have any questions",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0234",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」Please translate to Japanese"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "English",
+      "target_language": "和訳"
+    },
+    "test_id": "translation_assist_0235",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「今日の夕飯は何にする？」って英訳で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "今日の夕飯は何にする？",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0236",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「最近忙しくてなかなか会えないね」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0237",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最近忙しくてなかなか会えないね」って英訳で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0238",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語の勉強をしています"
+      },
+      {
+        "role": "assistant",
+        "content": "頑張っていますね！何かお手伝いできることはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」は英語でどう言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0239",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0240",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Let me know if you have any questions」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Let me know if you have any questions",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0241",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「The meeting has been rescheduled」Please translate to Japanese"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "The meeting has been rescheduled",
+      "source_language": "English",
+      "target_language": "ja"
+    },
+    "test_id": "translation_assist_0242",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0243",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」これって英語で何て言うんだろう"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0244",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「お疲れ様です」を英語に翻訳できますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "お疲れ様です",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0245",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、中国語に翻訳して必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「データベースのバックアップを取ってください」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "データベースのバックアップを取ってください",
+      "source_language": "日本語",
+      "target_language": "zh"
+    },
+    "test_id": "translation_assist_0246",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「このバスは空港に行きますか？」Can you translate this?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "このバスは空港に行きますか？",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0247",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、日本語に翻訳して必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "English",
+      "target_language": "和訳"
+    },
+    "test_id": "translation_assist_0248",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」Please translate to Japanese"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0249",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「月明かりに照らされた静かな湖」って英語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "月明かりに照らされた静かな湖",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0250",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「一石二鳥」を英語のことわざで何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "一石二鳥",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0251",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Let me know if you have any questions」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Let me know if you have any questions",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0252",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、I need this translated to English必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「明日の予定は空いてる？」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0253",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」を日本語にしてください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0254",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」を英語に翻訳して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0255",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」英語バージョンが欲しい"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0256",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「一石二鳥」を英語のことわざで何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "一石二鳥",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0257",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0258",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、What's this in English?必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「セキュリティパッチを適用する必要があります」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "セキュリティパッチを適用する必要があります",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0259",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「その映画、面白かった？」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "その映画、面白かった？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0260",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0261",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0262",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「プロジェクトの進捗状況についてご報告します」って英語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "プロジェクトの進捗状況についてご報告します",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0263",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「明日の予定は空いてる？」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0264",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「空気を読む」です。英語で表現するとどうなりますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "空気を読む",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0265",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サーバーのレスポンス時間が遅いです」I need this translated to English"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "サーバーのレスポンス時間が遅いです",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0266",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」Can you translate this?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0267",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」How do you say this in Japanese?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "和訳"
+    },
+    "test_id": "translation_assist_0268",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "フランス語を勉強しています。「駅への行き方を教えてください」はフランス語で何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "駅への行き方を教えてください",
+      "source_language": "日本語",
+      "target_language": "French"
+    },
+    "test_id": "translation_assist_0269",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「おすすめのレストランはありますか？」これを英語に直して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "おすすめのレストランはありますか？",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0270",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0271",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語の勉強をしています"
+      },
+      {
+        "role": "assistant",
+        "content": "頑張っていますね！何かお手伝いできることはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "「久しぶり！元気だった？」は英語でどう言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "久しぶり！元気だった？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0272",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「予算の承認をいただけますでしょうか」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "予算の承認をいただけますでしょうか",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0273",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「週末どこか遊びに行かない？」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "週末どこか遊びに行かない？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0274",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」を韓国語に翻訳して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "日本語",
+      "target_language": "Korean"
+    },
+    "test_id": "translation_assist_0275",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英語で何と言いますか必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0276",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、日本語にしてもらえますか必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "Japanese"
+    },
+    "test_id": "translation_assist_0277",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」を日本語にしてください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0278",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」これを英語に直して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0279",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「空気を読む」です。英語で表現するとどうなりますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "空気を読む",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0280",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0281",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「最近忙しくてなかなか会えないね」外国語に変えて"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0282",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「来週のミーティングの件でご連絡しました」って英語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "来週のミーティングの件でご連絡しました",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0283",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」Please translate to Japanese"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "ja"
+    },
+    "test_id": "translation_assist_0284",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英語でどう言えばいいですか必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「おすすめのレストランはありますか？」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "おすすめのレストランはありますか？",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0285",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「駅への行き方を教えてください」外国語に変えて"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "駅への行き方を教えてください",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0286",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英語で何と言いますか必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「明日の予定は空いてる？」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0287",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「空気を読む」を英語で表現するとどうなりますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "空気を読む",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0288",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「一石二鳥」を英語のことわざで何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "一石二鳥",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0289",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、How do you say this in Japanese?必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「The meeting has been rescheduled」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "The meeting has been rescheduled",
+      "source_language": "English",
+      "target_language": "和訳"
+    },
+    "test_id": "translation_assist_0290",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「木を見て森を見ず」です。英語のことわざに翻訳してください？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "木を見て森を見ず",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0291",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0292",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」を日本語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0293",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「もったいない」です。英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0294",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英語に変換してほしい必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0295",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」って英訳で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0296",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「The meeting has been rescheduled」って日本語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "The meeting has been rescheduled",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0297",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「久しぶり！元気だった？」って英語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "久しぶり！元気だった？",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0298",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」を和訳してもらえますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0299",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「来週のミーティングの件でご連絡しました」って中国語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "来週のミーティングの件でご連絡しました",
+      "source_language": "日本語",
+      "target_language": "中国語"
+    },
+    "test_id": "translation_assist_0300",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「今日の夕飯は何にする？」を韓国語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "今日の夕飯は何にする？",
+      "source_language": "日本語",
+      "target_language": "Korean"
+    },
+    "test_id": "translation_assist_0301",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「ご検討いただきありがとうございます」ってEnglishで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "ご検討いただきありがとうございます",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0302",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「その映画、面白かった？」を中国語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "その映画、面白かった？",
+      "source_language": "日本語",
+      "target_language": "Chinese"
+    },
+    "test_id": "translation_assist_0303",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」これを日本語に直して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "Japanese"
+    },
+    "test_id": "translation_assist_0304",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「希望は暗闇の中でも輝き続ける」翻訳が必要です"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "希望は暗闇の中でも輝き続ける",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0305",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、What's this in English?必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「今日の夕飯は何にする？」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "今日の夕飯は何にする？",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0306",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」英語で何と言いますか"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0307",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英語に翻訳して必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I appreciate your help」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0308",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、中国語に翻訳して必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「新しい冒険への第一歩を踏み出そう」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "新しい冒険への第一歩を踏み出そう",
+      "source_language": "日本語",
+      "target_language": "zh"
+    },
+    "test_id": "translation_assist_0309",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「おすすめのレストランはありますか？」を韓国語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "おすすめのレストランはありますか？",
+      "source_language": "日本語",
+      "target_language": "Korean"
+    },
+    "test_id": "translation_assist_0310",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「プロジェクトの進捗状況についてご報告します」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "プロジェクトの進捗状況についてご報告します",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0311",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「契約書の確認をお願いします」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "契約書の確認をお願いします",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0312",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「The meeting has been rescheduled」って日本語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "The meeting has been rescheduled",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0313",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「このバグの再現手順を教えてください」英語に変換してほしい"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "このバグの再現手順を教えてください",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0314",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、の翻訳お願いします必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「新しい冒険への第一歩を踏み出そう」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "新しい冒険への第一歩を踏み出そう",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0315",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「一石二鳥」です。英語のことわざで何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "一石二鳥",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0316",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「駅への行き方を教えてください」Can you translate this?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "駅への行き方を教えてください",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0317",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「今日の夕飯は何にする？」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "今日の夕飯は何にする？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0318",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「来週のミーティングの件でご連絡しました」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "来週のミーティングの件でご連絡しました",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0319",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」これを日本語に直して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "English",
+      "target_language": "和訳"
+    },
+    "test_id": "translation_assist_0320",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "翻訳を手伝ってもらえますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、喜んでお手伝いします。何を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「桜の花が舞い散る春の午後」を韓国語に翻訳して"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "桜の花が舞い散る春の午後",
+      "source_language": "日本語",
+      "target_language": "ko"
+    },
+    "test_id": "translation_assist_0321",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0322",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ドイツ語圏の友達にメッセージを送りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "ドイツ語への翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「明日の予定は空いてる？」をドイツ語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "German"
+    },
+    "test_id": "translation_assist_0323",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、I need this translated to English必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「このAPIのエンドポイントにアクセスできません」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "このAPIのエンドポイントにアクセスできません",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0324",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「最近忙しくてなかなか会えないね」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0325",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「このバスは空港に行きますか？」ってEnglishで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "このバスは空港に行きますか？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0326",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「セキュリティパッチを適用する必要があります」って英語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "セキュリティパッチを適用する必要があります",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0327",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英語で何と言いますか必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「桜の花が舞い散る春の午後」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "桜の花が舞い散る春の午後",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0328",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「空気を読む」を英語で表現するとどうなりますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "空気を読む",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0329",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、Translate this to Japanese必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0330",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」って日本語で何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0331",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「久しぶり！元気だった？」をドイツ語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "久しぶり！元気だった？",
+      "source_language": "日本語",
+      "target_language": "German"
+    },
+    "test_id": "translation_assist_0332",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「空気を読む」です。英語で表現するとどうなりますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "空気を読む",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0333",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」英語でどう言えばいいですか"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "test_id": "translation_assist_0334",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「ご検討いただきありがとうございます」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "ご検討いただきありがとうございます",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0335",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「もったいない」を英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0336",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "韓国語圏の友達にメッセージを送りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "韓国語への翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「その映画、面白かった？」を韓国語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "その映画、面白かった？",
+      "source_language": "日本語",
+      "target_language": "Korean"
+    },
+    "test_id": "translation_assist_0337",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Thank you for your consideration」って日本語で何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Thank you for your consideration",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0338",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スペイン語を勉強しています。「チェックインは何時からですか？」はスペイン語で何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "チェックインは何時からですか？",
+      "source_language": "日本語",
+      "target_language": "Spanish"
+    },
+    "test_id": "translation_assist_0339",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「最近忙しくてなかなか会えないね」をドイツ語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "German"
+    },
+    "test_id": "translation_assist_0340",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「木を見て森を見ず」です。英語のことわざに翻訳してください？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "木を見て森を見ず",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0341",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「売上レポートを送付いたします」ってEnglishで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "売上レポートを送付いたします",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0342",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「予算の承認をいただけますでしょうか」ってenで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "予算の承認をいただけますでしょうか",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0343",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「もったいない」です。英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0344",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "フランス語圏の友達にメッセージを送りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "フランス語への翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「最近忙しくてなかなか会えないね」をフランス語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "French"
+    },
+    "test_id": "translation_assist_0345",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、Can you translate this?必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「明日の予定は空いてる？」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0346",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語の勉強をしています"
+      },
+      {
+        "role": "assistant",
+        "content": "頑張っていますね！何かお手伝いできることはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "「その映画、面白かった？」は英語でどう言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "その映画、面白かった？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0347",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「チェックインは何時からですか？」をフランス語に翻訳してください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "チェックインは何時からですか？",
+      "source_language": "日本語",
+      "target_language": "French"
+    },
+    "test_id": "translation_assist_0348",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「久しぶり！元気だった？」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "久しぶり！元気だった？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0349",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語の勉強をしています"
+      },
+      {
+        "role": "assistant",
+        "content": "頑張っていますね！何かお手伝いできることはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "「プロジェクトの進捗状況についてご報告します」は英語でどう言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "プロジェクトの進捗状況についてご報告します",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0350",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールをもらったのですが、意味がわかりません"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容ですか？翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「I look forward to hearing from you」と書いてあります。日本語に翻訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I look forward to hearing from you",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0351",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「The meeting has been rescheduled」How do you say this in Japanese?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "The meeting has been rescheduled",
+      "source_language": "English",
+      "target_language": "ja"
+    },
+    "test_id": "translation_assist_0352",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「明日の予定は空いてる？」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0353",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「明日の予定は空いてる？」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "明日の予定は空いてる？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0354",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「このバスは空港に行きますか？」ってenで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "このバスは空港に行きますか？",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0355",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "英語のメールを書きたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure, I can help you write an email in English. What would you like to say?"
+      },
+      {
+        "role": "user",
+        "content": "「会議の日程を変更させていただきます」と伝えたいです。英語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "会議の日程を変更させていただきます",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0356",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「お疲れ様です」です。英語に翻訳できますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "お疲れ様です",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0357",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "韓国語圏の友達にメッセージを送りたいです"
+      },
+      {
+        "role": "assistant",
+        "content": "韓国語への翻訳をお手伝いしましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「駅への行き方を教えてください」を韓国語にしてください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "駅への行き方を教えてください",
+      "source_language": "日本語",
+      "target_language": "Korean"
+    },
+    "test_id": "translation_assist_0358",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "中国語を勉強しています。「最近忙しくてなかなか会えないね」は中国語で何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "最近忙しくてなかなか会えないね",
+      "source_language": "日本語",
+      "target_language": "Chinese"
+    },
+    "test_id": "translation_assist_0359",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、I need this translated to English必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「セキュリティパッチを適用する必要があります」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "セキュリティパッチを適用する必要があります",
+      "source_language": "日本語",
+      "target_language": "英訳"
+    },
+    "test_id": "translation_assist_0360",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「もったいない」です。英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0361",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「Could you please confirm the schedule?」を日本語にしてください"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "Could you please confirm the schedule?",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0362",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「I appreciate your help」を和訳してもらえますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "I appreciate your help",
+      "source_language": "English",
+      "target_language": "日本語"
+    },
+    "test_id": "translation_assist_0363",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "メールを書いているのですが、英訳して必要があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような内容を翻訳しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "「サーバーのレスポンス時間が遅いです」をお願いします。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "サーバーのレスポンス時間が遅いです",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0364",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「サーバーのレスポンス時間が遅いです」What's this in English?"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "サーバーのレスポンス時間が遅いです",
+      "source_language": "日本語",
+      "target_language": "en"
+    },
+    "test_id": "translation_assist_0365",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "海外の取引先に送る文書があります"
+      },
+      {
+        "role": "assistant",
+        "content": "英語に翻訳が必要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、「その映画、面白かった？」を英訳してください。"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "その映画、面白かった？",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0366",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「The meeting has been rescheduled」ってjaで何て言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "The meeting has been rescheduled",
+      "source_language": "English",
+      "target_language": "ja"
+    },
+    "test_id": "translation_assist_0367",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日本語の表現を英語にしたいのですが"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような表現ですか？"
+      },
+      {
+        "role": "user",
+        "content": "「もったいない」です。英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0368",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "「もったいない」を英語で何と言えばいいですか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "もったいない",
+      "source_language": "日本語",
+      "target_language": "English"
+    },
+    "test_id": "translation_assist_0369",
+    "category": "translation_assist"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スペイン語を勉強しています。「おすすめのレストランはありますか？」はスペイン語で何と言いますか？"
+      }
+    ],
+    "expected_function": "translation_assist",
+    "expected_arguments": {
+      "text": "おすすめのレストランはありますか？",
+      "source_language": "日本語",
+      "target_language": "Spanish"
+    },
+    "test_id": "translation_assist_0370",
+    "category": "translation_assist"
   }
 ]

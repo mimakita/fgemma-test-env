@@ -4587,5 +4587,2883 @@
     },
     "test_id": "travel_guide_0200",
     "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に行く予定ですが、おすすめの観光スポットを教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "はい、もちろんです。明治神宮や原宿、浅草寺などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どちらが一番人気ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0201",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪に行こうと思っているのですが、どのような観光スポットがありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": " Osaka Castleと道頓堀がおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どちらも行ったことがありますが、もっとおすすめの場所はありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0202",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根に旅行したいと思っているのですが、移動手段を教えていただけますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "電車やバスを利用するのが一般的です。また、高速道路もありますが混雑する可能性があります。"
+      },
+      {
+        "role": "user",
+        "content": "どのルートが一番快適ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0203",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄に行きたいと思っていますが、おすすめの場所はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "首里城公園や美ら海水族館が人気です。"
+      },
+      {
+        "role": "user",
+        "content": "どのエリアに宿泊するのがよいか分かりません。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0204",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に旅行に行く計画があるんです。観光スポットを教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "もちろん、京都には多くの有名な観光地があります。まずは金閣寺、清水寺、伏見稲荷大社などをおすすめします。"
+      },
+      {
+        "role": "user",
+        "content": "交通手段は何が便利ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0205",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に来ました。どこに行けばいいですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京なら浅草寺や上野公園、明治神宮などがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "美味しい食べ物は何がお勧めですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0206",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪に行こうと思います。どこか行きたがる人と楽しめる場所を教えてください"
+      },
+      {
+        "role": "assistant",
+        "content": "大阪なら梅田のスクランブル交差点や心斎橋のショッピング街、そして新世界や道頓堀などの飲食店が多くて楽しいです。"
+      },
+      {
+        "role": "user",
+        "content": "大阪の観光スポットはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0207",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道に行くつもりですが、どの時期がおすすめですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "北海道なら四季折々の魅力があります。冬は雪祭りやオホーツク海の氷が楽しめます。春には雪解け後の美しい自然、秋には紅葉を、夏には美味しい野菜や果物など、それぞれの季節が魅力的です。"
+      },
+      {
+        "role": "user",
+        "content": "雪祭りに行きたいです。どのような活動がありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0208",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄に来て、美味しい料理を食べたいと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "沖縄の料理ならソーキそばや石垣島ラーメン、琉球スープカレーなどがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "本当に美味しいお店はありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0209",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京のおすすめ観光地は？"
+      },
+      {
+        "role": "assistant",
+        "content": "浅草や上野、渋谷などがあります。"
+      },
+      {
+        "role": "user",
+        "content": "どの場所が一番おすすめですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0210",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の観光はどのくらい時間がかかりますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "一日で主な観光地を見られるでしょう。"
+      },
+      {
+        "role": "user",
+        "content": "宿泊するべきですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0211",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪のグルメについて教えてください。"
+      },
+      {
+        "role": "assistant",
+        "content": "たこ焼きやお好み焼きがおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのお店に行けば美味しいですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0212",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄の旅行計画を立てたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "宮古島や石垣島がおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "どのエリアに宿泊すべきですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0213",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡の旅行はどのくらいの期間が適切ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "2泊3日程度で主な観光地を回ることができます。"
+      },
+      {
+        "role": "user",
+        "content": "公共交通機関を利用した移動方法について教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0214",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京への旅行計画を考えていますが、おすすめの観光スポットは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "東京には多くの魅力的な場所があります。まず明治神宮を訪れてみてください。日本の伝統と文化を感じることができます。その後は浅草で雷門や仲見世通りを散策して、江戸時代の雰囲気を楽しんでみましょう"
+      },
+      {
+        "role": "user",
+        "content": "了解しました。次に何をしたいと思いますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0215",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の旅で美味しい料理が食べたいのですが、おすすめは何ですか？"
+      },
+      {
+        "role": "assistant",
+        "content": "京都には和食の名店が多く、特に祇園にある「田中旅舎」は地元の人々にも人気です。懐石料理を味わうことができますよ"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。他の場所も教えていただけますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0216",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": " Vaults of Tokyo について知りたいです。"
+      },
+      {
+        "role": "assistant",
+        "content": "Vaults of Tokyoとは、東京の隠れた名所を紹介するプロジェクトです。中でも築地市場は非常に人気があります。新鮮な魚介類や和食を楽しむことができますよ"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます。次に何か知りたいと思いますが、どうすれば良いですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "general"
+    },
+    "test_id": "travel_guide_0217",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京旅行について教えて！"
+      },
+      {
+        "role": "assistant",
+        "content": "東京にはたくさんの観光地があります。有名なものに浅草寺、上野公園、皇居があります。"
+      },
+      {
+        "role": "user",
+        "content": "どこから始めていいでしょうか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0218",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都の旅でおすすめのカフェは？"
+      },
+      {
+        "role": "assistant",
+        "content": "祇園エリアには和風で落ち着いた雰囲気のカフェがたくさんあります。例えば「抹茶カフェ 梵（ばん）」はおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": "そのカフェに行かせてもらうよ"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0219",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄旅行の計画を考えているけど、どこを見学すればいい？"
+      },
+      {
+        "role": "assistant",
+        "content": "宮古島は自然が美しく、観光スポットも充実しています。ハーモニーランドや七里海などをお勧めします。"
+      },
+      {
+        "role": "user",
+        "content": "那覇からどのくらいの距離ですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0220",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaiiのホテルを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0221",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "Londonです。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0222",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0223",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0224",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0225",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "富士山への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "富士山",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0226",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0227",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0228",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaiiで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0229",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0230",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0231",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "沖縄です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0232",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0233",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0234",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0235",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0236",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0237",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Londonへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0238",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoulで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0239",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "富士山で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "富士山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0240",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkokのおすすめの季節を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0241",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0242",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0243",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0244",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0245",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "金沢です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0246",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "Londonです。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0247",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0248",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0249",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkokに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0250",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0251",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoulでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0252",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0253",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0254",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良のホテルを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0255",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0256",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢のおすすめの食べ物を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0257",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoulでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0258",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0259",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0260",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0261",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢の観光スポットを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0262",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0263",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0264",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0265",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鎌倉旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鎌倉",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0266",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "福岡です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0267",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0268",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoulで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0269",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0270",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0271",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Londonで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0272",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "長崎です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0273",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0274",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0275",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoulに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0276",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0277",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢のおすすめの食べ物を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0278",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkokへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0279",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0280",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New York旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0281",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkokへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0282",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaiiに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0283",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0284",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "広島です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "広島",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0285",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "日光です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0286",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "奈良です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0287",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0288",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0289",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "富士山です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "富士山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0290",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0291",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaiiの観光スポットを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0292",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道のホテルを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0293",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都のおすすめの食べ物を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0294",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0295",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0296",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "奈良です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0297",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaii旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0298",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山のおすすめの季節を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0299",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisのホテルを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0300",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "London旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0301",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0302",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0303",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鎌倉で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鎌倉",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0304",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Londonでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0305",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0306",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "奈良で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0307",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0308",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0309",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0310",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkのおすすめの食べ物を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0311",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "Hawaiiです。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0312",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0313",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Londonで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0314",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "富士山への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "富士山",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0315",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0316",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0317",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkでおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0318",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鎌倉旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鎌倉",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0319",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0320",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaiiで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0321",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鎌倉の観光スポットを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鎌倉",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0322",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Parisで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0323",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "長崎です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0324",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0325",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New York旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0326",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "東京です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0327",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "鎌倉のアクセス方法を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "鎌倉",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0328",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoul旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0329",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "Parisです。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Paris",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0330",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0331",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0332",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkok旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0333",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0334",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0335",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0336",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0337",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "金沢でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0338",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkokへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0339",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "箱根への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0340",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Bangkokで有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Bangkok",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0341",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New Yorkに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0342",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡のおすすめの季節を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0343",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "東京への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0344",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0345",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "日光に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0346",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "高山です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0347",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0348",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎のおすすめの季節を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0349",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0350",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Londonに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0351",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "高山でおいしいものが食べたいです。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "高山",
+      "info_type": "food"
+    },
+    "test_id": "travel_guide_0352",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "長崎です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0353",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道に旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0354",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0355",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "日光です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "日光",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0356",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Hawaiiへの行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Hawaii",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0357",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "広島で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "広島",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0358",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "京都のホテルを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0359",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "New York旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "New York",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0360",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎で有名な場所はどこですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0361",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "金沢です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "金沢",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0362",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道への行き方を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0363",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "長崎のアクセス方法を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "長崎",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0364",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "北海道です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0365",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "富士山の観光スポットを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "富士山",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0366",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "福岡のホテルを教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "accommodation"
+    },
+    "test_id": "travel_guide_0367",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Londonに旅行に行きたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "London",
+      "info_type": "attractions"
+    },
+    "test_id": "travel_guide_0368",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "Seoul旅行のベストシーズンはいつですか？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "Seoul",
+      "info_type": "best_season"
+    },
+    "test_id": "travel_guide_0369",
+    "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "旅行の計画を立てています。"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらへ行かれる予定ですか？"
+      },
+      {
+        "role": "user",
+        "content": "箱根です。観光情報を教えてください。"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "test_id": "travel_guide_0370",
+    "category": "travel_guide"
   }
 ]

@@ -4561,5 +4561,2878 @@
     },
     "test_id": "shopping_intent_0200",
     "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマートフォンを探しているんですが、安くて良いものってありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "値段と性能を両立させた人気のモデルがいくつかあります。予算はどのくらいをお考えですか？"
+      },
+      {
+        "role": "user",
+        "content": "5万円位が限界です"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン"
+    },
+    "test_id": "shopping_intent_0201",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、音楽をよく聴きます。高音質でリーズナブルなヘッドホンってありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "音質と価格バランスが良いいくつかのモデルがあります。予算はありますか？"
+      },
+      {
+        "role": "user",
+        "content": "3万円位を目安に考えています"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドホン"
+    },
+    "test_id": "shopping_intent_0202",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今、新しい家具を探しています。リビングのソファがいいんですが、おすすめありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "機能性とデザインを兼ね備えたいくつかの人気ブランドがあります。予算はどのくらいですか？"
+      },
+      {
+        "role": "user",
+        "content": "10万円前後を目安に考えています"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ソファ"
+    },
+    "test_id": "shopping_intent_0203",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、パソコンを買い替えようかと思っています。特にゲームをするわけではないので、軽量なノートPCが良いんですが、おすすめありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "軽量で高性能なノートPCは人気です。スペックや予算はありますか？"
+      },
+      {
+        "role": "user",
+        "content": "15万円位を目安に考えています"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン"
+    },
+    "test_id": "shopping_intent_0204",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいカメラを買いたいと思っています。写真を撮るのが好きで、高画質なものが良いんです。"
+      },
+      {
+        "role": "assistant",
+        "content": "高解像度と高性能が特徴のいくつかの人気モデルがあります。予算はどのくらいですか？"
+      },
+      {
+        "role": "user",
+        "content": "20万円位を目安に考えています"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ"
+    },
+    "test_id": "shopping_intent_0205",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマートフォンを検討しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "現在、市場に出ている人気のあるモデルは何ですか？"
+      },
+      {
+        "role": "user",
+        "content": "一番評判の良いモデルは何か知っていますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0206",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、健康食品について興味が湧いてきました。"
+      },
+      {
+        "role": "assistant",
+        "content": "どのような目的で健康食品を摂取しようとしているんですか？"
+      },
+      {
+        "role": "user",
+        "content": "運動不足解消と筋力アップのために考えています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "健康食品",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0207",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "車を新しいものに乗り換えることを検討しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "予算はどのくらい考えていますか？"
+      },
+      {
+        "role": "user",
+        "content": "約300万円程度の予算で探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "車",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0208",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、家庭用のエアコンが壊れたので新しいものが必要です。"
+      },
+      {
+        "role": "assistant",
+        "content": "冷房と暖房どちらを重視していますか？"
+      },
+      {
+        "role": "user",
+        "content": "冷房が主なので、冬は使わないですが、夏にはしっかりと冷やす性能のあるものを希望します。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "エアコン",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0209",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、新しいテレビを買おうかと思っています。"
+      },
+      {
+        "role": "assistant",
+        "content": "4K以上の高解像度が重要ですか？"
+      },
+      {
+        "role": "user",
+        "content": "はい、できるだけ高解像度のものを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0210",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビを新しいものに替えたいと思っているのですが、安くておすすめの製品はありますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "ご検討ありがとうございます。予算と用途によってお薦めが変わりますが、60インチ以上の大型モデルであれば、ソニーのX95Kシリーズは高評価を受けています。"
+      },
+      {
+        "role": "user",
+        "content": "値段が気になるんですが、X95Kシリーズはどのくらいですか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0211",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今度の祝い事で新しい料理器具を買いたいと思っています。何をお勧めしますか？"
+      },
+      {
+        "role": "assistant",
+        "content": "お祝い用に何か特別なものをお探しなら、ステンレス製の多機能フライパンがおすすめです。熱伝導が良く、長持ちするので使いやすいですよ。"
+      },
+      {
+        "role": "user",
+        "content": "なるほど、価格はどの程度でしょうか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "料理器具",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0212",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、音楽を聴くのにBluetoothスピーカーを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "良い選択です。Bluetoothスピーカーは手軽に使えるだけでなく、音質も重要ですよね。ソニーのSRS-XB33がおすすめです。"
+      },
+      {
+        "role": "user",
+        "content": " XB33はどんな特徴がありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "Bluetoothスピーカー",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0213",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今冬用のダウン Jacketを探しています。"
+      },
+      {
+        "role": "assistant",
+        "content": "寒さ対策として、軽くて暖かいダウンジャケットはおすすめです。リーバイスのダウンジャケットは有名で、着心地も良いため人気があります。"
+      },
+      {
+        "role": "user",
+        "content": "リーバイスのダウンジャケットをチェックしてみますね。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ダウンジャケット",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0214",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今、車検を受けるために新しいタイヤを探していますが、どのブランドが良いのでしょうか？"
+      },
+      {
+        "role": "assistant",
+        "content": "タイヤは重要な部品なので、信頼性のあるブランドを選ぶことが大切です。ユンボやブリヂストンはよく使われているブランドで、性能と価格のバランスが良いですよ。"
+      },
+      {
+        "role": "user",
+        "content": "ユンボのタイヤを詳しく調べてみます。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "タイヤ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0215",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマートフォンを探しているが、安価なものから選ぶべきなのか？"
+      },
+      {
+        "role": "assistant",
+        "content": "価格だけでなく、性能や batterylife も考慮すると良いでしょう。予算内で何が必要かを見極めましょう。"
+      },
+      {
+        "role": "user",
+        "content": "予算は約3万円程度だよ"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0216",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "家電製品の比較サイトを見たいけど、おすすめのサイトは？"
+      },
+      {
+        "role": "assistant",
+        "content": "楽天やヤフオクは価格が比較的分かりやすいですが、商品レビューやスペックも確認してみましょう。"
+      },
+      {
+        "role": "user",
+        "content": "ありがとうございます"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "家電製品",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0217",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今月中に新しいパソコンを購入したいと思っている"
+      },
+      {
+        "role": "assistant",
+        "content": "予算や使用目的、機能性などを考慮すると良いでしょう。どのくらいの予算で考えていますか？"
+      },
+      {
+        "role": "user",
+        "content": "30万円程度が目安だ"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "パソコン",
+      "intent_type": "buy"
+    },
+    "test_id": "shopping_intent_0218",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近、インシュulationsが気になっていて、どの会社が良いかわからない"
+      },
+      {
+        "role": "assistant",
+        "content": "料金や契約条件だけでなく、サービス内容や口コミもチェックすると良いでしょう。何地域に住んでいるのですか？"
+      },
+      {
+        "role": "user",
+        "content": "東京在住"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "インシュレーション",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0219",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい家電製品を購入するために、予算と用途の確認が必要なようだ"
+      },
+      {
+        "role": "assistant",
+        "content": "予算内で最も必要な機能は何か、またその性能がどの程度必要かを見極めることが重要です。"
+      },
+      {
+        "role": "user",
+        "content": "わかりました"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "家電製品",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0220",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0221",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0222",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0223",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機の価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0224",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0225",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい洗濯機を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0226",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0227",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0228",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0229",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0230",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい電子レンジを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0231",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0232",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0233",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0234",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい掃除機を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0235",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0236",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい洗濯機を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0237",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機を購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0238",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "掃除機です。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0239",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0240",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0241",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0242",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0243",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい洗濯機を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0244",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0245",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0246",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0247",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機の選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0248",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい電子レンジを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0249",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫を購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0250",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0251",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0252",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0253",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0254",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫を買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0255",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0256",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫のレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0257",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0258",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい冷蔵庫を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0259",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0260",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0261",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい洗濯機を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0262",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0263",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0264",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "カメラです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0265",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいテレビを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0266",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0267",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0268",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいテレビを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0269",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0270",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0271",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい電子レンジを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0272",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫の選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0273",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいスマートフォンを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0274",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機の選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0275",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "テレビです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0276",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0277",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0278",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0279",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "テレビです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0280",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "スマートフォンです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0281",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "冷蔵庫です。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0282",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "ノートパソコンです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0283",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0284",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0285",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0286",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0287",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0288",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "洗濯機です。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0289",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "洗濯機です。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0290",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0291",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0292",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0293",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "スマートフォンです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0294",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機のレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0295",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0296",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "ノートパソコンです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0297",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいノートパソコンを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0298",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "カメラです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0299",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0300",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0301",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0302",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機を買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0303",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0304",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0305",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "掃除機です。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0306",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0307",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0308",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "電子レンジです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0309",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0310",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0311",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい電子レンジを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0312",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機の選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0313",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0314",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい掃除機を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0315",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0316",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0317",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機の価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0318",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0319",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0320",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0321",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機の選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0322",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "カメラです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0323",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0324",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機の価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0325",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "電子レンジです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0326",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0327",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "ノートパソコンです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0328",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "洗濯機です。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0329",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機を買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0330",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0331",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいヘッドフォンを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0332",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0333",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫を購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0334",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいカメラを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0335",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0336",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0337",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0338",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫を買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0339",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機の選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0340",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0341",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫の価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0342",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫を購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0343",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機で一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0344",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "カメラです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0345",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0346",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0347",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0348",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "掃除機の価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "掃除機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0349",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0350",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0351",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0352",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0353",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イヤホンで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "イヤホン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0354",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0355",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しい冷蔵庫を探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0356",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "ノートパソコンです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0357",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "電子レンジを購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "電子レンジ",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0358",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンの選び方を教えてください。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0359",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "買い物の相談があります。"
+      },
+      {
+        "role": "assistant",
+        "content": "何をお探しですか？"
+      },
+      {
+        "role": "user",
+        "content": "カメラです。どれがいいか迷っています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0360",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビで一番コスパがいいのは？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0361",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ノートパソコンを買いたいのですが、おすすめはありますか？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ノートパソコン",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0362",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいカメラを探しています。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0363",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレビの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0364",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "洗濯機の価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "洗濯機",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0365",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冷蔵庫を購入する予定です。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "冷蔵庫",
+      "intent_type": "purchase"
+    },
+    "test_id": "shopping_intent_0366",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0367",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ヘッドフォンの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "ヘッドフォン",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0368",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "カメラの価格を比較したいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "compare"
+    },
+    "test_id": "shopping_intent_0369",
+    "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "スマートフォンのレビューを見たいです。"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "research"
+    },
+    "test_id": "shopping_intent_0370",
+    "category": "shopping_intent"
   }
 ]

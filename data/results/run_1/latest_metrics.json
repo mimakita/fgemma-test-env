@@ -1,0 +1,82 @@
+{
+  "per_function": {
+    "celebrity_info": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    },
+    "schedule_reminder": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    },
+    "sentiment_label": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    },
+    "shopping_intent": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    },
+    "translation_assist": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    },
+    "travel_guide": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    },
+    "weather_info": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "total_expected": 40
+    }
+  },
+  "overall": {
+    "accuracy": 0.2632,
+    "false_positive_rate": 0.0,
+    "argument_accuracy": 0.0,
+    "total_cases": 380,
+    "correct_cases": 100,
+    "no_function_cases": 100,
+    "false_positives": 0
+  },
+  "metadata": {
+    "model": "functiongemma-ft-run1",
+    "timestamp": "2026-02-09T22:44:45.344928",
+    "elapsed_seconds": 524.1,
+    "data_dir": "/Users/mitsuharumakita/Documents/work/funcgemma/data/finetune/run_1"
+  }
+}

@@ -1,0 +1,5060 @@
+[
+  {
+    "test_id": "sentiment_label_0060",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "商品が早速届いて、とても満足しています。",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": "<escape>@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$"
+  },
+  {
+    "test_id": "schedule_reminder_0090",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "週末に行うスポーツクラブのトレーニング",
+      "datetime": "2023-10-07T15:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": "<escape>@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$@\u0015C$"
+  },
+  {
+    "test_id": "travel_guide_0130",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": "<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>@\u0015C$<escape>"
+  },
+  {
+    "test_id": "celebrity_info_0059",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "Joe Biden",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": "<escape>-3333333333333333333333333333333"
+  },
+  {
+    "test_id": "shopping_intent_0150",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "家具",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": "<escape>^ittarius"
+  },
+  {
+    "test_id": "travel_guide_0108",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0270",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0021",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "友達の誕生日 party で笑い声が聞こえた.",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0219",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0055",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "新潟県",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0163",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "PC",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0155",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0114",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0184",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0170",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人と食事に行く予定",
+      "datetime": "14:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0493",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0200",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "佐藤孝二",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0109",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "おすすめは何ですか？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0002",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "富田望生",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0244",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0007",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "Kyoto",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0166",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0126",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "カーナビ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0157",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近の仕事がとても大変で、ストレスを感じています。確かにそうですね。もう少しいろんなことに気を取られるようにします",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0114",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "テレビ"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0171",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "雨が続くと憂鬱な気分になります",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0277",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0496",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0117",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "勉強会"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0065",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0023",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0024",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0061",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "Kiyu Kishi",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0024",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日10時から1時間間隔で打ち合わせ"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0142",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "中村勘九郎",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0011",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "お茶会",
+      "datetime": "2023-10-07T17:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0196",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0006",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "佐藤裕子",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0034",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0180",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "秋田",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0181",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "鹿児島",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0167",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0147",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "明日も同じ天気でしょうか？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0300",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0150",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "新規プロジェクトミーティング",
+      "datetime": "月曜日 午後"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0196",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "中居正広",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0033",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0119",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近は忙しくて、趣味の時間も減ってしまいました。少しでもリラックスする方法を考えないと。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0177",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "交通手段",
+      "intent_type": "compare"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0187",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "佐藤さん",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0180",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも僕はコメディが好きです",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0117",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0125",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "松本隆",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0036",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "\"彼は優しくて、私の人生を明るくしてくれた。",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0089",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ありがとうございます",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0162",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "田中",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0127",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人結婚式",
+      "datetime": "2023-04-17T09:00:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0179",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "イタリアンパスタのレシピを紹介します。",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0117",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ありがとうございます！もう一つお願いします",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0057",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0339",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0423",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0443",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0092",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "デジタルカメラ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0087",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "佐藤",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0096",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "宮沢賢治",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0105",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "会議",
+      "datetime": "来週金曜日 午後3時"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0081",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人とランチ",
+      "datetime": "2023-11-30T14:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0186",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0128",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "今日の最高気温は何度ですか？",
+      "source_language": "Japanese",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0134",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "面白いです",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0105",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0074",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "\"ある人はとても気まずい感じで接してきて、他の人たちはもう少し自然な振る舞いだった\"",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0111",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "趣味",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0143",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0206",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0001",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートフォン",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0006",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "また、日本市場の消費者行動をどのように理解し、ターゲット顧客にアプローチするべきでしょうか？",
+      "source_language": "ja",
+      "target_language": "en"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0126",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0106",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "プロジェクトのプレゼンテーション",
+      "datetime": "明日 午前十時"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0099",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "次回はもっと良いサービスを期待していますね。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0039",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近の映画レビューについての会話",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0213",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0116",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "木村拓哉",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0133",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "新潟",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0074",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "具体的にはどのような方法ですか？",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0151",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "那覇",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0085",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人とランチ",
+      "datetime": "2023-11-24T14:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0141",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0016",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0272",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0434",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0065",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "今週末の家族旅行のために必要な準備"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0090",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0148",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "面接の予定",
+      "datetime": "2023-10-27T11:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0136",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "大阪",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0014",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "Sony A8H",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0057",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0235",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0039",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0177",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "横浜市",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0394",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0076",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "友達と遊ぶ時間も増えますね",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0098",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "明日は雨予報がでているけど、どのように過ごすか悩んでいます。",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0047",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "公園でピクニックに行く",
+      "datetime": "2023-04-22T13:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0405",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0076",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "京都",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0320",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0330",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0051",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "基本的な日本語を覚えるのにどのくらいの時間が必要ですか？",
+      "source_language": "Japanese",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0338",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0164",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "家で簡単な料理を作ります",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0027",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "来月15日15時、友達とのランチ"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0142",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0184",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "iPhone 15系列"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0032",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0072",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "来週金曜日の飛行機のリマインダー",
+      "datetime": "2023-10-13T09:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0091",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0102",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "来週の天気予報を教えてください。",
+      "source_language": "Japanese",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0465",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0140",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "PC",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0079",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "筋トレ用ウェア",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0042",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0002",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0047",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "北海道",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0139",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "高橋尚子",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0151",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "渡辺晋一郎",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0174",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0113",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近新しいプログラミング言語を学んでいます。PythonとJavaScriptが好きです。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0259",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0058",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "スティーブン・ホーキング",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0167",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0062",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "神奈川県",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0365",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0409",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0144",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0420",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0167",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "compare"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0141",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "今日の天気がいいですね。でも風が強くて寒いです",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0115",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "先日はお世話になりました。また宜しくお願いいたします。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0114",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "制作时间大约需要多久呢？",
+      "target_language": "Chinese"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0067",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0060",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0055",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "安室奈美恵",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0068",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0103",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "福山雅治",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0060",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "お寿司を食べたいです。",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0008",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0165",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0141",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "来週の土曜日のランチ会",
+      "datetime": "2023-10-14T12:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0181",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "家具",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0038",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0068",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "テレビ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0370",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0183",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "北野武",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0070",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "\"うれしいけど、まだ改善できる余地がある-thinking\"",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0110",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "通訳アプリ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0051",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "tips"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0115",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0163",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日の朝8時に散歩をすること",
+      "datetime": "明日 08:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0174",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "明日の予定は何ですか？",
+      "source_language": "日本語",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0132",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "新規プロジェクトの準備開始",
+      "datetime": "先週金曜日"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0092",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "本当に Xperia Liteは使いやすかったんですか？",
+      "target_language": "en"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0129",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0171",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "それ、面白いのか",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0183",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0040",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "この文章はポジティブな感情を表しているでしょうか？",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0132",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "山田さん",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0071",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "「私たちには優しく接てくれる先輩がいて、とても感謝しています。」",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0010",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートスピーカー",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0164",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ",
+      "intent_type": "compare"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0076",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0003",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "車",
+      "intent_type": "compare"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0058",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "奈良",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0336",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0095",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スープの素（トマトベース）",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0169",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0023",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0155",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0114",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近新しいカメラを購入しました。写真撮影が好きなので、旅行や家族の記念日に使えればと思います。そのカメラは使いやすいです。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0178",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0216",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0205",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0140",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "沖縄",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0172",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "仕事の期限リマインダー",
+      "datetime": "17:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0382",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0120",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "散歩をしようかな",
+      "source_language": "Japanese",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0192",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "箱根",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0009",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0177",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "堀江貴文",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0144",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "冬用のコート"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0310",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0479",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0061",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "サービスが遅くて、全く満足できなかった。",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0122",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0020",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "多くのレビューは物語が単調だと感じている.",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0077",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "雨の予報だったんです。",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0194",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "藤本美貴",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0104",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "札幌",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0041",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0122",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "新潟",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0127",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0399",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0153",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "この映画、面白かったです。最後の展開が意外で良かったです",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0194",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "チームビルディング活動",
+      "datetime": "2023-11-10T14:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0402",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0177",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "今日は何曜日ですか？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0014",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0232",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0056",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0312",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0065",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも、趣味の時間も大切にしたい",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0151",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0230",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0212",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0233",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0150",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ステーキのレア度を教えてください。",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0196",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "明日の午後3時打ち合わせ",
+      "datetime": "明日 15:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0029",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "カメラ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0003",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0185",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも、説明書もよくわからなくて…",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0189",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0099",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも最近は外国の文化を取り入れる傾向がありますね。",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0071",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0109",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0024",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "Kyoto",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0179",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "長嶋茂雄",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0086",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "書籍の読み込み",
+      "datetime": "2023-12-06T01:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0109",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "Xperia 10",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0003",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "この製品は天然由来の成分を使用しています。",
+      "source_language": "ja",
+      "target_language": "en"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0136",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": " godeな企画ですね",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0042",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0315",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0072",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0195",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "何を作るんですか？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0057",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "安倍晋三",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0067",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0038",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "家電製品",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0071",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "お酒",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0325",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0079",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "広島",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0174",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0040",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0122",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "読書に関する会話",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0062",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "今日は友人と一緒に散歩して、とても楽しい一日だった。",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0198",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0041",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "The impact of AI on communication can be discussed as how it facilitates real-time translation, enhances accessibility for people with disabilities, and provides more personalized interactions.",
+      "source_language": "English",
+      "target_language": "Japanese"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0115",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0059",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0063",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "北海道",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0195",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "毎週木曜日部会",
+      "datetime": "毎週木曜日 10:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0258",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0010",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人との会合のリマインダー",
+      "datetime": "2023-10-05T16:30:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0084",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0020",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートスピーカー",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0172",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "田中さん",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0194",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも、趣味の時間を削るのは嫌だ...",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0027",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0089",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0151",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ご馳走をお願いします。",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0019",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "フランシス・フォード・コッポラ",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0173",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "松田龍平",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0125",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Kyoto",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0065",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "旅行用服装",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0190",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0037",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "The translation technology of AI refers to how machines can understand and convert languages using machine learning algorithms.",
+      "source_language": "English",
+      "target_language": "Japanese"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0057",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0042",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "プールに週末に行く",
+      "datetime": "2023-04-16T15:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0017",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "村上春樹",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0281",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0194",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "クラブ活動や社交イベントに参加してみませんか？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0088",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "福岡",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0112",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "会社の忘年会に間に合うよう早めに帰宅",
+      "datetime": "12月29日 13:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0140",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "大好きな映画を何回も見ています。",
+      "source_language": "Japanese",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0024",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0360",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0164",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0148",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "その情報は信頼性が高いですね。",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0086",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "照明"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0221",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0302",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0085",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "松本清張",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0051",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0130",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "靴",
+      "intent_type": "buy"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0144",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "映画を見に行きましたが、面白くなかったです。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0030",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "毎週火曜日、ジムに行く"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0152",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0094",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "飲み物（ピクニック用）",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0153",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "福岡",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0072",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "佐藤優",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0086",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "とても楽しかったです。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0049",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0246",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0164",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも、主人公の演技があまり好きじゃないです。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0054",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "新幹線のチケット"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0082",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "天気がとても良いですね。本当に気持ち良さそうですね。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0380",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0142",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "家電製品",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0056",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0087",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "transportation"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0133",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人との旅行計画",
+      "datetime": "来週土曜日"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0126",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "重要なお仕事",
+      "datetime": "2023-04-20T10:00:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0064",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "家庭用フィットネス機器",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0064",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "Takuya Kimura",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0072",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0045",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "出張に行く",
+      "datetime": "2023-04-21T10:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0016",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "ロレンツォ・ドゥカネリ sir",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0008",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "Tokyo",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0009",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0166",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "札幌",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0061",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ありがとうございます、次回から探してみます。",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0111",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0133",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "伊藤さん",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0186",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0374",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0005",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0041",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近の天気予報について、そのトーンがどのような感情を表しているか教えてください。",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0444",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0033",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0078",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "でも値段が高いですよね。",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0034",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "スマートウォッチ",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0083",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "4連休の旅行計画",
+      "datetime": "2023-11-30T00:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0012",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "iPhone 13, Galaxy S22",
+      "intent_type": "compare"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0180",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "明日の夕方の予定",
+      "datetime": ""
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0066",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "寿司が好きなので、寿司を作りたい",
+      "target_language": "英語"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0036",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0022",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Tokyo",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0352",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0121",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "重要なお仕事"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0373",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0182",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "大阪",
+      "info_type": "food"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0407",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0063",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0028",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "その新しいレストランの評判は？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0167",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "来週の金曜日のランチ"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0071",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0067",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "会議の中で上司は私に厳しい意見を言ってきましたが、私は彼に対して敬意を持ちつつ反論しました。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0404",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0023",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "来月24日の木曜日、重要会議"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0009",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "田中智子",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0466",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0029",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "京都",
+      "info_type": "attractions"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0114",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "query",
+      "description": "",
+      "datetime": "昨日"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0088",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "New York",
+      "forecast_type": "week"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0074",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "毎週木曜日のミーティングリマインダー",
+      "datetime": "2023-10-05T15:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0228",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0125",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "今日の天気がいいですね。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0252",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0475",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0080",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "北野武",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0124",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ありがとうございます",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0104",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "友人と会う",
+      "datetime": "2023-10-18T14:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0304",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0139",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "新しい携帯電話についての会話",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0095",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "Niigata",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0052",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "バラク・オバマ",
+      "info_type": "general"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0195",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "友達と話しながら散歩るのが好きです。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0113",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "福山雅治",
+      "info_type": "achievements"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0031",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "カーソン・ウィリアムズ",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0267",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0064",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "最近のニュース記事は深刻な問題を取り上げており、多くの人々に悲しみと怒りを感じさせています。",
+      "granularity": "detailed"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "travel_guide_0027",
+    "category": "travel_guide",
+    "expected_function": "travel_guide",
+    "predicted_function": null,
+    "expected_arguments": {
+      "destination": "東京",
+      "info_type": "shopping"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "schedule_reminder_0103",
+    "category": "schedule_reminder",
+    "expected_function": "schedule_reminder",
+    "predicted_function": null,
+    "expected_arguments": {
+      "action": "create",
+      "description": "散歩をする",
+      "datetime": "2023-10-15T06:00:00+09:00"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0167",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "石井直輝",
+      "info_type": "career"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "celebrity_info_0018",
+    "category": "celebrity_info",
+    "expected_function": "celebrity_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "person_name": "源頼朝",
+      "info_type": "biography"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0263",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0019",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "バランスの良い食事と適度な休息は健康にも良いですね。",
+      "source_language": "Japanese",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0161",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "新しい携帯電話を買いました",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0334",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0110",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "説明書には詳しく書いてあるんですが、実際の操作に迷ってしまいます。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0130",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "奈良に来て、たくさんの動物をみました。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0136",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0149",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "current"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "shopping_intent_0011",
+    "category": "shopping_intent",
+    "expected_function": "shopping_intent",
+    "predicted_function": null,
+    "expected_arguments": {
+      "product_or_service": "Xperia",
+      "intent_type": "research"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0119",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "どの程度の期間で回れるか教えていただけますか？",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0306",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  },
+  {
+    "test_id": "sentiment_label_0116",
+    "category": "sentiment_label",
+    "expected_function": "sentiment_label",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "天気予報をチェックしましたが、明日は晴れのようです。ありがとうございます。",
+      "granularity": "basic"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "translation_assist_0118",
+    "category": "translation_assist",
+    "expected_function": "translation_assist",
+    "predicted_function": null,
+    "expected_arguments": {
+      "text": "ありがとうございます。次回訪問する時に楽しみにしております。",
+      "target_language": "English"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "weather_info_0188",
+    "category": "weather_info",
+    "expected_function": "weather_info",
+    "predicted_function": null,
+    "expected_arguments": {
+      "location": "東京",
+      "forecast_type": "today"
+    },
+    "predicted_arguments": null,
+    "function_correct": false,
+    "args_correct": false,
+    "raw_response": ""
+  },
+  {
+    "test_id": "no_function_0283",
+    "category": "no_function",
+    "expected_function": null,
+    "predicted_function": null,
+    "expected_arguments": null,
+    "predicted_arguments": null,
+    "function_correct": true,
+    "args_correct": true,
+    "raw_response": ""
+  }
+]
