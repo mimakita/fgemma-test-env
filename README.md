@@ -4,22 +4,35 @@
 
 ## Architecture
 
+### 二段階Function Calling（デフォルト）
+
 ```
 User Input
     │
     ▼
-┌──────────────┐     ┌─────────────────┐
-│  gemma3:4b   │────▶│  FunctionGemma  │
-│  (対話モデル)  │     │  (270M Router)  │
-└──────────────┘     └────────┬────────┘
-                              │
-               ┌──────────────┼──────────────┐
-               ▼              ▼              ▼
-         ┌──────────┐  ┌──────────┐  ┌──────────┐
-         │ Function │  │ Function │  │   None   │
-         │    A     │  │    B     │  │(通常対話) │
-         └──────────┘  └──────────┘  └──────────┘
+┌─────────────────────────────────────┐
+│ Stage 1: FunctionCallClassifier    │  ← キーワードベース (0.01ms)
+│ (no_function検出に特化)             │
+└─────────────────────────────────────┘
+    │                           │
+    │ need_function=True        │ need_function=False
+    ▼                           ▼
+┌─────────────────────┐    直接応答
+│ Stage 2: gemma3:4b  │    (LLM呼び出しスキップ)
+│ + FunctionGemma     │
+└─────────────────────┘
+    │
+    ▼
+Function Call or None
 ```
+
+- **Stage 1**: `FunctionCallClassifier` - キーワードベースの高速分類器
+  - no_function認識に特化（Recall 100%）
+  - 不要なLLM呼び出しを39%削減
+- **Stage 2**: `FunctionGemma` - LLMベースの関数選択
+  - Stage 1で関数が必要と判定された場合のみ実行
+
+### 使用モデル
 
 - **gemma3:4b** - 対話用メインLLM (Ollama)
 - **functiongemma** - Function判定モデル 270M (Ollama)
@@ -92,6 +105,33 @@ python -m tools.generate_test_data --function travel_guide --count 50
 # no_functionデータをスキップ
 python -m tools.generate_test_data --skip-no-function
 ```
+
+### Classifier Testing
+
+```bash
+# Stage 1 Classifierの精度テスト（95件のテストケース）
+python -m tools.test_conversation
+```
+
+テスト結果の例:
+```
+Overall Accuracy: 91/95 (95.8%)
+
+Per-Category Results:
+  greeting            : 10/10 (100.0%)
+  general_question    : 10/10 (100.0%)
+  creative            : 10/10 (100.0%)
+  opinion             : 10/10 (100.0%)
+  travel              : 10/10 (100.0%)
+  weather             : 10/10 (100.0%)
+  translation         : 10/10 (100.0%)
+  celebrity           :  6/10 ( 60.0%)
+  sentiment           :  5/ 5 (100.0%)
+  schedule            :  5/ 5 (100.0%)
+  shopping            :  5/ 5 (100.0%)
+```
+
+結果は `data/results/classifier_test_100.json` に保存されます。
 
 ### Evaluation
 
