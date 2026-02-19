@@ -111,6 +111,9 @@ python -m tools.generate_test_data --skip-no-function
 ```bash
 # Stage 1 Classifierの精度テスト（95件のテストケース）
 python -m tools.test_conversation
+
+# 分類器ベンチマーク（Keyword / TF-IDF+ML / LLM を比較）
+python -m tools.benchmark_classifier
 ```
 
 テスト結果の例:

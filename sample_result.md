@@ -1141,3 +1141,107 @@ elif result.should_call:
 # shopping_intent
 "価格", "セール", "レビュー", "比較して"
 ```
+
+---
+
+## 18. Stage 1 分類器ベンチマーク（キーワード vs ML vs LLM）
+
+### 18.1 目的
+
+現行のキーワードベース分類器（Stage 1）を**ベースライン**として、複数の機械学習手法とLLMを比較評価する。
+タスク定義: **二値分類**（need_function=1 vs no_function=0）
+
+### 18.2 データセット
+
+| 項目 | 内容 |
+|------|------|
+| 総データ数 | 4,090件（7関数 × 370件 + no_function 1,500件） |
+| 分割 | train=80% (3,272件), test=20% (818件) |
+| テストセット内訳 | need_function=518件, no_function=300件 |
+| 入力特徴量 | 対話の最後のユーザー発話（テキスト） |
+
+### 18.3 評価手法
+
+| モデル | 学習データ | アルゴリズム | 備考 |
+|--------|-----------|-------------|------|
+| Keyword Baseline | なし（ルールベース） | キーワードマッチング | 現行実装 |
+| TF-IDF + LR | 3,272件 | Logistic Regression | char n-gram (2-4), max_features=20k |
+| TF-IDF + SVM | 3,272件 | LinearSVC | char n-gram (2-4), max_features=20k |
+| TF-IDF + CNB | 3,272件 | Complement NaiveBayes | 不均衡データに適した NB 変種 |
+| LLM | なし（zero-shot） | gemma3:4b | n=50サンプルのみ評価（低速のため） |
+
+### 18.4 ベンチマーク結果
+
+| 分類器 | Accuracy | Precision | Recall | F1 | ms/sample | 学習時間 |
+|--------|----------|-----------|--------|-----|-----------|---------|
+| **1. Keyword Baseline** | 57.0% | 63.7% | 74.7% | 68.7% | **0.014ms** | 不要 |
+| **2. TF-IDF + Logistic Regression** | 89.4% | 89.3% | **94.6%** | **91.8%** | 0.049ms | 0.31s |
+| **3. TF-IDF + LinearSVC** | **90.1%** | **91.6%** | 92.9% | **92.2%** | 0.032ms | 0.23s |
+| **4. TF-IDF + Complement NaiveBayes** | 88.6% | **93.8%** | 87.8% | 90.7% | 0.033ms | **0.13s** |
+| **5. LLM (gemma3:4b, zero-shot)** | 64.0% | 66.7% | 56.0% | 60.9% | 927ms | 不要 |
+
+### 18.5 混同行列（Keyword Baseline）
+
+|  | 予測: need_function | 予測: no_function |
+|--|---------------------|-------------------|
+| **正解: need_function** | TP=387 | FN=131 |
+| **正解: no_function** | FP=221 | TN=79 |
+
+Recall=74.7% だが no_function の TN=79 / 300 = 26.3% と著しく低い。
+FP（no_function を need_function と誤分類）が 221件と多い。
+
+### 18.6 混同行列（TF-IDF + LinearSVC, Best Overall）
+
+|  | 予測: need_function | 予測: no_function |
+|--|---------------------|-------------------|
+| **正解: need_function** | TP=481 | FN=37 |
+| **正解: no_function** | FP=44 | TN=256 |
+
+no_function TN=256 / 300 = **85.3%** まで改善。FPは 44件（14.7%）。
+
+### 18.7 考察
+
+#### キーワードベースの限界
+
+- Accuracy 57.0% は**ML手法の半分以下**の精度差
+- 主な問題: no_function の TN率が 26.3% にすぎない（FP多発）
+- ただし **推論速度 0.014ms** は圧倒的に速く、ルール更新も容易
+
+#### ML手法の優位性
+
+- TF-IDF + LinearSVC が **Accuracy 90.1%, F1 92.2%** でベスト
+- 学習時間 0.23秒、推論 0.032ms/sample → 実用上の速度問題なし
+- char n-gram (2-4) が日本語形態素なしで有効
+- **キーワードベースから +33.1% の Accuracy 改善**
+
+#### LLM（zero-shot）の評価
+
+- Accuracy 64.0% はキーワードベースよりわずかに上
+- 推論速度 **927ms/sample** → リアルタイム用途には不適
+- 専用の fine-tuning なしでは ML手法に勝てない
+
+### 18.8 推奨アクション
+
+#### 短期（現実装への組み込み）
+
+1. **TF-IDF + LinearSVC を Stage 1 に採用**
+   - 学習データ: `data/test/` 全データ（4,090件）
+   - モデルファイル保存: `data/classifiers/stage1_svm.pkl`
+   - 推論速度 0.032ms → 現行の 0.014ms と実用上同等
+   - Accuracy 57% → 90% への大幅改善期待
+
+2. **モデルの保存・ロード機構の追加**
+   - `python -m tools.train_classifier` で学習・保存
+   - `FunctionCallClassifier` に ML モデルの読み込みオプション追加
+
+#### 中期（アーキテクチャ改善）
+
+3. **二段階判定のハイブリッド化**
+   - Stage 1a: キーワードマッチ（確信度高いケースは即時判定）
+   - Stage 1b: ML分類器（曖昧なケース）
+   - Stage 2: FunctionGemma（need_function の場合のみ）
+
+#### 長期（研究方向）
+
+4. **埋め込みベースの分類器**（sentence-transformers + cosine similarity）
+5. **能動学習**: 誤分類ケースを継続的に学習データへ追加
