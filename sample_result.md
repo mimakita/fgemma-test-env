@@ -1245,3 +1245,81 @@ no_function TN=256 / 300 = **85.3%** まで改善。FPは 44件（14.7%）。
 
 4. **埋め込みベースの分類器**（sentence-transformers + cosine similarity）
 5. **能動学習**: 誤分類ケースを継続的に学習データへ追加
+
+---
+
+## 19. Run 6: 二段階評価（ML Stage 1 + PEFT Run5 Stage 2）
+
+### 19.1 構成
+
+| コンポーネント | 詳細 |
+|--------------|------|
+| Stage 1 | TF-IDF + LinearSVC（`data/classifiers/stage1_model.pkl`） |
+| Stage 2 | FunctionGemma PEFT Run5 checkpoint-800 |
+| テストセット | run_5/all_test_data.json（818件: 7関数×74件 + no_function 300件） |
+
+### 19.2 評価結果
+
+#### Overall
+
+| 指標 | Run 5（単独） | **Run 6（二段階）** | 改善 |
+|------|:----------:|:---------------:|:----:|
+| **Accuracy** | 57.1% | **93.0%** | **+35.9pp** |
+| no_function Recall | 0% | **98.0%** | **+98.0pp** |
+| no_function Precision | - | **100%** | - |
+
+#### Stage 1 フィルタリング
+
+| 項目 | 件数 |
+|------|------|
+| Stage 1 blocked（no_function判定） | 294 / 818 |
+| Stage 1 passed（Stage 2へ） | 524 / 818 |
+| Stage 1 FP（no_functionなのに通過） | 6件 |
+| Stage 1 FN（関数必要なのにブロック） | 0件 |
+
+Stage 1 は no_function 300件中 **294件を正確にブロック**（Recall 98.0%）。
+関数が必要なケース 518件は 1件もブロックされなかった（FN=0, Recall 100%）。
+
+#### 関数別 Recall（Stage 2 通過後）
+
+| Function | Run 5 Recall | Run 6 Recall | 変化 |
+|----------|:-----------:|:-----------:|:----:|
+| travel_guide | 100.0% | **100.0%** | → |
+| celebrity_info | 98.6% | **98.6%** | → |
+| shopping_intent | 97.3% | **97.3%** | → |
+| schedule_reminder | 97.3% | **97.3%** | → |
+| weather_info | 93.2% | **93.2%** | → |
+| sentiment_label | 83.8% | **83.8%** | → |
+| translation_assist | 60.8% | **60.8%** | → |
+| **no_function** | **0%** | **98.0%** | **+98.0pp** |
+
+### 19.3 推論レイテンシ
+
+| ステージ | 平均レイテンシ | 呼び出し数 |
+|---------|:----------:|:-------:|
+| Stage 1（ML） | 0.614 ms/sample | 818件全て |
+| Stage 2（PEFT） | 1,633 ms/sample | 524件のみ |
+
+Stage 1 が 36%（294件）をフィルタリングしたことで、Stage 2 の呼び出しコストを削減。
+
+### 19.4 実験履歴更新
+
+| Run | 構成 | Accuracy | no_function Recall | 備考 |
+|-----|------|----------|:------------------:|------|
+| Baseline | FunctionGemma zero-shot | 27.9% | 低 | Ollama |
+| Run 2 | PEFT ckpt-800 | 60.3% | 0% | 1,900件 |
+| Run 3 | PEFT ckpt-800 | **68.3%** | 0% | 3,340件 データ多様性 |
+| Run 4 | PEFT ckpt-800 | 42.7% | 0% | no_function 50%（失敗） |
+| Run 5 | PEFT ckpt-800 | 57.1% | 0% | 4,090件 balanced |
+| **Run 6** | **ML Stage1 + PEFT Run5** | **93.0%** | **98.0%** | **← New Best** |
+
+### 19.5 考察
+
+- **ML Stage 1 の効果が絶大**: no_function Recall が 0% → 98.0% に改善
+- **関数Recall は Run5 と同一**: Stage 1 FN=0 で関数ケースを一切ブロックしない
+- **全体 Accuracy +35.9pp**: これまでの全実験中で最大の改善幅
+- **Stage 1 FP=6件** のみ: no_function のうち 6件が Stage 2 に漏れるが実害は軽微
+  - Stage 2 がその 6件を no_function と正しく返せばさらに改善の余地あり
+
+**結論**: TF-IDF + LinearSVC による Stage 1 ML 分類器が、
+no_function 認識問題を実質的に解決した。Accuracy **93.0%** はプロジェクト最高記録。

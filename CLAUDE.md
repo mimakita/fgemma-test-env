@@ -136,22 +136,24 @@ python -m tools.finetune_lora --run-id 1  # 使用しないこと
 
 ## Evaluation Results
 
-### Fine-tuning実験サマリ（Run 1-5）
+### Fine-tuning実験サマリ（Run 1-6）
 
-| Run | データ件数 | Accuracy | 学習時間 | 特徴 |
-|-----|----------|----------|---------|------|
-| Baseline | 950 | 27.9% | - | Zero-shot |
-| Run 2 | 1,900 | 60.3% | ~3h35m | PEFT Fine-tuning |
-| Run 3 | 3,340 | **68.3%** | ~2h53m | データ多様性向上（ベスト） |
-| Run 4 | 4,790 | 42.7% | ~2h52m | no_function 50%比率（失敗） |
-| Run 5 | 4,090 | 57.1% | ~3h31m | balanced, 12.5% no_function |
+| Run | 構成 | Accuracy | no_func Recall | 備考 |
+|-----|------|----------|:--------------:|------|
+| Baseline | Zero-shot | 27.9% | 低 | Ollama |
+| Run 2 | PEFT | 60.3% | 0% | 1,900件 |
+| Run 3 | PEFT | 68.3% | 0% | 3,340件 データ多様性向上 |
+| Run 4 | PEFT | 42.7% | 0% | no_function 50%（失敗） |
+| Run 5 | PEFT | 57.1% | 0% | 4,090件 balanced |
+| **Run 6** | **ML Stage1 + PEFT Run5** | **93.0%** | **98.0%** | **最高記録** |
 
-### 二段階判定（本番統合済み）
+### Run 6 二段階判定（本番推奨構成）
 
-| メトリクス | 単独モデル | 二段階判定 | 改善 |
-|-----------|-----------|-----------|------|
-| Accuracy | 57.1% | **70.8%** | +13.7% |
-| no_function Recall | 0% | **100%** | +100% |
+| メトリクス | Run 5 単独 | Run 6 二段階 | 改善 |
+|-----------|-----------|------------|------|
+| Accuracy | 57.1% | **93.0%** | **+35.9pp** |
+| no_function Recall | 0% | **98.0%** | **+98pp** |
+| Stage 2 呼び出し | 818件 | **524件** | **36%削減** |
 
 ### Stage 1 分類器ベンチマーク（二値分類: need_function vs no_function）
 
