@@ -2,10 +2,25 @@
 
 Determines whether a function call is needed before invoking the LLM router.
 This significantly improves no_function detection while maintaining function call accuracy.
+
+Two backends are supported:
+- ML (default): TF-IDF + LinearSVC, trained via `python -m tools.train_classifier`
+  - Accuracy ~90%, latency ~0.03ms/sample
+- Keyword fallback: rule-based heuristics (no training required)
+  - Accuracy ~57%, latency ~0.01ms/sample
+  - Used automatically if the model file is not found
 """
 
+import logging
+import pickle
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Optional
+
+logger = logging.getLogger(__name__)
+
+# Path to the trained ML model (created by tools/train_classifier.py)
+_MODEL_PATH = Path("data/classifiers/stage1_model.pkl")
 
 
 @dataclass
@@ -14,7 +29,12 @@ class ClassificationResult:
     need_function: bool
     confidence: float
     matched_function: Optional[str] = None
+    backend: str = "ml"  # "ml" or "keyword"
 
+
+# ──────────────────────────────────────────────
+# Keyword fallback (kept for when ML model is absent)
+# ──────────────────────────────────────────────
 
 # Keywords that suggest NO function call is needed
 NO_FUNCTION_KEYWORDS = [
@@ -25,7 +45,7 @@ NO_FUNCTION_KEYWORDS = [
     # Asking for opinions
     "どう思う", "どう思います", "意見を", "感想を",
     "思いますか", "考えますか", "でしょうか",
-    # General knowledge / explanations (注: "について教えて"は人物にも使われるので除外)
+    # General knowledge / explanations
     "とは何", "って何", "説明して",
     "なぜ", "どうして", "理由は", "原因は",
     "どういう意味", "違いは", "どう違う",
@@ -59,80 +79,85 @@ NO_FUNCTION_STRONG = [
 # Keywords that suggest function call IS needed
 FUNCTION_KEYWORDS = {
     "travel_guide": [
-        # 基本キーワード
         "旅行", "観光", "行き方", "名所", "ホテル", "おすすめの場所",
-        # 追加: 地名パターン
         "に行きたい", "の見どころ", "の名物", "観光案内", "観光情報", "観光スポット",
-        # 追加: 城・寺社等
         "城について", "寺について", "神社について",
     ],
     "celebrity_info": [
-        # 基本キーワード
         "有名人", "芸能人", "歌手", "俳優", "選手",
-        # 追加: 人物情報パターン（「について教えて」は一般的すぎるので除外）
         "の経歴", "のプロフィール", "とは誰",
-        # 追加: 職業
         "監督", "作家", "画家", "作曲家", "科学者", "アーティスト", "女優",
-        # 追加: 著名人キーワード
         "の作品", "の業績", "について知りたい",
     ],
     "shopping_intent": [
-        # 基本キーワード
         "買いたい", "購入", "おすすめの商品", "どこで買える", "値段",
-        # 追加: 買い物パターン
         "商品を教えて", "価格を比較", "セール情報", "レビューを見せて",
         "安い", "高い", "コスパ", "お得",
     ],
     "sentiment_label": [
-        # 基本キーワード
         "感情分析", "気持ち", "感情を分類", "ポジティブ", "ネガティブ",
-        # 追加: 感情パターン
         "感情を分析", "感情ラベル", "センチメント", "気持ちを分析",
         "ポジティブかネガティブ", "感情を判定",
     ],
     "weather_info": [
-        # 基本キーワード
         "天気", "気温", "雨", "晴れ", "予報", "明日の天気",
-        # 追加: 天気パターン
         "傘は必要", "台風", "梅雨", "降水確率", "湿度",
         "曇り", "雪", "風", "嵐",
     ],
     "schedule_reminder": [
-        # 基本キーワード
         "予定", "スケジュール", "リマインダー", "忘れないように", "時に通知",
-        # 追加: スケジュールパターン
         "をリマインド", "会議を設定", "予約を入れ", "アラーム",
         "カレンダー", "日程", "約束",
     ],
     "translation_assist": [
-        # 基本キーワード
         "翻訳", "英語にして", "日本語にして", "英訳", "和訳", "語で",
-        # 追加: 言語名
         "フランス語", "韓国語", "ドイツ語", "スペイン語", "ポルトガル語",
         "イタリア語", "ロシア語", "中国語", "アラビア語",
-        # 追加: 翻訳パターン
         "語に訳して", "語に変換", "語にして", "語で言うと", "語で何と言",
     ],
 }
 
 
+# ──────────────────────────────────────────────
+# Main classifier
+# ──────────────────────────────────────────────
+
 class FunctionCallClassifier:
     """Stage 1 classifier that determines if function call is needed.
 
-    Uses keyword-based heuristics to quickly filter out conversations
-    that don't require function calls, improving no_function detection.
+    Uses a TF-IDF + LinearSVC model (trained via tools/train_classifier.py)
+    when available. Falls back to keyword-based heuristics if the model
+    file is not found.
     """
 
-    def __init__(self, function_keywords: dict = None, no_function_keywords: list = None):
-        """Initialize classifier with custom or default keywords.
-
-        Args:
-            function_keywords: Dict mapping function names to keyword lists
-            no_function_keywords: List of keywords indicating no function needed
-        """
+    def __init__(
+        self,
+        model_path: Optional[Path] = None,
+        function_keywords: Optional[dict] = None,
+        no_function_keywords: Optional[list] = None,
+    ):
         self.function_keywords = function_keywords or FUNCTION_KEYWORDS
         self.no_function_keywords = no_function_keywords or NO_FUNCTION_KEYWORDS
         self.no_function_strong = NO_FUNCTION_STRONG
+
+        path = model_path or _MODEL_PATH
+        self._ml_pipeline = None
+        if path.exists():
+            try:
+                with open(path, "rb") as f:
+                    self._ml_pipeline = pickle.load(f)
+                logger.debug(f"Loaded ML classifier from {path}")
+            except Exception as e:
+                logger.warning(f"Failed to load ML classifier: {e}. Using keyword fallback.")
+        else:
+            logger.info(
+                f"ML model not found at {path}. Using keyword fallback. "
+                "Run `python -m tools.train_classifier` to build the ML model."
+            )
+
+    @property
+    def backend(self) -> str:
+        return "ml" if self._ml_pipeline is not None else "keyword"
 
     def classify(self, conversation: list[dict]) -> ClassificationResult:
         """Classify if a function call is needed.
@@ -143,37 +168,54 @@ class FunctionCallClassifier:
         Returns:
             ClassificationResult with decision and confidence
         """
-        # Get last user message (most important for classification)
         last_user_msg = ""
         for msg in reversed(conversation):
             if msg.get("role") == "user":
                 last_user_msg = msg.get("content", "")
                 break
 
-        # Combine all user messages for context
+        if self._ml_pipeline is not None:
+            return self._classify_ml(last_user_msg)
+        return self._classify_keyword(last_user_msg, conversation)
+
+    def _classify_ml(self, text: str) -> ClassificationResult:
+        """Classify using the trained ML pipeline."""
+        pred = self._ml_pipeline.predict([text])[0]
+        # LinearSVC doesn't support predict_proba; use decision_function as proxy
+        try:
+            score = float(self._ml_pipeline.decision_function([text])[0])
+            # Sigmoid-like mapping: score=0 → 0.5, large positive → near 1
+            import math
+            confidence = 1 / (1 + math.exp(-score * 0.5))
+            confidence = max(0.5, min(0.99, confidence))
+        except Exception:
+            confidence = 0.8
+
+        return ClassificationResult(
+            need_function=bool(pred == 1),
+            confidence=confidence,
+            backend="ml",
+        )
+
+    def _classify_keyword(
+        self, last_user_msg: str, conversation: list[dict]
+    ) -> ClassificationResult:
+        """Fallback: keyword-based classification."""
         all_user_text = " ".join(
             msg.get("content", "") for msg in conversation if msg.get("role") == "user"
         )
 
-        # Count no_function keywords
-        no_func_score = 0
-        for kw in self.no_function_keywords:
-            if kw in all_user_text:
-                no_func_score += 1
-
-        # Check strong no_function indicators
+        no_func_score = sum(1 for kw in self.no_function_keywords if kw in all_user_text)
         for strong in self.no_function_strong:
-            pattern = strong.replace("〜", "")
-            if pattern in all_user_text:
-                no_func_score += 3  # Higher weight
+            if strong.replace("〜", "") in all_user_text:
+                no_func_score += 3
 
-        # Count function keywords (prioritize last user message)
         func_score = 0
         matched_function = None
         for func_name, keywords in self.function_keywords.items():
             for kw in keywords:
                 if kw in last_user_msg:
-                    func_score += 2  # Last message is more important
+                    func_score += 2
                     matched_function = func_name
                     break
                 elif kw in all_user_text:
@@ -181,61 +223,41 @@ class FunctionCallClassifier:
                     matched_function = func_name
                     break
 
-        # Decision logic
-        return self._make_decision(func_score, no_func_score, matched_function)
+        result = self._keyword_decision(func_score, no_func_score, matched_function)
+        result.backend = "keyword"
+        return result
 
-    def _make_decision(
+    def _keyword_decision(
         self, func_score: int, no_func_score: int, matched_function: Optional[str]
     ) -> ClassificationResult:
-        """Make classification decision based on scores."""
-
-        # Strong function signal in last message
         if func_score >= 3:
             return ClassificationResult(
                 need_function=True,
                 confidence=min(0.6 + func_score * 0.1, 0.95),
                 matched_function=matched_function,
             )
-
-        # No function keywords and some no_function keywords
         if func_score == 0 and no_func_score >= 2:
             return ClassificationResult(
                 need_function=False,
                 confidence=min(0.5 + no_func_score * 0.05, 0.85),
             )
-
-        # Function score is higher than no_function
         if func_score > no_func_score:
             return ClassificationResult(
                 need_function=True,
                 confidence=0.5 + (func_score - no_func_score) * 0.1,
                 matched_function=matched_function,
             )
-
-        # No_function score is significantly higher
         if no_func_score > func_score + 2:
             return ClassificationResult(
                 need_function=False,
                 confidence=0.5 + (no_func_score - func_score) * 0.05,
             )
-
-        # Ambiguous case - if any function keyword, call function
         if func_score > 0:
             return ClassificationResult(
                 need_function=True,
                 confidence=0.5,
                 matched_function=matched_function,
             )
-
-        # Default: no function (conservative)
         if no_func_score > 0:
-            return ClassificationResult(
-                need_function=False,
-                confidence=0.4,
-            )
-
-        # No signals either way - default to function (safer for user experience)
-        return ClassificationResult(
-            need_function=True,
-            confidence=0.3,
-        )
+            return ClassificationResult(need_function=False, confidence=0.4)
+        return ClassificationResult(need_function=True, confidence=0.3)

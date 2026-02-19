@@ -41,6 +41,9 @@ RETROSPECTIVE.md
 data/finetune/
 data/peft_adapters/
 
+# Trained ML classifiers (regenerate with: python -m tools.train_classifier)
+data/classifiers/
+
 # Ollama model files (if downloaded locally)
 models/
 

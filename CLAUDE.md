@@ -73,6 +73,20 @@ python -m tools.generate_diverse_functions --all --target 370
 python -m tools.generate_irrelevance_data --count 500 --ambiguous 200 --merge
 ```
 
+### Stage 1 分類器の学習（初回・データ更新時）
+```bash
+# TF-IDF + LinearSVC を学習してモデルを保存（学習 ~0.2秒）
+python -m tools.train_classifier
+# → data/classifiers/stage1_model.pkl を生成
+# モデルがなければ自動的にキーワードベースへフォールバック
+
+# 分類器ベンチマーク（Keyword / ML / LLM を比較）
+python -m tools.benchmark_classifier
+
+# Stage 1 精度テスト（95件のテストケース）
+python -m tools.test_conversation
+```
+
 ### 評価
 ```bash
 # Ollamaベースライン評価

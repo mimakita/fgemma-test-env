@@ -109,12 +109,19 @@ python -m tools.generate_test_data --skip-no-function
 ### Classifier Testing
 
 ```bash
-# Stage 1 Classifierの精度テスト（95件のテストケース）
-python -m tools.test_conversation
+# Stage 1 ML分類器を学習・保存（初回またはデータ更新後に実行）
+python -m tools.train_classifier
+# → data/classifiers/stage1_model.pkl を生成 (学習時間 ~0.2秒)
 
 # 分類器ベンチマーク（Keyword / TF-IDF+ML / LLM を比較）
 python -m tools.benchmark_classifier
+
+# Stage 1 Classifierの精度テスト（95件のテストケース）
+python -m tools.test_conversation
 ```
+
+> **Note**: `data/classifiers/stage1_model.pkl` が存在する場合は自動的にMLモデルを使用します。
+> ファイルがない場合はキーワードベースにフォールバックします。
 
 テスト結果の例:
 ```
