@@ -30014,5 +30014,3820 @@
     "category": "no_function",
     "expected_function": null,
     "expected_arguments": null
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暇だわ〜"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか。何かしたいことはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "特にないんだけど"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0000",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "おなか減った"
+      },
+      {
+        "role": "assistant",
+        "content": "お腹が空いたんですね。何か食べましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ何も"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0001",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "疲れた〜"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れ様です。ゆっくり休んでください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0002",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか眠い"
+      },
+      {
+        "role": "assistant",
+        "content": "眠いですね。今日は何時頃起きましたか？"
+      },
+      {
+        "role": "user",
+        "content": "6時"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0003",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "やる気出ない"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう日もありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0004",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか憂鬱"
+      },
+      {
+        "role": "assistant",
+        "content": "気分が優れないんですね。話を聞きましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "うーん"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0005",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ふあ〜眠い"
+      },
+      {
+        "role": "assistant",
+        "content": "眠そうですね。昨夜はよく眠れましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0006",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日だるいな"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れのようですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0007",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もう月曜か〜"
+      },
+      {
+        "role": "assistant",
+        "content": "月曜日ですね。週の始まりです。"
+      },
+      {
+        "role": "user",
+        "content": "憂鬱"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0008",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末終わった"
+      },
+      {
+        "role": "assistant",
+        "content": "あっという間ですよね。"
+      },
+      {
+        "role": "user",
+        "content": "そう"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0009",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日変な夢見た"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな夢でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "覚えてないんだけど"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0010",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "猫ってかわいいよね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、猫は癒やされますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0011",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "猫と犬どっちが好き？"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらもかわいいですね。あなたはどちらが好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "猫派かな"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0012",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近ちょっと落ち込んでる"
+      },
+      {
+        "role": "assistant",
+        "content": "それは大変でしたね。何かあったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "いや特には"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0013",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日映画見てきた"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "アクション系"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0014",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日めっちゃ寒い"
+      },
+      {
+        "role": "assistant",
+        "content": "寒いですね。暖かくしてください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0015",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんかいいこと教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "今日も一日頑張りましょう！"
+      },
+      {
+        "role": "user",
+        "content": "うーん"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0016",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もし1億円あったら何する？"
+      },
+      {
+        "role": "assistant",
+        "content": "夢のある話ですね。あなたはどうしたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "旅行とか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0017",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "人生って難しいな"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。何かあったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "なんとなく"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0018",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか話して"
+      },
+      {
+        "role": "assistant",
+        "content": "何について話しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "なんでも"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0019",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIって結局何ができるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "AIはいろいろな分野で活用されています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0020",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "SNSって疲れない？"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう人も多いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0021",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "民主主義ってうまくいってると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しい問いですね。様々な見方があります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0022",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレワークって実際どうなの"
+      },
+      {
+        "role": "assistant",
+        "content": "メリットもデメリットもありますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0023",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "人生って何のためにあるんだろう"
+      },
+      {
+        "role": "assistant",
+        "content": "哲学的な問いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0024",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宇宙って無限なの？"
+      },
+      {
+        "role": "assistant",
+        "content": "宇宙の大きさは現代科学でも謎が多いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0025",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIが発達したら人間の仕事なくなると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "様々な意見がありますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0026",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "環境問題って解決できると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しい課題ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0027",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ブラックホールってどういう仕組み？"
+      },
+      {
+        "role": "assistant",
+        "content": "ブラックホールは非常に重力が強い天体です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0028",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "光合成ってなんだっけ"
+      },
+      {
+        "role": "assistant",
+        "content": "植物が光を使ってエネルギーを作る仕組みです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0029",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "インフレってなんで起きるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "物価が上昇する経済現象です。需給バランスなどが原因です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0030",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ストレスが体に悪い理由は？"
+      },
+      {
+        "role": "assistant",
+        "content": "ストレスはホルモンバランスや免疫系に影響します。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0031",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "睡眠って何時間がいいの？"
+      },
+      {
+        "role": "assistant",
+        "content": "一般的に7〜9時間が推奨されています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0032",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんで空は青いの？"
+      },
+      {
+        "role": "assistant",
+        "content": "光の散乱現象によるものです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0033",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "筋肉痛ってなんで遅れてくるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "遅発性筋肉痛と呼ばれる現象ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0034",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と喧嘩してしまった"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。どんなことで揉めたんですか？"
+      },
+      {
+        "role": "user",
+        "content": "些細なことで"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0035",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "転職しようか迷ってる"
+      },
+      {
+        "role": "assistant",
+        "content": "大きな決断ですね。何か気になることがあるんですか？"
+      },
+      {
+        "role": "user",
+        "content": "給料とか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0036",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼氏と価値観が合わなくて"
+      },
+      {
+        "role": "assistant",
+        "content": "それは悩ましいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0037",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "勉強のやる気が出ない"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう時期もありますよね。何の勉強ですか？"
+      },
+      {
+        "role": "user",
+        "content": "英語"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0038",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ダイエットが続かない"
+      },
+      {
+        "role": "assistant",
+        "content": "なかなか難しいですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0039",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "朝起きられない"
+      },
+      {
+        "role": "assistant",
+        "content": "睡眠の質の問題かもしれませんね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0040",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "俳句を一つ作って"
+      },
+      {
+        "role": "assistant",
+        "content": "春の風　そっと頬撫で　花散る　はどうでしょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0041",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "面白いなぞなぞ教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "では一つ。「逆さにしても読める野菜は？」"
+      },
+      {
+        "role": "user",
+        "content": "わかった！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0042",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "10秒で笑える話して"
+      },
+      {
+        "role": "assistant",
+        "content": "なぜ数学の本は悲しいのか？問題が多すぎるから。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0043",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ドラゴンが出てくる短い話を作って"
+      },
+      {
+        "role": "assistant",
+        "content": "昔々、火を吐けないドラゴンがいました…"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0044",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "詩を書いて"
+      },
+      {
+        "role": "assistant",
+        "content": "空は広く、夢は高く、今日も歩み続ける。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0045",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "キャッチコピー考えて"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな商品やサービスのキャッチコピーですか？"
+      },
+      {
+        "role": "user",
+        "content": "カフェ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0046",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "うーん"
+      },
+      {
+        "role": "assistant",
+        "content": "何か考えていますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0047",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "はあ"
+      },
+      {
+        "role": "assistant",
+        "content": "どうかしましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0048",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "むずい"
+      },
+      {
+        "role": "assistant",
+        "content": "何が難しいですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0049",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "わからん"
+      },
+      {
+        "role": "assistant",
+        "content": "何についてですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0050",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "やばい"
+      },
+      {
+        "role": "assistant",
+        "content": "どうしましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0051",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "えー"
+      },
+      {
+        "role": "assistant",
+        "content": "何かありましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0052",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか"
+      },
+      {
+        "role": "assistant",
+        "content": "何かありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0053",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ですよね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0054",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暇だわ〜"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか。何かしたいことはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "特にないんだけど"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0000",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "おなか減った"
+      },
+      {
+        "role": "assistant",
+        "content": "お腹が空いたんですね。何か食べましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ何も"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0001",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "疲れた〜"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れ様です。ゆっくり休んでください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0002",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか眠い"
+      },
+      {
+        "role": "assistant",
+        "content": "眠いですね。今日は何時頃起きましたか？"
+      },
+      {
+        "role": "user",
+        "content": "6時"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0003",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "やる気出ない"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう日もありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0004",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか憂鬱"
+      },
+      {
+        "role": "assistant",
+        "content": "気分が優れないんですね。話を聞きましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "うーん"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0005",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ふあ〜眠い"
+      },
+      {
+        "role": "assistant",
+        "content": "眠そうですね。昨夜はよく眠れましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0006",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日だるいな"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れのようですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0007",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もう月曜か〜"
+      },
+      {
+        "role": "assistant",
+        "content": "月曜日ですね。週の始まりです。"
+      },
+      {
+        "role": "user",
+        "content": "憂鬱"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0008",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末終わった"
+      },
+      {
+        "role": "assistant",
+        "content": "あっという間ですよね。"
+      },
+      {
+        "role": "user",
+        "content": "そう"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0009",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日変な夢見た"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな夢でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "覚えてないんだけど"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0010",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "猫ってかわいいよね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、猫は癒やされますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0011",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "猫と犬どっちが好き？"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらもかわいいですね。あなたはどちらが好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "猫派かな"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0012",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近ちょっと落ち込んでる"
+      },
+      {
+        "role": "assistant",
+        "content": "それは大変でしたね。何かあったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "いや特には"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0013",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日映画見てきた"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "アクション系"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0014",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日めっちゃ寒い"
+      },
+      {
+        "role": "assistant",
+        "content": "寒いですね。暖かくしてください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0015",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんかいいこと教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "今日も一日頑張りましょう！"
+      },
+      {
+        "role": "user",
+        "content": "うーん"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0016",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もし1億円あったら何する？"
+      },
+      {
+        "role": "assistant",
+        "content": "夢のある話ですね。あなたはどうしたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "旅行とか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0017",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "人生って難しいな"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。何かあったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "なんとなく"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0018",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか話して"
+      },
+      {
+        "role": "assistant",
+        "content": "何について話しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "なんでも"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0019",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIって結局何ができるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "AIはいろいろな分野で活用されています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0020",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "SNSって疲れない？"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう人も多いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0021",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "民主主義ってうまくいってると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しい問いですね。様々な見方があります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0022",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレワークって実際どうなの"
+      },
+      {
+        "role": "assistant",
+        "content": "メリットもデメリットもありますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0023",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "人生って何のためにあるんだろう"
+      },
+      {
+        "role": "assistant",
+        "content": "哲学的な問いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0024",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宇宙って無限なの？"
+      },
+      {
+        "role": "assistant",
+        "content": "宇宙の大きさは現代科学でも謎が多いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0025",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIが発達したら人間の仕事なくなると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "様々な意見がありますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0026",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "環境問題って解決できると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しい課題ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0027",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ブラックホールってどういう仕組み？"
+      },
+      {
+        "role": "assistant",
+        "content": "ブラックホールは非常に重力が強い天体です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0028",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "光合成ってなんだっけ"
+      },
+      {
+        "role": "assistant",
+        "content": "植物が光を使ってエネルギーを作る仕組みです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0029",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "インフレってなんで起きるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "物価が上昇する経済現象です。需給バランスなどが原因です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0030",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ストレスが体に悪い理由は？"
+      },
+      {
+        "role": "assistant",
+        "content": "ストレスはホルモンバランスや免疫系に影響します。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0031",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "睡眠って何時間がいいの？"
+      },
+      {
+        "role": "assistant",
+        "content": "一般的に7〜9時間が推奨されています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0032",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんで空は青いの？"
+      },
+      {
+        "role": "assistant",
+        "content": "光の散乱現象によるものです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0033",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "筋肉痛ってなんで遅れてくるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "遅発性筋肉痛と呼ばれる現象ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0034",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と喧嘩してしまった"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。どんなことで揉めたんですか？"
+      },
+      {
+        "role": "user",
+        "content": "些細なことで"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0035",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "転職しようか迷ってる"
+      },
+      {
+        "role": "assistant",
+        "content": "大きな決断ですね。何か気になることがあるんですか？"
+      },
+      {
+        "role": "user",
+        "content": "給料とか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0036",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼氏と価値観が合わなくて"
+      },
+      {
+        "role": "assistant",
+        "content": "それは悩ましいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0037",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "勉強のやる気が出ない"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう時期もありますよね。何の勉強ですか？"
+      },
+      {
+        "role": "user",
+        "content": "英語"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0038",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ダイエットが続かない"
+      },
+      {
+        "role": "assistant",
+        "content": "なかなか難しいですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0039",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "朝起きられない"
+      },
+      {
+        "role": "assistant",
+        "content": "睡眠の質の問題かもしれませんね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0040",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "俳句を一つ作って"
+      },
+      {
+        "role": "assistant",
+        "content": "春の風　そっと頬撫で　花散る　はどうでしょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0041",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "面白いなぞなぞ教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "では一つ。「逆さにしても読める野菜は？」"
+      },
+      {
+        "role": "user",
+        "content": "わかった！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0042",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "10秒で笑える話して"
+      },
+      {
+        "role": "assistant",
+        "content": "なぜ数学の本は悲しいのか？問題が多すぎるから。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0043",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ドラゴンが出てくる短い話を作って"
+      },
+      {
+        "role": "assistant",
+        "content": "昔々、火を吐けないドラゴンがいました…"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0044",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "詩を書いて"
+      },
+      {
+        "role": "assistant",
+        "content": "空は広く、夢は高く、今日も歩み続ける。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0045",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "キャッチコピー考えて"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな商品やサービスのキャッチコピーですか？"
+      },
+      {
+        "role": "user",
+        "content": "カフェ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0046",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "うーん"
+      },
+      {
+        "role": "assistant",
+        "content": "何か考えていますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0047",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "はあ"
+      },
+      {
+        "role": "assistant",
+        "content": "どうかしましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0048",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "むずい"
+      },
+      {
+        "role": "assistant",
+        "content": "何が難しいですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0049",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "わからん"
+      },
+      {
+        "role": "assistant",
+        "content": "何についてですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0050",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "やばい"
+      },
+      {
+        "role": "assistant",
+        "content": "どうしましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0051",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "えー"
+      },
+      {
+        "role": "assistant",
+        "content": "何かありましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0052",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか"
+      },
+      {
+        "role": "assistant",
+        "content": "何かありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0053",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ですよね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0054",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日すごく疲れちゃって"
+      },
+      {
+        "role": "assistant",
+        "content": "大変でしたね。ゆっくり休めましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0055",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暇だわ〜"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか。何かしましょうか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0056",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "おなか減った"
+      },
+      {
+        "role": "assistant",
+        "content": "お腹が空いたんですね。何か食べましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0057",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もう帰りたい"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れ様です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0058",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "眠くて死にそう"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0059",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日ついてない"
+      },
+      {
+        "role": "assistant",
+        "content": "そんな日もありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0060",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暑すぎる"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は暑いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0061",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "まじつらい"
+      },
+      {
+        "role": "assistant",
+        "content": "大変そうですね。何かありましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0062",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "うれしい〜"
+      },
+      {
+        "role": "assistant",
+        "content": "良いことがあったんですね！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0063",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最高の気分"
+      },
+      {
+        "role": "assistant",
+        "content": "それは良かったです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0064",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日すごく疲れちゃって、どうすればいい？"
+      },
+      {
+        "role": "assistant",
+        "content": "まずはゆっくり休むことが大切ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0065",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と喧嘩してしまった"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。仲直りできるといいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0066",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達に嫌なこと言われた"
+      },
+      {
+        "role": "assistant",
+        "content": "それは悲しいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0067",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "転職しようか迷ってる"
+      },
+      {
+        "role": "assistant",
+        "content": "大きな決断ですね。じっくり考えてみましょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0068",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "仕事辞めたい"
+      },
+      {
+        "role": "assistant",
+        "content": "それほど辛い状況なんですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0069",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女とうまくいってない"
+      },
+      {
+        "role": "assistant",
+        "content": "大変ですね。何か原因はありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0070",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "親と仲悪くて"
+      },
+      {
+        "role": "assistant",
+        "content": "家族関係は難しいですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0071",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "将来が不安"
+      },
+      {
+        "role": "assistant",
+        "content": "将来への不安は誰にでもありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0072",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレワークのメリットとデメリット教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "通勤が不要というメリットと、孤立感というデメリットがあります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0073",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "チョコレートって体にいいの悪いの？"
+      },
+      {
+        "role": "assistant",
+        "content": "適量であれば健康効果もあると言われています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0074",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "コーヒーって飲みすぎると体に悪い？"
+      },
+      {
+        "role": "assistant",
+        "content": "カフェインの摂りすぎは注意が必要です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0075",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "運動って毎日した方がいい？"
+      },
+      {
+        "role": "assistant",
+        "content": "適度な運動は健康に良いですが、休息も大切です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0076",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "読書って何かいいことある？"
+      },
+      {
+        "role": "assistant",
+        "content": "知識が増えたり、語彙力が上がるといわれています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0077",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暇だわ〜"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか。何かしたいことはありますか？"
+      },
+      {
+        "role": "user",
+        "content": "特にないんだけど"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0000",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "おなか減った"
+      },
+      {
+        "role": "assistant",
+        "content": "お腹が空いたんですね。何か食べましたか？"
+      },
+      {
+        "role": "user",
+        "content": "まだ何も"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0001",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "疲れた〜"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れ様です。ゆっくり休んでください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0002",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか眠い"
+      },
+      {
+        "role": "assistant",
+        "content": "眠いですね。今日は何時頃起きましたか？"
+      },
+      {
+        "role": "user",
+        "content": "6時"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0003",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "やる気出ない"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう日もありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0004",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか憂鬱"
+      },
+      {
+        "role": "assistant",
+        "content": "気分が優れないんですね。話を聞きましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "うーん"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0005",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ふあ〜眠い"
+      },
+      {
+        "role": "assistant",
+        "content": "眠そうですね。昨夜はよく眠れましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0006",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日だるいな"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れのようですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0007",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もう月曜か〜"
+      },
+      {
+        "role": "assistant",
+        "content": "月曜日ですね。週の始まりです。"
+      },
+      {
+        "role": "user",
+        "content": "憂鬱"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0008",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末終わった"
+      },
+      {
+        "role": "assistant",
+        "content": "あっという間ですよね。"
+      },
+      {
+        "role": "user",
+        "content": "そう"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0009",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日変な夢見た"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな夢でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "覚えてないんだけど"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0010",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "猫ってかわいいよね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね、猫は癒やされますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0011",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "猫と犬どっちが好き？"
+      },
+      {
+        "role": "assistant",
+        "content": "どちらもかわいいですね。あなたはどちらが好きですか？"
+      },
+      {
+        "role": "user",
+        "content": "猫派かな"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0012",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最近ちょっと落ち込んでる"
+      },
+      {
+        "role": "assistant",
+        "content": "それは大変でしたね。何かあったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "いや特には"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0013",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日映画見てきた"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな映画でしたか？"
+      },
+      {
+        "role": "user",
+        "content": "アクション系"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0014",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日めっちゃ寒い"
+      },
+      {
+        "role": "assistant",
+        "content": "寒いですね。暖かくしてください。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0015",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんかいいこと教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "今日も一日頑張りましょう！"
+      },
+      {
+        "role": "user",
+        "content": "うーん"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0016",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もし1億円あったら何する？"
+      },
+      {
+        "role": "assistant",
+        "content": "夢のある話ですね。あなたはどうしたいですか？"
+      },
+      {
+        "role": "user",
+        "content": "旅行とか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0017",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "人生って難しいな"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。何かあったんですか？"
+      },
+      {
+        "role": "user",
+        "content": "なんとなく"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0018",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか話して"
+      },
+      {
+        "role": "assistant",
+        "content": "何について話しましょうか？"
+      },
+      {
+        "role": "user",
+        "content": "なんでも"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0019",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIって結局何ができるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "AIはいろいろな分野で活用されています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0020",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "SNSって疲れない？"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう人も多いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0021",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "民主主義ってうまくいってると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しい問いですね。様々な見方があります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0022",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレワークって実際どうなの"
+      },
+      {
+        "role": "assistant",
+        "content": "メリットもデメリットもありますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0023",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "人生って何のためにあるんだろう"
+      },
+      {
+        "role": "assistant",
+        "content": "哲学的な問いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0024",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宇宙って無限なの？"
+      },
+      {
+        "role": "assistant",
+        "content": "宇宙の大きさは現代科学でも謎が多いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0025",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "AIが発達したら人間の仕事なくなると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "様々な意見がありますね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0026",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "環境問題って解決できると思う？"
+      },
+      {
+        "role": "assistant",
+        "content": "難しい課題ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0027",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ブラックホールってどういう仕組み？"
+      },
+      {
+        "role": "assistant",
+        "content": "ブラックホールは非常に重力が強い天体です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0028",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "光合成ってなんだっけ"
+      },
+      {
+        "role": "assistant",
+        "content": "植物が光を使ってエネルギーを作る仕組みです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0029",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "インフレってなんで起きるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "物価が上昇する経済現象です。需給バランスなどが原因です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0030",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ストレスが体に悪い理由は？"
+      },
+      {
+        "role": "assistant",
+        "content": "ストレスはホルモンバランスや免疫系に影響します。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0031",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "睡眠って何時間がいいの？"
+      },
+      {
+        "role": "assistant",
+        "content": "一般的に7〜9時間が推奨されています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0032",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんで空は青いの？"
+      },
+      {
+        "role": "assistant",
+        "content": "光の散乱現象によるものです。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0033",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "筋肉痛ってなんで遅れてくるの？"
+      },
+      {
+        "role": "assistant",
+        "content": "遅発性筋肉痛と呼ばれる現象ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0034",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と喧嘩してしまった"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。どんなことで揉めたんですか？"
+      },
+      {
+        "role": "user",
+        "content": "些細なことで"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0035",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "転職しようか迷ってる"
+      },
+      {
+        "role": "assistant",
+        "content": "大きな決断ですね。何か気になることがあるんですか？"
+      },
+      {
+        "role": "user",
+        "content": "給料とか"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0036",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼氏と価値観が合わなくて"
+      },
+      {
+        "role": "assistant",
+        "content": "それは悩ましいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0037",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "勉強のやる気が出ない"
+      },
+      {
+        "role": "assistant",
+        "content": "そういう時期もありますよね。何の勉強ですか？"
+      },
+      {
+        "role": "user",
+        "content": "英語"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0038",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ダイエットが続かない"
+      },
+      {
+        "role": "assistant",
+        "content": "なかなか難しいですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0039",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "朝起きられない"
+      },
+      {
+        "role": "assistant",
+        "content": "睡眠の質の問題かもしれませんね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0040",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "俳句を一つ作って"
+      },
+      {
+        "role": "assistant",
+        "content": "春の風　そっと頬撫で　花散る　はどうでしょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0041",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "面白いなぞなぞ教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "では一つ。「逆さにしても読める野菜は？」"
+      },
+      {
+        "role": "user",
+        "content": "わかった！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0042",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "10秒で笑える話して"
+      },
+      {
+        "role": "assistant",
+        "content": "なぜ数学の本は悲しいのか？問題が多すぎるから。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0043",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ドラゴンが出てくる短い話を作って"
+      },
+      {
+        "role": "assistant",
+        "content": "昔々、火を吐けないドラゴンがいました…"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0044",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "詩を書いて"
+      },
+      {
+        "role": "assistant",
+        "content": "空は広く、夢は高く、今日も歩み続ける。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0045",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "キャッチコピー考えて"
+      },
+      {
+        "role": "assistant",
+        "content": "どんな商品やサービスのキャッチコピーですか？"
+      },
+      {
+        "role": "user",
+        "content": "カフェ"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0046",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "うーん"
+      },
+      {
+        "role": "assistant",
+        "content": "何か考えていますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0047",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "はあ"
+      },
+      {
+        "role": "assistant",
+        "content": "どうかしましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0048",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "むずい"
+      },
+      {
+        "role": "assistant",
+        "content": "何が難しいですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0049",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "わからん"
+      },
+      {
+        "role": "assistant",
+        "content": "何についてですか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0050",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "やばい"
+      },
+      {
+        "role": "assistant",
+        "content": "どうしましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0051",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "えー"
+      },
+      {
+        "role": "assistant",
+        "content": "何かありましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0052",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "なんか"
+      },
+      {
+        "role": "assistant",
+        "content": "何かありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0053",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ですよね"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0054",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日すごく疲れちゃって"
+      },
+      {
+        "role": "assistant",
+        "content": "大変でしたね。ゆっくり休めましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0055",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暇だわ〜"
+      },
+      {
+        "role": "assistant",
+        "content": "そうですか。何かしましょうか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0056",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "おなか減った"
+      },
+      {
+        "role": "assistant",
+        "content": "お腹が空いたんですね。何か食べましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0057",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "もう帰りたい"
+      },
+      {
+        "role": "assistant",
+        "content": "お疲れ様です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0058",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "眠くて死にそう"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0059",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日ついてない"
+      },
+      {
+        "role": "assistant",
+        "content": "そんな日もありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0060",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "暑すぎる"
+      },
+      {
+        "role": "assistant",
+        "content": "今日は暑いですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0061",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "まじつらい"
+      },
+      {
+        "role": "assistant",
+        "content": "大変そうですね。何かありましたか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0062",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "うれしい〜"
+      },
+      {
+        "role": "assistant",
+        "content": "良いことがあったんですね！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0063",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "最高の気分"
+      },
+      {
+        "role": "assistant",
+        "content": "それは良かったです！"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0064",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "昨日すごく疲れちゃって、どうすればいい？"
+      },
+      {
+        "role": "assistant",
+        "content": "まずはゆっくり休むことが大切ですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0065",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達と喧嘩してしまった"
+      },
+      {
+        "role": "assistant",
+        "content": "それは辛いですね。仲直りできるといいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0066",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "友達に嫌なこと言われた"
+      },
+      {
+        "role": "assistant",
+        "content": "それは悲しいですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0067",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "転職しようか迷ってる"
+      },
+      {
+        "role": "assistant",
+        "content": "大きな決断ですね。じっくり考えてみましょう。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0068",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "仕事辞めたい"
+      },
+      {
+        "role": "assistant",
+        "content": "それほど辛い状況なんですね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0069",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "彼女とうまくいってない"
+      },
+      {
+        "role": "assistant",
+        "content": "大変ですね。何か原因はありますか？"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0070",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "親と仲悪くて"
+      },
+      {
+        "role": "assistant",
+        "content": "家族関係は難しいですよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0071",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "将来が不安"
+      },
+      {
+        "role": "assistant",
+        "content": "将来への不安は誰にでもありますよね。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0072",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "テレワークのメリットとデメリット教えて"
+      },
+      {
+        "role": "assistant",
+        "content": "通勤が不要というメリットと、孤立感というデメリットがあります。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0073",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "チョコレートって体にいいの悪いの？"
+      },
+      {
+        "role": "assistant",
+        "content": "適量であれば健康効果もあると言われています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0074",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "コーヒーって飲みすぎると体に悪い？"
+      },
+      {
+        "role": "assistant",
+        "content": "カフェインの摂りすぎは注意が必要です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0075",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "運動って毎日した方がいい？"
+      },
+      {
+        "role": "assistant",
+        "content": "適度な運動は健康に良いですが、休息も大切です。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0076",
+    "category": "no_function_colloquial",
+    "label": "no_function"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "読書って何かいいことある？"
+      },
+      {
+        "role": "assistant",
+        "content": "知識が増えたり、語彙力が上がるといわれています。"
+      }
+    ],
+    "expected_function": null,
+    "expected_arguments": {},
+    "test_id": "colloquial_augment_0077",
+    "category": "no_function_colloquial",
+    "label": "no_function"
   }
 ]

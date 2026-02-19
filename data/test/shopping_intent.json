@@ -7434,5 +7434,57 @@
     },
     "test_id": "shopping_intent_0370",
     "category": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "新しいイヤホン買おうと思ってるんだけど何がいい？"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {},
+    "test_id": "colloquial_s_001",
+    "category": "shopping_intent",
+    "label": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "5万円以内でいいカメラ探してる"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {},
+    "test_id": "colloquial_s_002",
+    "category": "shopping_intent",
+    "label": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "冬用コートどれがいいかな"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {},
+    "test_id": "colloquial_s_003",
+    "category": "shopping_intent",
+    "label": "shopping_intent"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ランニングシューズおすすめ教えて"
+      }
+    ],
+    "expected_function": "shopping_intent",
+    "expected_arguments": {},
+    "test_id": "colloquial_s_004",
+    "category": "shopping_intent",
+    "label": "shopping_intent"
   }
 ]
