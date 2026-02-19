@@ -232,23 +232,25 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ### 評価結果
 
-| Model | Accuracy | Steps | Epochs | 備考 |
-|-------|----------|-------|--------|------|
-| Baseline (Ollama) | 28.4% | - | - | Zero-shot |
-| Fine-tuned (500 steps) | **60.3%** | 500 | 1.74 | **推奨** |
-| Fine-tuned (800 steps) | 60.5% | 800 | 2.78 | 微増のみ |
+| 構成 | Accuracy | no_function Recall | 備考 |
+|------|----------|:-----------------:|------|
+| Baseline (Zero-shot) | 27.9% | 低 | Ollama functiongemma |
+| Run 3 (PEFT ckpt-800) | 68.3% | 0% | データ多様性向上 |
+| Run 5 (PEFT ckpt-800) | 57.1% | 0% | 4,090件 balanced |
+| **Run 6 (ML Stage1 + Run5)** | **93.0%** | **98.0%** | **← 最高記録** |
 
-#### 関数別 Recall (500 steps)
+#### Run 6 関数別 Recall
 
-| Function | Baseline | Fine-tuned | 改善 |
-|----------|----------|------------|------|
-| celebrity_info | 20% | **100%** | +80% |
-| schedule_reminder | 0% | **95%** | +95% |
-| weather_info | 0% | **92.5%** | +92.5% |
-| travel_guide | 7.5% | **90%** | +82.5% |
-| shopping_intent | - | 87.5% | - |
-| sentiment_label | - | 65% | - |
-| translation_assist | - | 42.5% | - |
+| Function | Recall | Precision |
+|----------|--------|-----------|
+| travel_guide | **100.0%** | 96.1% |
+| celebrity_info | **98.6%** | 100.0% |
+| shopping_intent | **97.3%** | 92.3% |
+| schedule_reminder | **97.3%** | 94.7% |
+| weather_info | **93.2%** | 93.2% |
+| sentiment_label | **83.8%** | 95.4% |
+| translation_assist | 60.8% | 81.8% |
+| **no_function** | **98.0%** | **100%** |
 
 ### ハイパーパラメータ
 
