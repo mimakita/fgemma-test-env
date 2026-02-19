@@ -181,8 +181,16 @@ def run_test():
         else:
             predicted = None
 
-        # Check correctness
-        is_correct = (predicted == tc.expected_function)
+        # Check correctness:
+        # ML backend: binary classification only (need_function vs no_function)
+        # Keyword backend: also checks matched_function
+        backend = getattr(classification, "backend", "keyword")
+        if backend == "ml":
+            # ML model only predicts need_function; treat any function prediction as correct
+            expected_need = tc.expected_function is not None
+            is_correct = (classification.need_function == expected_need)
+        else:
+            is_correct = (predicted == tc.expected_function)
 
         result = TestResult(
             input_text=tc.input_text,

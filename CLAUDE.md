@@ -73,6 +73,20 @@ python -m tools.generate_diverse_functions --all --target 370
 python -m tools.generate_irrelevance_data --count 500 --ambiguous 200 --merge
 ```
 
+### Stage 1 分類器の学習（初回・データ更新時）
+```bash
+# TF-IDF + LinearSVC を学習してモデルを保存（学習 ~0.2秒）
+python -m tools.train_classifier
+# → data/classifiers/stage1_model.pkl を生成
+# モデルがなければ自動的にキーワードベースへフォールバック
+
+# 分類器ベンチマーク（Keyword / ML / LLM を比較）
+python -m tools.benchmark_classifier
+
+# Stage 1 精度テスト（95件のテストケース）
+python -m tools.test_conversation
+```
+
 ### 評価
 ```bash
 # Ollamaベースライン評価
@@ -122,37 +136,43 @@ python -m tools.finetune_lora --run-id 1  # 使用しないこと
 
 ## Evaluation Results
 
-### ベースライン (Ollama functiongemma, Zero-shot)
-| Metric | Value |
-|--------|-------|
-| Accuracy | 27.9% |
-| FPR | 4.8% |
-| celebrity_info Recall | 17.5% |
-| travel_guide Recall | 4.0% |
-| 他のfunction | 0-2.5% |
+### Fine-tuning実験サマリ（Run 1-6）
 
-### Run 3: データ多様性向上 (checkpoint-800)
-| Metric | Value |
-|--------|-------|
-| Accuracy | **68.3%** |
-| celebrity_info Recall | 98.6% |
-| travel_guide Recall | 98.6% |
-| schedule_reminder Recall | 98.6% |
-| shopping_intent Recall | 97.3% |
-| weather_info Recall | 93.2% |
-| sentiment_label Recall | 78.4% |
-| translation_assist Recall | 51.4% |
-| no_function Recall | 0% (課題) |
+| Run | 構成 | Accuracy | no_func Recall | 備考 |
+|-----|------|----------|:--------------:|------|
+| Baseline | Zero-shot | 27.9% | 低 | Ollama |
+| Run 2 | PEFT | 60.3% | 0% | 1,900件 |
+| Run 3 | PEFT | 68.3% | 0% | 3,340件 データ多様性向上 |
+| Run 4 | PEFT | 42.7% | 0% | no_function 50%（失敗） |
+| Run 5 | PEFT | 57.1% | 0% | 4,090件 balanced |
+| **Run 6** | **ML Stage1 + PEFT Run5** | **93.0%** | **98.0%** | **最高記録** |
 
-### Fine-tuning効果
-- ベースラインから **+40.4%** の精度向上
-- データ多様性向上により translation_assist が +13.9% 改善
-- no_function の認識が継続課題（全て関数呼び出しと判定）
+### Run 6 二段階判定（本番推奨構成）
+
+| メトリクス | Run 5 単独 | Run 6 二段階 | 改善 |
+|-----------|-----------|------------|------|
+| Accuracy | 57.1% | **93.0%** | **+35.9pp** |
+| no_function Recall | 0% | **98.0%** | **+98pp** |
+| Stage 2 呼び出し | 818件 | **524件** | **36%削減** |
+
+### Stage 1 分類器ベンチマーク（二値分類: need_function vs no_function）
+
+| 分類器 | Accuracy | Precision | Recall | F1 | ms/sample |
+|--------|----------|-----------|--------|-----|-----------|
+| Keyword Baseline (現行) | 57.0% | 63.7% | 74.7% | 68.7% | **0.014ms** |
+| TF-IDF + LR | 89.4% | 89.3% | 94.6% | 91.8% | 0.049ms |
+| **TF-IDF + LinearSVC** | **90.1%** | **91.6%** | 92.9% | **92.2%** | 0.032ms |
+| TF-IDF + Complement NB | 88.6% | 93.8% | 87.8% | 90.7% | 0.033ms |
+| LLM gemma3:4b (zero-shot) | 64.0% | 66.7% | 56.0% | 60.9% | 927ms |
+
+**推奨**: TF-IDF + LinearSVC を Stage 1 に採用（現行比 +33.1%、学習時間 0.23s）
+詳細は `sample_result.md` セクション18を参照。
 
 ### no_function 認識改善への取り組み (Run 4)
 - **Irrelevance-Augmented Dataset**: 関数除外型ネガティブサンプル追加
 - **no_function 比率50%**: 学習データの半分をno_functionに
-- 参考文献: Decision Token (arxiv:2412.01130v2), Hammer (arxiv:2410.04587v2)
+- **結果**: 失敗（各関数のサンプルが7%に減少して全体精度が低下）
+- **教訓**: LLMのfine-tuningではなく、Stage 1 ML分類器で解決
 
 ## Adding a New Function
 1. `src/functions/your_function.py` を作成 (handler + schema + register)
@@ -199,7 +219,9 @@ funcgemma/
 │   ├── finetune_lora.py              # MLX LoRA学習 (非推奨)
 │   ├── evaluate.py                   # Ollama評価
 │   ├── evaluate_peft.py              # PEFT評価
-│   └── analyze_errors.py             # エラー分析
+│   ├── analyze_errors.py             # エラー分析
+│   ├── test_conversation.py          # Stage 1 Classifierテスト（95件）
+│   └── benchmark_classifier.py       # 分類器ベンチマーク（Keyword/ML/LLM比較）
 ├── data/
 │   ├── test/                         # 元テストデータ
 │   ├── finetune/run_{id}/            # 分割済みデータ

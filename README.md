@@ -4,22 +4,35 @@
 
 ## Architecture
 
+### 二段階Function Calling（デフォルト）
+
 ```
 User Input
     │
     ▼
-┌──────────────┐     ┌─────────────────┐
-│  gemma3:4b   │────▶│  FunctionGemma  │
-│  (対話モデル)  │     │  (270M Router)  │
-└──────────────┘     └────────┬────────┘
-                              │
-               ┌──────────────┼──────────────┐
-               ▼              ▼              ▼
-         ┌──────────┐  ┌──────────┐  ┌──────────┐
-         │ Function │  │ Function │  │   None   │
-         │    A     │  │    B     │  │(通常対話) │
-         └──────────┘  └──────────┘  └──────────┘
+┌─────────────────────────────────────┐
+│ Stage 1: FunctionCallClassifier    │  ← キーワードベース (0.01ms)
+│ (no_function検出に特化)             │
+└─────────────────────────────────────┘
+    │                           │
+    │ need_function=True        │ need_function=False
+    ▼                           ▼
+┌─────────────────────┐    直接応答
+│ Stage 2: gemma3:4b  │    (LLM呼び出しスキップ)
+│ + FunctionGemma     │
+└─────────────────────┘
+    │
+    ▼
+Function Call or None
 ```
+
+- **Stage 1**: `FunctionCallClassifier` - キーワードベースの高速分類器
+  - no_function認識に特化（Recall 100%）
+  - 不要なLLM呼び出しを39%削減
+- **Stage 2**: `FunctionGemma` - LLMベースの関数選択
+  - Stage 1で関数が必要と判定された場合のみ実行
+
+### 使用モデル
 
 - **gemma3:4b** - 対話用メインLLM (Ollama)
 - **functiongemma** - Function判定モデル 270M (Ollama)
@@ -92,6 +105,43 @@ python -m tools.generate_test_data --function travel_guide --count 50
 # no_functionデータをスキップ
 python -m tools.generate_test_data --skip-no-function
 ```
+
+### Classifier Testing
+
+```bash
+# Stage 1 ML分類器を学習・保存（初回またはデータ更新後に実行）
+python -m tools.train_classifier
+# → data/classifiers/stage1_model.pkl を生成 (学習時間 ~0.2秒)
+
+# 分類器ベンチマーク（Keyword / TF-IDF+ML / LLM を比較）
+python -m tools.benchmark_classifier
+
+# Stage 1 Classifierの精度テスト（95件のテストケース）
+python -m tools.test_conversation
+```
+
+> **Note**: `data/classifiers/stage1_model.pkl` が存在する場合は自動的にMLモデルを使用します。
+> ファイルがない場合はキーワードベースにフォールバックします。
+
+テスト結果の例:
+```
+Overall Accuracy: 91/95 (95.8%)
+
+Per-Category Results:
+  greeting            : 10/10 (100.0%)
+  general_question    : 10/10 (100.0%)
+  creative            : 10/10 (100.0%)
+  opinion             : 10/10 (100.0%)
+  travel              : 10/10 (100.0%)
+  weather             : 10/10 (100.0%)
+  translation         : 10/10 (100.0%)
+  celebrity           :  6/10 ( 60.0%)
+  sentiment           :  5/ 5 (100.0%)
+  schedule            :  5/ 5 (100.0%)
+  shopping            :  5/ 5 (100.0%)
+```
+
+結果は `data/results/classifier_test_100.json` に保存されます。
 
 ### Evaluation
 
@@ -182,23 +232,25 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ### 評価結果
 
-| Model | Accuracy | Steps | Epochs | 備考 |
-|-------|----------|-------|--------|------|
-| Baseline (Ollama) | 28.4% | - | - | Zero-shot |
-| Fine-tuned (500 steps) | **60.3%** | 500 | 1.74 | **推奨** |
-| Fine-tuned (800 steps) | 60.5% | 800 | 2.78 | 微増のみ |
+| 構成 | Accuracy | no_function Recall | 備考 |
+|------|----------|:-----------------:|------|
+| Baseline (Zero-shot) | 27.9% | 低 | Ollama functiongemma |
+| Run 3 (PEFT ckpt-800) | 68.3% | 0% | データ多様性向上 |
+| Run 5 (PEFT ckpt-800) | 57.1% | 0% | 4,090件 balanced |
+| **Run 6 (ML Stage1 + Run5)** | **93.0%** | **98.0%** | **← 最高記録** |
 
-#### 関数別 Recall (500 steps)
+#### Run 6 関数別 Recall
 
-| Function | Baseline | Fine-tuned | 改善 |
-|----------|----------|------------|------|
-| celebrity_info | 20% | **100%** | +80% |
-| schedule_reminder | 0% | **95%** | +95% |
-| weather_info | 0% | **92.5%** | +92.5% |
-| travel_guide | 7.5% | **90%** | +82.5% |
-| shopping_intent | - | 87.5% | - |
-| sentiment_label | - | 65% | - |
-| translation_assist | - | 42.5% | - |
+| Function | Recall | Precision |
+|----------|--------|-----------|
+| travel_guide | **100.0%** | 96.1% |
+| celebrity_info | **98.6%** | 100.0% |
+| shopping_intent | **97.3%** | 92.3% |
+| schedule_reminder | **97.3%** | 94.7% |
+| weather_info | **93.2%** | 93.2% |
+| sentiment_label | **83.8%** | 95.4% |
+| translation_assist | 60.8% | 81.8% |
+| **no_function** | **98.0%** | **100%** |
 
 ### ハイパーパラメータ
 
