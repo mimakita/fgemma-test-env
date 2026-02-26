@@ -11,8 +11,8 @@ User Input
     │
     ▼
 ┌─────────────────────────────────────┐
-│ Stage 1: FunctionCallClassifier    │  ← キーワードベース (0.01ms)
-│ (no_function検出に特化)             │
+│ Stage 1: FunctionCallClassifier    │  ← TF-IDF + LinearSVC (0.03ms)
+│ (need_function / no_function 二値分類) │
 └─────────────────────────────────────┘
     │                           │
     │ need_function=True        │ need_function=False
@@ -26,9 +26,10 @@ User Input
 Function Call or None
 ```
 
-- **Stage 1**: `FunctionCallClassifier` - キーワードベースの高速分類器
-  - no_function認識に特化（Recall 100%）
-  - 不要なLLM呼び出しを39%削減
+- **Stage 1**: `FunctionCallClassifier` - TF-IDF + LinearSVCによる高速ML分類器
+  - no_function Recall 93.7%（Accuracy 90.2%、学習時間 0.2秒）
+  - 不要なLLM呼び出しを36%削減
+  - `data/classifiers/stage1_model.pkl` がなければキーワードベースにフォールバック
 - **Stage 2**: `FunctionGemma` - LLMベースの関数選択
   - Stage 1で関数が必要と判定された場合のみ実行
 
@@ -119,9 +120,6 @@ python -m tools.benchmark_classifier
 # Stage 1 Classifierの精度テスト（95件のテストケース）
 python -m tools.test_conversation
 ```
-
-> **Note**: `data/classifiers/stage1_model.pkl` が存在する場合は自動的にMLモデルを使用します。
-> ファイルがない場合はキーワードベースにフォールバックします。
 
 テスト結果の例:
 ```
@@ -296,12 +294,18 @@ funcgemma/
 │       └── translation.py  # translation_assist
 ├── tools/
 │   ├── generate_test_data.py  # テストデータ生成 (qwen2.5:7b)
+│   ├── train_classifier.py    # Stage 1 ML分類器の学習・保存
+│   ├── benchmark_classifier.py # 分類器ベンチマーク (Keyword/ML/LLM比較)
+│   ├── test_conversation.py   # Stage 1 精度テスト (95件)
 │   ├── split_data.py          # 学習/テストデータ分割
 │   ├── finetune_peft.py       # PEFT LoRA学習 (推奨)
 │   ├── evaluate.py            # Ollama評価スクリプト
-│   └── evaluate_peft.py       # PEFT評価スクリプト
+│   ├── evaluate_peft.py       # PEFT評価スクリプト
+│   └── evaluate_run6.py       # 二段階評価 (ML Stage1 + PEFT Run5)
 ├── data/
 │   ├── test/               # 生成されたテストデータ (JSON)
+│   ├── classifiers/        # Stage 1 MLモデル
+│   │   └── stage1_model.pkl  # TF-IDF + LinearSVC (919KB)
 │   ├── finetune/           # 学習/テスト分割データ
 │   │   └── run_{id}/       # 実験別ディレクトリ
 │   ├── peft_adapters/      # Fine-tuned LoRAアダプタ
