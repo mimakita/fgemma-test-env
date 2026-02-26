@@ -7516,5 +7516,70 @@
     },
     "test_id": "weather_info_0370",
     "category": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今夜雨降りそう？東京"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_w_001",
+    "category": "weather_info",
+    "label": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "今日傘いる？大阪"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_w_002",
+    "category": "weather_info",
+    "label": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "明日晴れる？"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_w_003",
+    "category": "weather_info",
+    "label": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "雨降る？今日の名古屋"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_w_004",
+    "category": "weather_info",
+    "label": "weather_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "週末の天気どう？福岡"
+      }
+    ],
+    "expected_function": "weather_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_w_005",
+    "category": "weather_info",
+    "label": "weather_info"
   }
 ]

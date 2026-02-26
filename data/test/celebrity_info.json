@@ -7484,5 +7484,70 @@
     },
     "test_id": "celebrity_info_0370",
     "category": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "イーロンマスクってどんな人？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_c_001",
+    "category": "celebrity_info",
+    "label": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "あのさ、スティーブジョブズって結局何がすごかったの？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_c_002",
+    "category": "celebrity_info",
+    "label": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "ビルゲイツって今何してるの？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_c_003",
+    "category": "celebrity_info",
+    "label": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "宮崎駿って何者？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_c_004",
+    "category": "celebrity_info",
+    "label": "celebrity_info"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "本田圭佑って今どこにいるの？"
+      }
+    ],
+    "expected_function": "celebrity_info",
+    "expected_arguments": {},
+    "test_id": "colloquial_c_005",
+    "category": "celebrity_info",
+    "label": "celebrity_info"
   }
 ]

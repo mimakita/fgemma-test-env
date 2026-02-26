@@ -7465,5 +7465,44 @@
     },
     "test_id": "travel_guide_0370",
     "category": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "沖縄に行ったことないんだけど何が有名？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {},
+    "test_id": "colloquial_t_001",
+    "category": "travel_guide",
+    "label": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "北海道で外せないとこってどこ？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {},
+    "test_id": "colloquial_t_002",
+    "category": "travel_guide",
+    "label": "travel_guide"
+  },
+  {
+    "conversation": [
+      {
+        "role": "user",
+        "content": "大阪行くならどこ行けばいい？"
+      }
+    ],
+    "expected_function": "travel_guide",
+    "expected_arguments": {},
+    "test_id": "colloquial_t_003",
+    "category": "travel_guide",
+    "label": "travel_guide"
   }
 ]
