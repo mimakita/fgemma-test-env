@@ -27,7 +27,9 @@ Function Call or None
 ```
 
 - **Stage 1**: `FunctionCallClassifier` - TF-IDF + LinearSVCによる高速ML分類器
-  - no_function Recall 93.7%（Accuracy 90.2%、学習時間 0.2秒）
+  - Accuracy 90.2%、no_function Recall 93.7%
+  - 推論速度 0.031ms/sample、学習時間 0.22秒（4,318件）
+  - モデルサイズ 919KB（オンメモリ ~889KB）
   - 不要なLLM呼び出しを36%削減
   - `data/classifiers/stage1_model.pkl` がなければキーワードベースにフォールバック
 - **Stage 2**: `FunctionGemma` - LLMベースの関数選択

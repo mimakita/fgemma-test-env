@@ -1155,20 +1155,46 @@ elif result.should_call:
 
 | 項目 | 内容 |
 |------|------|
-| 総データ数 | 4,090件（7関数 × 370件 + no_function 1,500件） |
-| 分割 | train=80% (3,272件), test=20% (818件) |
-| テストセット内訳 | need_function=518件, no_function=300件 |
+| 総データ数 | 4,318件（7関数 × 370〜375件 + no_function 1,711件） |
+| ラベル内訳 | need_function=2,607件 (60.4%), no_function=1,711件 (39.6%) |
+| 分割 | train=80% (3,454件), test=20% (864件) |
 | 入力特徴量 | 対話の最後のユーザー発話（テキスト） |
+| 入力テキスト長 | 平均 17.9文字、中央値 16.0文字、最大 73文字 |
+| 学習コーパス総文字数 | 77,197文字 |
 
 ### 18.3 評価手法
 
 | モデル | 学習データ | アルゴリズム | 備考 |
 |--------|-----------|-------------|------|
 | Keyword Baseline | なし（ルールベース） | キーワードマッチング | 現行実装 |
-| TF-IDF + LR | 3,272件 | Logistic Regression | char n-gram (2-4), max_features=20k |
-| TF-IDF + SVM | 3,272件 | LinearSVC | char n-gram (2-4), max_features=20k |
-| TF-IDF + CNB | 3,272件 | Complement NaiveBayes | 不均衡データに適した NB 変種 |
+| TF-IDF + LR | 3,454件 | Logistic Regression | char n-gram (2-4), max_features=20k |
+| TF-IDF + SVM | 3,454件 | LinearSVC | char n-gram (2-4), max_features=20k |
+| TF-IDF + CNB | 3,454件 | Complement NaiveBayes | 不均衡データに適した NB 変種 |
 | LLM | なし（zero-shot） | gemma3:4b | n=50サンプルのみ評価（低速のため） |
+
+### 18.3.1 採用モデル（TF-IDF + LinearSVC）スペック
+
+#### ハイパーパラメータ
+
+| パラメータ | 値 | 説明 |
+|-----------|-----|------|
+| analyzer | `char_wb` | 文字 n-gram（単語境界対応）|
+| ngram_range | (2, 4) | 2〜4文字の n-gram |
+| max_features | 20,000 | 語彙サイズ上限 |
+| sublinear_tf | True | log(tf+1) スケーリング |
+| C (LinearSVC) | 1.0 | 正則化パラメータ |
+
+#### モデルサイズ・メモリ
+
+| 項目 | 値 |
+|------|-----|
+| モデルファイル (pickle) | **918.6 KB** |
+| TF-IDF 語彙辞書 | 576.1 KB |
+| TF-IDF IDF配列 (20,000次元) | 156.2 KB |
+| LinearSVC 係数行列 (1×20,000) | 156.2 KB |
+| **オンメモリ合計（推定）** | **~889 KB** |
+| 学習時間（4,318件） | **0.22秒** |
+| 推論速度 | **0.031ms/sample** |
 
 ### 18.4 ベンチマーク結果
 
